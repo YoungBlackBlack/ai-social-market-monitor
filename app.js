@@ -812,6 +812,67 @@ function renderMonitor(monitor, history, ledger, digest, data) {
   runs.append(laneGrid);
 }
 
+function renderAlertTriage(triage) {
+  const root = document.querySelector("#alert-triage");
+  if (!root) return;
+  root.replaceChildren();
+  if (!triage || !Array.isArray(triage.candidates)) return;
+
+  const head = el("div", "monitor-block-head");
+  head.append(el("p", "section-label", "alert triage"));
+  head.append(el("h3", null, "监控 → 升级队列（自动评分）"));
+  head.append(
+    el(
+      "p",
+      null,
+      "每日 monitor 抓到的近窗/新增条目，用证据规则自动打分、与对照表去重，并路由到 brief 对应位置。这是连接动态监测与存量对照的闭环入口。",
+    ),
+  );
+  root.append(head);
+
+  const s = triage.summary ?? {};
+  const stats = [
+    [s.totalCandidates ?? 0, "候选总数"],
+    [s.newUrls ?? 0, "新增 URL"],
+    [s.promotionQueueSize ?? 0, "升级队列"],
+    [s.alreadyTracked ?? 0, "已在对照表"],
+  ];
+  const statRow = el("div", "monitor-summary");
+  stats.forEach(([value, label]) => {
+    const card = el("article", "monitor-stat");
+    card.append(el("strong", null, String(value)));
+    card.append(el("span", null, label));
+    statRow.append(card);
+  });
+  root.append(statRow);
+
+  const queue = (triage.promotionQueue ?? []).slice(0, 8);
+  if (queue.length === 0) {
+    root.append(el("p", "empty-state", "本次没有达到 A/B 级的升级候选；其余条目保留为 watchlist。"));
+    return;
+  }
+
+  const grid = el("div", "recent-grid");
+  queue.forEach((c) => {
+    const card = el("article", `recent-card priority-${c.lanePriority ?? "medium"}`);
+    const newFlag = c.isNewUrl ? " · 🆕新增" : "";
+    card.append(el("span", "tag", `${c.grade}·${c.triageScore} · ${c.monitorLabel}${newFlag}`));
+    card.append(el("h4", null, c.candidateName));
+    card.append(el("p", "date-line", `路由：${c.routeTo}`));
+    card.append(el("p", null, `待补证据：${c.missingEvidence}`));
+    card.append(el("p", null, c.suggestedAction));
+    if (c.url) {
+      const link = el("a", null, "查看证据");
+      link.href = c.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      card.append(link);
+    }
+    grid.append(card);
+  });
+  root.append(grid);
+}
+
 function renderClusters(data) {
   const root = document.querySelector("#cluster-stack");
   data.clusters.forEach((cluster) => {
@@ -2817,17 +2878,26 @@ async function loadReportData() {
     fetch(`data/monitor-digest.json?v=${cacheKey}`, { cache: "no-store" }),
   ]);
 
+  let triage = null;
+  try {
+    const triageResponse = await fetch(`data/alert-triage.json?v=${cacheKey}`, { cache: "no-store" });
+    if (triageResponse.ok) triage = await triageResponse.json();
+  } catch {
+    triage = null;
+  }
+
   return {
     brief: await briefResponse.json(),
     monitor: await monitorResponse.json(),
     history: await historyResponse.json(),
     ledger: await ledgerResponse.json(),
     digest: await digestResponse.json(),
+    triage,
   };
 }
 
 async function boot() {
-  const { brief: data, monitor, history, ledger, digest } = await loadReportData();
+  const { brief: data, monitor, history, ledger, digest, triage } = await loadReportData();
   renderHero(data);
   renderExecutiveSummary(data);
   renderThesis(data);
@@ -2838,6 +2908,7 @@ async function boot() {
   renderSynthesis(data);
   renderProductCapability(data);
   renderMonitor(monitor, history, ledger, digest, data);
+  renderAlertTriage(triage);
   renderClusters(data);
   renderFunding(data);
   renderIrl(data);

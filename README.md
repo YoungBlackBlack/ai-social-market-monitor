@@ -13,6 +13,7 @@ This folder contains an Exa-driven research page for AI social, AI entertainment
 - `data/monitor-history.json` - retained monitor summaries for trend display.
 - `data/monitor-ledger.json` - retained first-seen alert ledger for new monitor items.
 - `data/monitor-digest.json` - human-friendly monitor interpretation and recommended actions.
+- `data/alert-triage.json` - auto-scored monitor candidates with a promotion queue routed toward the stock comparison (closed-loop connector).
 - `data/exa-websets-monitor.json` - Exa Websets Monitor API access probe and fallback status.
 - `data/exa-discovery-scan.json` - broad blind-spot scan for AI friend, AI dating, long-tail companion, IRL, and language-exchange candidates.
 - `data/exa-official-gap-deep-dive.json` - targeted Exa official/social-profile gap pass for products missing store, LinkedIn, or social-community evidence.
@@ -44,6 +45,8 @@ This folder contains an Exa-driven research page for AI social, AI entertainment
 - `scripts/exa-language-growth-channel-deep-dive.mjs` - reruns targeted Exa searches for language-exchange growth, channel, app-store, PR, and community evidence.
 - `scripts/exa-language-official-social-deep-dive.mjs` - reruns targeted Exa searches for language official, store, LinkedIn, and social/community evidence.
 - `scripts/refresh-derived.mjs` - refreshes computed `brief.json` fields after reruns, including coverage, query matrix, funding summary, and evidence scoring.
+- `scripts/triage-alerts.mjs` - closed-loop connector: scores each monitor recent/new-alert item with a deterministic evidence rubric, dedupes against products already in the stock comparison, routes each candidate to the `brief.json` location it would feed, and writes `data/alert-triage.json` with a promotion queue. No network access.
+- `scripts/build-feishu-card.mjs` - turns the monitor digest + alert triage into a Feishu-card-ready markdown body (`exports/feishu-alert-digest.md`) plus card metadata (`exports/feishu-card-meta.json`: title/color/button/shouldSend). No network access; sending stays a single `feishu-card` skill command.
 - `scripts/export-csv.mjs` - exports CSV attachments for the competitive matrix, funding timeline, monitor recent signals, monitor recent review queue, and latest alert review.
 - `scripts/export-sqlite.mjs` - exports `exports/exa-social-research.sqlite` with products, funding events, monitor signals, source linkage, coverage gaps, generic audit rows, and query-ready views.
 - `scripts/export-completion-audit.mjs` - exports a Markdown requirement-by-requirement completion audit and a machine-readable completion manifest.
@@ -243,6 +246,47 @@ The monitor page distinguishes:
 - `新增提醒`: recent URLs that were not in the baseline or previous monitor runs.
 - `提醒台账`: first-seen new alert URLs retained across future runs.
 - `监控解读`: headline, bullets, and recommended actions derived from the latest monitor run.
+- `监控 → 升级队列`: auto-scored triage candidates routed toward the stock comparison (see below).
+
+## Triage Alerts Into the Promotion Queue (Closed Loop)
+
+```bash
+node scripts/triage-alerts.mjs
+```
+
+This is the connector between the two layers of the system — dynamic monitoring and the stock competitor comparison. It reads `data/monitor.json` (no network) and, for every recent / new-alert item:
+
+- scores it with a deterministic rubric (lane priority + funding/launch/IRL/companion/risk signal keywords + new-URL/recency/reputable-source bonuses) into an A/B/C/D grade,
+- dedupes against products already in the stock comparison (`brief.json` clusters + funding timeline) so known names are flagged `already-tracked` instead of re-surfaced,
+- routes each candidate to the `brief.json` location it would feed (funding timeline, IRL cluster, language cluster, companions, research signals, discovery pool, channel audit, coverage-gap register) with the evidence still missing before promotion,
+- writes `data/alert-triage.json` with a `promotionQueue` of A/B-grade candidates that need human review.
+
+Promotion into the curated `brief.json` stays manual on purpose: the triage queue makes the next reviewable step explicit, it does not auto-write conclusions. The page renders this queue inside the "持续监控" section as `监控 → 升级队列（自动评分）`.
+
+## Build the Feishu Notification Card
+
+```bash
+node scripts/build-feishu-card.mjs
+```
+
+Turns the monitor digest + alert triage into a Feishu-card-ready markdown body and metadata under `exports/`:
+
+- `exports/feishu-alert-digest.md` - headline, counts, top promotion-queue candidates (grade·score · name → route), and recommended actions,
+- `exports/feishu-card-meta.json` - `title`, header `color` (red/orange/blue by urgency), `buttonText`/`buttonUrl`, and `shouldSend` (true when there are new URLs or grade-A candidates, so a scheduler can skip empty days).
+
+Sending stays a single command via the `feishu-card` skill once a target user (`ou_...`) or group chat (`oc_...`) is known:
+
+```bash
+node skills/feishu-card/send.js \
+  --target <ou_or_oc_id> \
+  --title "$(node -e "console.log(require('./exports/feishu-card-meta.json').title)")" \
+  --color "$(node -e "console.log(require('./exports/feishu-card-meta.json').color)")" \
+  --text-file exports/feishu-alert-digest.md \
+  --button-text "查看最高优先级证据" \
+  --button-url "$(node -e "console.log(require('./exports/feishu-card-meta.json').buttonUrl)")"
+```
+
+Both `triage-alerts.mjs` and `build-feishu-card.mjs` run automatically near the end of `scripts/run-all.mjs` (both `monitor` and `--full` modes), right after derived fields are refreshed.
 
 ## Refresh Derived Fields
 

@@ -55,8 +55,8 @@ for (const id of requiredIds) {
   expect(html.includes(`id="${id}"`), `index.html must include #${id}`);
 }
 
-expect(html.includes("styles.css?v=20260602-v96"), "index.html must version the stylesheet URL for live-demo cache busting");
-expect(html.includes("app.js?v=20260602-v96"), "index.html must version the app script URL for live-demo cache busting");
+expect(/styles\.css\?v=[\w.-]+/.test(html), "index.html must version the stylesheet URL for live-demo cache busting");
+expect(/app\.js\?v=[\w.-]+/.test(html), "index.html must version the app script URL for live-demo cache busting");
 
 const requiredRenderCalls = [
   "renderHero(data)",
