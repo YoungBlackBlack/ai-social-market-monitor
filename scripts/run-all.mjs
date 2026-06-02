@@ -23,6 +23,7 @@ const workflows = {
     ["Validate standalone deliverable", "scripts/validate-deliverable.mjs"],
     ["Save timestamped snapshot", "scripts/snapshot-current.mjs"],
     ["Validate latest snapshot", "scripts/validate-snapshot.mjs"],
+    ["Send Feishu alert card", "scripts/send-feishu-card.mjs"],
   ],
   full: [
     ["Run Exa category research", "scripts/exa-research.mjs"],
@@ -54,6 +55,7 @@ const workflows = {
     ["Validate standalone deliverable", "scripts/validate-deliverable.mjs"],
     ["Save timestamped snapshot", "scripts/snapshot-current.mjs"],
     ["Validate latest snapshot", "scripts/validate-snapshot.mjs"],
+    ["Send Feishu alert card", "scripts/send-feishu-card.mjs"],
   ],
 };
 

@@ -46,7 +46,8 @@ This folder contains an Exa-driven research page for AI social, AI entertainment
 - `scripts/exa-language-official-social-deep-dive.mjs` - reruns targeted Exa searches for language official, store, LinkedIn, and social/community evidence.
 - `scripts/refresh-derived.mjs` - refreshes computed `brief.json` fields after reruns, including coverage, query matrix, funding summary, and evidence scoring.
 - `scripts/triage-alerts.mjs` - closed-loop connector: scores each monitor recent/new-alert item with a deterministic evidence rubric, dedupes against products already in the stock comparison, routes each candidate to the `brief.json` location it would feed, and writes `data/alert-triage.json` with a promotion queue. No network access.
-- `scripts/build-feishu-card.mjs` - turns the monitor digest + alert triage into a Feishu-card-ready markdown body (`exports/feishu-alert-digest.md`) plus card metadata (`exports/feishu-card-meta.json`: title/color/button/shouldSend). No network access; sending stays a single `feishu-card` skill command.
+- `scripts/build-feishu-card.mjs` - turns the monitor digest + alert triage into a Feishu-card-ready markdown body (`exports/feishu-alert-digest.md`) plus card metadata (`exports/feishu-card-meta.json`: title/color/button/shouldSend). No network access.
+- `scripts/send-feishu-card.mjs` - posts the prebuilt card to a Feishu custom-bot webhook (`FEISHU_WEBHOOK_URL`, optional `FEISHU_WEBHOOK_SECRET` for signature verification). Only sends when `meta.shouldSend` is true unless `--force` is passed.
 - `scripts/export-csv.mjs` - exports CSV attachments for the competitive matrix, funding timeline, monitor recent signals, monitor recent review queue, and latest alert review.
 - `scripts/export-sqlite.mjs` - exports `exports/exa-social-research.sqlite` with products, funding events, monitor signals, source linkage, coverage gaps, generic audit rows, and query-ready views.
 - `scripts/export-completion-audit.mjs` - exports a Markdown requirement-by-requirement completion audit and a machine-readable completion manifest.
@@ -274,19 +275,22 @@ Turns the monitor digest + alert triage into a Feishu-card-ready markdown body a
 - `exports/feishu-alert-digest.md` - headline, counts, top promotion-queue candidates (grade·score · name → route), and recommended actions,
 - `exports/feishu-card-meta.json` - `title`, header `color` (red/orange/blue by urgency), `buttonText`/`buttonUrl`, and `shouldSend` (true when there are new URLs or grade-A candidates, so a scheduler can skip empty days).
 
-Sending stays a single command via the `feishu-card` skill once a target user (`ou_...`) or group chat (`oc_...`) is known:
+## Send the Feishu Card to a Webhook
 
 ```bash
-node skills/feishu-card/send.js \
-  --target <ou_or_oc_id> \
-  --title "$(node -e "console.log(require('./exports/feishu-card-meta.json').title)")" \
-  --color "$(node -e "console.log(require('./exports/feishu-card-meta.json').color)")" \
-  --text-file exports/feishu-alert-digest.md \
-  --button-text "查看最高优先级证据" \
-  --button-url "$(node -e "console.log(require('./exports/feishu-card-meta.json').buttonUrl)")"
+node scripts/send-feishu-card.mjs          # sends only when there is something new
+node scripts/send-feishu-card.mjs --force  # always sends (useful for testing)
 ```
 
-Both `triage-alerts.mjs` and `build-feishu-card.mjs` run automatically near the end of `scripts/run-all.mjs` (both `monitor` and `--full` modes), right after derived fields are refreshed.
+Posts the prebuilt card to a Feishu custom-bot webhook. Set up once:
+
+1. In the target Feishu group: 设置 → 群机器人 → 添加机器人 → 自定义机器人.
+2. Copy the webhook URL into `.env` as `FEISHU_WEBHOOK_URL` (see `.env.example`).
+3. If you enabled 签名校验, also set `FEISHU_WEBHOOK_SECRET`.
+
+The sender respects `meta.shouldSend`, so empty days do not spam the group. It builds a Feishu interactive card (header color by urgency, markdown body, and a button to the top-priority evidence link).
+
+`triage-alerts.mjs` and `build-feishu-card.mjs` run near the end of `scripts/run-all.mjs` right after derived fields refresh (both `monitor` and `--full`); `send-feishu-card.mjs` runs as the final step so a webhook hiccup never blocks the data refresh, validators, or snapshot.
 
 ## Refresh Derived Fields
 
