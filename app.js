@@ -270,10 +270,10 @@ function renderDashboard(data, monitor, history, triage) {
   // 证据等级分布 donut
   const grades = data.evidenceScoring?.counts ?? {};
   const gradeSegments = [
-    { label: "A 强证据", value: grades.A ?? 0, color: "#0a8f73" },
-    { label: "B 可展示", value: grades.B ?? 0, color: "#246bfe" },
-    { label: "C 边界 / watch", value: grades.C ?? 0, color: "#d49b12" },
-    { label: "D 仅观察", value: grades.D ?? 0, color: "#bf3f2f" },
+    { label: "A 强证据", value: grades.A ?? 0, color: "#0c8f6e" },
+    { label: "B 可展示", value: grades.B ?? 0, color: "#2353ff" },
+    { label: "C 边界 / watch", value: grades.C ?? 0, color: "#bd8410" },
+    { label: "D 仅观察", value: grades.D ?? 0, color: "#d8442c" },
   ];
   const gradeCard = el("article", "dash-card");
   gradeCard.append(el("h3", null, "证据等级分布"));
@@ -300,7 +300,7 @@ function renderDashboard(data, monitor, history, triage) {
   trendCard.append(el("h3", null, "监控趋势"));
   trendCard.append(el("p", "dash-sub", `最近 ${runs.length} 次监控运行的近窗高相关数量。`));
   if (runs.length) {
-    trendCard.append(sparkline(runs.map((run) => run.summary?.recentResults ?? 0), "#246bfe"));
+    trendCard.append(sparkline(runs.map((run) => run.summary?.recentResults ?? 0), "#2353ff"));
     const last = runs[runs.length - 1]?.summary ?? {};
     trendCard.append(el("p", "kpi-sub", `最新：近窗 ${last.recentResults ?? "—"} 条 · 新增提醒 ${last.newAlerts ?? "—"} 条`));
   } else {
