@@ -14,7 +14,15 @@ function escapeInlineScript(value) {
     .replaceAll("\u2029", "\\u2029");
 }
 
-const [html, css, app, brief, monitor, history, ledger, digest] = await Promise.all([
+async function readTextOptional(path) {
+  try {
+    return await readText(path);
+  } catch {
+    return null;
+  }
+}
+
+const [html, css, app, brief, monitor, history, ledger, digest, triage] = await Promise.all([
   readText("index.html"),
   readText("styles.css"),
   readText("app.js"),
@@ -23,6 +31,7 @@ const [html, css, app, brief, monitor, history, ledger, digest] = await Promise.
   readText("data/monitor-history.json"),
   readText("data/monitor-ledger.json"),
   readText("data/monitor-digest.json"),
+  readTextOptional("data/alert-triage.json"),
 ]);
 
 const reportData = {
@@ -31,6 +40,7 @@ const reportData = {
   history: JSON.parse(history),
   ledger: JSON.parse(ledger),
   digest: JSON.parse(digest),
+  triage: triage ? JSON.parse(triage) : null,
 };
 
 const dataScript = `window.__EXA_REPORT_DATA__ = ${escapeInlineScript(JSON.stringify(reportData))};`;

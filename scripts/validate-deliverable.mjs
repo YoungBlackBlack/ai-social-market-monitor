@@ -218,7 +218,8 @@ for (const viewport of viewports) {
 
   expect(consoleErrors.length === 0, `${viewport.name} has console errors: ${consoleErrors.join(" | ")}`);
   expect(result.activeView === "home", `${viewport.name} must default to home overview`);
-  expect(result.visibleSections.length === 5, `${viewport.name} home must stay focused instead of rendering every section`);
+  expect(result.visibleSections.length === 6, `${viewport.name} home must stay focused instead of rendering every section`);
+  expect(result.visibleSections.includes("dashboard"), `${viewport.name} home must include the listening dashboard`);
   expect(result.visibleSections.includes("executive"), `${viewport.name} home must include executive overview`);
   expect(!result.visibleSections.includes("matrix"), `${viewport.name} home must not render the matrix section`);
   expect(result.scrollWidth <= result.clientWidth + 2, `${viewport.name} has page-level horizontal overflow`);

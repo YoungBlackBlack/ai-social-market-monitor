@@ -180,6 +180,185 @@ function renderHero(data) {
   });
 }
 
+const SVG_NS = "http://www.w3.org/2000/svg";
+function svg(tag, attrs) {
+  const node = document.createElementNS(SVG_NS, tag);
+  for (const [key, value] of Object.entries(attrs || {})) node.setAttribute(key, value);
+  return node;
+}
+
+function donutChart(segments, size = 140, stroke = 20) {
+  const r = (size - stroke) / 2;
+  const circumference = 2 * Math.PI * r;
+  const total = segments.reduce((sum, s) => sum + s.value, 0) || 1;
+  const root = svg("svg", { viewBox: `0 0 ${size} ${size}`, width: size, height: size });
+  root.append(svg("circle", { cx: size / 2, cy: size / 2, r, fill: "none", stroke: "#eef2f7", "stroke-width": stroke }));
+  let offset = 0;
+  segments.forEach((seg) => {
+    if (!seg.value) return;
+    const len = (circumference * seg.value) / total;
+    root.append(svg("circle", {
+      cx: size / 2, cy: size / 2, r, fill: "none",
+      stroke: seg.color, "stroke-width": stroke,
+      "stroke-dasharray": `${len} ${circumference - len}`,
+      "stroke-dashoffset": `${-offset}`,
+      transform: `rotate(-90 ${size / 2} ${size / 2})`,
+    }));
+    offset += len;
+  });
+  return root;
+}
+
+function sparkline(values, color, w = 460, h = 96) {
+  const root = svg("svg", { viewBox: `0 0 ${w} ${h}`, preserveAspectRatio: "none" });
+  root.classList.add("spark-svg");
+  if (!values.length) return root;
+  const max = Math.max(...values, 1);
+  const min = Math.min(...values, 0);
+  const range = max - min || 1;
+  const pts = values.map((v, i) => {
+    const x = values.length > 1 ? (i / (values.length - 1)) * w : w / 2;
+    const y = h - ((v - min) / range) * (h - 12) - 6;
+    return [Math.round(x), Math.round(y)];
+  });
+  const area = svg("polygon", {
+    fill: color, "fill-opacity": "0.12", stroke: "none",
+    points: `0,${h} ${pts.map((p) => p.join(",")).join(" ")} ${w},${h}`,
+  });
+  const line = svg("polyline", {
+    fill: "none", stroke: color, "stroke-width": "2.5",
+    "stroke-linejoin": "round", "stroke-linecap": "round",
+    points: pts.map((p) => p.join(",")).join(" "),
+  });
+  root.append(area, line);
+  return root;
+}
+
+function hostnameOf(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "source";
+  }
+}
+
+function renderDashboard(data, monitor, history, triage) {
+  const kpiRoot = document.querySelector("#dashboard-kpis");
+  const gridRoot = document.querySelector("#dashboard-grid");
+  if (!kpiRoot || !gridRoot) return;
+  kpiRoot.replaceChildren();
+  gridRoot.replaceChildren();
+
+  const productCount = (data.clusters ?? []).reduce((sum, c) => sum + (c.items?.length ?? 0), 0);
+  const mSummary = monitor?.summary ?? {};
+  const kpis = [
+    { label: "覆盖产品 / 公司", value: productCount, sub: `${data.clusters?.length ?? 0} 个赛道簇`, accent: true },
+    { label: "Exa 查询组", value: data.coverage?.queries ?? "—", sub: `${data.coverage?.results ?? "—"} 条原始结果` },
+    { label: "来源域名", value: data.coverage?.uniqueDomains ?? "—", sub: `${data.coverage?.uniqueUrls ?? "—"} 个唯一 URL` },
+    { label: "监控主题", value: mSummary.monitors ?? "—", sub: `本次返回 ${mSummary.totalResults ?? "—"} 条` },
+    { label: "近窗高相关", value: mSummary.recentResults ?? "—", sub: `回看 ${monitor?.lookbackDays ?? "—"} 天`, accent: true },
+    { label: "新增提醒", value: mSummary.newAlerts ?? "—", sub: triage?.summary ? `升级队列 ${triage.summary.promotionQueueSize ?? 0} 条` : "待人工复核", accent: true },
+  ];
+  kpis.forEach((kpi) => {
+    const tile = el("article", kpi.accent ? "kpi-tile kpi-accent" : "kpi-tile");
+    tile.append(el("p", "kpi-label", kpi.label));
+    tile.append(el("div", "kpi-value", String(kpi.value)));
+    tile.append(el("p", "kpi-sub", kpi.sub));
+    kpiRoot.append(tile);
+  });
+
+  // 证据等级分布 donut
+  const grades = data.evidenceScoring?.counts ?? {};
+  const gradeSegments = [
+    { label: "A 强证据", value: grades.A ?? 0, color: "#0a8f73" },
+    { label: "B 可展示", value: grades.B ?? 0, color: "#246bfe" },
+    { label: "C 边界 / watch", value: grades.C ?? 0, color: "#d49b12" },
+    { label: "D 仅观察", value: grades.D ?? 0, color: "#bf3f2f" },
+  ];
+  const gradeCard = el("article", "dash-card");
+  gradeCard.append(el("h3", null, "证据等级分布"));
+  gradeCard.append(el("p", "dash-sub", "按证据规则给每个产品打分（A/B/C/D），类似情绪分布的健康度视角。"));
+  const donutRow = el("div", "donut-row");
+  donutRow.append(donutChart(gradeSegments));
+  const legend = el("div", "donut-legend");
+  gradeSegments.forEach((seg) => {
+    const item = el("div", "legend-item");
+    const sw = el("span", "legend-swatch");
+    sw.style.background = seg.color;
+    item.append(sw);
+    item.append(el("span", null, seg.label));
+    item.append(el("b", null, String(seg.value)));
+    legend.append(item);
+  });
+  donutRow.append(legend);
+  gradeCard.append(donutRow);
+  gridRoot.append(gradeCard);
+
+  // 监控趋势 sparkline
+  const runs = [...(history?.runs ?? [])].slice(0, 12).reverse();
+  const trendCard = el("article", "dash-card");
+  trendCard.append(el("h3", null, "监控趋势"));
+  trendCard.append(el("p", "dash-sub", `最近 ${runs.length} 次监控运行的近窗高相关数量。`));
+  if (runs.length) {
+    trendCard.append(sparkline(runs.map((run) => run.summary?.recentResults ?? 0), "#246bfe"));
+    const last = runs[runs.length - 1]?.summary ?? {};
+    trendCard.append(el("p", "kpi-sub", `最新：近窗 ${last.recentResults ?? "—"} 条 · 新增提醒 ${last.newAlerts ?? "—"} 条`));
+  } else {
+    trendCard.append(el("p", "empty-state", "暂无历史运行数据。"));
+  }
+  gridRoot.append(trendCard);
+
+  // 主题/赛道近窗占比 bars
+  const lanes = [...(monitor?.runs ?? [])].sort((a, b) => (b.recentCount ?? 0) - (a.recentCount ?? 0));
+  const maxRecent = Math.max(1, ...lanes.map((l) => l.recentCount ?? 0));
+  const laneCard = el("article", "dash-card dash-wide");
+  laneCard.append(el("h3", null, "监控主题近窗占比"));
+  laneCard.append(el("p", "dash-sub", "各监控主题在回看窗口内的高相关信号量，类似社媒监听的来源/话题分布。"));
+  const bars = el("div", "lane-bars");
+  lanes.forEach((lane) => {
+    const row = el("div", "lane-bar");
+    row.append(el("span", "lane-name", lane.label ?? lane.id));
+    const track = el("div", "lane-track");
+    const fill = el("div", "lane-fill");
+    fill.style.width = `${Math.round(((lane.recentCount ?? 0) / maxRecent) * 100)}%`;
+    track.append(fill);
+    row.append(track);
+    row.append(el("span", "lane-count", String(lane.recentCount ?? 0)));
+    bars.append(row);
+  });
+  laneCard.append(bars);
+  gridRoot.append(laneCard);
+
+  // 最新信号 mentions feed
+  const feedCard = el("article", "dash-card dash-wide");
+  feedCard.append(el("h3", null, "最新信号"));
+  feedCard.append(el("p", "dash-sub", "最近一次监控的高相关条目（mentions 流），点击查看原始证据。"));
+  const feed = el("div", "mentions-feed");
+  const items = (monitor?.recentItems ?? []).slice(0, 6);
+  if (!items.length) {
+    feed.append(el("p", "empty-state", "近窗内暂无高相关信号。"));
+  }
+  items.forEach((item) => {
+    const m = el("article", "mention-item");
+    const top = el("div", "mention-top");
+    top.append(el("span", "mention-source", hostnameOf(item.url)));
+    top.append(el("span", null, `${item.monitorLabel ?? ""} · ${fmtDate(item.publishedDate)}`));
+    m.append(top);
+    if (item.url) {
+      const link = el("a", null, item.title ?? "Untitled");
+      link.href = item.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      m.append(link);
+    } else {
+      m.append(el("p", null, item.title ?? "Untitled"));
+    }
+    feed.append(m);
+  });
+  feedCard.append(feed);
+  gridRoot.append(feedCard);
+}
+
 function renderExecutiveSummary(data) {
   const root = document.querySelector("#executive-summary");
   const productCount = data.clusters.reduce((count, cluster) => count + cluster.items.length, 0);
@@ -2957,6 +3136,7 @@ async function loadReportData() {
 async function boot() {
   const { brief: data, monitor, history, ledger, digest, triage } = await loadReportData();
   renderHero(data);
+  renderDashboard(data, monitor, history, triage);
   renderExecutiveSummary(data);
   renderThesis(data);
   renderPriorityShortlist(data);

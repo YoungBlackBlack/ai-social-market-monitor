@@ -4,23 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI 社交与线下真人连接机会图谱</title>
-    <link rel="stylesheet" href="styles.css?v=20260602-v99" />
+    <link rel="stylesheet" href="styles.css?v=20260602-v101" />
   </head>
   <body data-active-view="home">
     <div id="loading-overlay"><div class="spinner" aria-label="加载中"></div></div>
-    <div class="topnav-wrap">
-      <nav class="topbar" aria-label="页面导航">
-        <a href="#home" data-route="home">总览</a>
-        <a href="#matrix" data-route="matrix">对照表</a>
-        <a href="#funding" data-route="funding">融资新闻</a>
-        <a href="#products" data-route="products">产品图谱</a>
-        <a href="#monitor" data-route="monitor">持续监控</a>
-        <a href="#evidence" data-route="evidence">证据审计</a>
-        <a href="#playbook" data-route="playbook">Exa 检索</a>
-      </nav>
-      <div class="view-toc" id="view-toc" aria-label="本视图小节导航"></div>
-    </div>
-    <header class="hero">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <strong>AI 社交监听</strong>
+          <span>Exa market intelligence</span>
+        </div>
+        <nav class="topbar" aria-label="页面导航">
+          <a href="#home" data-route="home">总览</a>
+          <a href="#matrix" data-route="matrix">对照表</a>
+          <a href="#funding" data-route="funding">融资新闻</a>
+          <a href="#products" data-route="products">产品图谱</a>
+          <a href="#monitor" data-route="monitor">持续监控</a>
+          <a href="#evidence" data-route="evidence">证据审计</a>
+          <a href="#playbook" data-route="playbook">Exa 检索</a>
+        </nav>
+      </aside>
+      <div class="app-body">
+        <header class="hero">
       <div class="hero-grid">
         <section class="hero-copy">
           <p class="kicker">Exa Search API run · 2024.06 - 2026.06</p>
@@ -54,9 +59,19 @@
           <p class="map-hint">点击圆点 → 在对照表中按赛道筛选</p>
         </section>
       </div>
-    </header>
+        </header>
+        <div class="view-toc" id="view-toc" aria-label="本视图小节导航"></div>
+        <main>
+          <section class="section route-section dashboard" id="dashboard" data-view="home">
+            <div class="section-head">
+              <p class="section-label">listening dashboard</p>
+              <h2>实时概览：覆盖规模、证据分布、监控趋势与最新信号</h2>
+              <p>参考社媒监听产品的仪表盘视角：先看规模与分布，再下钻到对照表、监控与证据。</p>
+            </div>
+            <div class="dashboard-kpis" id="dashboard-kpis"></div>
+            <div class="dashboard-grid" id="dashboard-grid"></div>
+          </section>
 
-    <main>
       <section class="section route-section executive" id="executive" data-view="home">
         <div class="section-head">
           <p class="section-label">executive snapshot</p>
@@ -321,9 +336,11 @@
         <a class="doc-link" href="https://docs.exa.ai/reference/search" target="_blank" rel="noreferrer">Exa Search API category 参考</a>
       </section>
     </main>
+      </div>
+    </div>
 
     <button id="back-to-top" type="button" aria-label="回到顶部" hidden>↑ 顶部</button>
 
-    <script src="app.js?v=20260602-v99"></script>
+    <script src="app.js?v=20260602-v101"></script>
   </body>
 </html>
