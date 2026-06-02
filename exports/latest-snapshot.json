@@ -1,0 +1,43 @@
+{
+  "savedAt": "2026-06-02T06:21:22.718Z",
+  "snapshot": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-02-062122/",
+  "manifest": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-02-062122/manifest.json",
+  "relativeSnapshot": "exports/snapshots/2026-06-02-062122/",
+  "relativeManifest": "exports/snapshots/2026-06-02-062122/manifest.json",
+  "strictCompletionStatus": "not-mathematically-complete",
+  "presentationReady": true,
+  "entrypoints": {
+    "standaloneHtml": "exports/exa-ai-social-report.html",
+    "sqliteDatabase": "exports/exa-social-research.sqlite",
+    "sqliteDatabaseGuide": "exports/sqlite-database-guide.md",
+    "latestMonitorRun": "exports/latest-monitor-run.md",
+    "latestMonitorRunJson": "exports/latest-monitor-run.json",
+    "exaCategoryCoverageGuide": "exports/exa-category-coverage-guide.md",
+    "automationAudit": "exports/automation-audit.md",
+    "demoChecklist": "exports/demo-checklist.md",
+    "featureVersionLog": "功能与版本记录.md",
+    "liveLocalUrl": "http://127.0.0.1:8000/#home",
+    "matrixRoute": "http://127.0.0.1:8000/#matrix",
+    "monitorRoute": "http://127.0.0.1:8000/#monitor"
+  },
+  "counts": {
+    "products": 42,
+    "fundingTimelineEvents": 25,
+    "uniqueFundingNewsEvents": 37,
+    "monitorLanes": 9,
+    "monitorRecentItems": 37,
+    "monitorNewAlerts": 4,
+    "monitorHistoryRuns": 30,
+    "monitorLedgerItems": 41,
+    "sqliteProducts": 42,
+    "sqliteFundingEvents": 40,
+    "sqliteMonitorSignals": 37,
+    "originalObjectiveAuditRows": 9
+  },
+  "retention": {
+    "keep": 30,
+    "pruned": [
+      "2026-06-02-051414"
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-06-02T05:22:02.912Z",
+  "objective": "Use Exa categories to judge app market/company/product capability, organize HelloTalk/Tandem-like social apps by growth/channel/function/evidence, and summarize near-two-year AI social/entertainment funding/news with IRL/offline-human emphasis.",
+  "verdict": {
+    "generatedAt": "2026-06-02T05:21:55.121Z",
+    "status": "not-mathematically-complete",
+    "presentationReady": true,
+    "reason": "当前证据集已经满足展示交付：阻塞候选、latest alert pending 和 recent signal pending 均为 0；但原始目标里的“所有相关产品”无法在实时变化的消费社交市场中被数学证明，因此保持 broad monitored coverage，并继续通过 monitor 与 full rebuild 推进。",
+    "blockingGapRows": 0,
+    "monitoredGapRows": 19,
+    "latestAlertPendingRows": 0,
+    "recentSignalPendingRows": 0,
+    "hardConditions": [
+      "阻塞型 product-candidate 缺口必须为 0。",
+      "latest alert review 待复核必须为 0。",
+      "monitor recent review 待复核必须为 0。",
+      "页面必须继续披露 broad monitored coverage，不声称数学穷尽。"
+    ],
+    "nextMechanism": "日常 monitor 捕获新 URL，latest alert review 给处理结论；每周 full rebuild 重跑 Exa category / official-social / discovery / deep-dive 层。"
+  },
+  "counts": {
+    "products": 42,
+    "languageAdjacentUnique": 20,
+    "fundingTimelineEvents": 25,
+    "fundingReviewRows": 40,
+    "uniqueFundingEvents": 37,
+    "irlOfflineEvidenceRows": 26,
+    "monitorLanes": 9,
+    "monitorRecentResults": 31,
+    "monitorNewAlerts": 1,
+    "latestAlertPendingRows": 0,
+    "recentSignalPendingRows": 0
+  },
+  "rows": [
+    {
+      "id": "exa-categories",
+      "requirement": "使用 Exa company / people / research paper / news / financial report 等类别支撑市场、公司背景和产品能力判断",
+      "status": "proved-for-current-evidence",
+      "evidence": "60 组 Exa 查询、646 条结果；类别审计覆盖 6 类，市场判断映射含 13 条 research/financial 证据。",
+      "artifacts": "data/brief.json; exports/exa-category-evidence-audit.csv; exports/market-decision-evidence-map.csv; exports/source-coverage.csv",
+      "boundary": "类别证据已用于当前页面判断；后续新增类别或新结果继续通过 full rebuild 进入同一审计层。",
+      "nextCheck": "运行 node scripts/run-all.mjs --full 后复核 category audit 与 source coverage 行数。"
+    },
+    {
+      "id": "hellotalk-tandem-products",
+      "requirement": "找 HelloTalk / Tandem 类似社交 app，并形成可展示竞品表",
+      "status": "proved-for-current-evidence-with-monitor-boundary",
+      "evidence": "42 个产品进入主矩阵；HelloTalk/Tandem 相邻语言条目 20 个唯一覆盖，其中 16 个在主表语言产品。",
+      "artifacts": "exports/competitive-matrix.csv; exports/language-coverage-audit.csv; exports/language-similarity-audit.csv",
+      "boundary": "不能证明全球市场永久穷尽；但当前阻塞型候选为 0，新增相邻产品进入 monitor/full rebuild。",
+      "nextCheck": "检查 candidate-promotion-queue.csv 与 coverage-gap-register.csv 是否出现新的 product-candidate。"
+    },
+    {
+      "id": "growth-channel-function-evidence",
+      "requirement": "按增长信号、投放/获客渠道、功能差异、官网/社媒证据整理",
+      "status": "proved-for-current-evidence",
+      "evidence": "增长渠道审计覆盖 42 个产品，功能差异审计覆盖 42 个产品，官方/社媒覆盖审计覆盖 42 个产品；投放证据审计覆盖 42 个产品。",
+      "artifacts": "exports/growth-channel-audit.csv; exports/acquisition-channel-map.csv; exports/paid-acquisition-evidence-audit.csv; exports/functional-difference-audit.csv; exports/official-social-coverage-audit.csv",
+      "boundary": "当前产品级明确付费投放证据 0 个，方向性渠道证据 37 个；不把广告生态新闻误升级为具体产品买量结论。",
+      "nextCheck": "优先复核 paid-acquisition monitor lane 的新 URL，再决定是否升级产品级付费投放证据。"
+    },
+    {
+      "id": "company-background-capability",
+      "requirement": "补公司背景与产品能力判断",
+      "status": "proved-for-current-evidence",
+      "evidence": "公司背景 deep-dive 38 组查询、304 条结果，42 个产品均达到产品级部分覆盖；产品能力评分覆盖 42 个产品。",
+      "artifacts": "exports/company-background-deep-dive.csv; exports/company-background-coverage-audit.csv; exports/product-capability-score.csv",
+      "boundary": "部分公司仍是产品级部分覆盖，未强行伪造团队、收入或融资细节。",
+      "nextCheck": "公司新融资、招聘、收入和团队变动继续通过 company/news/financial report 查询补证。"
+    },
+    {
+      "id": "two-year-funding-news",
+      "requirement": "统计近两年 AI 社交、AI 泛娱乐相关产品融资和新闻",
+      "status": "proved-for-current-evidence",
+      "evidence": "精确窗口 2024-06-02 - 2026-06-02；主时间线 25 条，补充候选 15 条，合并复核 40 行，去重唯一事件 37 个，窗口外事件 0 条。",
+      "artifacts": "exports/funding-timeline.csv; exports/funding-news-review.csv; exports/funding-news-dedup-audit.csv; exports/funding-event-audit.csv; exports/funding-product-rollup.csv",
+      "boundary": "月份级和新闻级事件保留日期精度说明；补充候选不直接混入主时间线结论。",
+      "nextCheck": "每次 full rebuild 后检查 funding-discovery-candidates.csv 待复核行是否为 0。"
+    },
+    {
+      "id": "irl-offline-emphasis",
+      "requirement": "特别统计包含线下真人社交的产品和融资/新闻",
+      "status": "proved-for-current-evidence-with-monitor-boundary",
+      "evidence": "IRL/线下真人覆盖 26 个唯一条目，主表 IRL 样本 14 个；线下真人证据地图 26 行，其中融资/新闻链接 19 行、monitor 链接 9 行、强证据 5 行。",
+      "artifacts": "exports/irl-coverage-audit.csv; exports/irl-offline-evidence-map.csv; exports/funding-product-rollup.csv",
+      "boundary": "IRL/watchlist 新信号保持 monitor 观察，不把普通社交、旅游或广告平台新闻直接升级为线下真人社交产品。",
+      "nextCheck": "优先复核 residual-irl-watchlist 与 irl monitor lane 的新增 URL。"
+    },
+    {
+      "id": "monitor-new-movement",
+      "requirement": "用 Exa 能力监控新的动向和内容，并在前端友好展示",
+      "status": "proved-with-search-api-fallback",
+      "evidence": "当前 Exa Websets Monitor 权限不可用，使用 Search API + Codex automation fallback；最近 monitor 9 条 lane、31 条近窗高相关信号、1 条新增提醒；latest alert 待复核 0，recent signal 待复核 0。",
+      "artifacts": "data/monitor.json; data/monitor-history.json; data/monitor-ledger.json; exports/latest-alert-review.csv; exports/monitor-recent-review.csv; exports/monitor-recent-signals.csv",
+      "boundary": "这是 Exa Search API monitor fallback，不是原生 Websets Monitor；页面和文档已披露该边界。",
+      "nextCheck": "每日运行 node scripts/run-all.mjs，并保持新增提醒复核为 0。"
+    },
+    {
+      "id": "presentation-web",
+      "requirement": "不要只给表格，要做方便展示的网页",
+      "status": "proved-for-current-deliverable",
+      "evidence": "网页拆分首页、竞品矩阵、产品图谱、融资/新闻、monitor、证据审计和 playbook；交付验证显示桌面/平板/手机均无横向溢出，前端渲染 49 个导出卡。",
+      "artifacts": "index.html; app.js; styles.css; exports/exa-ai-social-report.html; exports/browser-qa-report.md",
+      "boundary": "网页保留真实表格和 CSV，但展示主体验是多页面研究工作台。",
+      "nextCheck": "运行 node scripts/validate-deliverable.mjs 复核桌面/移动端。"
+    },
+    {
+      "id": "all-scope-boundary",
+      "requirement": "覆盖所有相关产品与新闻",
+      "status": "not-mathematically-proved",
+      "evidence": "当前 strictCompletionVerdict.status = not-mathematically-complete，presentationReady = true；阻塞型候选 0，monitor 观察型缺口 19，背景/低相关留档 61。",
+      "artifacts": "exports/completion-audit.md; exports/completion-manifest.json; exports/goal-readiness.csv; exports/coverage-gap-register.csv",
+      "boundary": "消费社交和 AI companion 市场持续变化，不能把 broad coverage 伪装成数学穷尽；通过 monitor 与 full rebuild 持续逼近。",
+      "nextCheck": "只有在新市场动向持续监控、候选队列清零且仍保持边界披露时，才可声明展示版可用；不能声明数学穷尽。"
+    }
+  ]
+}

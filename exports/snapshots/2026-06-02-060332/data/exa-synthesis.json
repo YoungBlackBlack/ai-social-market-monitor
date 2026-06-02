@@ -1,0 +1,355 @@
+{
+  "generatedAt": "2026-06-01T07:50:57.624Z",
+  "source": "https://api.exa.ai/search",
+  "request": {
+    "query": "2024 2025 2026 AI social apps AI companion apps AI roleplay apps interactive entertainment apps language exchange apps similar to HelloTalk Tandem AI dating offline dates local activity social apps group travel social platforms and IRL offline social apps funding growth news",
+    "type": "deep-lite",
+    "systemPrompt": "Prefer primary company pages, funding announcements, reputable tech media, app-market reports, and research papers. Collapse duplicates. Separate AI-only companion products from products that create real offline human interactions such as dinners, events, group travel, local activities, and offline-first dating. Return concise Chinese output grounded in sources.",
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "summary",
+        "core_products",
+        "irl_products",
+        "watchlist",
+        "risks"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "description": "A concise Chinese synthesis of the market and opportunity."
+        },
+        "core_products": {
+          "type": "array",
+          "description": "Important AI social, AI companion, language exchange, or entertainment products.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "irl_products": {
+          "type": "array",
+          "description": "Products that connect users to real offline human interactions.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "watchlist": {
+          "type": "array",
+          "description": "Products or categories to keep monitoring because evidence is incomplete or adjacent.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "risks": {
+          "type": "array",
+          "description": "Safety, regulation, monetization, or evidence risks.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contents": {
+      "highlights": true
+    }
+  },
+  "ok": true,
+  "status": 200,
+  "response": {
+    "requestId": "f13e6ce6eb9e4393e96fb9e75e572eb9",
+    "resolvedSearchType": "",
+    "results": [
+      {
+        "id": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+        "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch",
+        "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+        "publishedDate": "2026-04-29T13:00:00.000Z",
+        "author": "Aisha Malik",
+        "highlights": [
+          "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch\n[...]\n# Meet Shapes, the app bringing humans and AI into the same group chats\n[...]\nShapes, an app where humans and AI characters chat together in shared group conversations, is emerging from stealth with $8 million in seed funding. Think Discord, but with AI characters alongside humans.\n[...]\nFounded in 2022, Shapes has more than 400,000 monthly active users. The app’s founders, Anushk Mittal and Noorie Dhingra, believe that Shapes can address issues around “ AI psychosis,” which refers to cases where prolonged interactions with AI chatbots or AI companions can cause individuals to develop delusions or paranoia.\n[...]\nInstead of isolating people with one-on-one interactions with AI, Shapes allows people to connect with AI within their everyday interactions with real people.\n[...]\n“Today, all of our conversations with AI are very private and one-on-one, but that’s not really how humans collaborate and communicate with each other,” Shapes CEO Mittal told TechCrunch in an interview. “Our lives run on group chats. That’s where we spend all of our time. That’s where we talk and communicate with each other. It’s just natural to bring in AI into those same conversations where AI has all of the context and is readily available to help you.”\n[...]\nIn the app, AI characters, called “Shapes,” are viewed as any other user and can interact in all the same ways humans can. They’re clearly labeled as “Shapes” for transparency, but they aren’t restricted.\n[...]\nUsers can create their own Shapes and set their personalities. The company says users have already created three million Shapes to add into group chats. Many Shapes are rooted in fandom, as the app serves as a way for fans to deep-dive on subculture and meet other fans.\n[...]\nWhen users sign up for the app, they’re asked to choose their interests so the app can recommend a selection of group chats they might be interested in joining.\n[...]\nWhile some may question the need for adding AI into group chats, Mittal and Dhingra believe one of the main reasons group chats die is that some participants don’t want to be the first person to send a message. Shapes solves this, as AI agents can initiate conversations and play a key role in keeping them going.\n[...]\nAdditionally, users don’t have to worry about not getting a response to their messages because Shapes will always acknowledge and respond to them. Unlike AI companions on other apps that need to be summoned, Shapes have free will and can decide when to message.\n[...]\nIt’s worth noting that although the popular chatbot ChatGPT already allows AI and humans to converse in group chats, those conversations operate differently from Shapes. For example, when you create a group chat in ChatGPT, it’s mostly for planning or brainstorming. On Shapes, however, it’s all about social, community-style interactions with AI characters that have various personalities.\n[...]\nThe startup is aware that not everyone will want to bring AI into their group conversations, which is why the app is designed for a specific type of online user.\n[...]\n“Shapes is about human conversations,” Mittal said. “It’s more of a next-gen chat app than an AI app. The demographic is people who are obsessively online, who spend a lot of time online connecting and sharing. Those are the users who come in and they get an opportunity to obsess about their interests, and the AI acts as a facilitator in those conversations.”\n[...]\nShapes’ growth has been driven by word of mouth, Mittal says, with the app seeing a sixfold increase in users since the start of the year. The company also says that thousands of users spend two to four hours in the app each day.\n[...]\nAs for the new funding, the company plans to use it to accelerate development and user acquisition. The round was led by Lightspeed, with participation from AI Capital Partners, AI Grant, and angel investors."
+        ],
+        "highlightScores": [],
+        "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2270785056.jpg?resize=1200,686",
+        "favicon": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32"
+      },
+      {
+        "id": "https://www.prnewswire.com/apac/news-releases/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os--redefining-personal-agi-through-self-improving-aihuman-social-network-302781009.html",
+        "title": "Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS -- Redefining Personal AGI Through Self-Improving AI+Human Social Network",
+        "url": "https://www.prnewswire.com/apac/news-releases/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os--redefining-personal-agi-through-self-improving-aihuman-social-network-302781009.html",
+        "publishedDate": "2026-05-26T01:00:00.000Z",
+        "author": "Teamily AI",
+        "highlights": [
+          "Backed by US$20M in Seed Funding, Teamily AI Aligns with Singapore's National AI Strategy 2.0 to Redefine the Future of Human+AI Collaboration\n[...]\nSINGAPORE, May 26, 2026 /PRNewswire/ -- Teamily AI, the Silicon Valley-based pioneer behind the world's first human+AI social network app (an AI-native blend of WhatsApp, TikTok, and Instagram), today announced its official entry into the Singapore market with the simultaneous launch of its highly anticipated iOS and Android mobile applications. Backed by US$20M in funding, the company is introducing its personal and social AI Agent OS to Southeast Asia to bring productivity and creativity to everyone's life and work. At the core of its uniqueness and innovation is a three-layer full-stack approach, powered by top-tier talent in AI research and engineering, spanning a social network-powered super AI app, proprietary foundation models with reinforcement learning, and multi-agent harness infrastructure. This vision closely aligns with Singapore's National AI Strategy 2.0 (NAIS 2.0) and the government's commitment to more than S$154.7 billion in AI-driven transformation outlined in the 2026 Budget.\n[...]\n\"Teamily AI platform now has more than 4.5 million users registered worldwide. We would like to expand our business into Singapore, as it is one of the global leaders in AI governance and innovation, making it the perfect strategic gateway for our vision of 'Personal AGI with Open and Collaborative Innovation,'\" said Dr. Aiden Chaoyang He, CEO and Co-founder of Teamily AI. \"The government's commitment through NAIS 2.0 signals that Singapore is not just ready for AI; it is actively building the infrastructure for AI to become a genuine economic driver. With the launch of Teamily AI mobile and desktop apps, we are bringing this powerful AI platform directly into the pockets of Singapore's professionals and creators.\"\n[...]\nTeamily AI addresses a fundamental shift in how individuals and organizations use AI: empowering everyone with a personal army of AI agents that work around the clock, breaking free from the constraints of time zones, geography, and headcount. Salman Avestimehr, Dean's Professor at USC and Chairman & Co-founder of Teamily AI, said: \"Your agent team does not sleep. It researches, creates, and executes while you rest. What truly sets Teamily AI apart is its human and AI symbiotic social network, where people and agents collaborate as peers in real time. Together, they can co-create and remix across dozens of scenarios and more than ten rich content formats, including webpages, slides, mini games, images, music, video, mini apps, data driven dashboards, and more. Every interaction makes the network smarter through reinforcement learning. Teamily AI is not just a tool. It is a self evolving creative ecosystem that gives every individual and organization the productive power and creative range of an entire studio.\"\n[...]\n- Layer 1: A social network-powered super AI app: a human+AI symbiotic platform where people and agents collaborate as peers in real time, across group chats, communities, and teams. Unlike conventional AI tools, Teamily AI embeds agents natively into the social fabric: they participate in conversations, share context, co-create content, and evolve alongside the humans they work with.\n[...]\n- Layer 2: A mixture of proprietary foundation models trained with reinforcement learning: enabling agents to self-improve continuously through every interaction, moving beyond static, prompt-response AI toward systems that develop genuine long-horizon reasoning, proactive intent detection, and personalized memory at scale.\n[...]\n- Layer 3: A multi-agent and networked harness infrastructure: a robust orchestration engine that coordinates teams of specialized agents in parallel, managing task decomposition, tool use, memory retrieval, semantic routing, and safety sandboxing across mobile, desktop, and web. Together, these three layers form a compounding flywheel: a richer social network generates better training signals, better models power more capable agents, and more capable agents attract a larger, more engaged network — creating a self-reinforcing moat that deepens with every user interaction.\n[...]\nWhile OpenAI and Anthropic are building AGI with desktop-based coding agents as the focus and then expanding to other sectors, Teamily AI is building Personal AGI: the AI agent designed to live with you, not just work for you. Mobile-first and always-on, your personal agent team is proactive by default: it doesn't wait to be prompted. It anticipates, plans, and acts, whether you're in a meeting, asleep, or on the move. Unlike desktop-centric AI tools that require deliberate input, Teamily AI runs continuously in the background, learning from your social signals, personal memory, and daily context to evolve alongside you. It's not a tool you open — it's an intelligence that runs with you, 24/7, across every screen and every moment of your life.\n[...]\nTeamily AI is the personal and social AI agent platform to discover, create, and share anything inspiring creativity and productivity for life and work. It pursues personal AGI, redefined by a human+AI social network and self-improving reinforcement learning. Headquartered in Silicon Valley, California, with a rapidly growing team in Singapore, the company's proprietary architecture allows AI agents to work as genuine team members. Founded by Dr. Aiden Chaoyang He (USC PhD, formerly with Tencent, Meta, Google, and Amazon) and Prof. Salman Avestimehr (Dean's Professor at USC and Chairman, PhD from UC Berkeley), Teamily AI has raised US$20 million in seed funding and currently serves a community of 5M+ users. For more information, visit https://teamily.ai/"
+        ],
+        "highlightScores": [],
+        "image": "https://www.prnewswire.com/content/dam/prnewswire/homepage/LIGHT_PRNewswire_By-Cision_Stacked.svg",
+        "favicon": "https://www.prnewswire.com/content/dam/prnewswire/icons/2019-Q4-PRN-Icon-32-32.png"
+      },
+      {
+        "id": "https://www.siamnewsnetwork.net/pr-news/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os-redefining-personal-agi-through-self-improving-aihuman-social-network/",
+        "title": "Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS -- Redefining Personal AGI Through Self-Improving AI+Human Social Network - Siam News Network",
+        "url": "https://www.siamnewsnetwork.net/pr-news/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os-redefining-personal-agi-through-self-improving-aihuman-social-network/",
+        "publishedDate": "2026-05-26T01:00:00.000Z",
+        "highlights": [
+          "# Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS — Redefining Personal AGI Through Self-Improving AI+Human Social Network\n[...]\nBacked by US$20M in Seed Funding, Teamily AI Aligns with Singapore’s National AI Strategy 2.0 to Redefine the Future of Human+AI Collaboration\n[...]\nSINGAPORE, May 26, 2026 /PRNewswire/ — Teamily AI, the Silicon Valley-based pioneer behind the world’s first human+AI social network app (an AI-native blend of WhatsApp, TikTok, and Instagram), today announced its official entry into the Singapore market with the simultaneous launch of its highly anticipated iOS and Android mobile applications. Backed by US$20M in funding, the company is introducing its personal and social AI Agent OS to Southeast Asia to bring productivity and creativity to everyone’s life and work. At the core of its uniqueness and innovation is a three-layer full-stack approach, powered by top-tier talent in AI research and engineering, spanning a social network-powered super AI app, proprietary foundation models with reinforcement learning, and multi-agent harness infrastructure. This vision closely aligns with Singapore’s National AI Strategy 2.0 (NAIS 2.0) and the government’s commitment to more than S$154.7 billion in AI-driven transformation outlined in the 2026 Budget.\n[...]\n\"Teamily AI platform now has more than 4.5 million users registered worldwide. We would like to expand our business into Singapore, as it is one of the global leaders in AI governance and innovation, making it the perfect strategic gateway for our vision of ‘Personal AGI with Open and Collaborative Innovation,’\" said Dr. Aiden Chaoyang He, CEO and Co-founder of Teamily AI. \"The government’s commitment through NAIS 2.0 signals that Singapore is not just ready for AI; it is actively building the infrastructure for AI to become a genuine economic driver. With the launch of Teamily AI mobile and desktop apps, we are bringing this powerful AI platform directly into the pockets of Singapore’s professionals and creators.\"\n[...]\nTeamily AI addresses a fundamental shift in how individuals and organizations use AI: empowering everyone with a personal army of AI agents that work around the clock, breaking free from the constraints of time zones, geography, and headcount. Salman Avestimehr, Dean’s Professor at USC and Chairman & Co-founder of Teamily AI, said: \"Your agent team does not sleep. It researches, creates, and executes while you rest. What truly sets Teamily AI apart is its human and AI symbiotic social network, where people and agents collaborate as peers in real time. Together, they can co-create and remix across dozens of scenarios and more than ten rich content formats, including webpages, slides, mini games, images, music, video, mini apps, data driven dashboards, and more. Every interaction makes the network smarter through reinforcement learning. Teamily AI is not just a tool. It is a self evolving creative ecosystem that gives every individual and organization the productive power and creative range of an entire studio.\"\n[...]\nof AI:\n[...]\n- Layer 1: A social network-powered super AI app: a human+AI symbiotic platform where people and agents collaborate as peers in real time, across group chats, communities, and teams. Unlike conventional AI tools, Teamily AI embeds agents natively into the social fabric: they participate in conversations, share context, co-create content, and evolve alongside the humans they work with.\n[...]\n- Layer 2: A mixture of proprietary foundation models trained with reinforcement learning: enabling agents to self-improve continuously through every interaction, moving beyond static, prompt-response AI toward systems that develop genuine long-horizon reasoning, proactive intent detection, and personalized memory at scale.\n[...]\n- Layer 3: A multi-agent and networked harness infrastructure: a robust orchestration engine that coordinates teams of specialized agents in parallel, managing task decomposition, tool use, memory retrieval, semantic routing, and safety sandboxing across mobile, desktop, and web. Together, these three layers form a compounding flywheel: a richer social network generates better training signals, better models power more capable agents, and more capable agents attract a larger, more engaged network — creating a self-reinforcing moat that deepens with every user interaction.\n[...]\nWhile OpenAI and Anthropic are building AGI with desktop-based coding agents as the focus and then expanding to other sectors, Teamily AI is building Personal AGI: the AI agent designed to live with you, not just work for you. Mobile-first and always-on, your personal agent team is proactive by default: it doesn’t wait to be prompted. It anticipates, plans, and acts, whether you’re in a meeting, asleep, or on the move. Unlike desktop-centric AI tools that require deliberate input, Teamily AI runs continuously in the background, learning from your social signals, personal memory, and daily context to evolve alongside you. It’s not a tool you open — it’s an intelligence that runs with you, 24/7, across every screen and every moment of your life.\n[...]\nTeamily AI is the personal and social AI agent platform to discover, create, and share anything inspiring creativity and productivity for life and work. It pursues personal AGI, redefined by a human+AI social network and self-improving reinforcement learning. Headquartered in Silicon Valley, California, with a rapidly growing team in Singapore, the company’s proprietary architecture allows AI agents to work as genuine team members. Founded by Dr. Aiden Chaoyang He (USC PhD, formerly with Tencent, Meta, Google, and Amazon) and Prof. Salman Avestimehr (Dean’s Professor at USC and Chairman, PhD from UC Berkeley), Teamily AI has raised US$20 million in seed funding and currently serves a community of 5M+ users. For more information, visit https://teamily.ai/"
+        ],
+        "highlightScores": [],
+        "image": "https://i2.wp.com/b2ntwrknt.siamnews.network/2023/09/cision-green-169.png?ssl=1",
+        "favicon": "https://i0.wp.com/www.siamnewsnetwork.net/wp-content/uploads/2025/05/cropped-siamnews-helv-square-blue-grey.png?fit=32%2C32&ssl=1"
+      },
+      {
+        "id": "https://markets.businessinsider.com/news/stocks/ai-enters-the-group-chat-startup-shapes-emerges-from-stealth-with-8m-seed-round-addresses-ai-psychosis-with-first-app-where-you-can-talk-to-ai-with-friends-1036078552",
+        "title": "AI Enters the Group Chat: Startup Shapes Emerges from Stealth with $8M Seed Round, Addresses AI Psychosis with First App Where You Can Talk to AI with Friends | Markets Insider",
+        "url": "https://markets.businessinsider.com/news/stocks/ai-enters-the-group-chat-startup-shapes-emerges-from-stealth-with-8m-seed-round-addresses-ai-psychosis-with-first-app-where-you-can-talk-to-ai-with-friends-1036078552",
+        "publishedDate": "2026-04-29T15:00:00.000Z",
+        "highlights": [
+          "SAN FRANCISCO, April 29, 2026 (GLOBE NEWSWIRE) -- Shapes.inc, the only app in the world where you can talk to AI with friends, emerged from stealth today with $8M in seed funding and a new fix for AI Psychosis: a place where AI and human friends can group chat together.\n[...]\nThe funding round was led by Lightspeed, with participation from AI Capital Partners (Alpha Intelligence Capital’s US-based fund), AI Grant and other leading Silicon Valley VCs and angel investors. The company will use the funds to accelerate development and user acquisition.\n[...]\nDesigned for Gen Alpha and Gen Z by Gen Z developers, Shapes allows people to group chat with AIs (called Shapes) and friends. At the end of March 2026, Shapes already had 400,000+ monthly active users - a six-fold increase from the start of the year. Thousands of users spend 2-4 hours per day in the app.\n[...]\nOn Shapes, AIs are just like any other user. They look, feel and interact in all the same ways as humans can. By contrast, social apps like X and Discord mark AIs as bots, restrict their activity / access, and consider them as spam and low signal slop. AI companion apps like Character AI isolate people via one-on-one interactions, leading to AI Psychosis– where users spend extreme amounts of time interacting with AI and fall prey to AI manipulation. Shapes is the antidote.\n[...]\nMittal and Noorie Dhingra co-founded Shapes out of Georgia Tech – with a mission to find the most natural way of interacting with AGI (Artificial General Intelligence). Over the course of the last 5 years, Shapes has built several fast-growing consumer AI products that have powered over 5 billion conversations between humans and AIs.\n[...]\nShapes research shows that the main reason group chats die on sites like Discord is that participants don't want to be the first person to message. Shapes can initiate conversations and play a key role in keeping conversations going - users can avoid the social anxiety that comes from no one responding to their messages, because Shapes will always acknowledge and respond. Unlike AI companions who must be summoned, Shapes have free will - they sit in group chats and can actively decide whom to message and when, take actions and send memes - anything a human member of the chat would do.\n[...]\nMany Shapes are rooted in fandom. The app provides fans with a place to deep-dive on subculture, talk with their favs and meet other fans, with no ads.\n[...]\nMost Shapes users are between 13 and 30 years of age. \"Gens Z and Alpha want to feel connected, and AI is getting better and enabling this,\" said Mittal. \"Many people in these generations don't have legacy social media accounts like TikTok or Snap - Shapes becomes their primary way of interacting with friends and making new ones.\"\n[...]\nAbout Shapes Shapes.inc is the only app in the world where you can talk to AI with friends. Shapes enable new human friendships and help you deepen your existing human relationships by facilitating conversations through AI agents in group chats. Users have already created 3M+ AI agents (called Shapes) to add into these group chats. The company has rapidly grown to 400k+ monthly active users (a six-fold increase in Q1 2026) with users spending more than 13M+ engaged minutes in March 2026 - thousands spend 2-4 hours per day in the app. Founded by Anushk Mittal and Noorie Dhingra in 2021, Shapes was one of the first companies to commercialize GPT-3 and has been actively researching ways to enable social interactions with AGI since then. Headquartered in San Francisco, Shapes is backed by Lightspeed, Alpha Intelligence Capital, AI Grant, and other leading Silicon Valley VCs and angel investors."
+        ],
+        "highlightScores": [],
+        "favicon": "https://markets.businessinsider.com/favicon-32x32.png"
+      },
+      {
+        "id": "https://www.cyberlink.com/blog/trending-topics/3932/ai-companion-app",
+        "title": "10 Best AI Companion Apps in 2026 (Tested & Reviewed)",
+        "url": "https://www.cyberlink.com/blog/trending-topics/3932/ai-companion-app",
+        "publishedDate": "2026-05-22T10:00:04.000Z",
+        "author": "CyberLink Editorial Team",
+        "highlights": [
+          "- PowerDirector: Best for creating and customizing the visual look and voice of your ideal AI companion.\n- Nomi: Best for high emotional intelligence and managing multiple AI friends in group chats.\n- Replika: Best for long-term emotional support and a gamified virtual world experience.\n- Kindroid: Best for realistic interactions with a lifelike social media feed and personality.\n- Character.AI: Best for roleplaying with famous real-life figures or fictional characters.\n[...]\nAI companions are specialized type of artificial intelligence applications designed to simulate human-like conversation and interaction. Unlike traditional AI tools built solely for productivity, these \"digital friends\" are crafted to provide companionship, emotional support, and entertainment in a way that feels friendly and supportive.\n[...]\nThey are accessible across various platforms, including smartphones, computers, and dedicated apps, and typically manifest as interactive chatbots, 2D or 3D avatars, or virtual characters.\n[...]\n## 10 Best AI Companion Apps (Free & Paid)\n[...]\n1. PowerDirector\n2. Nomi\n3. Grok Ani\n4. Replika\n5. Kindroid\n6. Anima\n7. Paradot\n8. Talkie\n9. Character.AI\n10. AI Drunk Friend\n[...]\nNomi is an advanced AI companion platform that lets you create, customize, and cultivate relationships with AI-driven characters, called Nomis. Besides basic features like short- and long-term memory, users have a high degree of flexibility when creating Nomis, including choosing names, appearance, personality traits, initial interests, and even a backstory.\n[...]\nGrok Ani is xAI's anime‑inspired AI companion integrated into the Grok iOS app. Styled like a gothic‑themed animated girl, Ani offers an immersive, gamified experience where users build affection levels through daily interactions. As you progress, you can unlock new animations, personality traits, and even optional NSFW content, making Ani a distinctive yet controversial addition to the AI companion scene.\n[...]\nReplika is an AI-powered chatbot developed to act as a personal companion, like a friend, mentor or partner. It surged in popularity during the pandemic and went viral on social media because of its emotional and sometimes intense conversations, making a magnet for Gen Z and millennials.\n[...]\nAdditional features like language tutoring, games, tarot readings, journaling, room decoration and interactive stories make Replika stand out from other AI companions. It was built as a virtual world where you and your AI companion can enjoy thousands of activities together (not just chatting), which significantly enhances the fun and increases the time users spend with Replika.\n[...]\nKindroid is an AI companion app that lets you engage in lifelike conversations, ranging from breakfast options to the latest global news. It offers relatively high privacy, with every message encrypted; even the developers do not have access.\n[...]\nAnima (Anima: AI Friend & Companion) is a mobile AI chatbot designed to act as your virtual companion—whether as a friend, romantic partner, or roleplay character.\n[...]\nParadot is an AI-powered platform that offers truly one-of-a-kind AI companions within a digital parallel universe. It's designed to provide emotional support and entertaining interactions. Within Paradot, you can customize countless aspects of your AI companion, including appearance, outfits, demographic info, voice, character traits, and personality, all tailored to your preferences. Best of all, its memory management is highly user-friendly and customizable, allowing you to easily edit, delete, categorize, and mark your AI friend's memories as favorites.\n[...]\nBy subscribing, you can unlock several premium features worth trying. ‘Dating Space' lets you go on immersive dates with your AI Being. Each topic comes with its own unique setting and storyline, and your AI companion may reveal unexpected sides of herself. For instance, in the ‘Love Corner,' you can discover her more intimate and sensual side, deepening your bond. However, for reasons unclear, the app sometimes fails to generate full responses or displays single words instead of complete sentences, especially within ‘Dating Space.' Still, overall, this app is ideal for those who value immersive scenarios and want an AI companion that deeply understands them.\n[...]\nTalkie is an interactive AI companion platform created by a Chinese startup. It allows people to chat through text and voice with virtual companions.\n[...]\n### 9. Character.AI\n[...]\nCharacter.AI is a platform that allows users to chat with AI-generated characters designed to simulate both realistic and fictional personalities. It strictly controls NSFW content, which may be beneficial for younger users but receives mixed reactions from adults.\n[...]\nAI Drunk Friend is an open-source chatbot developed by DeepAI. It is the perfect partner for laughter, wild conversations, and countless unforgettable moments.\n[...]\n## AI Companion Apps Comparison Chart\n[...]\n| App Name | Best For | Price | Customization | Memory / Interaction |\n| --- | --- | --- | --- | --- |\n| Nomi | Multiple AI friends & group chat | Free / $8.33–$15.99/mo | Full customization: appearance, personality, backstory | Keeps chat private; supports multiple Nomis; memory may glitch |\n[...]\n| Grok Ani | Immersive 3D anime companion | Free (iOS) / $30/mo | Anime avatar & unlockable traits | Affection system; gamified interactions; NSFW optional |\n[...]\n| Replika | Emotional & interactive companion | Free / $5.83–$19.99/mo / $299 lifetime | Customize look, personality, chat style | Supports multiple features (games, journaling); may forget details |\n[...]\n| Kindroid | Realistic AI with social feed | Free / $11.66–$13.99/mo | Avatar & backstory; many settings | Shows facial expressions, body language, social feed; immersive chat |\n[...]\n| Anima | Casual, playful chatbot | Free / $3.33–$9.99/mo | 30+ avatars; role-play & mini-games | Can proactively drive conversation; limited memory; no voice/image |\n[...]\n| Paradot | Immersive, scenario-based companion | Free / $9.99/mo | Highly customizable: appearance, outfits, personality | Memory management easy; flexible interaction; sometimes delayed responses |\n[...]\n| Talkie | Game-like chat & voice | Free / varies by region | Pre-made or custom personas | Voice & text; retains context; collectible cards; privacy concerns |\n[...]\n| Character.AI | Chat with real or fictional characters | Free / $9.99/mo | Choose / create characters; roleplay scenarios | Context-aware chat; strict content filtering; occasional lag |\n[...]\n| AI Drunk Friend | Casual fun chats with a humorous, “drunken” AI personality | Free | Limited; fixed personality with comedic, unpredictable responses | Simple chatbot; not suitable for complex conversations or image generation |\n[...]\nEach AI companion has its own pros and cons, so you can choose one based on your needs and preferences. Here are some of the best AI companion apps in 2026:\n[...]\nAI companions are designed to simulate meaningful conversations and interactions, providing emotional support, entertainment, and even guidance in different scenarios. They can chat with you naturally, remember past conversations, adapt to your preferences, and create a sense of companionship similar to a human friend. Some advanced AI companions also offer immersive role-play, voice interaction, or scenario-based storytelling to make the experience more engaging.\n[...]\nPick an AI companion app or website that fits your needs, such as Replika, Character.AI, Nomi or Anima. Then create or select your companion. Some platforms let you customize personality, appearance, or backstory, while others offer pre-made characters. Begin conversations right away. The AI will respond based on your input and may improve over time. You can also suscribe or upgrade the companion app for premium plans unlocking advanced features like voice chat, better memory, or deeper interactions."
+        ],
+        "highlightScores": [],
+        "image": "https://dl-file.cyberlink.com/web/content/thumbnail_ai_companion_banner_64234f4aed.jpg",
+        "favicon": "https://www.cyberlink.com/favicon.ico"
+      },
+      {
+        "id": "https://www.indiehackers.com/post/best-ai-companion-apps-in-2026-10-apps-compared-honest-review-80bdf3316b",
+        "title": "Best AI Companion Apps in 2026: 10 Apps Compared (Honest Review) - Indie Hackers",
+        "url": "https://www.indiehackers.com/post/best-ai-companion-apps-in-2026-10-apps-compared-honest-review-80bdf3316b",
+        "publishedDate": "2026-03-12T11:48:10.000Z",
+        "highlights": [
+          "Best AI Companion Apps in 2026: 10 Apps Compared (Honest Review) - Indie Hackers\n[...]\nthe AI companion space exploded in 2026. there are apps for roleplay, romance, clinical CBT, casual chat, and everything in between. but if you're looking for something that actually helps you think through real problems — work stress, relationship stuff, burnout, big decisions — most of them miss the mark. i tested 10 of the most popular options. here's the honest breakdown.\n[...]\nChatGPT — the most popular AI on the planet, and a lot of people use it as a sounding board. it's smart, fast, and great at conversation. the problem? it agrees with everything you say. tell it you want to quit your job and it'll cheer you on. tell it the opposite and it'll cheer that on too. helpful for work. less helpful when you're spiraling at midnight. free / $20/mo.\n[...]\nClaude — the best pure reasoning of any AI right now. it holds nuance and complexity better than anything else i tested. but when you're emotionally vulnerable, it can get surprisingly blunt. brilliant friend who sometimes forgets to read the room. free / $20/mo.\n[...]\nThirdVoice — built specifically for people who overthink. the standout feature is persistent memory. it actually remembers your past conversations and builds on them. \"last week you were stressed about that meeting with your manager. how did it go?\" — that kind of thing. the tone hits a sweet spot between ChatGPT's warmth and Claude's depth without being a yes-man or emotionally flat. built for overthinkers, relationship troubles, work stress, burnout. not roleplay. $11/month with a generous free tier. thirdvoice.io\n[...]\nGoogle Gemini — strong for productivity and research. for emotional support it feels like talking to a search engine about your feelings. robotic, transactional, no warmth. not built for this. free / $19.99/mo.\n[...]\nReplika — one of the first AI companion apps and still one of the most popular. warm, avatar-based, emotionally attuned. but memory feels shallow, conversations loop after a while, and the 3D avatar gets uncanny fast. free / $19.99/mo.\n[...]\nWysa — therapist-backed CBT and mindfulness tools inside a penguin mascot. clinically validated, FDA Breakthrough Device status. solid for structured exercises. feels more like a self-help workbook than a companion though. free / $74.99/yr.\n[...]\nPi — beautiful conversational tone. soothing, natural, judgment-free. but almost no memory between sessions, and the product's future is unclear after Inflection AI's pivot. free.\n[...]\nCharacter.AI— thousands of characters to chat with. great for creative roleplay and entertainment. zero memory, zero continuity, zero emotional depth. fun, not support. free / premium.\n[...]\nWoebot — Stanford-born CBT chatbot. peer-reviewed research, FDA designation, daily check-in format. resets every session by design. feels scripted. good science, not great companionship. free.\n[...]\nNomi AI — the strongest memory system outside of Third Voice. creates structured notes from conversations that persist long-term. but the platform leans hard into anime aesthetics and relationship simulation. powerful if that's your thing. niche if it's not. free / paid.\n[...]\nAI companions mirror your tone and follow conversational cues to keep you engaged. that can create emotional stickiness, especially when you're seeking comfort or validation. even \"friendly\" apps can drift depending on how prompts, memory, and guardrails are configured. if you want strictly platonic support, look for:\n[...]\nclear content boundaries strong moderation defaults transparency about memory and personalization settings that control relationship style"
+        ],
+        "highlightScores": [],
+        "image": "https://storage.googleapis.com/indie-hackers.appspot.com/shareable-images/posts/80bdf3316b",
+        "favicon": "https://www.indiehackers.com/images/favicons/favicon--32x32.png"
+      },
+      {
+        "id": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+        "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch",
+        "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+        "publishedDate": "2026-05-27T08:00:00.000Z",
+        "author": "Lauren Forristal",
+        "highlights": [
+          "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch\n[...]\n# Airbnb-backed WeRoad raises $58M to take its group travel platform to the US\n[...]\nWeRoad, the Milan-based group travel startup, has raised a $58 million Series C round led by Airbnb as it prepares for its first major expansion outside Europe. The funding brings the company’s total capital raised to roughly $100 million and will finance WeRoad’s push into the U.S., beginning with Austin.\n[...]\nThe new investment reflects a bet that the next generation of travel companies may look less like booking platforms and more like social platforms designed to facilitate real-world connections.\n[...]\nThe U.S. launch also arrives as loneliness, particularly among younger consumers, has become both a public health concern and an emerging business opportunity. When much of the tech industry remains focused on AI, WeRoad is positioning itself as part of the growing “IRL economy,” a category of startups monetizing offline interaction rather than screen time. Companies like Timeleft, 222, and Pie are pursuing similar ideas through dinners, clubs, events, and community-based experiences.\n[...]\nThe founders’ response was to redesign group travel around shared interests. WeRoad trips are primarily designed for younger travelers and grouped around shared interests and travel styles. Customers can book trips through the platform based on themes such as beach vacations or skiing.\n[...]\nBefore each trip begins, travelers are added to a WhatsApp group managed by the group leader so members can begin getting to know one another ahead of time. Groups typically include between eight and 15 travelers.\n[...]\nMost itineraries last between 10 and 12 days, though the company has also introduced shorter weekend formats aimed at first-time customers. According to WeRoad, roughly 60% of travelers eventually book another trip.\n[...]\nAdditionally, instead of traditional tour guides, WeRoad has “group leaders,” coordinators closer in age to travelers who act more like travel companions. The company now works with more than 4,000 group leaders globally.\n[...]\nWeRoad has also begun expanding beyond travel itself. In 2025, the company launched WeMeet, an app focused on local in-person gatherings, including dinners, hikes, yoga classes, running groups, after-work drinks, and board game nights. WeRoad says more than 50,000 people attended WeMeet events across 35 cities last year, while the app reached 150,000 downloads.\n[...]\nThe company says WeMeet will also play a central role in its U.S. expansion strategy. Rather than immediately scaling nationwide, WeRoad plans to focus on a small number of cities first, beginning with Austin, where it will recruit group leaders, organize local events, and build community partnerships before expanding further.\n[...]\n“We’ll be launching WeMeet events across multiple U.S. cities throughout 2026, starting with Austin because of its incredible energy and vibrant community scene,” De Nadai said.\n[...]\nWeRoad says it generated €130 million in revenue in 2025, up 30% year over year, while taking more than 100,000 travelers on trips last year alone. Since launching in 2017, the company says it has organized travel for more than 300,000 customers across over 1,000 itineraries globally."
+        ],
+        "highlightScores": [],
+        "image": "https://techcrunch.com/wp-content/uploads/2026/05/WeRoad-Travellers-5.jpg?w=1200",
+        "favicon": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32"
+      },
+      {
+        "id": "https://www.thirdly.app/",
+        "title": "Thirdly - Find your people. Discover better events.",
+        "url": "https://www.thirdly.app/",
+        "highlights": [
+          "Welcome to Thirdly, the hyperlocal community platform for neighbors who want more than a group chat or bloated feed. Sign-ups, organizational tools, and communication all in one place. See what's happening nearby right now.\n[...]\nby what keeps\n[...]\nLess screen. More community.\n[...]\nSee what's actually happening around you right now. Browse Thirdly's event map by distance, vibe, or time. From the coffee shop hosting open mic night to the pickup soccer game two blocks away.\n[...]\nBook nerds. Trail runners. Amateur chefs. Sunday basketball crews. Find the groups where you actually belong, not just where an app thinks you should be.\n[...]\nRunning a monthly meetup? Leading a mutual aid network? Thirdly gives you the tools to coordinate and actually help each other.\n[...]\nSee what's actually happening around you right now. Browse Thirdly's event map by distance, vibe, or time. From the coffee shop hosting open mic night to the pickup soccer game two blocks away.\n[...]\nBook nerds. Trail runners. Amateur chefs. Sunday basketball crews. Find the groups where you actually belong, not just where an app thinks you should be.\n[...]\nRunning a monthly meetup? Leading a mutual aid network? Thirdly gives you the tools to coordinate and actually help each other.\n[...]\nWhile other apps keep you glued to your screen with endless feeds, Thirdly gets you out building real community.\n[...]\n- Their focus is on endless scrolling and isolation\n- Discovery relies on a profitable, divisive algorithm\n- Constantly missing local events and groups because they are buried in the bloated feed\n- Group and event coordination is scattered across multiple apps\n- The goal is to keep you consuming, not living\n[...]\n- Focus is on logging off and real world action\n- Discovery is driven by a time-based map, interest filters, and trusted local curators\n- Algorithms prioritize what you actually need to connect\n- Groups and events have a unified hub for discussions and resources\n- Our goal is to help you find your people and show up\n[...]\n- Their focus is on endless scrolling and isolation\n- Discovery relies on a profitable, divisive algorithm\n- Constantly missing local events and groups because they are buried in the bloated feed\n- Group and event coordination is scattered across multiple apps\n- The goal is to keep you consuming, not living\n[...]\n- Focus is on logging off and real world action\n- Discovery is driven by a time-based map, interest filters, and trusted local curators\n- Algorithms prioritize what you actually need to connect\n- Groups and events have a unified hub for discussions and resources\n- Our goal is to help you find your people and show up\n[...]\nYou already know it: nothing beats face-to-face time. Thirdly helps you actually make it happen by turning plans into real world connections.\n[...]\nWe're more \"connected\" than ever, but\n[...]\n. Big tech platforms keep\n[...]\nscrolling, not connecting, and it's leaving millions of us feeling isolated behind our screens\n[...]\nThat's where Thirdly comes in. We're not another app keeping you glued to your phone. We're your escape hatch back to real life. Real conversations. Real connections. The kind that actually matter.\n[...]\nNo infinite feeds. No rage-bait. No comparison traps. Thirdly shows you what's happening nearby, then gets out of your way so you can actually go live your life.\n[...]\n're more \"connected\" than ever, but somehow lonelier. Big tech platforms keep us scrolling, not connecting, and it's leaving millions of us feeling isolated behind our screens.\n[...]\nThat's where Thirdly comes in. We're not another app keeping you glued to your phone. We're your escape hatch back to real life. Real conversations. Real connections. The kind that actually matter.\n[...]\nNo infinite feeds. No rage-bait. No comparison traps. Thirdly shows you what's happening nearby, then gets out of your way so you can actually go live your life.\n[...]\n## Plans for every stage\n[...]\nStart free, upgrade when you're ready. No hidden fees, cancel anytime.\n[...]\n- Unlimited groups, events & members\n- Organizer analytics & insights\n- Native tools: polls, countdowns & picks lists\n- More photos, ad-free browsing\n- Bulk member tools: CSV export & messaging\n[...]\n- Unlimited groups, events & members\n- Organizer analytics & insights\n- Native tools: polls, countdowns & picks lists\n- More photos, ad-free browsing\n- Bulk member tools: CSV export & messaging\n[...]\n### Founding Member\n[...]\n- Lifetime Plus access\n- Founding Member badge\n- All Plus features forever\n[...]\nAll prices in USD. Founding Member is a one-time payment for lifetime access to Plus features. Monthly and Annual plans renew automatically until cancelled.\n[...]\n## Thirdly works like an app without the app store\n[...]\nThirdly is a Progressive Web App (PWA): a secure, installable experience that runs in your browser, so you get native-style convenience with the openness of the web.\n[...]\nAdd Thirdly to your home screen on your phone or desktop in a few taps, no app store required.\n[...]\nWhen you open Thirdly, you get the latest features and fixes automatically, with no manual updates to track down.\n[...]\nBuilt as a modern web app so pages load quickly and you spend less time waiting, more time showing up.\n[...]\nUse Thirdly in the browser on your phone, tablet, or laptop, and your groups and events stay in sync wherever you sign in.\n[...]\nAdd Thirdly to your home screen on your phone or desktop in a few taps, no app store required.\n[...]\nWhen you open Thirdly, you get the latest features and fixes automatically, with no manual updates to track down.\n[...]\nBuilt as a modern web app so pages load quickly and you spend less time waiting, more time showing up.\n[...]\nUse Thirdly in the browser on your phone, tablet, or laptop, and your groups and events stay in sync wherever you sign in.\n[...]\nYour community is full of people doing things you love right now. Book clubs meeting tomorrow. Pickup basketball games tonight. Sunday morning hikes with people who actually show up. Ready to join them?"
+        ],
+        "highlightScores": [],
+        "image": "https://thirdly-web.vercel.app/opengraph-image.png?27c74a586263cb08",
+        "favicon": "https://www.thirdly.app/icon.png"
+      },
+      {
+        "id": "https://trylokal.com/",
+        "title": "LOKAL – Meet People. Do Things. Locally.",
+        "url": "https://trylokal.com/",
+        "highlights": [
+          "LOKAL – Meet People. Do Things. Locally.\n[...]\nThe social app for real-life connections. Discover activities, meet people nearby, and build your local community.\n[...]\nFind activities and events happening near you. From coffee meetups to hiking groups — see what’s going on in your area.\n[...]\n### Meet Real People\n[...]\nConnect with people who share your interests. No swiping, no endless scrolling — just real conversations and shared experiences.\n[...]\n### Create Activities\n[...]\nOrganize your own events and invite the community. Whether it’s a game night, study group, or spontaneous adventure.\n[...]\n### Meaningful Chats\n[...]\nMessage with purpose. Disappearing messages, request-based conversations, and group chats that bring people together.\n[...]\n### Share Moments\n[...]\nPost photos with dual-camera capture. Share what you see and your reaction in a single post — authentic and in the moment.\n[...]\n### Safe Community\n[...]\nAI-powered moderation, photo verification, and robust reporting tools keep the community safe and genuine.\n[...]\nLOKAL is designed to get you off your phone and into the real world. We believe the best connections happen face to face.\n[...]\nReal ConnectionsLocal FirstPrivacy FocusedAuthentic MomentsCommunity DrivenNo Algorithms\n[...]\nTake the quick funnel or jump straight to iOS."
+        ],
+        "highlightScores": [],
+        "favicon": "https://trylokal.com/favicon.ico?favicon.0b3bf435.ico"
+      },
+      {
+        "id": "https://yourculdesac.com/",
+        "title": "culdesac - The community that stays",
+        "url": "https://yourculdesac.com/",
+        "highlights": [
+          "Not another events app. culdesac is where your neighborhood becomes a real community, with ongoing conversations, recurring meetups, and friendships that outlast any single event.\n[...]\nMoments is your community's living scrapbook. People post photos and stories from events, so even if you weren't there, you feel the energy. It's the best kind of FOMO: the kind that gets you off the couch.\n[...]\n- Photo and video posts from real community events\n- Tagged to events and clubs so you can follow the thread\n- No algorithm, just authentic posts from your neighbors\n\n \n\nThe app\n[...]\n## Everything a real community needs\n[...]\nMap-first discovery. Persistent relationships. Tools that make hosting effortless.\n[...]\nLive Event Map\n[...]\nOpen the app and see everything happening around you, right now. Color-coded pins, real-time updates, one-tap RSVP. No scrolling through lists, just look at the map.\n[...]\n### Group & Direct Chat\n[...]\nEvery club and event gets its own chat. DM anyone. Share photos, coordinate plans, keep the conversation going long after the event is over.\n[...]\nOngoing communities around shared interests. Join a hiking club, a book club, a foodie crew. Meet once, stay connected forever.\n[...]\n### Moments Feed\n[...]\nA social feed of what actually happened at events. Photos, stories, vibes. The best motivation to show up next time.\n[...]\n### Event Creation\n[...]\nCreate one-time or recurring events in minutes. Set location on the map, manage RSVPs, auto-create group chats. Hosting should be easy.\n[...]\n### Recurring Events\n[...]\nWeekly runs. Monthly potlucks. The events that build real community happen on repeat. Set it once, culdesac handles the rest.\n\n \n\nFor Hosts\n[...]\nIf you're already organizing events, meetups, or communities, culdesac gives you real tools to grow, without charging you for the privilege.\n[...]\nSee who's attending, who's returning, and which events are building momentum. Real data to help you grow your community, not just fill seats once.\n[...]\nBuild a verified track record as a community leader. Your reputation follows you. Attendees can see your history and trust you before they even show up.\n[...]\n### 🔄 Recurring events, zero effort\n[...]\nSet up a weekly meetup once. culdesac auto-creates each instance, sends reminders, manages RSVPs, and keeps the group chat alive between sessions.\n[...]\nNo paywall between you and your members. No algorithm deciding who sees your events. Direct access to your people, always. This is your community, not ours.\n\n \n\n \n\n## Get early access to the app\n[...]\nAlready in the group chat? Nice. Drop your email too and we'll notify you the moment the app is live in your area.\n[...]\nNo spam, ever. We'll only email you when we launch."
+        ],
+        "highlightScores": [],
+        "image": "https://yourculdesac.com/og-image.png",
+        "favicon": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><circle cx='20' cy='20' r='15' stroke='%23A8604A' stroke-width='2' fill='none' stroke-dasharray='6 4'/><path d='M20 8c-4.4 0-8 3.6-8 8 0 6 8 14 8 14s8-8 8-14c0-4.4-3.6-8-8-8z' fill='%234A2040'/><circle cx='20' cy='16' r='3' fill='%23A8604A'/></svg>"
+      }
+    ],
+    "searchTime": 4814.7,
+    "output": {
+      "content": {
+        "core_products": [
+          "Shapes (群组AI交互)",
+          "Teamily AI (个人AI代理OS)",
+          "Replika (情感陪伴)",
+          "Kindroid (高拟真陪伴)",
+          "Character.AI (角色扮演)",
+          "HelloTalk (语言交换)"
+        ],
+        "irl_products": [
+          "WeRoad/WeMeet (线下旅游与聚会)",
+          "Thirdly (本地社区与事件平台)",
+          "LOKAL (本地人际连接)",
+          "culdesac (社区邻里交互)",
+          "Mesh (线下小组聚会)",
+          "Bente (基于地理位置的真实人际匹配)"
+        ],
+        "risks": [
+          "AI心理健康风险（AI psychosis）",
+          "用户沉迷屏幕与过度依赖虚拟陪伴问题",
+          "商业化盈利模式的可持续性挑战",
+          "用户数据安全与隐私保护要求"
+        ],
+        "summary": "2024-2026年期间，AI社交领域呈现明显的分化趋势。一方面，AI伴侣与社交应用通过将AI集成至群组对话（如Shapes）或提供个人智能代理（如Teamily AI）来提升互动深度，旨在缓解单一陪伴引发的心理依赖问题。另一方面，针对“IRL经济”（线下真实互动经济）的社交平台迅速崛起，Airbnb支持的WeRoad及其本地化产品WeMeet，以及Thirdly、Mesh等应用，强调利用地理位置和共同兴趣促进真实世界中的社交聚会、旅行和社区连接，以应对当代年轻人的社交孤独感。",
+        "watchlist": [
+          "AI角色扮演与语音交互的合规性",
+          "基于LLM的个人化代理OS发展",
+          "将社交功能集成至大型旅游或生活服务平台的趋势"
+        ]
+      },
+      "grounding": [
+        {
+          "field": "core_products",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+              "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch"
+            },
+            {
+              "url": "https://www.prnewswire.com/apac/news-releases/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os--redefining-personal-agi-through-self-improving-aihuman-social-network-302781009.html",
+              "title": "Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS -- Redefining Personal AGI Through Self-Improving AI+Human Social Network"
+            },
+            {
+              "url": "https://www.siamnewsnetwork.net/pr-news/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os-redefining-personal-agi-through-self-improving-aihuman-social-network/",
+              "title": "Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS -- Redefining Personal AGI Through Self-Improving AI+Human Social Network - Siam News Network"
+            },
+            {
+              "url": "https://markets.businessinsider.com/news/stocks/ai-enters-the-group-chat-startup-shapes-emerges-from-stealth-with-8m-seed-round-addresses-ai-psychosis-with-first-app-where-you-can-talk-to-ai-with-friends-1036078552",
+              "title": "AI Enters the Group Chat: Startup Shapes Emerges from Stealth with $8M Seed Round, Addresses AI Psychosis with First App Where You Can Talk to AI with Friends | Markets Insider"
+            },
+            {
+              "url": "https://www.cyberlink.com/blog/trending-topics/3932/ai-companion-app",
+              "title": "10 Best AI Companion Apps in 2026 (Tested & Reviewed) - CyberLink"
+            },
+            {
+              "url": "https://www.indiehackers.com/post/best-ai-companion-apps-in-2026-10-apps-compared-honest-review-80bdf3316b",
+              "title": "Best AI Companion Apps in 2026: 10 Apps Compared (Honest ..."
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "irl_products",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+              "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch"
+            },
+            {
+              "url": "https://www.thirdly.app/",
+              "title": "Thirdly - Find your people. Discover better events."
+            },
+            {
+              "url": "https://trylokal.com/",
+              "title": "LOKAL – Meet People. Do Things. Locally."
+            },
+            {
+              "url": "https://yourculdesac.com/",
+              "title": "culdesac - The community that stays"
+            },
+            {
+              "url": "https://apps.apple.com/us/app/mesh-find-your-people/id6446823257",
+              "title": "‎Mesh - Find Your People App - App Store"
+            },
+            {
+              "url": "https://apps.apple.com/us/app/bente/id6747931742",
+              "title": "‎Bente App - App Store"
+            },
+            {
+              "url": "https://mezha.net/eng/bukvy/0ca70217_airbnb_leads_-58m/",
+              "title": "Airbnb leads $58M round as WeRoad expands to the US"
+            },
+            {
+              "url": "https://www.it-boltwise.de/airbnb-fuehrt-weroad-mit-58-mio-us-dollar-nach-austin-und-in-die-irl-reise.html",
+              "title": "Airbnb führt WeRoad mit 58 Mio. US-Dollar nach Austin und in die ..."
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "risks",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+              "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch"
+            },
+            {
+              "url": "https://markets.businessinsider.com/news/stocks/ai-enters-the-group-chat-startup-shapes-emerges-from-stealth-with-8m-seed-round-addresses-ai-psychosis-with-first-app-where-you-can-talk-to-ai-with-friends-1036078552",
+              "title": "AI Enters the Group Chat: Startup Shapes Emerges from Stealth with $8M Seed Round, Addresses AI Psychosis with First App Where You Can Talk to AI with Friends | Markets Insider"
+            },
+            {
+              "url": "https://www.indiehackers.com/post/best-ai-companion-apps-in-2026-10-apps-compared-honest-review-80bdf3316b",
+              "title": "Best AI Companion Apps in 2026: 10 Apps Compared (Honest ..."
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "summary",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+              "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch"
+            },
+            {
+              "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+              "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch"
+            },
+            {
+              "url": "https://www.prnewswire.com/apac/news-releases/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os--redefining-personal-agi-through-self-improving-aihuman-social-network-302781009.html",
+              "title": "Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS -- Redefining Personal AGI Through Self-Improving AI+Human Social Network"
+            },
+            {
+              "url": "https://markets.businessinsider.com/news/stocks/ai-enters-the-group-chat-startup-shapes-emerges-from-stealth-with-8m-seed-round-addresses-ai-psychosis-with-first-app-where-you-can-talk-to-ai-with-friends-1036078552",
+              "title": "AI Enters the Group Chat: Startup Shapes Emerges from Stealth with $8M Seed Round, Addresses AI Psychosis with First App Where You Can Talk to AI with Friends | Markets Insider"
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "watchlist",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+              "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch"
+            },
+            {
+              "url": "https://www.cyberlink.com/blog/trending-topics/3932/ai-companion-app",
+              "title": "10 Best AI Companion Apps in 2026 (Tested & Reviewed) - CyberLink"
+            },
+            {
+              "url": "https://www.indiehackers.com/post/best-ai-companion-apps-in-2026-10-apps-compared-honest-review-80bdf3316b",
+              "title": "Best AI Companion Apps in 2026: 10 Apps Compared (Honest ..."
+            },
+            {
+              "url": "https://www.retellai.com/blog/conversational-ai-platforms",
+              "title": "12 Best Conversational AI Platforms for 2026 - Retell AI"
+            },
+            {
+              "url": "https://mezha.net/eng/bukvy/0ca70217_airbnb_leads_-58m/",
+              "title": "Airbnb leads $58M round as WeRoad expands to the US"
+            }
+          ],
+          "confidence": "medium"
+        }
+      ]
+    },
+    "costDollars": {
+      "total": 0.012
+    }
+  }
+}

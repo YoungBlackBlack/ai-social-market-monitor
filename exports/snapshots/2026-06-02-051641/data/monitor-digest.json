@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-06-02T05:09:37.942Z",
+  "headline": "发现 1 条新增提醒，优先复核 投放 / 付费获客证据。",
+  "bullets": [
+    "监控主题 9 条，成功 9 条，共返回 90 条结果。",
+    "近窗高相关 31 条；新增提醒 1 条；台账累计 36 条。",
+    "当前最活跃主题是「投放 / 付费获客证据」：近窗 9 条，新增 1 条。"
+  ],
+  "recommendedActions": [
+    "优先人工打开新增提醒里的 IRL 和融资类证据链接，确认是否需要升级进核心产品图谱。",
+    "把确认后的融资金额、增长信号、投放渠道和功能差异补入 data/brief.json。",
+    "对低质量来源只保留为 watchlist，不进入核心证据卡。"
+  ],
+  "laneSummaries": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Sekai raises $20 million as people create 15 million AI mini apps",
+        "Status AI Raises $17 Million to Turn Social Media Into Worlds Users Can Live Inside - Fundraise Insider",
+        "Sesame, the conversational AI startup from Oculus founders, launches its iOS app | TechCrunch"
+      ]
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "priority": "critical",
+      "alertCount": 0,
+      "recentCount": 4,
+      "topRecentTitles": [
+        "Breeze: Can a Dutch app save Brits from swiping past our dismal dating scene? | The Independent",
+        "Breeze Launches IRL Group Dates Across London - Global Dating Insights",
+        "WeRoad raises $58M and expands to the US with Airbnb | WeRoad"
+      ]
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 2,
+      "topRecentTitles": [
+        "Learning Portuguese in Brazil: Expat Shortcut to Fluency 2026 | The Rio Times",
+        "Why Promova Is Quietly Becoming the Most Addictive AI Language App Beyond Duolingo + Video - UNDERCODE NEWS"
+      ]
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 2,
+      "topRecentTitles": [
+        "China’s MiniMax records 1-million client base, fivefold growth in half a year | South China Morning Post",
+        "China AI Upstart MiniMax Doubles Sales Ahead of New Model - Bloomberg"
+      ]
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 1,
+      "topRecentTitles": [
+        "Suicide and self-harm in the age of generative artificial intelligence: The case of ChatGPT and rise of suicide-related lawsuits - ScienceDirect"
+      ]
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 0,
+      "topRecentTitles": []
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "priority": "medium",
+      "alertCount": 1,
+      "recentCount": 9,
+      "topRecentTitles": [
+        "Meta’s Advantage+ Creative Is Rewriting DTC Ad Economics in 2026 – Ecommerce Times",
+        "Meta’s Advantage+ Overhaul Is Rewriting DTC Acquisition Math – Online Store News",
+        "OpenAI turns on cost-per-action ads inside ChatGPT"
+      ]
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 2,
+      "topRecentTitles": [
+        "AppLovin Launches Its Own TikTok Rival",
+        "AppLovin launches Gist, a social app that could change everything"
+      ]
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 6,
+      "topRecentTitles": [
+        "Meta is trying to turn AI glasses into a subscription business",
+        "Meta Develops AI Pendant, Expands Wearables Lineup — Web Pulse",
+        "Sesame AI Launches iOS App: Next-Gen Chatbot Mimics Human Conversation - Headlinez News"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-06-02T06:15:59.788Z",
+  "monitorGeneratedAt": "2026-06-02T06:15:08.528Z",
+  "lookbackDays": 14,
+  "source": "https://api.exa.ai/search",
+  "nativeMonitor": {
+    "checkedAt": "2026-06-02T01:03:22.452Z",
+    "provider": "Exa Websets Monitor API",
+    "docsUrl": "https://docs.exa.ai/reference/websets",
+    "desiredMonitor": {
+      "externalId": "exa-ai-social-market-monitor",
+      "name": "Exa AI social market monitor",
+      "scope": "AI social apps, AI companions, AI entertainment, language-exchange social apps, and IRL/offline real-human social products."
+    },
+    "status": "unavailable",
+    "mode": "codex-cron-search-api-fallback",
+    "fallback": "Codex daily automation runs node scripts/run-all.mjs with Exa Search API monitor lanes.",
+    "probes": [
+      {
+        "path": "/websets",
+        "ok": false,
+        "status": 401,
+        "requestId": "476a0662395fd4fe76181c1088b8798f",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      },
+      {
+        "path": "/monitors",
+        "ok": false,
+        "status": 401,
+        "requestId": "7eaf47be5953eed78a71f75b9ff3cc99",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      }
+    ],
+    "websets": [],
+    "monitors": [],
+    "reason": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+  },
+  "automation": {
+    "name": "Exa AI social market monitor",
+    "schedule": "Daily 09:00"
+  },
+  "summary": {
+    "monitors": 9,
+    "ok": 9,
+    "totalResults": 90,
+    "recentResults": 37,
+    "newAlerts": 4
+  },
+  "requestIds": [
+    "44a87e741a4430fd1b44108b3e381c7e",
+    "b2b07d845f3c298118ed63eaba0b39fb",
+    "3e666a5f23843242de611387772d5f15",
+    "ad470efb1a55c0707db31795eb506919",
+    "7022b26cdc34736deaa4468dac20d135",
+    "15625d8be4c0989298696cd38fceafe6",
+    "0c43d76b3c27a83fd4891dc99ca396e8",
+    "defd8245595c630d2b2f8b59fe911719",
+    "ba919701499aadb54abf6d7376a946eb"
+  ],
+  "runs": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "status": 200,
+      "requestId": "44a87e741a4430fd1b44108b3e381c7e",
+      "recentCount": 8,
+      "query": "past two weeks funding raised seed series A AI social app AI companion app AI roleplay app consumer AI app social entertainment startup"
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "status": 200,
+      "requestId": "b2b07d845f3c298118ed63eaba0b39fb",
+      "recentCount": 4,
+      "query": "past two weeks IRL offline social app AI matching friends dinner strangers meetup event social discovery funding launch 222 Pie Timeleft Meet5 Aglow Breeze group travel"
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "status": 200,
+      "requestId": "3e666a5f23843242de611387772d5f15",
+      "recentCount": 3,
+      "query": "past two weeks HelloTalk Tandem SewaYou Hilokal Slowly Linguado LangPal MatchaLingua language exchange app native speaker chat social language learning growth funding launch"
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "status": 200,
+      "requestId": "ad470efb1a55c0707db31795eb506919",
+      "recentCount": 2,
+      "query": "past two weeks Chinese AI companion app overseas Talkie MiniMax PolyBuzz HiWaifu Linky AI social app downloads revenue funding"
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "status": 200,
+      "requestId": "7022b26cdc34736deaa4468dac20d135",
+      "recentCount": 1,
+      "query": "past two weeks AI companion safety loneliness teens regulation lawsuit research paper Character.AI Replika Nomi chatbot companion"
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "status": 200,
+      "requestId": "15625d8be4c0989298696cd38fceafe6",
+      "recentCount": 0,
+      "query": "new companies AI social app AI companion app IRL social app language exchange app launched 2026 startup"
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "status": 200,
+      "requestId": "0c43d76b3c27a83fd4891dc99ca396e8",
+      "recentCount": 10,
+      "query": "past two weeks AI social app AI companion app language exchange app IRL social app paid acquisition advertising campaign ads library creatives CAC ROAS user acquisition marketing spend app install ads"
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "status": 200,
+      "requestId": "defd8245595c630d2b2f8b59fe911719",
+      "recentCount": 4,
+      "query": "past two weeks Add One Eve Inc. Gist IRL Soma IRL social app friends events networking face-to-face launch funding users growth invite-only gatherings"
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "status": 200,
+      "requestId": "ba919701499aadb54abf6d7376a946eb",
+      "recentCount": 5,
+      "query": "past two weeks irl social handles Instagram - YouTube Social Media: Definition, Importance, Top Websites, and Apps The 15 Most Popular Social Media Platforms in 2026 | Salesforce AU ai social handles Discord (@discord) Official | TikTok Meta AI Studio TikTok - YouTube langpal growth Talkpal EZ Speak Plang, Inc. sewayou growth Eyse needyou AI Plang, Inc. ai friend wearables Amazon has big hopes for wearable AI - starting with this US$50 gadget - The Business Times ai social official gap profiles ‎status - sims but social media App - App Store companion long tail Soul AI irl social long tail Locpats offline social discovery companies Pie slowly growth Langly Inc. talk4now growth Viral App Launch AI social app IRL social app companion app launch funding users revenue downloads official product update"
+    }
+  ],
+  "alertClosure": {
+    "latestAlertReviewRows": 38,
+    "latestAlertPendingRows": 0,
+    "recentSignalReviewRows": 37,
+    "recentSignalPendingRows": 0,
+    "status": "closed"
+  },
+  "latestHandledAlerts": [
+    {
+      "name": "Meta is building an AI Pendant and this time it has a working wearables business behind it — TFN",
+      "decision": "市场口径佐证",
+      "source": "2026-06-02 monitor · Coverage signal watchlist",
+      "reason": "Meta AI pendant 是 AI wearable / ambient companion 入口的市场背景信号，能辅助判断硬件入口和订阅化方向；当前不是独立 consumer social app、线下真人社交产品或融资事件，不升级主表或融资时间线。",
+      "evidence": [
+        {
+          "label": "Coverage signal watchlist",
+          "url": "https://techfundingnews.com/meta-is-building-an-ai-pendant-and-this-time-it-has-a-working-wearables-business-behind-it/"
+        }
+      ]
+    },
+    {
+      "name": "How Chamberlain Coffee Is Winning the TikTok-to-Google Attribution War – D2C Times",
+      "decision": "投放平台背景",
+      "source": "2026-06-02 monitor · 投放 / 付费获客证据",
+      "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://d2c-times.com/how-chamberlain-coffee-is-winning-the-tiktok-to-google-attribution-war/"
+        }
+      ]
+    },
+    {
+      "name": "How Chomps Rebuilt Its Google-to-Meta Funnel to Hit 5.1x ROAS – D2C Times",
+      "decision": "投放平台背景",
+      "source": "2026-06-02 monitor · 投放 / 付费获客证据",
+      "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://d2c-times.com/how-chomps-rebuilt-its-google-to-meta-funnel-to-hit-5-1x-roas/"
+        }
+      ]
+    },
+    {
+      "name": "How Jolie Skin Co. Rewired Its Meta Attribution Stack to Hit 4.2x ROAS – D2C Times",
+      "decision": "投放平台背景",
+      "source": "2026-06-02 monitor · 投放 / 付费获客证据",
+      "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://d2c-times.com/how-jolie-skin-co-rewired-its-meta-attribution-stack-to-hit-4-2x-roas/"
+        }
+      ]
+    },
+    {
+      "name": "How Caden Lane Rebuilt Its Meta Signal Stack to Scale Past $30M – D2C Times",
+      "decision": "投放平台背景",
+      "source": "2026-06-02 monitor · 投放 / 付费获客证据",
+      "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://d2c-times.com/how-caden-lane-rebuilt-its-meta-signal-stack-to-scale-past-30m/"
+        }
+      ]
+    }
+  ],
+  "persistence": {
+    "monitorHistoryRuns": 30,
+    "monitorLedgerItems": 41,
+    "sqliteCounts": {
+      "products": 42,
+      "funding_events": 40,
+      "monitor_signals": 37,
+      "source_linkage": 746,
+      "coverage_gaps": 41,
+      "audit_rows": 348,
+      "view_latest_monitor_signals": 37
+    },
+    "files": [
+      "data/monitor.json",
+      "data/monitor-history.json",
+      "data/monitor-ledger.json",
+      "data/brief.json",
+      "exports/latest-alert-review.csv",
+      "exports/monitor-recent-review.csv",
+      "exports/monitor-recent-signals.csv",
+      "exports/exa-social-research.sqlite",
+      "exports/exa-ai-social-report.html"
+    ]
+  },
+  "boundary": "This receipt proves the latest monitor run and its persisted handling status. It does not claim mathematical exhaustiveness for all live-market products or news."
+}
