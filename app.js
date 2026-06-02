@@ -70,11 +70,71 @@ function applyRoute() {
       link.removeAttribute("aria-current");
     }
   });
+  renderViewToc(route);
+}
+
+function renderViewToc(route) {
+  const toc = document.querySelector("#view-toc");
+  if (!toc) return;
+  toc.replaceChildren();
+  const sections = [...document.querySelectorAll(".route-section")].filter(
+    (section) => section.dataset.view === route,
+  );
+  // Only show in-view sub-nav when a view stacks multiple sections.
+  if (sections.length <= 1) return;
+  sections.forEach((section) => {
+    const heading =
+      section.querySelector(".section-head h2")?.textContent ||
+      section.querySelector("h2")?.textContent ||
+      section.querySelector(".section-label")?.textContent ||
+      section.id;
+    const label = heading.trim().replace(/[：:].*$/, "").slice(0, 14);
+    const chip = el("button", null, label);
+    chip.type = "button";
+    chip.addEventListener("click", () => {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    toc.append(chip);
+  });
+}
+
+function scrollToActiveView() {
+  if (currentRoute() === "home") {
+    window.scrollTo({ top: 0 });
+    return;
+  }
+  const first = document.querySelector(".route-section:not([hidden])");
+  if (first) {
+    first.scrollIntoView({ block: "start" });
+  } else {
+    window.scrollTo({ top: 0 });
+  }
 }
 
 function setupRouting() {
   applyRoute();
-  window.addEventListener("hashchange", applyRoute);
+  window.addEventListener("hashchange", () => {
+    applyRoute();
+    scrollToActiveView();
+    const main = document.querySelector("main");
+    if (main) {
+      main.classList.remove("route-enter");
+      void main.offsetWidth; // restart the animation
+      main.classList.add("route-enter");
+      main.addEventListener("animationend", () => main.classList.remove("route-enter"), { once: true });
+    }
+  });
+}
+
+function setupBackToTop() {
+  const button = document.querySelector("#back-to-top");
+  if (!button) return;
+  const toggle = () => {
+    button.hidden = window.scrollY < 600;
+  };
+  toggle();
+  window.addEventListener("scroll", toggle, { passive: true });
+  button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
 
 function setupSignalMap() {
@@ -93,17 +153,18 @@ function setupSignalMap() {
     dot.setAttribute("aria-label", label);
     dot.setAttribute("title", label);
     dot.addEventListener("click", () => {
-      if (window.location.hash !== "#matrix") {
-        window.location.hash = "#matrix";
+      const alreadyOnMatrix = window.location.hash === "#matrix";
+      if (!alreadyOnMatrix) {
+        window.location.hash = "#matrix"; // hashchange handler scrolls to the matrix view
       }
       const matrixSearch = document.querySelector("#matrix-search-input");
       if (matrixSearch) matrixSearch.value = "";
       const filterButton = document.querySelector(`#matrix-controls button[data-filter="${target}"]`);
       if (filterButton) filterButton.click();
       dots.forEach((other) => other.classList.toggle("selected", other === dot));
-      const matrixSection = document.querySelector("#matrix");
-      if (matrixSection && typeof matrixSection.scrollIntoView === "function") {
-        matrixSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      // If already on the matrix view no hashchange fires, so bring it into view here.
+      if (alreadyOnMatrix) {
+        document.querySelector("#matrix")?.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
   });
@@ -491,14 +552,11 @@ function renderComparisonTable(data) {
     });
   });
 
-  const emptyRow = document.createElement("tr");
-  emptyRow.className = "matrix-empty-row";
-  const emptyCell = document.createElement("td");
-  emptyCell.colSpan = 9;
-  emptyCell.className = "empty-state";
-  emptyRow.append(emptyCell);
-  emptyRow.hidden = true;
-  body.append(emptyRow);
+  // Empty-state lives outside the table body so it never inflates row counts.
+  const emptyState = el("p", "empty-state matrix-empty", "");
+  emptyState.hidden = true;
+  const matrixShell = body.closest(".matrix-shell");
+  (matrixShell?.parentNode ?? body.parentNode).insertBefore(emptyState, matrixShell ? matrixShell.nextSibling : null);
 
   const filters = [
     ["all", "全部"],
@@ -534,11 +592,11 @@ function renderComparisonTable(data) {
       : `当前显示 ${visible} / ${rows.length} 个产品或公司`;
 
     if (visible === 0) {
-      emptyCell.textContent = query
+      emptyState.textContent = query
         ? `没有匹配“${searchInput.value.trim()}”的产品，换个更短的关键词或切换赛道筛选。`
         : "当前筛选下没有产品。";
     }
-    emptyRow.hidden = visible !== 0;
+    emptyState.hidden = visible !== 0;
   }
 
   filters.forEach(([filter, label]) => {
@@ -2926,8 +2984,16 @@ async function boot() {
   renderRunLog(data);
   setupRouting();
   setupSignalMap();
+  setupBackToTop();
 }
 
-boot().catch((error) => {
-  console.error("Failed to render brief", error);
-});
+function hideLoadingOverlay() {
+  const overlay = document.querySelector("#loading-overlay");
+  if (overlay) overlay.classList.add("hidden");
+}
+
+boot()
+  .catch((error) => {
+    console.error("Failed to render brief", error);
+  })
+  .finally(hideLoadingOverlay);

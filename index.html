@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI 社交与线下真人连接机会图谱</title>
-    <link rel="stylesheet" href="styles.css?v=20260602-v98" />
+    <link rel="stylesheet" href="styles.css?v=20260602-v99" />
   </head>
   <body data-active-view="home">
-    <header class="hero">
+    <div id="loading-overlay"><div class="spinner" aria-label="加载中"></div></div>
+    <div class="topnav-wrap">
       <nav class="topbar" aria-label="页面导航">
         <a href="#home" data-route="home">总览</a>
         <a href="#matrix" data-route="matrix">对照表</a>
@@ -17,6 +18,9 @@
         <a href="#evidence" data-route="evidence">证据审计</a>
         <a href="#playbook" data-route="playbook">Exa 检索</a>
       </nav>
+      <div class="view-toc" id="view-toc" aria-label="本视图小节导航"></div>
+    </div>
+    <header class="hero">
       <div class="hero-grid">
         <section class="hero-copy">
           <p class="kicker">Exa Search API run · 2024.06 - 2026.06</p>
@@ -27,16 +31,16 @@
           </p>
           <div class="metric-row" aria-label="研究摘要">
             <div>
-              <strong>3</strong>
-              <span>优先赛道</span>
+              <strong></strong>
+              <span></span>
             </div>
             <div>
-              <strong>14+</strong>
-              <span>Exa 证据点</span>
+              <strong></strong>
+              <span></span>
             </div>
             <div>
-              <strong>IRL</strong>
-              <span>重点筛选标签</span>
+              <strong></strong>
+              <span></span>
             </div>
           </div>
         </section>
@@ -47,6 +51,7 @@
           <button class="dot dot-b" data-label="Butterflies / Status AI">AI 泛娱乐</button>
           <button class="dot dot-c" data-label="Tolan / Pengu / Dippy">AI 伴侣</button>
           <button class="dot dot-d" data-label="222 / Pie / Timeleft">线下真人</button>
+          <p class="map-hint">点击圆点 → 在对照表中按赛道筛选</p>
         </section>
       </div>
     </header>
@@ -108,6 +113,7 @@
           <button id="matrix-export-csv" type="button">导出 CSV</button>
         </div>
         <p class="matrix-count" id="matrix-count" aria-live="polite"></p>
+        <p class="table-scroll-hint">← 左右滑动查看更多列 →</p>
         <div class="matrix-shell">
           <table class="comparison-table" id="comparison-table">
             <thead>
@@ -316,6 +322,8 @@
       </section>
     </main>
 
-    <script src="app.js?v=20260602-v98"></script>
+    <button id="back-to-top" type="button" aria-label="回到顶部" hidden>↑ 顶部</button>
+
+    <script src="app.js?v=20260602-v99"></script>
   </body>
 </html>
