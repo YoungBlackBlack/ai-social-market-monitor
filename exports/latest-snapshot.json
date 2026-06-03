@@ -1,9 +1,9 @@
 {
-  "savedAt": "2026-06-02T06:21:22.718Z",
-  "snapshot": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-02-062122/",
-  "manifest": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-02-062122/manifest.json",
-  "relativeSnapshot": "exports/snapshots/2026-06-02-062122/",
-  "relativeManifest": "exports/snapshots/2026-06-02-062122/manifest.json",
+  "savedAt": "2026-06-03T01:05:35.384Z",
+  "snapshot": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-03-010535/",
+  "manifest": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-03-010535/manifest.json",
+  "relativeSnapshot": "exports/snapshots/2026-06-03-010535/",
+  "relativeManifest": "exports/snapshots/2026-06-03-010535/manifest.json",
   "strictCompletionStatus": "not-mathematically-complete",
   "presentationReady": true,
   "entrypoints": {
@@ -25,19 +25,19 @@
     "fundingTimelineEvents": 25,
     "uniqueFundingNewsEvents": 37,
     "monitorLanes": 9,
-    "monitorRecentItems": 37,
-    "monitorNewAlerts": 4,
+    "monitorRecentItems": 30,
+    "monitorNewAlerts": 0,
     "monitorHistoryRuns": 30,
-    "monitorLedgerItems": 41,
+    "monitorLedgerItems": 47,
     "sqliteProducts": 42,
     "sqliteFundingEvents": 40,
-    "sqliteMonitorSignals": 37,
+    "sqliteMonitorSignals": 30,
     "originalObjectiveAuditRows": 9
   },
   "retention": {
     "keep": 30,
     "pruned": [
-      "2026-06-02-051414"
+      "2026-06-02-051641"
     ]
   }
 }

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-02T06:15:08.528Z",
-  "title": "AI 社交监控 · 4 条新增提醒待复核",
-  "color": "orange",
+  "generatedAt": "2026-06-03T01:04:33.812Z",
+  "title": "AI 社交监控 · 今日无新增，复核近窗信号",
+  "color": "blue",
   "buttonText": "查看最高优先级证据",
-  "buttonUrl": "https://www.prnewswire.com/apac/news-releases/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os--redefining-personal-agi-through-self-improving-aihuman-social-network-302781009.html",
-  "shouldSend": true,
-  "promotionQueueSize": 12,
-  "newUrls": 4
+  "buttonUrl": "https://www.bloomberg.com/news/articles/2026-05-28/china-ai-upstart-minimax-doubles-sales-ahead-of-new-model-launch",
+  "shouldSend": false,
+  "promotionQueueSize": 9,
+  "newUrls": 0
 }

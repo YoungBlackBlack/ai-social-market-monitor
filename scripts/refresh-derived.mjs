@@ -2965,6 +2965,13 @@ function monitorSignalResolution(item) {
         "Travel and Tour World 是对 WeRoad 美国扩张与旅游叙事的二次放大，近窗里已保留官方博客和 TechCrunch 关于 WeRoad 融资及入美扩张的更强证据；不重复升级主表或时间线。",
     };
   }
+  if (/partiful is turning party invites into a payments business|startupfortune.*partiful-is-turning-party-invites-into-a-payments-business|built-in ticketing/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Partiful 已在 IRL 主表、官方覆盖和边界融资样本中保留；这次内置票务上线说明其从 invite graph 向线下活动交易延伸，属于值得继续追踪的商业化更新，但不需要重复新增产品卡或融资事件。",
+    };
+  }
   if (/promova is quietly becoming the most addictive ai language app|undercode news.*promova/.test(text)) {
     return {
       decision: "暂缓",
@@ -2984,6 +2991,27 @@ function monitorSignalResolution(item) {
       decision: "候选升级",
       reason:
         "Sekai 的 2000 万美元融资和 1500 万 AI mini apps 使用量，说明其具备 AI entertainment / creation 社区潜力；下一步应补官方产品形态、社区互动机制和 consumer social 证据，再决定是否升级进主表或融资时间线。",
+    };
+  }
+  if (/board, the new game startup from mirror founder brynn putnam|techcrunch.*board-the-new-game-startup|board.*raises \$20m/.test(text)) {
+    return {
+      decision: "暂缓/泛娱乐边界",
+      reason:
+        "Board 的 2000 万美元融资和桌游式社交玩法说明其处在 AI/游戏化娱乐的相邻边界，但当前更像游戏 startup 而非 AI social app、AI companion 或线下真人社交主线；保留为泛娱乐融资观察，不进入核心主表。",
+    };
+  }
+  if (/nectar social raises \$30m|rebrands itself as nectar agent|demandgenreport.*nectar-social-raises-30m|marketing operating system nectar social/.test(text)) {
+    return {
+      decision: "暂缓/B2B 社交营销",
+      reason:
+        "Nectar Social 的 3000 万美元融资和更名为 Nectar Agent 说明 agentic social marketing 赛道升温，但产品定位仍是品牌营销操作系统，不是 consumer AI social app、语言交换或 IRL 真人社交产品；继续作为 B2B 边界融资样本保留。",
+    };
+  }
+  if (/aippy raises tens of millions|aippy.*250 million valuation|ai-native interactive entertainment|technode\.global\/prnasia\/aippy-raises/.test(text)) {
+    return {
+      decision: "候选升级",
+      reason:
+        "Aippy 的融资与 AI-native interactive entertainment 叙事对 AI 泛娱乐主线相关，说明资本正在押注互动内容形态；下一步应补官方产品形态、用户互动机制和是否具备社区/社交层证据，再决定是否升级进主表或融资时间线。",
     };
   }
   if (/meta develops ai pendant|ai-powered pendant|expands wearables lineup|wpnews\.pro\/news\/meta-develops-ai-pendant/.test(text)) {
