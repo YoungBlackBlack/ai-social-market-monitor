@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-01T09:29:42.361Z",
-  "startedAt": "2026-06-01T09:29:37.283Z",
+  "generatedAt": "2026-06-09T06:22:41.579Z",
+  "startedAt": "2026-06-09T06:22:36.604Z",
   "source": "https://api.exa.ai/search",
   "purpose": "Targeted Exa company/news pass for the remaining LingoPraxis language-exchange watchlist item, focused on official evidence, consumer-social strength, growth, funding, and whether it should upgrade to the HelloTalk/Tandem-adjacent main table.",
   "searches": [
@@ -10,7 +10,7 @@
       "query": "LingoPraxis language exchange app company official website users growth App Store Google Play Product Hunt LinkedIn",
       "ok": true,
       "status": 200,
-      "requestId": "22d29cb8b7f12723084bcf3afc39a287",
+      "requestId": "b266bf607523dcec7270e16a14613826",
       "results": [
         {
           "title": "LingoPraxis - English Speaking Club",
@@ -27,53 +27,11 @@
           "highlight": "LingoLooper is a Technology, Information and Internet company. LingoLooper is an immersive language learning app that allows users to acquire target language in the same way as native speakers acquire their own. It offers interactive conversations with AI avatars to help users achieve native-level fluency. LingoLooper employs 14 people (+200.0% YoY, +8 people), founded in 2022. Headquartered in göteborg, västra götaland county, Sweden, operates in 9 countries (including Denmark, Italy, France, United Kingdom, and T"
         },
         {
-          "title": "Lingopanda (previously PingoLearn)",
-          "url": "https://lingopanda.app/",
-          "publishedDate": "2026-04-23T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Lingopanda (previously PingoLearn) is a E-Learning Providers company. PingoLearn is an ai-powered English tutor on your smartphone that offers a range of learning tools and resources for practice speaking in different situations. They provide a voice chat, feedback, practice partner calls, and language audio books. PingoLearn aims to make learning English fun and stress-free. Lingopanda (previously PingoLearn) employs 17 people (+100.0% YoY, +11 people), founded in 2021. Headquartered in Bengaluru, Karnataka, India"
-        },
-        {
           "title": "Ling",
           "url": "https://ling-app.com/",
           "publishedDate": "2026-04-25T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Ling is a Software Development company. Ling is a company that focuses on Asian and Eastern European languages, providing easy language learning. They offer simplified lessons that touch on all four language skills, including reading, writing, speaking, and listening. The company aims to make learning hard languages easier. Ling employs 58 people (+5.1% YoY, +4 people), founded in 2016. Headquartered in Chiang Mai, Chiang Mai, Thailand, operates in 20 countries (including Germany, Pakistan, Philippines, Serbia, and"
-        },
-        {
-          "title": "Plang, Inc.",
-          "url": "https://plang.ai/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-28.6% YoY, -2 people). Headquartered in South Korea. Has $824.6K in total funding, with 1 prior funding round. [...] - Industry: Education - Type: Privately Held - Homepage"
-        },
-        {
-          "title": "Linguado",
-          "url": "https://linguado.com/",
-          "publishedDate": "2026-04-30T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to translators, teachers, and students. Linguado employs 11 people (-25.0% YoY, -5 people), founded in 2"
-        },
-        {
-          "title": "LingoGalaxy",
-          "url": "https://lingogalaxy.com/",
-          "publishedDate": "2026-04-29T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "LingoGalaxy is a E-Learning Providers company. LingoGalaxy is an online language school for kids and teens that offers native teachers and full parental guidance. They have three study groups tailored to specific age ranges and attention spans, allowing them to implement the most suitable and engaging curriculum for each child. They aim to help children achieve native-like speaking skills and language fluency. LingoGalaxy employs 37 people. Headquartered in Thessaloniki, Greece, operates in 13 countries (including "
-        },
-        {
-          "title": "AvoLingo",
-          "url": "https://avo-lingo.com/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "AvoLingo is a Education company. AvoLingo helps education institutions revolutionize their teaching approach, empowering educators with AI-powered tools that drive student engagement, retention, and success. Transforming teachers into AI-powered superheroes. Our AI Avatars help students to speak foreign language as if student is communicating with a real person and contribute to the development of students language skills. AvoLingo employs 2 people (-66.7% YoY), founded in 2024. Headquartered in Dover, Delaware, Un"
-        },
-        {
-          "title": "LingoQuesto",
-          "url": "https://lingoquesto.com/",
-          "publishedDate": "2026-04-25T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "LingoQuesto is a Education company. LingoQuesto is a company that empowers language educators with a speech-based language practice. They help language educators improve their students' speaking skills through interactive and personalized conversations that simulate immersive learning experiences. LingoQuesto employs 7 people (+60.0% YoY, +3 people), founded in 2023. Headquartered in Singapore, Central Region, Singapore, with presence in Colombia, United States, and Germany. Has $225.0K in total funding, with 1 pri"
+          "highlight": "Ling is a Software Development company. Ling is a company that focuses on Asian and Eastern European languages, providing easy language learning. They offer simplified lessons that touch on all four language skills, including reading, writing, speaking, and listening. The company aims to make learning hard languages easier. Ling employs 58 people (+5.1% YoY, +4 people), founded in 2016. Headquartered in Chiang Mai, Chiang Mai, Thailand, operates in 20 countries (including Pakistan, Germany, Philippines, India, and "
         },
         {
           "title": "Lingo",
@@ -81,6 +39,48 @@
           "publishedDate": "2026-04-25T00:00:00.000Z",
           "author": "Exa",
           "highlight": "Lingo is a Software Development company. Lingo is a digital asset library, design system manager, and more designed to help teams organize, manage, and share their assets in one place. Lingo employs 4 people (-18.2% YoY, -2 people), founded in 2016. Headquartered in Los Angeles, California, United States. [...] - Industry: Software Development - Type: Privately Held - Headquarters: Los Angeles, United States - Founded Year: 2016 - Homepage: lingoapp.com - Status: active - Ownership: Private - Aliases: lingo, lingo "
+        },
+        {
+          "title": "Lingopass",
+          "url": "https://lingopass.com.br/",
+          "publishedDate": "2026-04-22T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Lingopass is an educational institution. Lingopass is a company that provides complete language solutions for accelerated professional development. They offer a dynamic learning and support for the real progress of each employee. Lingopass employs 64 people (-4.7% YoY, -5 people), founded in 2021. Headquartered in São Paulo, São Paulo, Brazil, with presence in Portugal and United Kingdom. Has $841.5K in total funding. [...] - Industry: E-Learning Providers - Type: Educational - Headquarters: São Paulo, Brazil - Fou"
+        },
+        {
+          "title": "Plang, Inc.",
+          "url": "https://plang.ai/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-37.5% YoY, -3 people). Headquartered in South Korea. Has $824.6K in total funding, with 1 prior funding round. [...] - Industry: Education - Type: Privately Held - Homepage"
+        },
+        {
+          "title": "Linguado",
+          "url": "https://linguado.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to translators, teachers, and students. Linguado employs 11 people (-20.0% YoY, -4 people), founded in 2"
+        },
+        {
+          "title": "Lingopanda (previously PingoLearn)",
+          "url": "https://lingopanda.app/",
+          "publishedDate": "2026-05-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Lingopanda (previously PingoLearn) is a E-Learning Providers company. PingoLearn is an ai-powered English tutor on your smartphone that offers a range of learning tools and resources for practice speaking in different situations. They provide a voice chat, feedback, practice partner calls, and language audio books. PingoLearn aims to make learning English fun and stress-free. Lingopanda (previously PingoLearn) employs 16 people (+72.7% YoY, +8 people), founded in 2021. Headquartered in Bengaluru, Karnataka, India. "
+        },
+        {
+          "title": "LingoLeap",
+          "url": "https://lingoleap.ai/",
+          "publishedDate": "2026-04-24T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoLeap is a Education company. LingoLeap is an online tool that provides prompt language and writing tasks to students. It allows students to create prompt answers based on their view. LingoLeap employs 5 people (-37.5% YoY, -3 people). Headquartered in Santa Clara, California, United States. [...] - Industry: Education - Type: Public Company - Headquarters: Santa Clara, United States - Homepage: lingoleap.ai - Status: active - Aliases: lingoleap, lingoleap inc. - LinkedIn: linkedin.com/company/lingoleap - Linke"
+        },
+        {
+          "title": "LingoQuesto",
+          "url": "https://lingoquesto.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoQuesto is a Education company. LingoQuesto is a company that empowers language educators with a speech-based language practice. They help language educators improve their students' speaking skills through interactive and personalized conversations that simulate immersive learning experiences. LingoQuesto employs 7 people (+60.0% YoY, +3 people), founded in 2023. Headquartered in Singapore, Central Region, Singapore, with presence in Colombia, Germany, and United States. Has $225.0K in total funding, with 1 pri"
         }
       ],
       "costDollars": {
@@ -96,7 +96,7 @@
       "query": "LingoPraxis app launch funding users growth language exchange 2024 2025 2026 Product Hunt App Store Telegram Zoom Google Meet",
       "ok": true,
       "status": 200,
-      "requestId": "bfab5034964662cd918a75704bec3298",
+      "requestId": "98f07482e510a6d26002963bb45d4a62",
       "results": [
         {
           "title": "LingoPraxis: Practice speaking English online",
@@ -106,18 +106,18 @@
           "highlight": "LingoPraxis: Practice speaking English online [...] Peer-to-peer online speaking club [...] Download on theApp Store [...] Get it on theGoogle Play [...] Continue with theTelegram Bot [...] # What learners say [...] AlinaMar 24, 2024 [...] Useful and convenient app. Meetings are filling up faster now, so conversations are more active. I haven't found anything better for speaking practice yet. [...] Highly recommend this app! It focuses on language practice and yields great results in just a couple of months, along "
         },
         {
-          "title": "Praktika raises $35.5M to use AI avatars to make learning languages feel more natural | TechCrunch",
-          "url": "https://techcrunch.com/2024/05/22/praktika-raises-35-5m-to-use-ai-avatars-to-make-learning-languages-feel-more-natural/",
-          "publishedDate": "2024-05-22T12:25:49.000Z",
-          "author": "Mike Butcher",
-          "highlight": "Praktika raises $35.5M to use AI avatars to make learning languages feel more natural | TechCrunch [...] # Praktika raises $35.5M to use AI avatars to make learning languages feel more natural [...] 5:25 AM PDT · May 22, 2024 [...] Most apps that help you learn languages have features where you select options or swipe away wrong answer cards — you’re more or less interacting with a machine. Language-learning app Praktika is adopting a different approach: It lets you create personalized AI-powered avatars to replica"
+          "title": "LingoPraxis: Language Exchange\n              4+",
+          "url": "https://apps.apple.com/ua/app/lingopraxis-language-exchange/id6446861184",
+          "publishedDate": "2023-07-26T10:34:51.000Z",
+          "author": null,
+          "highlight": "‎LingoPraxis: Language Exchange on the App Store [...] # LingoPraxis: Language Exchange4+ ## Learn Languages & Practice ## Artyom Avanesov ### Designed for iPhone * * Free * Offers In-App Purchases ## iPhone Screenshots [...] Unlock limitless language practicing with LingoPraxis! Boost fluency, connect with like-minded people, and explore cultures. Download now for the ultimate experience! [...] Language practices without limits. [...] Google Calendar, Google Meet, and Zoom Meetings integration Forget about long in"
         },
         {
-          "title": "Language Learning Revenue and Usage Statistics (2026) - Business of Apps",
-          "url": "https://www.businessofapps.com/data/language-learning-app-market/",
-          "publishedDate": "2021-11-02T12:48:13.000Z",
+          "title": "Building the future of language learning for over 5000 users worldwide with LangX - Appwrite",
+          "url": "https://appwrite.io/blog/post/customer-stories-langx",
+          "publishedDate": "2024-05-23T00:00:00.000Z",
           "author": null,
-          "highlight": "- Language learning apps generated $1.54 billion in 2025, a 18.8% year-on-year increase - Duolingo made the most revenue of all apps, reporting $1.03 billion in 2025 - Duolingo also had the most usage in 2025 by a large margin - Language learning apps were downloaded 327 million times in 2025 [...] Revenue in the language learning app sector reached $1.5 billion in 2025. Online services cover about 15% of the total income in the language learning industry."
+          "highlight": "Building the future of language learning for over 5000 users worldwide with LangX - Appwrite [...] Blog/ Building the future of language learning for over 5000 users worldwide with LangX [...] LangX is an open-source language exchange platform that allows users to learn new languages by interacting and chatting with users from different parts of the world. It allows you to: [...] Currently, LangX has been built using Ionic Angular, a cross-platform app framework that allows developers to create web and mobile apps "
         },
         {
           "title": "LangX | Practice Learn Succeed - Apps on Google Play",
@@ -127,18 +127,32 @@
           "highlight": "LangX | Practice Learn Succeed - Apps [...] We've created a free and 100% Open Source Alternative to Tandem app called LangX, which functions similarly to Tandem but still in beta phase, we update daily with a focus on language exchange and practice. Our community is growing so fast, i launched this app a month ago, and now we are more than 10 contributors actively, from design to digital marketing, from SEO, ASO to accessibility and we love testers as well!! Everyone does what they can do best! I'm really soo happ"
         },
         {
+          "title": "Meet Linguado",
+          "url": "https://overtonvc.medium.com/meet-linguado-82deb76cda39",
+          "publishedDate": "2022-04-28T17:53:53.000Z",
+          "author": "Overton Venture Capital",
+          "highlight": "A global, social community representing 250+ countries, nationalities, and languages *Linguado is a free mobile app that allows you to instantly link with native speakers of your choice of language, by proximity or worldwide*. [...] inguado**(**www.linguado.com**) [...] **Meet Linguado:**Linguado is the fastest growing language-obsessed community in the world. It’s a free mobile app that allows anyone to instantly link with native speakers of the language they’re learning (or just want to practice), by proximity or"
+        },
+        {
+          "title": "Praktika raises $35.5M to use AI avatars to make learning languages feel more natural | TechCrunch",
+          "url": "https://techcrunch.com/2024/05/22/praktika-raises-35-5m-to-use-ai-avatars-to-make-learning-languages-feel-more-natural/",
+          "publishedDate": "2024-05-22T12:25:49.000Z",
+          "author": "Mike Butcher",
+          "highlight": "Praktika raises $35.5M to use AI avatars to make learning languages feel more natural | TechCrunch [...] # Praktika raises $35.5M to use AI avatars to make learning languages feel more natural [...] 5:25 AM PDT · May 22, 2024 [...] Most apps that help you learn languages have features where you select options or swipe away wrong answer cards — you’re more or less interacting with a machine. Language-learning app Praktika is adopting a different approach: It lets you create personalized AI-powered avatars to replica"
+        },
+        {
           "title": "The best language learning in 2025",
           "url": "https://www.producthunt.com/categories/language-learning",
-          "publishedDate": "2026-05-22T00:00:00.000Z",
+          "publishedDate": "2026-06-04T06:22:40.101Z",
           "author": null,
           "highlight": "The best language learning in 2025 | Product Hunt [...] Product Hunt logo dark [...] 1. Home 2. Product categories 3. Platforms 4. Language Learning # The best language learning in 2025 **Tanka**—Tanka = Slack + Glean, built for fast-growing startups. PromotedProductivity •Messaging •Artificial Intelligence * Highest Rated * Trending * Recent Launches * Top Reviewed * Top Free [...] Duolingo [...] 1.### Duolingo [...] —The free, fun & effective way to learn a language [...] 4.7(1 [...] •Travel Echo [...] •View all "
         },
         {
-          "title": "200,000 users in one year – LingoLooper enters its next phase with new investors -",
-          "url": "https://scienceparkskovde.se/en/articles/200000-users-in-one-year-lingolooper-enters-its-next-phase-with-new-investors/",
-          "publishedDate": null,
+          "title": "Language Learning Revenue and Usage Statistics (2026) - Business of Apps",
+          "url": "https://www.businessofapps.com/data/language-learning-app-market/",
+          "publishedDate": "2021-11-02T12:48:13.000Z",
           "author": null,
-          "highlight": "200,000 users in one year – LingoLooper enters its next phase with new investors - [...] 200,000 users in one year – LingoLooper enters its next phase with new investors [...] The startup LingoLooper (formerly Lumi Labs), the company behind a language learning app often described as “The Sims with AI for language training”, has just closed its second investment round. The focus is now on the next exciting step in the company’s journey. [...] “With this investment, we can now accelerate our growth, continue developi"
+          "highlight": "- Language learning apps generated $1.54 billion in 2025, a 18.8% year-on-year increase - Duolingo made the most revenue of all apps, reporting $1.03 billion in 2025 - Duolingo also had the most usage in 2025 by a large margin - Language learning apps were downloaded 327 million times in 2025 [...] Revenue in the language learning app sector reached $1.5 billion in 2025. Online services cover about 15% of the total income in the language learning industry."
         },
         {
           "title": "Language Exchange App Market Size, Share | Global Research [2034]",
@@ -148,25 +162,11 @@
           "highlight": "Base Year: 2025 [...] The global Language Exchange App market size was valued at approximately USD 833.57 million in 2025 and is projected to reach USD 2240.11 million by 2034, growing at a compound annual growth rate (CAGR) of 11.61% from 2025 to 2034. [...] The Language Exchange App market is a mix of many players, each with unique tricks to draw users. Big names like Duolingo and HelloTalk lead with big user groups and cool learning tricks, like games and AI-made plans. Tandem and Babbel focus on talking with na"
         },
         {
-          "title": "Finally--A Language Exchange App That Actually Teaches You While You Chat",
-          "url": "https://www.youtube.com/watch?v=ro02g-iZLio",
-          "publishedDate": "2026-03-27T17:18:00.000Z",
-          "author": "Jon Knebel",
-          "highlight": "# Finally--A Language Exchange App That Actually Teaches You While You Chat [...] 10:1 [...] :00 [...] 07:00 [...] , Travel Vlog [...] In this video, I walk through Creolio's new chat feature — a smarter way to practice with your language exchange partner. [...] Here's what makes it different from just texting someone on WhatsApp or HelloTalk/Tandem: 💬 Word-for-word translations synced to your personal vocabulary profile — it knows what you already know and what you should learn next [...] 🔁 Reverse translation —"
-        },
-        {
-          "title": "Meet Linguado",
-          "url": "https://overtonvc.medium.com/meet-linguado-82deb76cda39",
-          "publishedDate": "2022-04-28T17:53:53.000Z",
-          "author": "Overton Venture Capital",
-          "highlight": "A global, social community representing 250+ countries, nationalities, and languages *Linguado is a free mobile app that allows you to instantly link with native speakers of your choice of language, by proximity or worldwide*. [...] inguado**(**www.linguado.com**) [...] **Meet Linguado:**Linguado is the fastest growing language-obsessed community in the world. It’s a free mobile app that allows anyone to instantly link with native speakers of the language they’re learning (or just want to practice), by proximity or"
-        },
-        {
-          "title": "Learning app Praktika announces seven new languages as Gen Z flocks to immersive platform",
-          "url": "https://www.einpresswire.com/article/812863098/learning-app-praktika-announces-seven-new-languages-as-gen-z-flocks-to-immersive-platform",
-          "publishedDate": "2025-05-15T11:16:21.000Z",
-          "author": "Amelia Bennett",
-          "highlight": "LONDON, UNITED KINGDOM, May 15, 2025 / EINPresswire.com/ -- Praktika – the world’s smartest language learning app built around personalised AI avatar tutors – is expanding its global reach with the launch of seven new languages. French, Japanese and Korean are available now, alongside existing courses in English and Spanish. Italian, German, French, Brazilian Portuguese, and European Portuguese will launch mid May. [...] The expansion comes as Praktika surpasses 14 million downloads, doubles its team size, opens a "
+          "title": "Apple's App Store facilitated $1.4 trn in developer billings, sales in 2025 | Company News - Business Standard",
+          "url": "https://www.business-standard.com/companies/news/apple-s-app-store-facilitated-1-4-trn-in-developer-billings-sales-in-2025-126060401176_1.html",
+          "publishedDate": "2026-06-04T14:39:01.000Z",
+          "author": "Business Standard",
+          "highlight": "## Apple said the study found that for more than 90 per cent of the billings and sales facilitated by the App Store ecosystem, developers did not pay any commission to Apple [...] Apple says its App Store ecosystem enabled $1.4 trillion in developer billings and sales in 2025, with AI-powered apps driving faster growth across categories. | Image: Bloomberg [...] Apple's App Store ecosystem facilitated over $1.4 trillion in developer billings and sales in 2025, according to a new study by economists at Analysis Grou"
         }
       ],
       "costDollars": {
@@ -182,7 +182,7 @@
       "query": "LingoPraxis official website App Store Google Play LinkedIn Instagram Telegram Product Hunt language exchange speaking club",
       "ok": true,
       "status": 200,
-      "requestId": "91e212922f74138c45865ff6eae82b00",
+      "requestId": "56af029d530b4b6d583d40bb43a29491",
       "results": [
         {
           "title": "LingoPraxis - English Speaking Club",
@@ -199,32 +199,32 @@
           "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and Colombia. [...] High schools, universities, libraries and businesses partner with Time2Talk to enhanc"
         },
         {
-          "title": "Tandem",
-          "url": "https://tandem.net/",
-          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "title": "HelloTalk",
+          "url": "https://hellotalk.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+3.9% YoY, +2 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Spain, Indonesia, United Kingdom, Canada, and France). Has $8.1M in total funding, with 4 prior funding rounds. [...] Tandem is a mobile language exchange and language learning app. | Tandem Logo | - | | --- | ---"
+          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The application is available for download on Android and Apple stores and can also be accessed via the web. | Logo used since 2016 | - | | --- | --- | | Trade name"
+        },
+        {
+          "title": "Languages Live Gesellschaft Lokalisierung mbH",
+          "url": "https://mylanguageexchange.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# Languages Live Gesellschaft Lokalisierung mbH [...] Languages Live Gesellschaft Lokalisierung mbH. Headquartered in Germany. [...] - Status: active - Ownership: Private - Aliases: languages live gesellschaft lokalisierung mbh, mylanguageexchange, language exchange community - Phone: (514) 448-0588 - SIC Codes: 82, 824 - NAICS Codes: 61, 611 [...] language learning community, practice, language exchange, learning environment, fun and friendship, language teacher"
         },
         {
           "title": "INT'L CAFE",
           "url": "https://intlcafe.io/",
           "publishedDate": "2026-04-29T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people (+50.0% YoY, +1 person), founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all levels to spend their social hours immersed in the languages of their choice."
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all levels to spend their social hours immersed in the languages of their choice. [...] - Industry: Techn"
         },
         {
-          "title": "Linguado",
-          "url": "https://linguado.com/",
-          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "title": "Lingopanda (previously PingoLearn)",
+          "url": "https://lingopanda.app/",
+          "publishedDate": "2026-05-23T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to translators, teachers, and students. Linguado employs 11 people (-25.0% YoY, -5 people), founded in 2"
-        },
-        {
-          "title": "LingoGalaxy",
-          "url": "https://lingogalaxy.com/",
-          "publishedDate": "2026-04-29T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "LingoGalaxy is a E-Learning Providers company. LingoGalaxy is an online language school for kids and teens that offers native teachers and full parental guidance. They have three study groups tailored to specific age ranges and attention spans, allowing them to implement the most suitable and engaging curriculum for each child. They aim to help children achieve native-like speaking skills and language fluency. LingoGalaxy employs 37 people. Headquartered in Thessaloniki, Greece, operates in 13 countries (including "
+          "highlight": "Lingopanda (previously PingoLearn) is a E-Learning Providers company. PingoLearn is an ai-powered English tutor on your smartphone that offers a range of learning tools and resources for practice speaking in different situations. They provide a voice chat, feedback, practice partner calls, and language audio books. PingoLearn aims to make learning English fun and stress-free. Lingopanda (previously PingoLearn) employs 16 people (+72.7% YoY, +8 people), founded in 2021. Headquartered in Bengaluru, Karnataka, India. "
         },
         {
           "title": "LingoLooper",
@@ -234,25 +234,25 @@
           "highlight": "LingoLooper is a Technology, Information and Internet company. LingoLooper is an immersive language learning app that allows users to acquire target language in the same way as native speakers acquire their own. It offers interactive conversations with AI avatars to help users achieve native-level fluency. LingoLooper employs 14 people (+200.0% YoY, +8 people), founded in 2022. Headquartered in göteborg, västra götaland county, Sweden, operates in 9 countries (including Denmark, Italy, France, United Kingdom, and T"
         },
         {
+          "title": "Linguado",
+          "url": "https://linguado.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to translators, teachers, and students. Linguado employs 11 people (-20.0% YoY, -4 people), founded in 2"
+        },
+        {
+          "title": "LingoGalaxy",
+          "url": "https://lingogalaxy.com/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoGalaxy is a E-Learning Providers company. LingoGalaxy is an online language school for kids and teens that offers native teachers and full parental guidance. They have three study groups tailored to specific age ranges and attention spans, allowing them to implement the most suitable and engaging curriculum for each child. They aim to help children achieve native-like speaking skills and language fluency. LingoGalaxy employs 37 people (+2.3% YoY, +1 person). Headquartered in Thessaloniki, Greece, operates in 1"
+        },
+        {
           "title": "LingoQuesto",
           "url": "https://lingoquesto.com/",
           "publishedDate": "2026-04-25T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "LingoQuesto is a Education company. LingoQuesto is a company that empowers language educators with a speech-based language practice. They help language educators improve their students' speaking skills through interactive and personalized conversations that simulate immersive learning experiences. LingoQuesto employs 7 people (+60.0% YoY, +3 people), founded in 2023. Headquartered in Singapore, Central Region, Singapore, with presence in Colombia, United States, and Germany. Has $225.0K in total funding, with 1 pri"
-        },
-        {
-          "title": "Linguapro.co",
-          "url": "https://linkedin.com/company/linguapro-co",
-          "publishedDate": "2025-02-04T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "# Linguapro.co [...] Linguapro.co is a Education company. Founded in 2019. Headquartered in Indonesia. [...] We provide English group classes with many different purposes, private class, proof-reading, TOEFL/IELTS preparation, and also English for specific purposes. [...] - Industry: Education - Type: Self-Employed - Founded Year: 2019 - Aliases: linguapro.co - LinkedIn: linkedin.com/company/linguapro-co - Linkedin Followers: 9 (Yearly: +200.0%)"
-        },
-        {
-          "title": "Ling",
-          "url": "https://ling-app.com/",
-          "publishedDate": "2026-04-25T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Ling is a Software Development company. Ling is a company that focuses on Asian and Eastern European languages, providing easy language learning. They offer simplified lessons that touch on all four language skills, including reading, writing, speaking, and listening. The company aims to make learning hard languages easier. Ling employs 58 people (+5.1% YoY, +4 people), founded in 2016. Headquartered in Chiang Mai, Chiang Mai, Thailand, operates in 20 countries (including Germany, Pakistan, Philippines, Serbia, and"
+          "highlight": "LingoQuesto is a Education company. LingoQuesto is a company that empowers language educators with a speech-based language practice. They help language educators improve their students' speaking skills through interactive and personalized conversations that simulate immersive learning experiences. LingoQuesto employs 7 people (+60.0% YoY, +3 people), founded in 2023. Headquartered in Singapore, Central Region, Singapore, with presence in Colombia, Germany, and United States. Has $225.0K in total funding, with 1 pri"
         }
       ],
       "costDollars": {

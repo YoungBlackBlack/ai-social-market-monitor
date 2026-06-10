@@ -1,0 +1,548 @@
+{
+  "generatedAt": "2026-06-08T09:12:50.692Z",
+  "objective": "Use Exa categories to judge app market/company/product capability, organize HelloTalk/Tandem-like social apps by growth/channel/function/evidence, and summarize near-two-year AI social/entertainment funding/news with IRL/offline-human emphasis.",
+  "statusSummary": {
+    "covered": 6,
+    "conservative": 1,
+    "total": 7
+  },
+  "strictCompletionVerdict": {
+    "status": "not-mathematically-complete",
+    "presentationReady": true,
+    "reason": "The current evidence set satisfies the presentation deliverable and has no blocking candidate or pending alert-review rows, but the original word 'all' cannot be proven mathematically for a live consumer-social market. The goal remains active through monitor and full rebuild workflows.",
+    "blockingGapRows": 0,
+    "monitoredGapRows": 29,
+    "latestAlertPendingRows": 0,
+    "recentSignalPendingRows": 0,
+    "conditionsForFutureCompletion": [
+      "No blocking product-candidate rows.",
+      "No pending latest-alert or recent-signal review rows.",
+      "Fresh monitor run reviewed.",
+      "Conservative boundary continues to disclose that coverage is broad and monitored, not mathematically exhaustive."
+    ]
+  },
+  "counts": {
+    "exaSearches": 60,
+    "exaResults": 646,
+    "exaCategoryEvidenceRows": 6,
+    "sourceLinkageRows": 746,
+    "sourceLinkageReviewQueue": 123,
+    "coverageGapGroups": 55,
+    "coverageGapRows": 123,
+    "highPriorityCoverageGaps": 18,
+    "coverageGapsDeepDiveReviewed": 31,
+    "coverageGapsUnresolvedAfterDeepDive": 89,
+    "goalReadinessStatus": "ready-with-monitoring-boundary",
+    "goalReadinessBlockingRows": 0,
+    "goalReadinessMonitoredRows": 29,
+    "goalReadinessBackgroundRows": 60,
+    "candidateDeepDiveCandidates": 12,
+    "candidateDeepDiveResults": 144,
+    "productCards": 42,
+    "productCapabilityRows": 42,
+    "growthChannelAuditRows": 42,
+    "strongGrowthSignals": 21,
+    "acquisitionChannelRows": 42,
+    "acquisitionHighConfidenceRows": 8,
+    "acquisitionPaidConversionRows": 6,
+    "acquisitionCityOpsRows": 18,
+    "paidAcquisitionEvidenceRows": 42,
+    "paidAcquisitionExplicitRows": 0,
+    "paidAcquisitionDirectionalRows": 37,
+    "paidAcquisitionNoEvidenceRows": 5,
+    "paidAcquisitionMonitorSignalRows": 7,
+    "paidAcquisitionMonitorNewRows": 0,
+    "functionalDifferenceAuditRows": 42,
+    "functionalMechanisms": 8,
+    "officialSocialCoverageAuditRows": 42,
+    "officialSocialCompleteRows": 9,
+    "officialGapDeepDiveSearches": 17,
+    "officialGapDeepDiveResults": 136,
+    "companyBackgroundSignals": 54,
+    "companyBackgroundLinkedSignals": 44,
+    "companyBackgroundDeepDiveSearches": 38,
+    "companyBackgroundDeepDiveResults": 304,
+    "companyBackgroundCoverageRows": 42,
+    "marketDecisionEvidenceRows": 14,
+    "marketDecisionResearchRows": 4,
+    "marketDecisionFinancialRows": 10,
+    "languageExchangeAdjacentProducts": 16,
+    "languageLongTailReview": 12,
+    "languageCoverageUnique": 19,
+    "languageCoverageWatchlist": 0,
+    "languageSimilarityRows": 19,
+    "highlySimilarLanguageProducts": 3,
+    "languageOfficialEvidenceRows": 16,
+    "languageOfficialEvidenceReadyRows": 3,
+    "languageOfficialSocialDeepDiveSearches": 14,
+    "languageOfficialSocialDeepDiveResults": 112,
+    "languageGrowthChannelDeepDiveSearches": 12,
+    "languageGrowthChannelDeepDiveResults": 96,
+    "languageGrowthChannelDeepDiveStrongRows": 3,
+    "languageGrowthChannelDeepDiveUsableRows": 9,
+    "irlProducts": 14,
+    "irlCoverageUnique": 29,
+    "irlCoverageMonitor": 11,
+    "irlOfflineEvidenceRows": 29,
+    "irlOfflineEvidenceStrongRows": 9,
+    "fundingTimelineEvents": 25,
+    "combinedFundingNewsReview": 38,
+    "uniqueFundingNewsEvents": 35,
+    "duplicateFundingNewsRows": 3,
+    "outOfWindowFundingNewsEvents": 0,
+    "fundingExactWindowStart": "2024-06-02",
+    "fundingExactWindowEnd": "2026-06-02",
+    "fundingEventAuditRows": 38,
+    "fundingEventAuditIrlRows": 14,
+    "fundingUpgradeRows": 13,
+    "fundingUpgradeRetainedCandidates": 10,
+    "fundingUpgradeDuplicateEvidenceRows": 3,
+    "fundingProductRollupRows": 33,
+    "fundingProductRollupIrlProducts": 14,
+    "fundingProductRollupExplicitUsdM": 330.6,
+    "fundingDiscoveryCandidateRows": 31,
+    "fundingDiscoveryCandidatePendingRows": 0,
+    "candidatePromotionQueueRows": 0,
+    "candidatePromotionQueueHighPriorityRows": 0,
+    "supplementalFundingNews": 13,
+    "irlFundingEvents": 9,
+    "monitorLanes": 9,
+    "monitorRecentSignals": 33,
+    "monitorNewAlerts": 0,
+    "latestAlertReview": 79,
+    "latestAlertReviewPendingRows": 0,
+    "recentSignalReview": 33,
+    "monitorRecentReviewPendingRows": 0,
+    "monitorLaneRouting": 6,
+    "monitorHistoryRuns": 30,
+    "objectiveEvidenceRows": 7
+  },
+  "verificationCommands": [
+    "node scripts/validate-brief.mjs",
+    "node scripts/validate-frontend.mjs",
+    "node scripts/validate-deliverable.mjs",
+    "node scripts/snapshot-current.mjs"
+  ],
+  "artifacts": {
+    "webpage": "index.html",
+    "featureVersionLogMarkdown": "功能与版本记录.md",
+    "deliveryNoteMarkdown": "交付说明.md",
+    "standaloneHtml": "exports/exa-ai-social-report.html",
+    "sqliteDatabase": "exports/exa-social-research.sqlite",
+    "sqliteDatabaseGuideMarkdown": "exports/sqlite-database-guide.md",
+    "currentStateMarkdown": "exports/current-state.md",
+    "currentStateJson": "exports/current-state.json",
+    "latestMonitorRunMarkdown": "exports/latest-monitor-run.md",
+    "latestMonitorRunJson": "exports/latest-monitor-run.json",
+    "exaCategoryCoverageGuideMarkdown": "exports/exa-category-coverage-guide.md",
+    "automationAuditMarkdown": "exports/automation-audit.md",
+    "demoChecklistMarkdown": "exports/demo-checklist.md",
+    "brief": "data/brief.json",
+    "rawExaResults": "data/exa-results.json",
+    "languageGrowthChannelDeepDiveRaw": "data/exa-language-growth-channel-deep-dive.json",
+    "languageOfficialSocialDeepDiveRaw": "data/exa-language-official-social-deep-dive.json",
+    "monitor": "data/monitor.json",
+    "monitorHistory": "data/monitor-history.json",
+    "monitorLedger": "data/monitor-ledger.json",
+    "monitorDigest": "data/monitor-digest.json",
+    "objectiveEvidenceMapCsv": "exports/objective-evidence-map.csv",
+    "goalReadinessCsv": "exports/goal-readiness.csv",
+    "competitiveMatrixCsv": "exports/competitive-matrix.csv",
+    "sourceCoverageCsv": "exports/source-coverage.csv",
+    "exaCategoryEvidenceAuditCsv": "exports/exa-category-evidence-audit.csv",
+    "sourceLinkageAuditCsv": "exports/source-linkage-audit.csv",
+    "coverageGapRegisterCsv": "exports/coverage-gap-register.csv",
+    "candidateDeepDiveCsv": "exports/candidate-deep-dive.csv",
+    "executiveBriefMarkdown": "exports/executive-brief.md",
+    "productCapabilityScoreCsv": "exports/product-capability-score.csv",
+    "growthChannelAuditCsv": "exports/growth-channel-audit.csv",
+    "acquisitionChannelMapCsv": "exports/acquisition-channel-map.csv",
+    "paidAcquisitionEvidenceAuditCsv": "exports/paid-acquisition-evidence-audit.csv",
+    "functionalDifferenceAuditCsv": "exports/functional-difference-audit.csv",
+    "officialSocialCoverageAuditCsv": "exports/official-social-coverage-audit.csv",
+    "officialGapDeepDiveCsv": "exports/official-gap-deep-dive.csv",
+    "companyBackgroundReviewCsv": "exports/company-background-review.csv",
+    "companyBackgroundDeepDiveCsv": "exports/company-background-deep-dive.csv",
+    "companyBackgroundCoverageAuditCsv": "exports/company-background-coverage-audit.csv",
+    "marketDecisionEvidenceMapCsv": "exports/market-decision-evidence-map.csv",
+    "fundingTimelineCsv": "exports/funding-timeline.csv",
+    "fundingNewsReviewCsv": "exports/funding-news-review.csv",
+    "fundingNewsDedupAuditCsv": "exports/funding-news-dedup-audit.csv",
+    "fundingEventAuditCsv": "exports/funding-event-audit.csv",
+    "fundingUpgradeMapCsv": "exports/funding-upgrade-map.csv",
+    "fundingProductRollupCsv": "exports/funding-product-rollup.csv",
+    "fundingDiscoveryCandidatesCsv": "exports/funding-discovery-candidates.csv",
+    "candidatePromotionQueueCsv": "exports/candidate-promotion-queue.csv",
+    "latestAlertReviewCsv": "exports/latest-alert-review.csv",
+    "monitorRecentReviewCsv": "exports/monitor-recent-review.csv",
+    "monitorLaneRoutingCsv": "exports/monitor-lane-routing.csv",
+    "monitorRecentSignalsCsv": "exports/monitor-recent-signals.csv",
+    "discoveryCandidatesCsv": "exports/discovery-candidates.csv",
+    "languageLongTailReviewCsv": "exports/language-long-tail-review.csv",
+    "languageCoverageAuditCsv": "exports/language-coverage-audit.csv",
+    "languageSimilarityAuditCsv": "exports/language-similarity-audit.csv",
+    "languageOfficialEvidenceMapCsv": "exports/language-official-evidence-map.csv",
+    "languageGrowthChannelDeepDiveCsv": "exports/language-growth-channel-deep-dive.csv",
+    "languageOfficialSocialDeepDiveCsv": "exports/language-official-social-deep-dive.csv",
+    "irlCoverageAuditCsv": "exports/irl-coverage-audit.csv",
+    "irlOfflineEvidenceMapCsv": "exports/irl-offline-evidence-map.csv",
+    "supplementalFundingNewsCsv": "exports/supplemental-funding-news.csv",
+    "browserQaReportMarkdown": "exports/browser-qa-report.md",
+    "completionAuditMarkdown": "exports/completion-audit.md",
+    "completionManifest": "exports/completion-manifest.json",
+    "originalObjectiveAuditMarkdown": "exports/original-objective-audit.md",
+    "originalObjectiveAuditCsv": "exports/original-objective-audit.csv",
+    "originalObjectiveAuditJson": "exports/original-objective-audit.json"
+  },
+  "objectiveEvidenceMap": [
+    {
+      "id": "exa-categories",
+      "requirement": "用 Exa company / people / research paper / news / financial report 判断市场、公司背景和产品能力",
+      "status": "已落库",
+      "evidence": "60 个 Exa 查询、646 条原始结果；category evidence audit 覆盖 6 类 Exa category，并把每类连接到下游判断和导出附件。",
+      "views": [
+        "#evidence",
+        "#playbook"
+      ],
+      "dataFiles": [
+        "data/exa-results.json",
+        "data/exa-social-profiles.json",
+        "data/exa-synthesis.json",
+        "data/brief.json"
+      ],
+      "exportFiles": [
+        "exports/source-coverage.csv",
+        "exports/exa-category-evidence-audit.csv",
+        "exports/source-linkage-audit.csv",
+        "exports/product-capability-score.csv",
+        "exports/company-background-review.csv",
+        "exports/company-background-coverage-audit.csv",
+        "exports/market-decision-evidence-map.csv"
+      ],
+      "validators": [
+        "validate-brief",
+        "validate-frontend"
+      ],
+      "boundary": "按 Exa 当前返回结果和官方/社媒补证整理；未关联结果进入 source linkage review queue。"
+    },
+    {
+      "id": "language-products",
+      "requirement": "找 HelloTalk / Tandem 类似社交 app，并整理增长信号、渠道、功能差异、官网/社媒证据",
+      "status": "已落库",
+      "evidence": "42 个产品进入主矩阵；语言相似度审计覆盖 19 个 HelloTalk/Tandem 相邻条目，其中高度相似 3 个、相邻变体 10 个；语言官方证据地图覆盖 16 个主表语言产品；语言增长/渠道 targeted deep-dive 新增 12 组 Exa 查询、96 条结果。",
+      "views": [
+        "#matrix",
+        "#evidence",
+        "#playbook"
+      ],
+      "dataFiles": [
+        "data/brief.json",
+        "data/exa-discovery-scan.json",
+        "data/exa-candidate-deep-dive.json",
+        "data/exa-language-growth-channel-deep-dive.json"
+      ],
+      "exportFiles": [
+        "exports/competitive-matrix.csv",
+        "exports/language-similarity-audit.csv",
+        "exports/language-official-evidence-map.csv",
+        "exports/language-growth-channel-deep-dive.csv",
+        "exports/growth-channel-audit.csv",
+        "exports/acquisition-channel-map.csv",
+        "exports/paid-acquisition-evidence-audit.csv",
+        "exports/functional-difference-audit.csv",
+        "exports/official-social-coverage-audit.csv",
+        "exports/language-coverage-audit.csv",
+        "exports/language-long-tail-review.csv",
+        "exports/candidate-deep-dive.csv"
+      ],
+      "validators": [
+        "validate-brief",
+        "validate-deliverable"
+      ],
+      "boundary": "长尾语言交换结果区分 core、watchlist、boundary，避免把弱相关产品强行并入主表。"
+    },
+    {
+      "id": "funding-news",
+      "requirement": "统计近两年 AI 社交、AI 泛娱乐相关产品融资和新闻",
+      "status": "已落库",
+      "evidence": "2024-06-02 - 2026-06-02 精确窗口，对应月份窗口 2024.06 - 2026.06；主时间线 25 条，补充候选 13 条；事件级审计 38 行，去重后 35 个唯一事件，其中 IRL/线下真人相关 14 个；产品聚合 33 行，其中 IRL 产品 14 个；补充候选升级映射 13 行，保留候选 10 行、重复佐证 3 行。",
+      "views": [
+        "#funding",
+        "#playbook"
+      ],
+      "dataFiles": [
+        "data/brief.json",
+        "data/exa-discovery-scan.json"
+      ],
+      "exportFiles": [
+        "exports/funding-timeline.csv",
+        "exports/funding-news-review.csv",
+        "exports/funding-news-dedup-audit.csv",
+        "exports/funding-event-audit.csv",
+        "exports/funding-upgrade-map.csv",
+        "exports/funding-product-rollup.csv",
+        "exports/supplemental-funding-news.csv"
+      ],
+      "validators": [
+        "validate-brief",
+        "validate-deliverable"
+      ],
+      "boundary": "美元融资总额只统计金额明确的主时间线事件；补充候选进入复核表但不直接混入主结论。"
+    },
+    {
+      "id": "irl-focus",
+      "requirement": "特别关注包含线下真人社交的产品",
+      "status": "已落库",
+      "evidence": "IRL 覆盖审计 29 个唯一线下真人/IRL 条目；线下真人证据地图 29 行，其中融资/新闻链接 22 行、monitor 近窗链接 14 行、强证据 9 行；主时间线 IRL 事件 9 条。",
+      "views": [
+        "#products",
+        "#funding",
+        "#monitor",
+        "#evidence"
+      ],
+      "dataFiles": [
+        "data/brief.json",
+        "data/monitor.json"
+      ],
+      "exportFiles": [
+        "exports/irl-coverage-audit.csv",
+        "exports/irl-offline-evidence-map.csv",
+        "exports/funding-news-review.csv",
+        "exports/monitor-lane-routing.csv"
+      ],
+      "validators": [
+        "validate-brief",
+        "validate-frontend"
+      ],
+      "boundary": "把 dating、events、travel、local activity 等真人线下相邻样本分层，避免只看 AI companion。"
+    },
+    {
+      "id": "monitor",
+      "requirement": "用 monitor 持续监控新的动向和内容",
+      "status": "已落库",
+      "evidence": "当前 9 条 monitor lane，近窗高相关信号 33 条，最新新增 0 条，历史运行 30 次。",
+      "views": [
+        "#monitor",
+        "#evidence",
+        "#playbook"
+      ],
+      "dataFiles": [
+        "data/monitor.json",
+        "data/monitor-history.json",
+        "data/monitor-ledger.json",
+        "data/monitor-digest.json"
+      ],
+      "exportFiles": [
+        "exports/latest-alert-review.csv",
+        "exports/monitor-recent-review.csv",
+        "exports/monitor-lane-routing.csv",
+        "exports/monitor-recent-signals.csv"
+      ],
+      "validators": [
+        "validate-brief",
+        "validate-deliverable"
+      ],
+      "boundary": "当前 Exa Websets Monitor API 权限不可用，使用 Exa Search API + Codex automation fallback，并在页面披露。"
+    },
+    {
+      "id": "friendly-web",
+      "requirement": "前端网页友好展示，而不是把所有内容堆在首页或只给表格",
+      "status": "已落库",
+      "evidence": "页面拆成 home、matrix、products、funding、monitor、evidence、playbook 多视图；首页只展示结论和优先级，细节分路由承接。",
+      "views": [
+        "#home",
+        "#matrix",
+        "#products",
+        "#funding",
+        "#monitor",
+        "#evidence",
+        "#playbook"
+      ],
+      "dataFiles": [
+        "index.html",
+        "styles.css",
+        "app.js",
+        "data/brief.json"
+      ],
+      "exportFiles": [
+        "exports/exa-ai-social-report.html",
+        "exports/executive-brief.md"
+      ],
+      "validators": [
+        "validate-frontend",
+        "validate-deliverable"
+      ],
+      "boundary": "保留真实 comparison table 和 CSV 导出，但展示主体验是网页视图。"
+    },
+    {
+      "id": "all-boundary",
+      "requirement": "“所有”相关产品的覆盖边界与后续补证",
+      "status": "保守落库",
+      "evidence": "source linkage audit 覆盖 746 条原始结果，已关联 623 条，coverage gap register 保留 123 条复核缺口，其中高优先级 18 条；candidate deep dive 12 个候选、144 条结果。",
+      "views": [
+        "#evidence",
+        "#playbook"
+      ],
+      "dataFiles": [
+        "data/brief.json",
+        "data/exa-discovery-scan.json",
+        "data/exa-candidate-deep-dive.json"
+      ],
+      "exportFiles": [
+        "exports/source-linkage-audit.csv",
+        "exports/coverage-gap-register.csv",
+        "exports/candidate-deep-dive.csv",
+        "exports/completion-audit.md",
+        "exports/completion-manifest.json"
+      ],
+      "validators": [
+        "validate-brief",
+        "validate-deliverable"
+      ],
+      "boundary": "消费社交产品持续变化，因此只声明 broad monitored coverage，不声明数学穷尽。"
+    }
+  ],
+  "requirements": [
+    {
+      "requirement": "使用 Exa company / people / research paper / news / financial report 等类别做市场、公司背景和产品能力判断",
+      "status": "已覆盖",
+      "evidence": "60 个 Exa 查询、646 条原始结果；主矩阵包含 company、news、research paper、financial report、people，另有 official/social profile pass。",
+      "proof": [
+        "Exa query matrix",
+        "coverage grid",
+        "requestId run log"
+      ],
+      "artifactKeys": [
+        "brief",
+        "rawExaResults",
+        "sourceCoverageCsv",
+        "productCapabilityScoreCsv",
+        "companyBackgroundReviewCsv",
+        "marketDecisionEvidenceMapCsv",
+        "completionManifest"
+      ]
+    },
+    {
+      "requirement": "找 HelloTalk / Tandem 类似社交 app，并按增长信号、渠道、功能差异、官网/社媒证据整理成表",
+      "status": "已覆盖",
+      "evidence": "竞品主表 42 行、9 列；语言交换相邻产品 16 个；表格包含增长信号、渠道、功能差异、证据、官方/社媒、证据等级，并支持搜索/筛选/CSV 导出。",
+      "proof": [
+        "competitive matrix",
+        "official/social evidence",
+        "CSV export"
+      ],
+      "artifactKeys": [
+        "competitiveMatrixCsv",
+        "growthChannelAuditCsv",
+        "acquisitionChannelMapCsv",
+        "languageLongTailReviewCsv",
+        "languageOfficialEvidenceMapCsv",
+        "languageGrowthChannelDeepDiveCsv",
+        "languageGrowthChannelDeepDiveRaw",
+        "languageOfficialSocialDeepDiveCsv",
+        "languageOfficialSocialDeepDiveRaw",
+        "candidatePromotionQueueCsv",
+        "standaloneHtml",
+        "brief"
+      ]
+    },
+    {
+      "requirement": "统计近两年 AI 社交、泛娱乐相关产品融资和新闻",
+      "status": "已覆盖",
+      "evidence": "2024-06-02 - 2026-06-02 对应月份窗口 2024.06 - 2026.06；主时间线 25 条，另有 discovery supplemental 13 条候选融资/新闻；funding summary 按年份、赛道、IRL 占比、明确美元融资口径统计，产品聚合覆盖 33 个产品/公司。",
+      "proof": [
+        "funding summary",
+        "funding timeline",
+        "supplemental funding/news",
+        "product funding rollup",
+        "timeline CSV export"
+      ],
+      "artifactKeys": [
+        "fundingTimelineCsv",
+        "fundingNewsReviewCsv",
+        "fundingProductRollupCsv",
+        "fundingDiscoveryCandidatesCsv",
+        "candidatePromotionQueueCsv",
+        "supplementalFundingNewsCsv",
+        "brief"
+      ]
+    },
+    {
+      "requirement": "特别关注包含线下真人社交的产品",
+      "status": "已覆盖",
+      "evidence": "IRL 主表 14 个产品/边界样本；IRL 相关融资/新闻 9 条，占时间线 36%；线下真人筛选和机会排序均独立展示。",
+      "proof": [
+        "IRL showcase",
+        "matrix filter",
+        "opportunity ranking",
+        "funding summary"
+      ],
+      "artifactKeys": [
+        "competitiveMatrixCsv",
+        "fundingTimelineCsv",
+        "monitorRecentReviewCsv",
+        "brief"
+      ]
+    },
+    {
+      "requirement": "用 monitor 监控新的动向和内容",
+      "status": "已覆盖",
+      "evidence": "Codex automation 每日 09:00 运行 Exa monitor；monitor 当前 9 条 lane，历史运行 30 次，台账保留 82 条已发现 URL，最新新增 0 条。",
+      "proof": [
+        "daily monitor section",
+        "monitor history",
+        "alert ledger",
+        "latest alert review"
+      ],
+      "artifactKeys": [
+        "monitor",
+        "monitorHistory",
+        "monitorLedger",
+        "monitorDigest",
+        "monitorRecentReviewCsv"
+      ]
+    },
+    {
+      "requirement": "前端网页友好展示，而不是表格文件",
+      "status": "已覆盖",
+      "evidence": "本地网页包含结论 shortlist、渠道观察、机会排序、筛选矩阵、融资统计、monitor、官方/社媒证据、query matrix、候选升级记录和 completion audit。",
+      "proof": [
+        "localhost page",
+        "frontend structure validator",
+        "browser validation"
+      ],
+      "artifactKeys": [
+        "webpage",
+        "standaloneHtml"
+      ]
+    },
+    {
+      "requirement": "“所有”相关产品的穷尽性",
+      "status": "保守说明",
+      "evidence": "消费社交产品持续变化，页面用 broad evidence pass + watchlist + monitor 逼近覆盖，但不声称数学穷尽；另有 10 组盲区扫描、100 条补充结果覆盖 AI friend/wearable、AI-native social、AI dating、companion 长尾、IRL 长尾和语言交换长尾。",
+      "proof": [
+        "coverage audit",
+        "discovery scan",
+        "candidate review",
+        "monitor policy"
+      ],
+      "artifactKeys": [
+        "brief",
+        "discoveryCandidatesCsv",
+        "languageLongTailReviewCsv",
+        "monitorRecentReviewCsv"
+      ]
+    }
+  ],
+  "conservativeBoundary": {
+    "status": "broad monitored coverage, not mathematical exhaustiveness",
+    "note": "Exa evidence pass across company, news, research paper, financial report, and people categories, now with added AI dating, group travel, local activity, language exchange, and China export专项 queries. It is broad coverage, not a mathematical guarantee of every product in market.",
+    "mitigation": [
+      "Broad Exa category query matrix",
+      "Discovery blind-spot scan",
+      "Daily monitor fallback",
+      "Recent signal review queue",
+      "Weekly full rebuild automation"
+    ]
+  }
+}

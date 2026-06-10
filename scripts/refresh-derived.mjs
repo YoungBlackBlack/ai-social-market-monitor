@@ -443,6 +443,29 @@ function discoveryFundingCandidateReview() {
   const lowConfidenceMarketUrls = new Set([
     "https://aiinsightsnews.net/how-ai-companion-apps-make-money/",
   ]);
+  const resolvedStatusByUrl = new Map([
+    [
+      "https://techcrunch.com/2024/07/29/former-squad-and-twitter-execs-raise-7m-to-build-a-hardware-ai-assistant/",
+      {
+        handlingStatus: "边界留档",
+        nextAction: "保留为 AI wearable companion 的边界融资样本，不进入核心 AI 社交/IRL 融资升级队列。",
+      },
+    ],
+    [
+      "https://www.globaldatinginsights.com/featured/ai-dating-app-sitch-raises-2m-launches-matchmaker-chatbot/",
+      {
+        handlingStatus: "已覆盖/重复佐证",
+        nextAction: "Sitch 已作为 AI dating / human matchmaking 的补充融资/发布信号留档；该来源保留为重复佐证，不再进入候选升级队列。",
+      },
+    ],
+    [
+      "https://www.m13.co/article/sitch-launches-ai-matchmaking-app-to-reinvent-modern-dating",
+      {
+        handlingStatus: "已覆盖/重复佐证",
+        nextAction: "Sitch 已作为 AI dating / human matchmaking 的补充融资/发布信号留档；该来源保留为重复佐证，不再进入候选升级队列。",
+      },
+    ],
+  ]);
   const amountPattern = /(\$\s?[\d.]+\s?(?:m|million|b|billion)|€\s?[\d.]+\s?(?:m|million)|¥\s?[\d.]+|[\d.]+\s?(?:million|m)\s+(?:users|downloads|daily users|total users)|series\s+[abc]|seed|pre-seed|raises?|funding|acquires?|acquisition|consumer spending|revenue)/i;
   const newsScans = discoveryScans.filter((scan) => scan.category === "news");
   const rows = newsScans.flatMap((scan) =>
@@ -471,13 +494,16 @@ function discoveryFundingCandidateReview() {
             : scan.label;
       const marketBackground = integratedMarketUrls.has(result.url);
       const lowConfidenceMarket = lowConfidenceMarketUrls.has(result.url);
-      const handlingStatus = matchedKnown
-        ? "已覆盖/重复佐证"
-        : marketBackground
-          ? "已并入市场判断"
-          : lowConfidenceMarket
-            ? "低可信市场口径留档"
-            : "待复核候选";
+      const override = resolvedStatusByUrl.get(result.url);
+      const handlingStatus = override
+        ? override.handlingStatus
+        : matchedKnown
+          ? "已覆盖/重复佐证"
+          : marketBackground
+            ? "已并入市场判断"
+            : lowConfidenceMarket
+              ? "低可信市场口径留档"
+              : "待复核候选";
       return {
         scanId: scan.id,
         scanLabel: scan.label,
@@ -487,13 +513,16 @@ function discoveryFundingCandidateReview() {
         amountMention,
         handlingStatus,
         nextAction:
-          handlingStatus === "已覆盖/重复佐证"
+          override?.nextAction ??
+          (handlingStatus === "已覆盖/重复佐证"
             ? "保留为现有主时间线或补充候选的佐证来源。"
             : handlingStatus === "已并入市场判断"
               ? "作为 financial/market 背景口径保留，不计入产品融资总额。"
               : handlingStatus === "低可信市场口径留档"
                 ? "仅作为低可信市场/商业化参考留档；不进入候选升级队列，不计入融资总额。"
-                : "复核公司/产品边界、金额口径和是否应升级进补充融资新闻或主时间线。",
+                : handlingStatus === "边界留档"
+                  ? "保留为边界融资样本，不进入核心升级队列。"
+                  : "复核公司/产品边界、金额口径和是否应升级进补充融资新闻或主时间线。"),
         title: result.title,
         url: result.url,
         highlight: result.highlight,
@@ -502,7 +531,7 @@ function discoveryFundingCandidateReview() {
   );
   const deduped = [...new Map(rows.map((row) => [row.url, row])).values()];
   return deduped.sort((a, b) => {
-    const statusOrder = { "待复核候选": 0, "已并入市场判断": 1, "低可信市场口径留档": 2, "已覆盖/重复佐证": 3 };
+    const statusOrder = { "待复核候选": 0, "边界留档": 1, "已并入市场判断": 2, "低可信市场口径留档": 3, "已覆盖/重复佐证": 4 };
     return (statusOrder[a.handlingStatus] ?? 9) - (statusOrder[b.handlingStatus] ?? 9) || b.publishedMonth.localeCompare(a.publishedMonth) || a.candidateName.localeCompare(b.candidateName);
   });
 }
@@ -2965,11 +2994,18 @@ function monitorSignalResolution(item) {
         "Travel and Tour World 是对 WeRoad 美国扩张与旅游叙事的二次放大，近窗里已保留官方博客和 TechCrunch 关于 WeRoad 融资及入美扩张的更强证据；不重复升级主表或时间线。",
     };
   }
-  if (/partiful is turning party invites into a payments business|startupfortune.*partiful-is-turning-party-invites-into-a-payments-business|built-in ticketing/.test(text)) {
+  if (/partiful launches ticketing|partiful is turning party invites into a payments business|startupfortune.*partiful-is-turning-party-invites-into-a-payments-business|built-in ticketing/.test(text)) {
     return {
       decision: "已覆盖/继续观察",
       reason:
         "Partiful 已在 IRL 主表、官方覆盖和边界融资样本中保留；这次内置票务上线说明其从 invite graph 向线下活动交易延伸，属于值得继续追踪的商业化更新，但不需要重复新增产品卡或融资事件。",
+    };
+  }
+  if (/bumble set to launch plans|bumble is launching a new paid group-dating feature|paid irl date feature|group-dating feature called plans/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Bumble Plans 是头部 dating app 把付费线下组局做成产品化入口的 IRL 商业化信号，说明约会平台正在把线上匹配延伸到线下履约；但 Bumble 已在财报/AI dating 边界里覆盖，这次更适合作为 IRL 需求与 monetization 观察，不重复升级主表或融资时间线。",
     };
   }
   if (/promova is quietly becoming the most addictive ai language app|undercode news.*promova/.test(text)) {
@@ -2986,11 +3022,25 @@ function monitorSignalResolution(item) {
         "Hark 的 7 亿美元 Series A 指向通用 AI interface / agent 平台级叙事，融资规模大但不属于 consumer AI social、AI companion 或 IRL 社交产品；保留为资本市场背景，不进入核心主线。",
     };
   }
-  if (/sekai raises \$20m series a|sekai raises \$20 million|15 million ai mini apps|sekai-raises-20m-series-a-ai-apps|axios.*sekai-mini-app-startup-funding/.test(text)) {
+  if (/sekai raises \$20m series a|sekai raises \$20 million|sekai raises \$26 million|social platform for ai-created mini-apps|15 million ai mini apps|sekai-raises-20m-series-a-ai-apps|axios.*sekai-mini-app-startup-funding|pulse2.*sekai-raises-26-million/.test(text)) {
     return {
       decision: "候选升级",
       reason:
-        "Sekai 的 2000 万美元融资和 1500 万 AI mini apps 使用量，说明其具备 AI entertainment / creation 社区潜力；下一步应补官方产品形态、社区互动机制和 consumer social 证据，再决定是否升级进主表或融资时间线。",
+        "Sekai 连续出现 2000 万/2600 万美元融资与 AI mini-app social platform 叙事，说明其具备 AI entertainment / creation 社区潜力；但轮次口径和融资金额在不同媒体间仍有差异，先保留为候选升级，后续补官方产品形态、社区互动机制和 round terms，再决定是否升级进主表或融资时间线。",
+      };
+  }
+  if (/town'?s deeply personal ai assistants|town builds ai assistants|forerunner.*town|andreessen horowitz.*town/.test(text)) {
+    return {
+      decision: "候选升级",
+      reason:
+        "Town 的 5500 万美元融资和具人格化 avatar 的 AI assistants 与 AI companion 主线相邻，具备进入融资/产品深挖的价值；但当前更像 personal AI assistant/company thesis 信号，仍需补官方产品形态、社交互动机制和 consumer 分发证据，再决定是否升级进主表或融资时间线。",
+    };
+  }
+  if (/town raises \$55m to expand personalized ai assistant|ventureburn\.com\/town-raises-55m-to-expand-personalized-ai-assistant/.test(text)) {
+    return {
+      decision: "候选升级",
+      reason:
+        "Town 的 5500 万美元融资与 personalized AI assistant 叙事和 AI companion 主线相邻，说明资本继续押注具备人格化、长期记忆和 workflow integration 的 assistant 产品；但当前仍更像 personal AI assistant/company thesis 信号，需补官方产品形态、社交互动机制和 consumer 分发证据后再决定是否升级进主表或融资时间线。",
     };
   }
   if (/board, the new game startup from mirror founder brynn putnam|techcrunch.*board-the-new-game-startup|board.*raises \$20m/.test(text)) {
@@ -3026,6 +3076,160 @@ function monitorSignalResolution(item) {
       decision: "边界观察/重复佐证",
       reason:
         "Teamily AI 进入新加坡是 Personal AI Agent OS / AI+human social network 的发布与转载信号；已有 PR Newswire 原始来源在 monitor 台账中，本次 Siam News Network 不构成新融资、独立 consumer social app 升级证据或线下真人社交样本，继续保留为 AI social 边界观察。",
+    };
+  }
+  if (/breeze sees growing but gradual success after london expansion|breeze, a dutch dating app that launched in europe in 2020 and expanded to london in 2025/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Breeze 已在 IRL 主表、官方覆盖、公司背景和近两年 IRL 边界事件中保留；这篇后续报道主要补充伦敦扩张后的履约和增长叙事，适合作为已覆盖样本继续观察，不重复新增产品卡或融资事件。",
+    };
+  }
+  if (/minimax reports big growth as it plans mainland china listing|fast-growing international business and new model as it eyes new listing|minimax is on the charge after it revealed major growth/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "MiniMax / Talkie 已在中国 AI 社交出海与 AI companion 主线中保留，既有 SCMP 等证据已覆盖其海外增长与 consumer app 变现路径；这次 Mainland China listing 跟进更像同一增长叙事的补充佐证，继续观察即可，不重复升级融资时间线。",
+    };
+  }
+  if (/china.?s top two large model firms seeking dual listing|dual listing in hong kong and chinese mainland|搜狐网/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "这条双重上市跟进延续的是 MiniMax 等中国 AI 公司出海与资本化叙事，和既有中国 AI 社交出海观察重合；当前更适合作为已覆盖公司的资本市场补充佐证，不单独升级融资时间线。",
+    };
+  }
+  if (/the ai tutor trick that gets language learners talking|talkpal is one of the tools built around that gap|private space to rehearse out loud/.test(text)) {
+    return {
+      decision: "暂缓",
+      reason:
+        "这条信号更像 AI tutor / 口语练习工具的通用增长叙事，强调私密练习和语言学习效率，而不是陌生人连接、跨文化真人社交或线下见面；先作为语言学习边界信号留档，不升级到语言社交主表。",
+    };
+  }
+  if (/uc berkeley graduate creates ai-powered app to make learning korean more immersive|how teuida turns language lessons into real-life simulations|venture that emerged became teuida/.test(text)) {
+    return {
+      decision: "暂缓",
+      reason:
+        "TEUIDA 已被识别为有增长势头的 AI Korean-learning app，但核心证据仍偏沉浸式课程与 AI 口语练习，不是陌生人社交或跨文化真人连接产品；保留在语言增长 watchlist，等出现社区、配对或线下连接证据后再升级。",
+    };
+  }
+  if (/tiktok's new events app rewards users for generating buzz about big events|dedicated social event apps : tiktok pro events|tiktok pro events is arriving ahead of the 2026 fifa world cup|new standalone app from the social media platform that's dedicated to social events/.test(text)) {
+    return {
+      decision: "边界观察",
+      reason:
+        "TikTok Pro Events 说明头部内容平台正在把赛事和文化活动做成独立事件入口，属于 IRL/events 相邻信号；但它更像平台侧活动增长工具，不是新的 AI social app、AI companion 或独立融资事件，因此保留为边界观察。",
+    };
+  }
+  if (/yaracircle is a social platform that turns strangers into genuine friends|ai-powered shared experiences called pulse, orbits & sparks|our ai companion yara learns from your conversations/.test(text)) {
+    return {
+      decision: "候选升级",
+      reason:
+        "YaraCircle 同时具备 AI companion、陌生人配对、shared experiences 和 real-world events 叙事，和 AI social + IRL 真人连接主线高度相关；目前仍缺融资、下载和更强第三方覆盖，先进入候选升级与人工复核队列。",
+    };
+  }
+  if (/eat no solo|eating alone is becoming the norm|dinner with a stranger|spontaneous meals and drinks/.test(text)) {
+    return {
+      decision: "候选升级",
+      reason:
+        "Eat No Solo 直接命中 solo dining / shared table 的线下真人社交需求，属于值得关注的 IRL 新样本；但目前证据主要是媒体故事和区域性上线描述，仍需补官网、城市覆盖、增长或融资信息后再决定是否进入核心主表。",
+    };
+  }
+  if (/awestruck: the world's first ai for your free time|awestruck is the world's first ai for your free time|finds the one experience you will love nearby and books it in under a minute/.test(text)) {
+    return {
+      decision: "候选升级",
+      reason:
+        "Awestruck 把 AI 推荐、附近活动发现和即时预订结合到 free-time planning 场景，和 IRL 真人体验分发主线高度相关；但目前主要还是单篇产品报道，仍需补官方产品页、城市覆盖、用户规模或融资信息后再决定是否升级进核心 IRL 主表。",
+    };
+  }
+  if (/partiful threw its own party|partiful hosted a party during new york tech week|the social startup recently launched ticketing and threw a party/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Partiful 已在 IRL 主表、官方覆盖和近期票务商业化更新中保留；这条纽约 Tech Week 派对报道更像品牌势能与线下渗透的补充佐证，说明其正从邀请工具延伸为更强的线下活动入口，但不需要重复新增产品卡或融资事件。",
+    };
+  }
+  if (/can we swipe our way to friendship|friendship apps and curated dinners|victory point cafe in berkeley/.test(text)) {
+    return {
+      decision: "背景信号",
+      reason:
+        "KQED 这条故事型报道强化了 friendship apps 与 curated dinners 正在承接孤独经济和线下连接需求，可作为 IRL 真人社交需求背景；但当前没有新增可升级的产品、融资或城市扩张证据，保留为 monitor 背景信号。",
+    };
+  }
+  if (/minimax launches m3 flagship model|million-token context|coding agent battle/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "MiniMax 已在中国 AI 社交出海 / companion 邻接观察中有既有覆盖，这条 M3 模型发布更偏基础模型与 coding agent 竞争信号；除非后续补到社交产品形态、出海分发或 companion 互动机制，否则先作为已覆盖的公司动态继续观察。",
+    };
+  }
+  if (/minimax m3 beats gpt-5\.5|minimax m3|chinese ai firm eyes shanghai ipo|memeburn\.com\/minimax-m3/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "这条 MiniMax M3 / IPO 报道仍以模型能力和资本市场预期为主，不新增更强的社交产品形态或 companion 互动证据；保留为已覆盖公司的动态补充，不重复升级主表或融资时间线。",
+    };
+  }
+  if (/aippy announces tens of millions|aippy raises tens of millions of dollars|aippy.*250m valuation|ai game creation platform aippy/.test(text)) {
+    return {
+      decision: "候选升级",
+      reason:
+        "Aippy 的融资与 AI-native interactive entertainment 叙事对 AI 泛娱乐主线仍然相关，但现阶段更像融资与产品方向信号，尚缺官方产品形态、用户互动机制和社区/社交层证据；先保留为候选升级，不直接并入主表或时间线。",
+    };
+  }
+  if (/news: new course from ling|growing demand from heritage learners|digital nomads|language enthusiasts worldwide|enewschannels/.test(text)) {
+    return {
+      decision: "暂缓",
+      reason:
+        "LING 这条更新更像语言学习课程与品牌扩展信号，主要面向 heritage learners、travelers 和 digital nomads；当前没有陌生人连接、跨文化真人社交或线下见面机制的新增证据，先保留在语言学习边界观察。",
+    };
+  }
+  if (/korean language app teuida surpasses 6 million downloads|teuida surpasses 6 million downloads|ai-driven conversation simulations/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Teuida 已在语言增长 watchlist 中有既有覆盖，这次 600 万下载量报道补的是增长势头而非社交机制；继续作为已覆盖的语言学习邻接信号观察，不升级到语言社交主表。",
+    };
+  }
+  if (/language app ling challenges automated education trend|human-first approach to fluency|accessnewswire/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "LING 的 human-first fluency 叙事主要是语言教育定位与品牌口径补充，和既有语言长尾观察重合；当前缺少陌生人社交、跨文化配对或线下连接的新证据，继续观察即可。",
+    };
+  }
+  if (/meta launches creator assistant ai for facebook creators|creator assistant ai|facebook creators/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Meta Creator Assistant 是平台侧创作者工具升级，说明社交平台继续把 AI 用在内容解释和分发优化；但它不是新的 consumer AI social app、IRL 产品或独立融资事件，保留为 coverage signal 观察即可。",
+    };
+  }
+  if (/meta business agent: ai agents go global|meta business agent|be there for every customer with meta business agent|about\.fb\.com\/news\/2026\/06\/meta-business-agent/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Meta Business Agent 属于平台级商家对话与服务自动化能力，虽然触达 WhatsApp、Instagram 和 Messenger，但本质仍是平台生态工具更新；继续作为已覆盖的社交平台能力信号观察，不升级主表或融资时间线。",
+    };
+  }
+  if (/what.?s happening in lisbon app launches today|portugalresident\.com\/new-whats-happening-in-lisbon-app-launches-today/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Lisbon 本地活动 app 这条报道更像区域性 IRL 发现工具补充，已进入 residual IRL watchlist；在出现更强的城市扩张、融资或产品规模证据前，继续观察即可。",
+    };
+  }
+  if (/perdata\.ai launches '?friends, not feeds'?|four-product ecosystem built to replace social media|successfuldaily\.com/.test(text)) {
+    return {
+      decision: "已覆盖/继续观察",
+      reason:
+        "Perdata.ai 这条 Friends, Not Feeds 发布已作为 residual IRL / friendship 叙事样本进入既有 monitor 台账；当前仍偏 PR 与产品口径更新，继续观察即可，不重复升级主表或融资时间线。",
+    };
+  }
+  if (/wtmf ai|what’s the matter, friend|emotionally intelligent companion/.test(text)) {
+    return {
+      decision: "边界观察",
+      reason:
+        "WTMF AI 具备 AI companion 邻接性，但当前证据主要是公司目录式简介，缺官方产品页、分发规模、留存或更强第三方报道；先保留为边界观察，不升级进主表或融资时间线。",
     };
   }
   if (/rippl launches a social recommendation platform|trust-led discovery|the rippl effect/.test(text)) {

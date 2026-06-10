@@ -169,7 +169,12 @@ if (latest) {
   expect(snapshotLatestMonitorRun.latestHandledAlerts?.[0]?.name === snapshotBrief.candidateReview.latestAlertReview?.[0]?.name, "snapshot monitor receipt latest handled alert must match snapshot brief");
   expect(snapshotLatestMonitorRun.latestHandledAlerts?.[0]?.decision === snapshotBrief.candidateReview.latestAlertReview?.[0]?.decision, "snapshot monitor receipt latest handled decision must match snapshot brief");
   expect(snapshotLatestMonitorRunMd.includes(`Monitor generated at: ${snapshotMonitor.generatedAt}`), "snapshot monitor Markdown receipt must record snapshot monitor generatedAt");
-  expect(snapshotLatestMonitorRunMd.includes(snapshotBrief.candidateReview.latestAlertReview?.[0]?.name ?? ""), "snapshot monitor Markdown receipt must record latest handled alert");
+  const snapshotLatestHandledAlertName = snapshotBrief.candidateReview.latestAlertReview?.[0]?.name ?? "";
+  const escapedSnapshotLatestHandledAlertName = snapshotLatestHandledAlertName.replace(/\|/g, "\\|");
+  expect(
+    snapshotLatestMonitorRunMd.includes(snapshotLatestHandledAlertName) || snapshotLatestMonitorRunMd.includes(escapedSnapshotLatestHandledAlertName),
+    "snapshot monitor Markdown receipt must record latest handled alert",
+  );
 }
 
 if (failures.length) {

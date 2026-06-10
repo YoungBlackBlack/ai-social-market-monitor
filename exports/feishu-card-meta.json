@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-03T01:04:33.812Z",
-  "title": "AI 社交监控 · 今日无新增，复核近窗信号",
-  "color": "blue",
+  "generatedAt": "2026-06-10T09:02:17.670Z",
+  "title": "AI 社交监控 · 10 条新增提醒待复核",
+  "color": "red",
   "buttonText": "查看最高优先级证据",
-  "buttonUrl": "https://www.bloomberg.com/news/articles/2026-05-28/china-ai-upstart-minimax-doubles-sales-ahead-of-new-model-launch",
-  "shouldSend": false,
-  "promotionQueueSize": 9,
-  "newUrls": 0
+  "buttonUrl": "https://eu.36kr.com/en/p/3845847971858696",
+  "shouldSend": true,
+  "promotionQueueSize": 17,
+  "newUrls": 10
 }

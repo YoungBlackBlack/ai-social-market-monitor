@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-06-08T09:11:57.229Z",
+  "provider": "Exa Websets Monitor API",
+  "docsUrl": "https://docs.exa.ai/reference/websets",
+  "desiredMonitor": {
+    "externalId": "exa-ai-social-market-monitor",
+    "name": "Exa AI social market monitor",
+    "scope": "AI social apps, AI companions, AI entertainment, language-exchange social apps, and IRL/offline real-human social products."
+  },
+  "status": "unavailable",
+  "mode": "codex-cron-search-api-fallback",
+  "fallback": "Codex daily automation runs node scripts/run-all.mjs with Exa Search API monitor lanes.",
+  "probes": [
+    {
+      "path": "/websets",
+      "ok": false,
+      "status": 401,
+      "requestId": "8aa0baefc5df90dde0e6415fc8b775db",
+      "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+    },
+    {
+      "path": "/monitors",
+      "ok": false,
+      "status": 401,
+      "requestId": "5d515f12b05678ac3878dfaaee152ecc",
+      "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+    }
+  ],
+  "websets": [],
+  "monitors": [],
+  "reason": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+}

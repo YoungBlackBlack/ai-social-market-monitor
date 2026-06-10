@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-06-04T01:05:38.154Z",
+  "monitorGeneratedAt": "2026-06-04T01:03:26.483Z",
+  "lookbackDays": 14,
+  "source": "https://api.exa.ai/search",
+  "nativeMonitor": {
+    "checkedAt": "2026-06-04T01:03:17.402Z",
+    "provider": "Exa Websets Monitor API",
+    "docsUrl": "https://docs.exa.ai/reference/websets",
+    "desiredMonitor": {
+      "externalId": "exa-ai-social-market-monitor",
+      "name": "Exa AI social market monitor",
+      "scope": "AI social apps, AI companions, AI entertainment, language-exchange social apps, and IRL/offline real-human social products."
+    },
+    "status": "unavailable",
+    "mode": "codex-cron-search-api-fallback",
+    "fallback": "Codex daily automation runs node scripts/run-all.mjs with Exa Search API monitor lanes.",
+    "probes": [
+      {
+        "path": "/websets",
+        "ok": false,
+        "status": 401,
+        "requestId": "934af9ee033f711b17095d0ebc77c750",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      },
+      {
+        "path": "/monitors",
+        "ok": false,
+        "status": 401,
+        "requestId": "bf897cedeb015e34228f9eec29647fc1",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      }
+    ],
+    "websets": [],
+    "monitors": [],
+    "reason": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+  },
+  "automation": {
+    "name": "Exa AI social market monitor",
+    "schedule": "Daily 09:00"
+  },
+  "summary": {
+    "monitors": 9,
+    "ok": 9,
+    "totalResults": 90,
+    "recentResults": 34,
+    "newAlerts": 9
+  },
+  "requestIds": [
+    "3e998cf2aad74dd22224b36cc0e54290",
+    "697ba88783efb42211b19df6cfa94fc7",
+    "5114bfb18fe9e7268d970ea6ed6429de",
+    "2453261635084797195ef2105d278ce2",
+    "a8f22ede17ebec365a094dca4b43a80d",
+    "0b4f4de6a75cc9167765b3b62080b1e1",
+    "6de6345a905def7f3772ff959c77cc76",
+    "35e187a1812925678a709e7d9339e680",
+    "6c89832859f074561a29665ee57d854d"
+  ],
+  "runs": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "status": 200,
+      "requestId": "3e998cf2aad74dd22224b36cc0e54290",
+      "recentCount": 5,
+      "query": "past two weeks funding raised seed series A AI social app AI companion app AI roleplay app consumer AI app social entertainment startup"
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "status": 200,
+      "requestId": "697ba88783efb42211b19df6cfa94fc7",
+      "recentCount": 6,
+      "query": "past two weeks IRL offline social app AI matching friends dinner strangers meetup event social discovery funding launch 222 Pie Timeleft Meet5 Aglow Breeze group travel"
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "status": 200,
+      "requestId": "5114bfb18fe9e7268d970ea6ed6429de",
+      "recentCount": 1,
+      "query": "past two weeks HelloTalk Tandem SewaYou Hilokal Slowly Linguado LangPal MatchaLingua language exchange app native speaker chat social language learning growth funding launch"
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "status": 200,
+      "requestId": "2453261635084797195ef2105d278ce2",
+      "recentCount": 2,
+      "query": "past two weeks Chinese AI companion app overseas Talkie MiniMax PolyBuzz HiWaifu Linky AI social app downloads revenue funding"
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "status": 200,
+      "requestId": "a8f22ede17ebec365a094dca4b43a80d",
+      "recentCount": 0,
+      "query": "past two weeks AI companion safety loneliness teens regulation lawsuit research paper Character.AI Replika Nomi chatbot companion"
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "status": 200,
+      "requestId": "0b4f4de6a75cc9167765b3b62080b1e1",
+      "recentCount": 0,
+      "query": "new companies AI social app AI companion app IRL social app language exchange app launched 2026 startup"
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "status": 200,
+      "requestId": "6de6345a905def7f3772ff959c77cc76",
+      "recentCount": 10,
+      "query": "past two weeks AI social app AI companion app language exchange app IRL social app paid acquisition advertising campaign ads library creatives CAC ROAS user acquisition marketing spend app install ads"
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "status": 200,
+      "requestId": "35e187a1812925678a709e7d9339e680",
+      "recentCount": 5,
+      "query": "past two weeks Add One Eve Inc. Gist IRL Soma IRL social app friends events networking face-to-face launch funding users growth invite-only gatherings"
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "status": 200,
+      "requestId": "6c89832859f074561a29665ee57d854d",
+      "recentCount": 5,
+      "query": "past two weeks irl social handles Instagram - YouTube Social Media: Definition, Importance, Top Websites, and Apps The 15 Most Popular Social Media Platforms in 2026 | Salesforce AU ai social handles Discord (@discord) Official | TikTok Meta AI Studio TikTok - YouTube langpal growth Talkpal EZ Speak Plang, Inc. sewayou growth Eyse needyou AI Plang, Inc. ai friend wearables Amazon has big hopes for wearable AI - starting with this US$50 gadget - The Business Times ai social official gap profiles ‎status - sims but social media App - App Store companion long tail Soul AI irl social long tail Locpats offline social discovery companies Pie slowly growth Langly Inc. talk4now growth Viral App Launch AI social app IRL social app companion app launch funding users revenue downloads official product update"
+    }
+  ],
+  "alertClosure": {
+    "latestAlertReviewRows": 53,
+    "latestAlertPendingRows": 0,
+    "recentSignalReviewRows": 34,
+    "recentSignalPendingRows": 0,
+    "status": "closed"
+  },
+  "latestHandledAlerts": [
+    {
+      "name": "Bumble is launching a new paid group-dating feature as it fights to stay competitive with Tinder",
+      "decision": "已覆盖/继续观察",
+      "source": "2026-06-04 monitor · Residual IRL watchlist",
+      "reason": "Bumble Plans 是头部 dating app 把付费线下组局做成产品化入口的 IRL 商业化信号，说明约会平台正在把线上匹配延伸到线下履约；但 Bumble 已在财报/AI dating 边界里覆盖，这次更适合作为 IRL 需求与 monetization 观察，不重复升级主表或融资时间线。",
+      "evidence": [
+        {
+          "label": "Residual IRL watchlist",
+          "url": "https://www.businessinsider.com/bumble-launching-plans-paid-group-dating-feature-2026-6"
+        }
+      ]
+    },
+    {
+      "name": "Partiful Launches Ticketing, Bringing Paid Events Into the Social Platform Where People Already Make Plans",
+      "decision": "已覆盖/继续观察",
+      "source": "2026-06-04 monitor · Residual IRL watchlist",
+      "reason": "Partiful 已在 IRL 主表、官方覆盖和边界融资样本中保留；这次内置票务上线说明其从 invite graph 向线下活动交易延伸，属于值得继续追踪的商业化更新，但不需要重复新增产品卡或融资事件。",
+      "evidence": [
+        {
+          "label": "Residual IRL watchlist",
+          "url": "https://www.prnewswire.com/news-releases/partiful-launches-ticketing-bringing-paid-events-into-the-social-platform-where-people-already-make-plans-302789410.html"
+        }
+      ]
+    },
+    {
+      "name": "Meta Advantage+ Shopping Costs Surge 31% as DTC Brands Rethink Paid Social Mix – Online Store News",
+      "decision": "投放平台背景",
+      "source": "2026-06-04 monitor · 投放 / 付费获客证据",
+      "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://onlinestorenews.com/meta-advantage-shopping-costs-surge-31-as-dtc-brands-rethink-paid-social-mix/"
+        }
+      ]
+    },
+    {
+      "name": "Temu slashed its U.S. ad spend on nearly every platform",
+      "decision": "投放证据候选",
+      "source": "2026-06-04 monitor · 投放 / 付费获客证据",
+      "reason": "该信号来自投放/付费获客 monitor lane，先进入 paid-acquisition evidence audit 的补证路径；只有出现广告素材库、投放平台、CAC/ROAS、买量或投放后下载变化等明确证据时，才把对应产品从方向性渠道升级为明确投放证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://digiday.com/marketing/tariffs-forced-temu-to-slash-its-u-s-ad-spend-on-nearly-every-platform/"
+        }
+      ]
+    },
+    {
+      "name": "How Meta’s New Burst Testing Mode Is Cutting DTC Creative Waste 42% – D2C Times",
+      "decision": "投放平台背景",
+      "source": "2026-06-04 monitor · 投放 / 付费获客证据",
+      "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://d2c-times.com/how-metas-new-burst-testing-mode-is-cutting-dtc-creative-waste-42/"
+        }
+      ]
+    }
+  ],
+  "persistence": {
+    "monitorHistoryRuns": 30,
+    "monitorLedgerItems": 56,
+    "sqliteCounts": {
+      "products": 42,
+      "funding_events": 40,
+      "monitor_signals": 34,
+      "source_linkage": 746,
+      "coverage_gaps": 41,
+      "audit_rows": 347,
+      "view_latest_monitor_signals": 34
+    },
+    "files": [
+      "data/monitor.json",
+      "data/monitor-history.json",
+      "data/monitor-ledger.json",
+      "data/brief.json",
+      "exports/latest-alert-review.csv",
+      "exports/monitor-recent-review.csv",
+      "exports/monitor-recent-signals.csv",
+      "exports/exa-social-research.sqlite",
+      "exports/exa-ai-social-report.html"
+    ]
+  },
+  "boundary": "This receipt proves the latest monitor run and its persisted handling status. It does not claim mathematical exhaustiveness for all live-market products or news."
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-01T10:15:01.758Z",
-  "startedAt": "2026-06-01T10:14:44.185Z",
+  "generatedAt": "2026-06-09T06:21:42.313Z",
+  "startedAt": "2026-06-09T06:21:20.928Z",
   "source": "https://api.exa.ai/search",
   "purpose": "Targeted Exa growth/channel deep-dive for HelloTalk/Tandem-adjacent language products whose growth, acquisition channel, or official discovery evidence was still thin.",
   "searches": [
@@ -12,42 +12,14 @@
       "query": "Conversation Exchange language exchange website app users traffic SEO app store social media growth",
       "ok": true,
       "status": 200,
-      "requestId": "0b6939bac9a22c8554ac0d2c721e07de",
+      "requestId": "cfa29d7a9efaf2ae0b1aaeb411127109",
       "results": [
         {
           "title": "Conversation Exchange",
           "url": "https://conversationexchange.com/",
-          "publishedDate": null,
-          "author": null,
-          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Italy and Brazil. [...] - Industry: E-learning - Type: Self-Owned - Headquarters: S"
-        },
-        {
-          "title": "Languages Live Gesellschaft Lokalisierung mbH",
-          "url": "https://mylanguageexchange.com/",
-          "publishedDate": null,
-          "author": null,
-          "highlight": "- Status: active - Ownership: Private - Aliases: languages live gesellschaft lokalisierung mbh, mylanguageexchange, language exchange community - Phone: (514) 448-0588 - SIC Codes: 82, 824 - NAICS Codes: 61, 611 [...] ## Web Presence [...] - Monthly Visits: 411,398 - Traffic Growth: Monthly: -3.3% - Global Rank: #84,641 - Bounce Rate: 0.4% - Pages per Visit: 6.2 - Top Countries: Germany: 14%, United States: 12%, Turk"
-        },
-        {
-          "title": "Time2Talk",
-          "url": "https://time2talk.app/",
-          "publishedDate": "2026-04-20T00:00:00.000Z",
+          "publishedDate": "2026-04-23T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and C"
-        },
-        {
-          "title": "HelloTalk",
-          "url": "https://hellotalk.com/",
-          "publishedDate": "2026-04-30T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The application is available for download on Android and Apple "
-        },
-        {
-          "title": "INT'L CAFE",
-          "url": "https://intlcafe.io/",
-          "publishedDate": "2026-04-29T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people (+50.0% YoY, +1 person), founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling s"
+          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Brazil and Italy. [...] - Industry: E-learning - Type: Self-Owned - Headquarters: S"
         },
         {
           "title": "LingoPraxis - English Speaking Club",
@@ -57,6 +29,20 @@
           "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
         },
         {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
           "title": "LanguageConvo",
           "url": "https://languageconvo.com/",
           "publishedDate": "2026-04-25T00:00:00.000Z",
@@ -64,11 +50,25 @@
           "highlight": "LanguageConvo is a E-Learning Providers company. LanguageConvo is a platform that connects individuals with authentic, effective, and enjoyable language learning experiences. They offer a platform that provides authentic, effective, and enjoyable language learning experiences. The platform allows users to learn from their own authentic language experiences, with flexible schedules and personalized advice. They also h"
         },
         {
-          "title": "Language Exchange International",
-          "url": "https://languageexchange.com/",
-          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "title": "Time2Talk",
+          "url": "https://time2talk.app/",
+          "publishedDate": "2026-04-20T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Language Exchange International is an educational institution. Language Exchange International employs 5 people (-7.7% YoY, -1 person) and has an annual revenue of $9.1M. Headquartered in United States. [...] - Industry: Education Administration Programs - Type: Educational - Homepage: languageexchange.com - Status: active - Ownership: Private - Aliases: language exchange international - LinkedIn: linkedin.com/compan"
+          "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and C"
+        },
+        {
+          "title": "SPEAK - Share your world",
+          "url": "https://speak.social/",
+          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SPEAK - Share your world is a Education Management company. SPEAK is a language exchange platform that allows users to learn and connect with people in their city. Users can connect with language groups, share their language, or do both. The platform offers in-person and online connections, and users can connect with groups at cafes, city parks, and other locations. SPEAK - Share your world employs 35 people (-19.1% "
+        },
+        {
+          "title": "Blabla Language Exchange",
+          "url": "https://blablalanguageexchange.com/",
+          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Blabla Language Exchange is a Events Services company. BlaBla Language Exchange is a community that aims to bring together expatriate communities, travelers, and locals. They offer a fun way to make new friends without the stress and awkwardness. They provide events for people to mingle, sip on their beverages, and chat with fellow humans. Blabla Language Exchange employs 5 people (-15.8% YoY, -3 people), founded in "
         }
       ]
     },
@@ -80,7 +80,7 @@
       "query": "SewaYou language exchange app nearby face to face users App Store Google Play growth social media",
       "ok": true,
       "status": 200,
-      "requestId": "f1987d2f8e06f8cd64d87236c3369053",
+      "requestId": "8dc5d0bd75da7d4ae94f80220ade4b2c",
       "results": [
         {
           "title": "SewaYou",
@@ -90,18 +90,18 @@
           "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
         },
         {
+          "title": "Conversation Exchange",
+          "url": "https://conversationexchange.com/",
+          "publishedDate": "2026-04-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Brazil and Italy. [...] - Industry: E-learning - Type: Self-Owned - Headquarters: S"
+        },
+        {
           "title": "INT'L CAFE",
           "url": "https://intlcafe.io/",
           "publishedDate": "2026-04-29T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people (+50.0% YoY, +1 person), founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling s"
-        },
-        {
-          "title": "Eyse",
-          "url": "https://play.google.com/store/apps/details",
-          "publishedDate": "2026-04-24T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Eyse is a Technology, Information and Internet company. Eyse employs 2 people (+33.3% YoY, +1 person), founded in 2022. Headquartered in Bengaluru, Karnataka, India, with presence in Argentina. [...] Social discovery made simple through sharing personal experiences, skills, and knowledge. [...] - Industry: Technology, Information and Internet - Type: Partnership - Headquarters: Bengaluru, India - Founded Year: 2022 -"
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
         },
         {
           "title": "ZINGR",
@@ -109,6 +109,13 @@
           "publishedDate": "2026-04-23T00:00:00.000Z",
           "author": "Exa",
           "highlight": "ZINGR is a Technology, Information and Internet company. Zingr is a social network app that discovers nearby people and shows videos, photos, stories, events, news, and everything what happens in Your city, around You. ZINGR employs 2 people. Headquartered in Lithuania. [...] People nearby app Zingr discover nearby people, shows the list of nearby users by distance. You can share videos, photos, stories with people a"
+        },
+        {
+          "title": "Plang, Inc.",
+          "url": "https://plang.ai/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-37.5% YoY, -3 people). Headquartered in South Korea. Has $824.6K in tota"
         },
         {
           "title": "needyou AI",
@@ -122,14 +129,7 @@
           "url": "https://aloyou.app/",
           "publishedDate": "2026-04-29T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "AloYou App is a Technology, Information and Internet company. AloYou App employs 4 people (+16.7% YoY, +1 person), founded in 2022. Headquartered in London, England, United Kingdom, with presence in Philippines and United States. [...] AloYou™ is a specialized AI platform designed for busy minds, operators, and strategic leaders in the UK and US. We are moving beyond the era of \"chatbots\" and \"task-automation\" to pio"
-        },
-        {
-          "title": "Plang, Inc.",
-          "url": "https://plang.ai/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-28.6% YoY, -2 people). Headquartered in South Korea. Has $824.6K in tota"
+          "highlight": "AloYou App is a Technology, Information and Internet company. AloYou App employs 4 people (+16.7% YoY, +1 person), founded in 2022. Headquartered in London, England, United Kingdom, with presence in United States and Philippines. [...] AloYou™ is a specialized AI platform designed for busy minds, operators, and strategic leaders in the UK and US. We are moving beyond the era of \"chatbots\" and \"task-automation\" to pio"
         },
         {
           "title": "SeeMe",
@@ -148,21 +148,21 @@
       "query": "Talk4Now language exchange app users launch app store social media growth channel",
       "ok": true,
       "status": 200,
-      "requestId": "5dcfc14c778552d6f86577a4bb4a7869",
+      "requestId": "52217ebb8762b20a7e8c315782e076f6",
       "results": [
         {
           "title": "Talk4Now",
           "url": "https://talk4now.com/",
-          "publishedDate": "2026-05-31T16:14:48.401Z",
-          "author": null,
-          "highlight": "Talk4Now is a Language Schools company. Talk4Now employs 2 people, founded in 2026. Headquartered in Dhaka, Bangladesh, with presence in Pakistan. [...] That’s why we built Talk4Now — a global platform where you can practice any language by talking to real people from around the world 💬🌎 [...] You can create or join rooms labeled by language, meet learners and native speakers, and talk with multiple people at the s"
-        },
-        {
-          "title": "Tandem",
-          "url": "https://tandem.net/",
           "publishedDate": "2026-05-03T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+3.9% YoY, +2 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Spain, Indonesia, United Kingdom, Canada, and France). Has $8.1M in total funding, with 4 prior funding rounds. ["
+          "highlight": "Talk4Now is a Language Schools company. Talk4Now employs 2 people, founded in 2026. Headquartered in Dhaka, Bangladesh, with presence in Pakistan. [...] 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝗶𝗻𝗴 𝗧𝗮𝗹𝗸𝟰𝗡𝗼𝘄 — 𝗧𝗮𝗹𝗸 𝘁𝗼 𝘁𝗵𝗲 𝗪𝗼𝗿𝗹𝗱, 𝗳𝗼𝗿 𝗙𝗿𝗲𝗲 - https://talk4now.com [...] That’s why we built Talk4Now — a global platform where you can practice any language by talking to real people from around the world 💬🌎 [...] You"
+        },
+        {
+          "title": "Talky",
+          "url": "https://talky-app.com/",
+          "publishedDate": "2026-05-01T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "- Industry: E-Learning Providers - Type: Privately Held - Headquarters: Barcelona, Spain - Founded Year: 2023 - Homepage: talky-app.com - Aliases: talky - LinkedIn: linkedin.com/company/talkyapp [...] - Features: Mobile App - Tech Stack: aws lambda, python, spacy, clever, c, impact, unity [...] - Monthly Visits: 1,455 - Traffic Growth: Monthly: +10.6%, Yearly: +21.3% - Global Rank: #11,175,088 - Bounce Rate: 0.3% - P"
         },
         {
           "title": "Time2Talk",
@@ -176,14 +176,7 @@
           "url": "https://intlcafe.io/",
           "publishedDate": "2026-04-29T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people (+50.0% YoY, +1 person), founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling s"
-        },
-        {
-          "title": "Viral App Launch",
-          "url": "https://viralapplaunch.com/",
-          "publishedDate": "2026-05-01T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Viral App Launch is a Marketing Services company. Viral App Launch is a top app launch agency that helps SaaS and mobile apps get 10,000 new users and 20 investor introductions. They specialize in boot-strapped app founders, have an app in hand but not sure how to get users eager to launch, but not sure the best strategy limited by tight budgets. They offer done-with-you blueprint. Viral App Launch employs 10 people "
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
         },
         {
           "title": "SewaYou",
@@ -197,14 +190,21 @@
           "url": "https://talkabroad.com/",
           "publishedDate": "2026-04-24T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "TalkAbroad is a Education company. TalkAbroad is a company that connects learners with native speakers for real-world conversations in nine languages. TalkAbroad employs 51 people (+14.5% YoY, +9 people) and has an annual revenue of $395.9K, founded in 2010. Headquartered in englewood, colorado, United States, operates in 25 countries (including Italy, Colombia, Argentina, Brazil, and Puerto Rico). [...] TalkAbroad i"
+          "highlight": "TalkAbroad is a Education company. TalkAbroad is a company that connects learners with native speakers for real-world conversations in nine languages. TalkAbroad employs 51 people (+11.1% YoY, +7 people) and has an annual revenue of $395.9K, founded in 2010. Headquartered in englewood, colorado, United States, operates in 25 countries (including Italy, Argentina, Colombia, Puerto Rico, and Ghana). [...] TalkAbroad is"
         },
         {
-          "title": "Growthenger",
-          "url": "https://growthenger.com/",
-          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "title": "Viral App Launch",
+          "url": "https://viralapplaunch.com/",
+          "publishedDate": "2026-05-01T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Growthenger is a Marketing Services company. growthenger is a digital marketing agency specializing in app and website marketing. They provide specialized services in app and website marketing to help businesses increase their visibility and drive targeted traffic to their apps and websites. Growthenger employs 4 people (+300.0% YoY, +3 people), founded in 2023. Headquartered in Bangalore, Karnataka, India. [...] Gro"
+          "highlight": "Viral App Launch is a Marketing Services company. Viral App Launch is a top app launch agency that helps SaaS and mobile apps get 10,000 new users and 20 investor introductions. They specialize in boot-strapped app founders, have an app in hand but not sure how to get users eager to launch, but not sure the best strategy limited by tight budgets. They offer done-with-you blueprint. Viral App Launch employs 10 people "
+        },
+        {
+          "title": "PERTALKS",
+          "url": "https://pertalks.group/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "PERTALKS is a Social Networking Platforms company. Pertalks is a social interaction app that connects people in person to share their knowledge and interests, make new friends, discuss ideas and exchange tips, networking, and practice or converse in another language. It is designed to bring people together in meaningful, in-person social interactions based on shared interests, knowledge, and a desire for connection t"
         }
       ]
     },
@@ -216,7 +216,7 @@
       "query": "meeTalk language exchange app users app store google play social media growth channel",
       "ok": true,
       "status": 200,
-      "requestId": "4f905888d58d0cb92ef7b36971befb09",
+      "requestId": "33de380356c2f0419adb87ff671da156",
       "results": [
         {
           "title": "meeTalk: Global Chat",
@@ -230,7 +230,14 @@
           "url": "https://meetalk.com/",
           "publishedDate": "2026-04-27T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "MeeTalk girişimi profesyonellerle, bu profesyonellerin bilgi ve deneyimlerine ihtiyaç duyan eğitim kurumlarını, sivil toplum kuruluşlarını ve işletmeleri buluşturan sosyal ağdır. [...] - Industry: Information Services - Type: Privately Held - Homepage: meetalk.com - Aliases: meetalk / service - LinkedIn: linkedin.com/company/meetalk-service - Linkedin Followers: 225 (Monthly: -0.4%, Yearly: -2.6%)"
+          "highlight": "MeeTalk girişimi profesyonellerle, bu profesyonellerin bilgi ve deneyimlerine ihtiyaç duyan eğitim kurumlarını, sivil toplum kuruluşlarını ve işletmeleri buluşturan sosyal ağdır. [...] - Industry: Information Services - Type: Privately Held - Homepage: meetalk.com - Aliases: meetalk / service - LinkedIn: linkedin.com/company/meetalk-service - Linkedin Followers: 223 (Monthly: -0.9%, Yearly: -3.5%)"
+        },
+        {
+          "title": "HelloTalk",
+          "url": "https://hellotalk.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The application is available for download on Android and Apple "
         },
         {
           "title": "SewaYou",
@@ -241,38 +248,31 @@
         },
         {
           "title": "Meet2Talk",
-          "url": "https://meet2talk.com/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "url": "https://meet2talk.online/",
+          "publishedDate": "2026-05-27T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "# Meet2Talk (Meet2Talk Co.) [...] Meet2Talk is a E-Learning Providers company. Headquartered in Kadıköy, Istanbul, Turkey. [...] Meet2Talk sosyal bir İngilizce konuşma platformu, İngilizce öğrenmenin en sosyal ve pratik yolu!🍀 💬Speaking 🌎Socializing 💻Online Education [...] - Industry: E-Learning Providers - Type: Self-Owned - Headquarters: Kadıköy, Turkey - Status: active - Aliases: meet2talk, meet2talk co. - Lin"
+          "highlight": "Meet2Talk is a E-Learning Providers company. Headquartered in Kadıköy, Istanbul, Turkey. [...] Meet2Talk sosyal bir İngilizce konuşma platformu, İngilizce öğrenmenin en sosyal ve pratik yolu!🍀 💬Speaking 🌎Socializing 💻Online Education [...] - Industry: E-Learning Providers - Type: Self-Owned - Headquarters: Kadıköy, Turkey - Homepage: meet2talk.online - Aliases: meet2talk - LinkedIn: linkedin.com/company/meet-2-ta"
         },
         {
-          "title": "goMeetalk",
-          "url": "https://gomeetalk.com/",
-          "publishedDate": "2026-05-01T00:00:00.000Z",
+          "title": "Time2Talk",
+          "url": "https://time2talk.app/",
+          "publishedDate": "2026-04-20T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "goMeetalk is a Software Development company. GoMeetalk employs 2 people, founded in 2025. Headquartered in Barcelona, Catalonia, Spain. [...] goMeeTalk removes language barriers from video calls. [...] Real-time translation + multilingual voice so every participant can hear the conversation in their own language—keeping meetings smooth and interruption-free. [...] ✅ Video conferencing + live translation [...] ✅ Multi"
-        },
-        {
-          "title": "HelloTalk",
-          "url": "https://hellotalk.com/",
-          "publishedDate": "2026-04-30T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The application is available for download on Android and Apple "
+          "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and C"
         },
         {
           "title": "INT'L CAFE",
           "url": "https://intlcafe.io/",
           "publishedDate": "2026-04-29T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people (+50.0% YoY, +1 person), founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling s"
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
         },
         {
-          "title": "Meet2Talk Online",
-          "url": "https://meet2talk.online/",
-          "publishedDate": "2026-04-24T00:00:00.000Z",
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Meet2Talk Online is a E-Learning Providers company. Meet2Talk Online employs 48 people (+12.1% YoY, +7 people). Headquartered in Kadıköy, Istanbul, Turkey, operates in 10 countries (including United States, Morocco, Kenya, Thailand, and Italy). [...] Meet2Talk sosyal bir İngilizce konuşma platformu, İngilizce öğrenmenin en sosyal ve pratik yolu!🍀 💬Speaking 🌎Socializing 💻Online Education [...] - Industry: E-Learni"
+          "highlight": "English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founded in 2022. Hea"
         }
       ]
     },
@@ -284,7 +284,7 @@
       "query": "LangPal AI language learning chat app users app store growth community",
       "ok": true,
       "status": 200,
-      "requestId": "e57ef102ae1a2b5e182fb2a6d8782adc",
+      "requestId": "79eace51a3dc34350c657faca6ad1012",
       "results": [
         {
           "title": "LangPal",
@@ -298,7 +298,7 @@
           "url": "https://talkpal.ai/",
           "publishedDate": "2026-04-29T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Talkpal is a Education company. Talkpal is a gpt-powered AI language teacher that helps individuals boost their speaking, listening, writing, and pronunciation skills. Talkpal employs 29 people (+93.8% YoY, +15 people) and has an annual revenue of $1.0M, founded in 2023. Headquartered in Wilmington, Delaware, United States, with presence in Georgia, Germany, and Spain. [...] Talkpal is an AI-powered language tutor 🚀"
+          "highlight": "Talkpal is a Education company. Talkpal is a gpt-powered AI language teacher that helps individuals boost their speaking, listening, writing, and pronunciation skills. Talkpal employs 29 people (+100.0% YoY, +15 people) and has an annual revenue of $1.0M, founded in 2023. Headquartered in Wilmington, Delaware, United States, with presence in Georgia, Germany, and Spain. [...] Talkpal is an AI-powered language tutor \ud83d"
         },
         {
           "title": "EZ Speak",
@@ -308,13 +308,6 @@
           "highlight": "EZ Speak is a E-learning company. EZ Speak is an AI-fueled app using a proprietary technology to facilitate immersive, high-engagement language chat. It allows starting language students to have relaxed, real-life conversations in their study language. Students can chat with the system or each other, whether they speak the same language or completely different languages. EZ Speak employs 3 people (-12.5% YoY, -1 pers"
         },
         {
-          "title": "SpeakingPal",
-          "url": "https://speakingpal.com/",
-          "publishedDate": "2026-04-25T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "E-Learning Providers [...] employs 6 people (+33.3% YoY, +1 person) and has an annual revenue of $24.3M, founded in [...] 2009. Headquartered in Tel Aviv, Israel. Has $1.4M in total funding. [...] SpeakingPal is an innovative AI-powered platform for spoken English learning for non-native speakers. At its core is a Spoken English Simulator powered by a proprietary Automatic Speech Recognition engine, delivering an eng"
-        },
-        {
           "title": "Chatterbox: Language Learning",
           "url": "https://chatterboxlabs.io/",
           "publishedDate": "2026-04-27T00:00:00.000Z",
@@ -322,25 +315,32 @@
           "highlight": "Chatterbox: Language Learning is a Education company. Chatterbox is a revolutionary language learning app that harnesses the power of artificial intelligence to provide a personalized and engaging learning experience. Whether you are a beginner or an advanced learner, our ai-driven platform adapts to your unique needs, delivering tailored lessons and interactive exercises to help you master a new language with ease. "
         },
         {
-          "title": "FluentPal AB",
-          "url": "https://fluentpal.net/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "title": "SpeakingPal",
+          "url": "https://speakingpal.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "FluentPal AB is a Education company. FluentPal is a language learning platform that allows users to talk to a language and be matched to a language partner. It offers instant matching experience and personalized language practice. The app matches users with compatible language partners based on their preferences, making language exchange effortless and efficient. It also features dynamic conversations, quizzes, and f"
-        },
-        {
-          "title": "PickLang",
-          "url": "https://picklang.ml/",
-          "publishedDate": "2026-04-29T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "PickLang is a Software Development company. Picklang is a company that provides a new way to learn language with AI. PickLang employs 5 people (-16.7% YoY, -1 person), founded in 2021. Headquartered in Nicosia, Cyprus, with presence in Russia, United Kingdom, and Kazakhstan. [...] PickLang is the most natural way to learn languages. [...] We combine the latest AI technologies to make learning languages using what you"
+          "highlight": "is a E-Learning Providers company. Speaking [...] employs 6 people (+33.3% YoY, +1 person) and has an annual revenue of $24.3M, founded in 2009. Headquartered in Tel Aviv, Israel. Has $1.4M in total funding. [...] SpeakingPal is an innovative AI-powered platform for spoken English learning for non-native speakers. At its core is a Spoken English Simulator powered by a proprietary Automatic Speech Recognition engine, "
         },
         {
           "title": "Plang, Inc.",
           "url": "https://plang.ai/",
           "publishedDate": "2026-04-27T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-28.6% YoY, -2 people). Headquartered in South Korea. Has $824.6K in tota"
+          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-37.5% YoY, -3 people). Headquartered in South Korea. Has $824.6K in tota"
+        },
+        {
+          "title": "FluentPal Ltd",
+          "url": "https://fluentpal.net/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "FluentPal Ltd is a Education company. FluentPal is a language learning platform that allows users to talk to a language and be matched to a language partner. It offers instant matching experience and personalized language practice. The app matches users with compatible language partners based on their preferences, making language exchange effortless and efficient. It also features dynamic conversations, quizzes, and "
+        },
+        {
+          "title": "Langclub",
+          "url": "https://langclub.live/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Langclub is a Education company. Langclub is a free English speaking club with global people that allows users to enhance their English fluency for free in a fun and safe environment. They connect with global individuals, engage in advanced conversations, and speak English fluently using real expressions with native speakers in premium sessions. Langclub employs 4 people (+100.0% YoY, +2 people). Headquartered in Sou"
         }
       ]
     },
@@ -352,14 +352,14 @@
       "query": "MatchaLingua language partners nearby app users launch app store social media",
       "ok": true,
       "status": 200,
-      "requestId": "017df393ee13d80f9f82c2e1032fc6e5",
+      "requestId": "07153fa383afd050146e0b21b9c1ca5c",
       "results": [
         {
           "title": "MatchaLingua",
           "url": "https://matchalingua.com/",
-          "publishedDate": null,
-          "author": null,
-          "highlight": "MatchaLingua is a Social Networking Platforms company. Founded in 2026. Headquartered in France. [...] Connect. Learn. Experience. Culture. A community for finding language exchange partners near you and embarking on a journey of cultural discovery together. Meet language partners in your area for in-person or virtual practice sessions. [...] Go beyond language - share traditions, food, and [...] - Industry: Social N"
+          "publishedDate": "2026-04-16T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "MatchaLingua is a Social Networking Platforms company. MatchaLingua employs 2 people, founded in 2026. Headquartered in France. [...] Connect. Learn. Experience. Culture. A community for finding language exchange partners near you and embarking on a journey of cultural discovery together. Meet language partners in your area for in-person or virtual practice sessions. [...] Go beyond language - share traditions, food,"
         },
         {
           "title": "SewaYou",
@@ -369,18 +369,32 @@
           "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Features: Mobile App [...] language exchange, social net"
         },
         {
-          "title": "Conversation Exchange",
-          "url": "https://conversationexchange.com/",
-          "publishedDate": "2026-04-23T00:00:00.000Z",
+          "title": "Linguado",
+          "url": "https://linguado.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Italy and Brazil. [...] Through Conversation Exchange you can [...] native speakers"
+          "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to t"
         },
         {
-          "title": "FluentPal AB",
+          "title": "FluentPal Ltd",
           "url": "https://fluentpal.net/",
           "publishedDate": "2026-04-27T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "FluentPal AB is a Education company. FluentPal is a language learning platform that allows users to talk to a language and be matched to a language partner. It offers instant matching experience and personalized language practice. The app matches users with compatible language partners based on their preferences, making language exchange effortless and efficient. It also features dynamic conversations, quizzes, and f"
+          "highlight": "FluentPal Ltd is a Education company. FluentPal is a language learning platform that allows users to talk to a language and be matched to a language partner. It offers instant matching experience and personalized language practice. The app matches users with compatible language partners based on their preferences, making language exchange effortless and efficient. It also features dynamic conversations, quizzes, and "
+        },
+        {
+          "title": "How do you do?",
+          "url": "https://howdoyou.do/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "How do you do? is language learning made social - and it's available at http://howdoyou.do. How do you do? lets you find conversation partners and practice different languages instantly - via text or video - with native speakers from around the world! [...] We've found that many language learners do seek conversation partners - and not only native speakers of the language they're learning, but also other peers learni"
+        },
+        {
+          "title": "Languages Live Gesellschaft Lokalisierung mbH",
+          "url": "https://mylanguageexchange.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# Languages Live Gesellschaft Lokalisierung mbH [...] Languages Live Gesellschaft Lokalisierung mbH. Headquartered in Germany. [...] - Status: active - Ownership: Private - Aliases: languages live gesellschaft lokalisierung mbh, mylanguageexchange, language exchange community - Phone: (514) 448-0588 - SIC Codes: 82, 824 - NAICS Codes: 61, 611 [...] - Monthly Visits: 354,995 - Traffic Growth: Monthly: -13.7% - Global "
         },
         {
           "title": "ZINGR",
@@ -390,25 +404,11 @@
           "highlight": "ZINGR is a Technology, Information and Internet company. Zingr is a social network app that discovers nearby people and shows videos, photos, stories, events, news, and everything what happens in Your city, around You. ZINGR employs 2 people. Headquartered in Lithuania. [...] People nearby app Zingr discover nearby people, shows the list of nearby users by distance. You can share videos, photos, stories with people a"
         },
         {
-          "title": "Blabla Language Exchange",
-          "url": "https://blablalanguageexchange.com/",
-          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "title": "Elite Lingo App",
+          "url": "https://elitelingo.app/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Blabla Language Exchange is a Events Services company. BlaBla Language Exchange is a community that aims to bring together expatriate communities, travelers, and locals. They offer a fun way to make new friends without the stress and awkwardness. They provide events for people to mingle, sip on their beverages, and chat with fellow humans. Blabla Language Exchange employs 5 people (-15.8% YoY, -3 people), founded in "
-        },
-        {
-          "title": "Pepchat (formerly Destiny)",
-          "url": "https://pepchat.in/",
-          "publishedDate": "2026-04-29T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Pepchat (formerly Destiny) is a Social Networking Platforms company. Destiny is a company that connects people and happenings in real-time. Pepchat (formerly Destiny) employs 3 people (+600.0% YoY), founded in 2025. Headquartered in Hyderabad, Telangana, India, with presence in Benin. [...] Pepchat is a proximity-based social app to connect, share posts, drop instant vibes, join groups, and meet people nearby. [...] "
-        },
-        {
-          "title": "Together App",
-          "url": "https://youtube.com/watch",
-          "publishedDate": "2026-04-21T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Together App is a IT Services and IT Consulting company. Together is a location-based social app that allows users to discover the nearby neighborhood. Founded in 2015. Headquartered in Tehran, Tehran, Iran. [...] Our vision is to help people have FUN in an on-demand way; anytime and anywhere. Together is a location-based social platform for planning meetups with like-minded people. You can swipe among your nearby ga"
+          "highlight": "Elite Lingo App is a Education company. Elite Lingo is a professional language training program that offers a variety of teaching methods from beginning to advanced. Founded in 2021. Headquartered in Turkey. [...] Elite Lingo Language Training Application is an international mobile app centered in Turkey. The English Training App, designed for teenagers and adults, has already been launched in App Store and Google Pl"
         }
       ]
     },
@@ -420,7 +420,7 @@
       "query": "RoamChat AI roaming social platform language translation launch users app store growth",
       "ok": true,
       "status": 200,
-      "requestId": "3833d5de210f95967a3066c61e2c9e8a",
+      "requestId": "eb36e863b34aefd58d09d3aac46bc5f4",
       "results": [
         {
           "title": "RoamChat | Live map chat with real-time translation",
@@ -458,25 +458,25 @@
           "highlight": "RoamChat Introduces [...] # As AI Is Redefining How Strangers Connect Globally, RoamChat Introduces a New “Roaming Social” Platform [...] SAN FRANCISCO and SINGAPORE and LONDON, May 19, 2026 /PRNewswire/ — As mainstream social platforms continue competing around short videos, recommendation algorithms, and endless content feeds, RoamChat, a new startup, is taking a very different approach to online interaction: helpi"
         },
         {
-          "title": "As AI Is Redefining How Strangers Connect Globally, RoamChat Introduces a New “Roaming Social” Platform – 1045 Capital Rock",
-          "url": "https://lifestyle.capitalcityrock.com/story/234114/as-ai-is-redefining-how-strangers-connect-globally-roamchat-introduces-a-new-roaming-social-platform/",
-          "publishedDate": "2026-05-22T00:00:00.000Z",
+          "title": "Voice AI Boom & Smartling’s Massive Update",
+          "url": "https://www.locanucu.com/2026/05/localization-news-19-may-2026.html",
+          "publishedDate": "2026-05-19T18:32:00.000Z",
           "author": null,
-          "highlight": "SAN FRANCISCO and SINGAPORE and LONDON, May 19, 2026 /PRNewswire/ — As mainstream social platforms continue competing around short videos, recommendation algorithms, and endless content feeds, RoamChat, a new startup, is taking a very different approach to online interaction: helping strangers around the world talk to each other in real time. [...] RoamChat is an AI-powered social platform that combines live maps, vo"
+          "highlight": "### RoamChat & WIZ.AI: Code-Switching Reality [...] Developers are rushing to integrate this low-latency voice capability everywhere. On the Bubble developer forums, a user named redvivi dropped a plugin directly integrating new OpenAI real-time voice capabilities. This means no-code developers can now build native mobile applications with instantaneous speech-to-speech translation. When the barrier to entry drops th"
         },
         {
-          "title": "Roam: Empowering Communities To Drive the Future of Decentralized Connectivity - TheNewsCrypto",
-          "url": "https://thenewscrypto.com/roam-empowering-communities-to-drive-the-future-of-decentralized-connectivity/",
-          "publishedDate": "2025-01-15T13:32:20.000Z",
-          "author": "Isabella",
-          "highlight": "“From the very beginning, our ultimate goal is to make WiFi access as seamless as possible, utilizing decentralized solutions to empower individuals. ” said co-founder Jeffrey of Roam. Fast forward three years, Roam stands as a pioneering leader in the telecom industry, boasting 1.8 million app users and 1.1 million self-deployed WiFi nodes across nearly 200 countries and regions, delivering on Jeffrey’s vision. [..."
-        },
-        {
-          "title": "Z-COM Introduces Edge-Native Infrastructure Architecture Across CommunicAsia and Computex 2026 - Siam News Network",
-          "url": "https://www.siamnewsnetwork.net/pr-news/z-com-introduces-edge-native-infrastructure-architecture-across-communicasia-and-computex-2026/",
-          "publishedDate": "2026-05-19T00:35:00.000Z",
+          "title": "Xiaohongshu Business x Singapore Outbound Tourism Forum Redefines the Evolution of Outbound Travel: Interest Shapes Travel Itineraries - Siam News Network",
+          "url": "https://www.siamnewsnetwork.net/pr-news/xiaohongshu-business-x-singapore-outbound-tourism-forum-redefines-the-evolution-of-outbound-travel-interest-shapes-travel-itineraries/",
+          "publishedDate": "2026-05-15T02:00:00.000Z",
           "author": null,
           "highlight": "### As AI Is Redefining How Strangers Connect Globally, RoamChat Introduces a New \"Roaming Social\" Platform"
+        },
+        {
+          "title": "Musk’s ‘XChat’ Lands in South Korea: A Super App Armed With No Ads and AI Aims to Challenge KakaoTalk’s Dominance — BigGo Finance",
+          "url": "https://finance.biggo.com/news/PSCPvZ0Bga3fZL9MR-uF",
+          "publishedDate": "2026-04-24T03:36:17.000Z",
+          "author": null,
+          "highlight": "Elon Musk’s new messaging app, XChat, is officially launching globally, including in South Korea, on April 25. The app positions itself as a direct challenger to KakaoTalk’s near-total dominance of the South Korean messenger market. XChat differentiates itself through a suite of robust security features—including end-to-end encryption (E2E) and screenshot blocking—an intelligent assistant powered by the advanced AI m"
         }
       ]
     },
@@ -488,28 +488,14 @@
       "query": "SpeakyParrot native speaker language exchange app users live sessions growth app store",
       "ok": true,
       "status": 200,
-      "requestId": "75c6bd3e18e3c8ad9d0173e06b6d6ddd",
+      "requestId": "cca184c3e4403fc6c11e03d3ad81e111",
       "results": [
         {
           "title": "SpeakyParrot",
           "url": "https://speakyparrot.com/",
-          "publishedDate": null,
-          "author": null,
-          "highlight": "Learn languages flexibly, interactively, and effectively, anytime, anywhere. Our e-learning platform offers practical exercises, motivating challenges, and the option to book live sessions with native speakers. Reach your language goals faster with real, world practice. [...] E-Learning Providers [...] - [2026-01-06] A look behind the scenes: We are officially LIVE! 🦜🚀 Last week, we quietly opened our doors for the"
-        },
-        {
-          "title": "Speaky",
-          "url": "https://speaky.com/",
-          "publishedDate": null,
-          "author": null,
-          "highlight": "Speaky is a E-Learning Providers company. Speaky is a free language exchange platform that allows users to learn languages from native speakers and make new friends around the world. They offer a community of 5 million language learners who have achieved success with speaky and connect with native speakers to immerse themselves in a world of cultural experiences. Speaky employs 2 people (-7.7% YoY, -1 person), founde"
-        },
-        {
-          "title": "BeeSpeaker",
-          "url": "https://beespeaker.com/",
-          "publishedDate": "2026-04-28T00:00:00.000Z",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "BeeSpeaker is a E-Learning Providers company. BeeSpeaker is an English learning app that focuses mainly on improving your speaking skills. They provide over 3000 video lessons with teachers and native speakers, and offer a smart AI tutor to practice real-life conversations with a smart ai tutor. They have over 2 million users worldwide. BeeSpeaker employs 15 people (+58.3% YoY, +7 people). Headquartered in Stockholm,"
+          "highlight": "employs 2 [...] (+100 [...] +1 person [...] in 202 [...] Learn languages flexibly, interactively, and effectively, anytime, anywhere. Our e-learning platform offers practical exercises, motivating challenges, and the option to book live sessions with native speakers. Reach your language goals faster with real, world practice. [...] - Industry: E-Learning Providers - Type: Public Company - Headquarters: Petersburg, Un"
         },
         {
           "title": "Fluently",
@@ -519,20 +505,6 @@
           "highlight": "Fluently is a E-Learning Providers company. Fluently is a company that offers live language exchange services for individuals to master any language. They provide free membership with early access and have a team of native speakers in their own dialects. The company aims to help individuals speak naturally and comfortably by learning from native speakers in their own dialects. Founded in 2019. Headquartered in santa "
         },
         {
-          "title": "LingoPraxis - English Speaking Club",
-          "url": "https://lingopraxis.com/",
-          "publishedDate": "2026-04-26T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
-        },
-        {
-          "title": "Speaking Partner Official Page",
-          "url": "https://speakingpartner.id/",
-          "publishedDate": "2026-04-23T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Speaking Partner Official Page is a E-Learning Providers company. Speaking Partner is an online language courses institution located in Pare Kampung Inggris. They have over 85 experienced tutors who have been teaching English for over 3 years. They offer a wide range of language skills and have a strong presence in various companies and institutions. They provide flexible learning options and have a focus on improvin"
-        },
-        {
           "title": "Time2Talk",
           "url": "https://time2talk.app/",
           "publishedDate": "2026-04-20T00:00:00.000Z",
@@ -540,11 +512,39 @@
           "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and C"
         },
         {
+          "title": "BeeSpeaker",
+          "url": "https://beespeaker.com/",
+          "publishedDate": "2026-04-28T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "BeeSpeaker is a E-Learning Providers company. BeeSpeaker is an English learning app that focuses mainly on improving your speaking skills. They provide over 3000 video lessons with teachers and native speakers, and offer a smart AI tutor to practice real-life conversations with a smart ai tutor. They have over 2 million users worldwide. BeeSpeaker employs 16 people (+58.3% YoY, +7 people). Headquartered in Stockholm,"
+        },
+        {
           "title": "Linguado",
           "url": "https://linguado.com/",
           "publishedDate": "2026-04-30T00:00:00.000Z",
           "author": "Exa",
           "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to t"
+        },
+        {
+          "title": "Speaking Partner Official Page",
+          "url": "https://speakingpartner.id/",
+          "publishedDate": "2026-05-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Speaking Partner Official Page is a E-Learning Providers company. Speaking Partner is an online language courses institution located in Pare Kampung Inggris. They have over 85 experienced tutors who have been teaching English for over 3 years. They offer a wide range of language skills and have a strong presence in various companies and institutions. They provide flexible learning options and have a focus on improvin"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "Talky",
+          "url": "https://talky-app.com/",
+          "publishedDate": "2026-05-01T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "(+120 [...] 023 [...] in total funding [...] Talky transforms language learning for 8-12 year olds. Leveraging AI, it delivers personalized feedback on speaking and writing skills. [...] - Features: Mobile App - Tech Stack: aws lambda, python, spacy, clever, c, impact, unity [...] - Monthly Visits: 1,455 - Traffic Growth: Monthly: +10.6%, Yearly: +21.3% - Global Rank: #11,175,088 - Bounce Rate: 0.3% - Pages per Visit"
         }
       ]
     },
@@ -556,28 +556,21 @@
       "query": "Fluently chat live language exchange native speakers users app store growth social media",
       "ok": true,
       "status": 200,
-      "requestId": "94fba08f31a2a0b6bc14d632c67ea697",
+      "requestId": "fd700293875dd7a778680e04be8e1683",
       "results": [
+        {
+          "title": "Fluently: AI English tutor",
+          "url": "https://getfluently.app/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Fluently: AI English tutor is a Technology, Information and Internet company. Fluently is a personal AI English tutor that helps individuals improve their English speaking skills and improve their personal learning plan. They offer a 20x cheaper and available 24/7 English tutor service. Fluently: AI English tutor employs 14 people, founded in 2023. Headquartered in Wilmington, Delaware, United States, operates in 9 c"
+        },
         {
           "title": "Fluently",
           "url": "https://fluently.chat/",
           "publishedDate": "2026-04-22T00:00:00.000Z",
           "author": "Exa",
           "highlight": "Fluently is a E-Learning Providers company. Fluently is a company that offers live language exchange services for individuals to master any language. They provide free membership with early access and have a team of native speakers in their own dialects. The company aims to help individuals speak naturally and comfortably by learning from native speakers in their own dialects. Founded in 2019. Headquartered in santa "
-        },
-        {
-          "title": "Fluently: AI English tutor",
-          "url": "https://getfluently.app/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Fluently: AI English tutor is a Technology, Information and Internet company. Fluently is a human-like AI English tutor that offers 24/7 and 15x cheaper than the real one. They help individuals improve their English speaking skills and reduce mistakes to feel confident on any important English call. Fluently: AI English tutor employs 14 people (+228.6% YoY), founded in 2023. Headquartered in Wilmington, Delaware, Uni"
-        },
-        {
-          "title": "HelloTalk",
-          "url": "https://hellotalk.com/",
-          "publishedDate": "2026-04-30T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The application is available for download on Android and Apple "
         },
         {
           "title": "Fluently",
@@ -587,6 +580,13 @@
           "highlight": "Fluently is a Education company. Fluently employs 4 people (-14.3% YoY, -1 person), founded in 2024. [...] Welcome to the Fluently Linkedin page ! We're revolutionizing the language learning experience. 🌍📚 [...] At Fluently, we're passionate about making language learning engaging, effective, and accessible to everyone. Our platform leverages cutting-edge technology to provide personalized learning experiences tail"
         },
         {
+          "title": "Tandem",
+          "url": "https://tandem.net/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+7.8% YoY, +4 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Indonesia, Spain, United Kingdom, Italy, and Czechia). Has $8.1M in total funding, with 4 prior funding rounds. ["
+        },
+        {
           "title": "meeTalk: Global Chat",
           "url": "https://quiksa.com/",
           "publishedDate": "2026-04-25T00:00:00.000Z",
@@ -594,18 +594,11 @@
           "highlight": "meeTalk: Global Chat is a Social Networking Platforms company. MeeTalk: Global Chat employs 2 people. Headquartered in İstanbul, Turkey. [...] meeTalk Global Chat is a next-generation language exchange and social messaging platform that connects you with native speakers from all around the world. 🌍 [...] Whether you want to practice a new language, make international friends, or simply explore new cultures, meeTalk "
         },
         {
-          "title": "How do you do?",
-          "url": "https://howdoyou.do/",
-          "publishedDate": "2026-04-25T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "How do you do? is language learning made social - and it's available at http://howdoyou.do. How do you do? lets you find conversation partners and practice different languages instantly - via text or video - with native speakers from around the world! [...] We've found that many language learners do seek conversation partners - and not only native speakers of the language they're learning, but also other peers learni"
-        },
-        {
           "title": "Conversation Exchange",
           "url": "https://conversationexchange.com/",
           "publishedDate": "2026-04-23T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Italy and Brazil. [...] Through Conversation Exchange you can practice your second "
+          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Brazil and Italy. [...] Through Conversation Exchange you can practice your second "
         },
         {
           "title": "Fluentworlds",
@@ -613,6 +606,13 @@
           "publishedDate": "2026-04-29T00:00:00.000Z",
           "author": "Exa",
           "highlight": "Fluentworlds is a E-Learning Providers company. FluentWorlds is an immersive language learning app that offers interactive online worlds for Spanish and English learning. It provides expert personal tutoring and engaging web conferencing, with a focus on immersion and interaction in simulated \"real world\" environments. The app also offers a 3Dmeet, expert personal tutoring, and engaging web conferencing. Fluentworlds"
+        },
+        {
+          "title": "Linguado",
+          "url": "https://linguado.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to t"
         }
       ]
     },
@@ -624,21 +624,14 @@
       "query": "Lingbe language exchange app users downloads app store google play growth native speakers",
       "ok": true,
       "status": 200,
-      "requestId": "dc5c46d8821790ee8c4129a4407b029c",
+      "requestId": "d86ddcb90ca9ffd11548b183574e5a59",
       "results": [
         {
           "title": "Lingbe",
           "url": "https://lingbe.com/",
           "publishedDate": null,
           "author": null,
-          "highlight": "Lingbe is a Technology, Information and Internet company. Lingbe.com is a language practice platform that allows users to practice with native speakers anytime, anywhere. Users can practice with native speakers and earn rewards and special features. The platform allows users to connect with other learners and make new friends from around the world. Lingbe employs 3 people (-12.5% YoY, -1 person) and has an annual rev"
-        },
-        {
-          "title": "Tandem",
-          "url": "https://tandem.net/",
-          "publishedDate": "2026-05-03T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+3.9% YoY, +2 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Spain, Indonesia, United Kingdom, Canada, and France). Has $8.1M in total funding, with 4 prior funding rounds. ["
+          "highlight": "Lingbe is a Technology, Information and Internet company. Lingbe.com is a language practice platform that allows users to practice with native speakers anytime, anywhere. Users can practice with native speakers and earn rewards and special features. The platform allows users to connect with other learners and make new friends from around the world. Lingbe employs 3 people (-22.2% YoY, -2 people) and has an annual rev"
         },
         {
           "title": "Linguado",
@@ -646,6 +639,13 @@
           "publishedDate": "2026-04-30T00:00:00.000Z",
           "author": "Exa",
           "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and they provide a global community that includes polyglots to t"
+        },
+        {
+          "title": "LINGORA",
+          "url": "https://tutoringgo.com/",
+          "publishedDate": "2026-01-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "We are a leading provider of on-demand matching platforms, specializing in premium education services. Our flagship service, Tutoring 1:1 English Speaking App Service, is a mobile education service platform that connects native tutors from around the world with learners in real time. As a high-end edutech service is rapidly expanding its reach in both domestic South Korea and globally across Taiwan, Thailand, Indones"
         },
         {
           "title": "Fluently",
@@ -659,28 +659,28 @@
           "url": "https://sewayou.com/",
           "publishedDate": "2026-05-02T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] - Features: Mobile App [...] - Monthly Visits: 3,719 - Traffic Growth: Monthly: -19.8%, Yearly: +6.3% - Global Rank: #4,762,238 - Bounce Rate: 0.4% - Pages per Visi"
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] - Features: Mobile App [...] - Monthly Visits: 9,798 - Traffic Growth: Monthly: +163.5%, Yearly: +196.9% - Global Rank: #2,431,782 - Bounce Rate: 0.5% - Pages per V"
+        },
+        {
+          "title": "BeeSpeaker",
+          "url": "https://beespeaker.com/",
+          "publishedDate": "2026-04-28T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "BeeSpeaker is a E-Learning Providers company. BeeSpeaker is an English learning app that focuses mainly on improving your speaking skills. They provide over 3000 video lessons with teachers and native speakers, and offer a smart AI tutor to practice real-life conversations with a smart ai tutor. They have over 2 million users worldwide. BeeSpeaker employs 16 people (+58.3% YoY, +7 people). Headquartered in Stockholm,"
         },
         {
           "title": "LingoPraxis - English Speaking Club",
           "url": "https://lingopraxis.com/",
           "publishedDate": "2026-04-26T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "LingoPraxis [...] English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), fo"
+          "highlight": "English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founded in 2022. Hea"
         },
         {
-          "title": "Beelinguapp",
-          "url": "https://beelinguapp.com/",
+          "title": "Speechling",
+          "url": "https://speechling.com/",
           "publishedDate": "2026-05-03T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "A screenshot of Beelinguapp showing English and Spanish simultaneously Beelinguapp is a language-learning mobile application. It works by showing a text to the user in two languages simultaneously, allowing the users to use their native language as a references. It also works as an audio book, where users can listen to a recording of a voice reading a text while at the same time a karaoke style animation moves throug"
-        },
-        {
-          "title": "Plang, Inc.",
-          "url": "https://plang.ai/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-28.6% YoY, -2 people). Headquartered in South Korea. Has $824.6K in tota"
+          "highlight": "Speechling is an educational institution. Speechling is a nonprofit language-learning platform focused on speaking. They offer free language coaching on speaking with 1000s of fun exercises. They provide free website/app for learning and tutoring for students. Speechling employs 3 people (-25.0% YoY, -2 people), founded in 2017. Headquartered in San Francisco, California, United States, with presence in Costa Rica an"
         }
       ]
     },
@@ -692,7 +692,7 @@
       "query": "Slowly pen pal app users downloads awards app store growth community language exchange",
       "ok": true,
       "status": 200,
-      "requestId": "bb47e07f4c1d08d5021887ea7a4f4668",
+      "requestId": "96b8d4e3e7e8ede23237f0866d334971",
       "results": [
         {
           "title": "Slowly Communications Ltd.",
@@ -702,18 +702,18 @@
           "highlight": "Slowly Communications Ltd. is a Software Development company. Slowly is a company that allows users to meet pen pals from their smartphones. They connect people around the world at a slower but better pace by providing meaningful conversations with people in the era of instant messaging. The app allows users to share their passion, write a letter, and collect stamps from around the world. Slowly Communications Ltd. e"
         },
         {
+          "title": "PenPal",
+          "url": "https://penpal.me/",
+          "publishedDate": "2026-05-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "PenPal is a Social Networking Platforms company. PenPal is a platform that allows users to sign up and match with other members based on mutual interests, chat and create customized postcards online. The platform is simple and fun, with features such as creating personalized postcards and hidden addresses. Users can learn about other cultures and countries through the platform. PenPal employs 3 people, founded in 202"
+        },
+        {
           "title": "Conversation Exchange",
           "url": "https://conversationexchange.com/",
           "publishedDate": "2026-04-23T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Italy and Brazil. [...] a social environment [...] other things about a culture [.."
-        },
-        {
-          "title": "Tandem",
-          "url": "https://tandem.net/",
-          "publishedDate": "2026-05-03T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+3.9% YoY, +2 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Spain, Indonesia, United Kingdom, Canada, and France). Has $8.1M in total funding, with 4 prior funding rounds. ["
+          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Brazil and Italy. [...] once a week and have a [...] There is no [...] in a social "
         },
         {
           "title": "LingoPraxis - English Speaking Club",
@@ -727,28 +727,28 @@
           "url": "https://sewayou.com/",
           "publishedDate": "2026-05-02T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] Information and Internet [...] - Aliases [...] sewayou [...] - Linkedin Followers: [...] 168 (Monthly: +0 [...] 6%, Yearly: +3.7%) - Emails [...] - Features: Mobile"
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] 69 (Monthly [...] 6%, Yearly [...] - Features: Mobile App [...] - Monthly Visits: 9,798 - Traffic Growth: Monthly: +163.5%, Yearly: +196.9% - Global Rank: #2,431,78"
         },
         {
-          "title": "Fluently",
-          "url": "https://fluently.chat/",
-          "publishedDate": "2026-04-22T00:00:00.000Z",
+          "title": "Hello Pal",
+          "url": "https://hellopal.com/",
+          "publishedDate": "2026-02-19T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Fluently is a E-Learning Providers company. Fluently is a company that offers live language exchange services for individuals to master any language. They provide free membership with early access and have a team of native speakers in their own dialects. The company aims to help individuals speak naturally and comfortably by learning from native speakers in their own dialects. Founded in 2019. Headquartered in santa "
+          "highlight": "(HLL [...] ) is a E-Learning Providers company. Hello [...] employs 4 people (-16.7% YoY, -1 person) and has an annual revenue of $18.5M, founded in 2013. Headquartered in Hong Kong, with presence in China, Saudi Arabia, Luxembourg, and Canada. Has a $55.8K market cap. IPO 2016. [...] Hello Pal is the developer of the social language chat app that allows you to talk to other people all over the world, in completely f"
         },
         {
           "title": "Langly Inc.",
           "url": "https://langly.ai/",
           "publishedDate": "2026-04-28T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Langly Inc. is a Information Technology & Services company. Langly is an innovative EdTech company that develops an English learning mobile game that helps practice English reading, listening, and writing easily. Langly Inc. employs 14 people (+14.3% YoY, +2 people). Headquartered in Lewes, Delaware, United States, with presence in Moldova and Brazil. Has $173.0K in total funding, with 1 prior funding round. [...] Gl"
+          "highlight": "Langly Inc. is a Information Technology & Services company. Langly is an innovative EdTech company that develops an English learning mobile game that helps practice English reading, listening, and writing easily. Langly Inc. employs 14 people (+6.7% YoY, +1 person). Headquartered in Lewes, Delaware, United States, with presence in Moldova and Brazil. Has $173.0K in total funding, with 1 prior funding round. [...] Glo"
         },
         {
-          "title": "Fluently: AI English tutor",
-          "url": "https://getfluently.app/",
-          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "title": "HelloTalk",
+          "url": "https://hellotalk.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Fluently: AI English tutor is a Technology, Information and Internet company. Fluently is a human-like AI English tutor that offers 24/7 and 15x cheaper than the real one. They help individuals improve their English speaking skills and reduce mistakes to feel confident on any important English call. Fluently: AI English tutor employs 14 people (+228.6% YoY), founded in 2023. Headquartered in Wilmington, Delaware, Uni"
+          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The application is available for download on Android and Apple "
         }
       ]
     },
@@ -760,7 +760,7 @@
       "query": "LingoPraxis language exchange speaking club app store google play telegram users growth",
       "ok": true,
       "status": 200,
-      "requestId": "97cfccb26695c1a7836784e488a780da",
+      "requestId": "c3cf7cc672feaaa8148c094bb3ce41ab",
       "results": [
         {
           "title": "LingoPraxis - English Speaking Club",
@@ -777,6 +777,20 @@
           "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and C"
         },
         {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "Languages Live Gesellschaft Lokalisierung mbH",
+          "url": "https://mylanguageexchange.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Languages Live Gesellschaft Lokalisierung mbH. Head [...] - Status: active - Ownership: Private - Aliases: languages live gesellschaft lokalisierung mbh, mylanguageexchange, language exchange community - Phone: (514) 448-0588 - SIC Codes: 82, 824 - NAICS Codes: 61, 611 [...] - Monthly Visits: 354,995 - Traffic Growth: Monthly: -13.7% - Global Rank: #95,350 - Bounce Rate: 0.4% - Pages per Visit: 5.9 - Top Countries: U"
+        },
+        {
           "title": "LingoLooper",
           "url": "https://lingolooper.com/",
           "publishedDate": "2025-12-25T00:00:00.000Z",
@@ -784,39 +798,25 @@
           "highlight": "LingoLooper is a Technology, Information and Internet company. LingoLooper is an immersive language learning app that allows users to acquire target language in the same way as native speakers acquire their own. It offers interactive conversations with AI avatars to help users achieve native-level fluency. LingoLooper employs 14 people (+200.0% YoY, +8 people), founded in 2022. Headquartered in göteborg, västra götal"
         },
         {
-          "title": "Lingopanda (previously PingoLearn)",
-          "url": "https://lingopanda.app/",
-          "publishedDate": "2026-04-23T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Lingopanda (previously PingoLearn) is a E-Learning Providers company. PingoLearn is an ai-powered English tutor on your smartphone that offers a range of learning tools and resources for practice speaking in different situations. They provide a voice chat, feedback, practice partner calls, and language audio books. PingoLearn aims to make learning English fun and stress-free. Lingopanda (previously PingoLearn) employ"
-        },
-        {
-          "title": "Tandem",
-          "url": "https://tandem.net/",
-          "publishedDate": "2026-05-03T00:00:00.000Z",
-          "author": "Exa",
-          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+3.9% YoY, +2 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Spain, Indonesia, United Kingdom, Canada, and France). Has $8.1M in total funding, with 4 prior funding rounds. ["
-        },
-        {
           "title": "Plang, Inc.",
           "url": "https://plang.ai/",
           "publishedDate": "2026-04-27T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-28.6% YoY, -2 people). Headquartered in South Korea. Has $824.6K in tota"
+          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-37.5% YoY, -3 people). Headquartered in South Korea. Has $824.6K in tota"
         },
         {
-          "title": "INT'L CAFE",
-          "url": "https://intlcafe.io/",
-          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "title": "LingoQuesto",
+          "url": "https://lingoquesto.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people (+50.0% YoY, +1 person), founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling s"
+          "highlight": "LingoQuesto is a Education company. LingoQuesto is a company that empowers language educators with a speech-based language practice. They help language educators improve their students' speaking skills through interactive and personalized conversations that simulate immersive learning experiences. LingoQuesto employs 7 people (+60.0% YoY, +3 people), founded in 2023. Headquartered in Singapore, Central Region, Singap"
         },
         {
-          "title": "Blabla Language Exchange",
-          "url": "https://blablalanguageexchange.com/",
-          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "title": "Lingopanda (previously PingoLearn)",
+          "url": "https://lingopanda.app/",
+          "publishedDate": "2026-05-23T00:00:00.000Z",
           "author": "Exa",
-          "highlight": "Blabla Language Exchange is a Events Services company. BlaBla Language Exchange is a community that aims to bring together expatriate communities, travelers, and locals. They offer a fun way to make new friends without the stress and awkwardness. They provide events for people to mingle, sip on their beverages, and chat with fellow humans. Blabla Language Exchange employs 5 people (-15.8% YoY, -3 people), founded in "
+          "highlight": "Lingopanda (previously PingoLearn) is a E-Learning Providers company. PingoLearn is an ai-powered English tutor on your smartphone that offers a range of learning tools and resources for practice speaking in different situations. They provide a voice chat, feedback, practice partner calls, and language audio books. PingoLearn aims to make learning English fun and stress-free. Lingopanda (previously PingoLearn) employ"
         }
       ]
     }

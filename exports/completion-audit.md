@@ -1,6 +1,6 @@
 # Exa AI Social Market Research - Completion Audit
 
-Generated from current workspace data at 2026-06-03T01:04:38.327Z.
+Generated from current workspace data at 2026-06-10T09:02:36.946Z.
 
 ## Scope
 
@@ -11,21 +11,21 @@ Original objective: use Exa categories such as company, people, research paper, 
 - Exa query matrix: 60 searches / 646 raw results.
 - Categories covered: official/social profile: 24 queries / 262 results; company: 17 queries / 160 results; news: 11 queries / 128 results; financial report: 4 queries / 48 results; people: 2 queries / 24 results; research paper: 2 queries / 24 results.
 - Product evidence cards: 42; language-exchange adjacent: 16; IRL/offline social: 14.
-- Raw source linkage audit: 746 results, 643 linked to curated products/timeline/official evidence, 103 in review queue.
-- Language coverage audit: 20 unique HelloTalk/Tandem-adjacent entries, 16 in core matrix, 0 in watchlist.
-- Language official evidence map: 16 curated language products, 4 ready, 8 displayable, 4 thin.
+- Raw source linkage audit: 746 results, 635 linked to curated products/timeline/official evidence, 111 in review queue.
+- Language coverage audit: 21 unique HelloTalk/Tandem-adjacent entries, 16 in core matrix, 2 in watchlist.
+- Language official evidence map: 16 curated language products, 6 ready, 6 displayable, 4 thin.
 - Language official/social deep-dive: 14 targeted Exa searches, 112 results.
 - Language growth/channel deep-dive: 12 targeted Exa searches, 96 results, 3 strong and 9 usable product rows.
-- IRL coverage audit: 26 unique offline-human/IRL entries, 8 core, 7 monitor-linked.
-- IRL offline evidence map: 26 entries, 20 funding/news-linked, 10 monitor-linked, 7 strong.
+- IRL coverage audit: 29 unique offline-human/IRL entries, 8 core, 10 monitor-linked.
+- IRL offline evidence map: 29 entries, 19 funding/news-linked, 11 monitor-linked, 4 strong.
 - Candidate deep dive: 11 product candidates, 22 targeted Exa company/news searches, 132 results.
-- Funding/news timeline: 25 core events plus 15 supplemental candidates from exact window 2024-06-02 - 2026-06-02 / month window 2024.06 - 2026.06; IRL events: 9; explicit USD funding total: $200M.
-- Funding/news dedupe: 40 raw review rows, 37 unique events, 3 duplicate rows.
-- Funding upgrade map: 15 supplemental rows, 12 retained candidates, 3 duplicate evidence rows, 5 retained IRL candidates.
+- Funding/news timeline: 25 core events plus 13 supplemental candidates from exact window 2024-06-02 - 2026-06-02 / month window 2024.06 - 2026.06; IRL events: 9; explicit USD funding total: $200M.
+- Funding/news dedupe: 38 raw review rows, 35 unique events, 3 duplicate rows.
+- Funding upgrade map: 13 supplemental rows, 10 retained candidates, 3 duplicate evidence rows, 4 retained IRL candidates.
 - Discovery scan: 10 blind-spot scans / 100 supplementary results.
-- Paid acquisition evidence audit: 42 products, 0 explicit paid-acquisition rows, 37 directional channel rows, 5 no-paid-evidence rows, 5 monitor paid-acquisition signals.
-- Coverage gaps: 103 unmatched rows retained, 23 product-candidate gaps reviewed by candidate deep-dive, 80 still monitored or archived by lane.
-- Monitor: 9 lanes, 30 recent high-signal items, 0 new alerts in latest run; recent signal review queue: 30.
+- Paid acquisition evidence audit: 42 products, 0 explicit paid-acquisition rows, 37 directional channel rows, 5 no-paid-evidence rows, 10 monitor paid-acquisition signals.
+- Coverage gaps: 111 unmatched rows retained, 25 product-candidate gaps reviewed by candidate deep-dive, 83 still monitored or archived by lane.
+- Monitor: 9 lanes, 37 recent high-signal items, 10 new alerts in latest run; recent signal review queue: 37.
 - Exports: competitive matrix, funding timeline, latest alert review, monitor recent review, monitor recent signals.
 
 ## Requirement Audit
@@ -50,7 +50,7 @@ Proof:
 
 ### 已覆盖: 统计近两年 AI 社交、泛娱乐相关产品融资和新闻
 
-2024-06-02 - 2026-06-02 对应月份窗口 2024.06 - 2026.06；主时间线 25 条，另有 discovery supplemental 15 条候选融资/新闻；funding summary 按年份、赛道、IRL 占比、明确美元融资口径统计，产品聚合覆盖 35 个产品/公司。
+2024-06-02 - 2026-06-02 对应月份窗口 2024.06 - 2026.06；主时间线 25 条，另有 discovery supplemental 13 条候选融资/新闻；funding summary 按年份、赛道、IRL 占比、明确美元融资口径统计，产品聚合覆盖 33 个产品/公司。
 
 Proof:
 - funding summary
@@ -71,7 +71,7 @@ Proof:
 
 ### 已覆盖: 用 monitor 监控新的动向和内容
 
-Codex automation 每日 09:00 运行 Exa monitor；monitor 当前 9 条 lane，历史运行 30 次，台账保留 47 条已发现 URL，最新新增 0 条。
+Codex automation 每日 09:00 运行 Exa monitor；monitor 当前 9 条 lane，历史运行 30 次，台账保留 107 条已发现 URL，最新新增 10 条。
 
 Proof:
 - daily monitor section
@@ -110,11 +110,11 @@ Status: not-mathematically-complete.
 
 The current evidence set satisfies the presentation deliverable and has no blocking candidate or pending alert-review rows, but the original word 'all' cannot be proven mathematically for a live consumer-social market. The goal remains active through monitor and full rebuild workflows.
 
-- Presentation ready: yes.
+- Presentation ready: no.
 - Blocking product-candidate rows: 0.
-- Monitored signal rows: 19.
-- Latest alert pending rows: 0.
-- Recent signal pending rows: 0.
+- Monitored signal rows: 26.
+- Latest alert pending rows: 3.
+- Recent signal pending rows: 3.
 
 ## Local Artifacts
 

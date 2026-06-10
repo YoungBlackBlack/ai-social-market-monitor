@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-03T01:04:38.424Z",
-  "monitorGeneratedAt": "2026-06-03T01:04:33.812Z",
+  "generatedAt": "2026-06-10T09:02:37.069Z",
+  "monitorGeneratedAt": "2026-06-10T09:02:17.670Z",
   "lookbackDays": 14,
   "source": "https://api.exa.ai/search",
   "nativeMonitor": {
-    "checkedAt": "2026-06-03T01:04:31.514Z",
+    "checkedAt": "2026-06-10T09:02:13.666Z",
     "provider": "Exa Websets Monitor API",
     "docsUrl": "https://docs.exa.ai/reference/websets",
     "desiredMonitor": {
@@ -20,14 +20,14 @@
         "path": "/websets",
         "ok": false,
         "status": 401,
-        "requestId": "081565762371e25d294ef404ce1bb788",
+        "requestId": "f2a4803cb7a1f66667406644cac7ca34",
         "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
       },
       {
         "path": "/monitors",
         "ok": false,
         "status": 401,
-        "requestId": "b35e86234b9e9bf87617bd1d6a8fcaae",
+        "requestId": "edc0ac1c4d9c4a31ea00ec9401b9b14c",
         "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
       }
     ],
@@ -43,58 +43,58 @@
     "monitors": 9,
     "ok": 9,
     "totalResults": 90,
-    "recentResults": 30,
-    "newAlerts": 0
+    "recentResults": 37,
+    "newAlerts": 10
   },
   "requestIds": [
-    "1be4f3afa50c2b1d9c994044948e3d5a",
-    "793ba87f0fbf3992bf188593d65108cd",
-    "be78aab8c865028abe7f099082c61fe9",
-    "e258abfb510a2179a611ba2a621fa72a",
-    "0b16ee42868942795c525ba3012c2fb7",
-    "2b4650dd4240d7020f27faccd06d433a",
-    "cedfbbdab47ca43ef79c6b1af4216d6f",
-    "89141281ea4a4c99dd5e637ce0ac43af",
-    "85bbe5148dbc435e7e309aec9b7d26d1"
+    "4bdbcebf22fe9f92078da8ddac8dd313",
+    "e6a68d5986dcae3c9cd65ff96a1254e0",
+    "454637e14869998f954639307d1e5f40",
+    "630c11bf65b457214789d882b6434b28",
+    "e6e7755439590980f66dc4532f73b3c0",
+    "14e3e4198433b661874c1a2f2213b842",
+    "92390e3195a1d173c3349389ffe6a552",
+    "709ae52dbe54ba2f114667652b0c4f33",
+    "a86df0e830fab8ad92776c1585b7ea4e"
   ],
   "runs": [
     {
       "id": "funding",
       "label": "融资 / 商业化",
       "status": 200,
-      "requestId": "1be4f3afa50c2b1d9c994044948e3d5a",
-      "recentCount": 6,
+      "requestId": "4bdbcebf22fe9f92078da8ddac8dd313",
+      "recentCount": 7,
       "query": "past two weeks funding raised seed series A AI social app AI companion app AI roleplay app consumer AI app social entertainment startup"
     },
     {
       "id": "irl",
       "label": "线下真人社交",
       "status": 200,
-      "requestId": "793ba87f0fbf3992bf188593d65108cd",
-      "recentCount": 4,
+      "requestId": "e6a68d5986dcae3c9cd65ff96a1254e0",
+      "recentCount": 2,
       "query": "past two weeks IRL offline social app AI matching friends dinner strangers meetup event social discovery funding launch 222 Pie Timeleft Meet5 Aglow Breeze group travel"
     },
     {
       "id": "language",
       "label": "语言交换 / 跨文化社交",
       "status": 200,
-      "requestId": "be78aab8c865028abe7f099082c61fe9",
-      "recentCount": 1,
+      "requestId": "454637e14869998f954639307d1e5f40",
+      "recentCount": 4,
       "query": "past two weeks HelloTalk Tandem SewaYou Hilokal Slowly Linguado LangPal MatchaLingua language exchange app native speaker chat social language learning growth funding launch"
     },
     {
       "id": "china-export",
       "label": "中国 AI 社交出海",
       "status": 200,
-      "requestId": "e258abfb510a2179a611ba2a621fa72a",
-      "recentCount": 2,
+      "requestId": "630c11bf65b457214789d882b6434b28",
+      "recentCount": 3,
       "query": "past two weeks Chinese AI companion app overseas Talkie MiniMax PolyBuzz HiWaifu Linky AI social app downloads revenue funding"
     },
     {
       "id": "research-risk",
       "label": "研究 / 政策风险",
       "status": 200,
-      "requestId": "0b16ee42868942795c525ba3012c2fb7",
+      "requestId": "e6e7755439590980f66dc4532f73b3c0",
       "recentCount": 1,
       "query": "past two weeks AI companion safety loneliness teens regulation lawsuit research paper Character.AI Replika Nomi chatbot companion"
     },
@@ -102,115 +102,115 @@
       "id": "company-new",
       "label": "新公司 / 新产品",
       "status": 200,
-      "requestId": "2b4650dd4240d7020f27faccd06d433a",
-      "recentCount": 0,
+      "requestId": "14e3e4198433b661874c1a2f2213b842",
+      "recentCount": 1,
       "query": "new companies AI social app AI companion app IRL social app language exchange app launched 2026 startup"
     },
     {
       "id": "paid-acquisition",
       "label": "投放 / 付费获客证据",
       "status": 200,
-      "requestId": "cedfbbdab47ca43ef79c6b1af4216d6f",
-      "recentCount": 8,
+      "requestId": "92390e3195a1d173c3349389ffe6a552",
+      "recentCount": 9,
       "query": "past two weeks AI social app AI companion app language exchange app IRL social app paid acquisition advertising campaign ads library creatives CAC ROAS user acquisition marketing spend app install ads"
     },
     {
       "id": "residual-irl-watchlist",
       "label": "Residual IRL watchlist",
       "status": 200,
-      "requestId": "89141281ea4a4c99dd5e637ce0ac43af",
-      "recentCount": 4,
+      "requestId": "709ae52dbe54ba2f114667652b0c4f33",
+      "recentCount": 5,
       "query": "past two weeks Add One Eve Inc. Gist IRL Soma IRL social app friends events networking face-to-face launch funding users growth invite-only gatherings"
     },
     {
       "id": "coverage-signal-watchlist",
       "label": "Coverage signal watchlist",
       "status": 200,
-      "requestId": "85bbe5148dbc435e7e309aec9b7d26d1",
-      "recentCount": 4,
-      "query": "past two weeks irl social handles Instagram - YouTube Social Media: Definition, Importance, Top Websites, and Apps The 15 Most Popular Social Media Platforms in 2026 | Salesforce AU ai social handles Discord (@discord) Official | TikTok Meta AI Studio TikTok - YouTube langpal growth Talkpal EZ Speak Plang, Inc. sewayou growth Eyse needyou AI Plang, Inc. ai friend wearables Amazon has big hopes for wearable AI - starting with this US$50 gadget - The Business Times ai social official gap profiles ‎status - sims but social media App - App Store companion long tail Soul AI irl social long tail Locpats offline social discovery companies Pie slowly growth Langly Inc. talk4now growth Viral App Launch AI social app IRL social app companion app launch funding users revenue downloads official product update"
+      "requestId": "a86df0e830fab8ad92776c1585b7ea4e",
+      "recentCount": 5,
+      "query": "past two weeks ai social handles Discord (@discord) Official | TikTok Meta AI Studio ai social official gap profiles ‎status - sims but social media App - App Store status - sims but social media - App Store - Apple companion long tail Nectar AI nunu.ai irl social profiles ‎Pax Meet App - App Store Reelink — Turn Reels into Real Connections langpal growth Talkpal EZ Speak Plang, Inc. ai companion funding expansion FantasyGF: Огляньте свого наступного віртуального компаньйона ai dating discovery Single 20-somethings need AI to make first move on dating apps, says Hinge boss - BBC News ai friend wearables Amazon has big hopes for wearable AI - starting with this US$50 gadget - The Business Times conversation exchange growth SPEAK - Share your world founder people background Taha Hossain irl social handles The 15 Most Popular Social Media Platforms in 2026 | Salesforce AU language exchange companies SPEAK AI social app IRL social app companion app launch funding users revenue downloads official product update"
     }
   ],
   "alertClosure": {
-    "latestAlertReviewRows": 44,
-    "latestAlertPendingRows": 0,
-    "recentSignalReviewRows": 30,
-    "recentSignalPendingRows": 0,
-    "status": "closed"
+    "latestAlertReviewRows": 104,
+    "latestAlertPendingRows": 3,
+    "recentSignalReviewRows": 37,
+    "recentSignalPendingRows": 3,
+    "status": "needs-review"
   },
   "latestHandledAlerts": [
     {
-      "name": "Partiful is turning party invites into a payments business - Startup Fortune",
-      "decision": "已覆盖/继续观察",
-      "source": "2026-06-03 monitor · Residual IRL watchlist",
-      "reason": "Partiful 已在 IRL 主表、官方覆盖和边界融资样本中保留；这次内置票务上线说明其从 invite graph 向线下活动交易延伸，属于值得继续追踪的商业化更新，但不需要重复新增产品卡或融资事件。",
+      "name": "ChatGPT ads reach the UK as ad tech's infrastructure bets pile up",
+      "decision": "投放证据候选",
+      "source": "2026-06-10 monitor · 投放 / 付费获客证据",
+      "reason": "该信号来自投放/付费获客 monitor lane，先进入 paid-acquisition evidence audit 的补证路径；只有出现广告素材库、投放平台、CAC/ROAS、买量或投放后下载变化等明确证据时，才把对应产品从方向性渠道升级为明确投放证据。",
       "evidence": [
         {
-          "label": "Residual IRL watchlist",
-          "url": "https://startupfortune.com/partiful-is-turning-party-invites-into-a-payments-business/"
+          "label": "投放 / 付费获客证据",
+          "url": "https://ppc.land/chatgpt-ads-reach-the-uk-as-ad-techs-infrastructure-bets-pile-up/"
         }
       ]
     },
     {
-      "name": "How Obvi Is Rebuilding Its Entire Meta Ad Stack Around Incremental Lift – D2C Times",
+      "name": "From Install Counts to Player Value: Introducing Unity Vector-Based ROAS Campaigns - Inven Global",
+      "decision": "投放证据候选",
+      "source": "2026-06-10 monitor · 投放 / 付费获客证据",
+      "reason": "该信号来自投放/付费获客 monitor lane，先进入 paid-acquisition evidence audit 的补证路径；只有出现广告素材库、投放平台、CAC/ROAS、买量或投放后下载变化等明确证据时，才把对应产品从方向性渠道升级为明确投放证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://www.invenglobal.com/articles/22477/from-install-counts-to-player-value-introducing-unity-vector-based-roas-campaigns"
+        }
+      ]
+    },
+    {
+      "name": "AI Marketing Tool AdLibrary.com Launches the First Cross-Platform Ad Library With Over 1 Billion Ads and AI-Powered Creative Analysis – North Headlines",
+      "decision": "投放证据候选",
+      "source": "2026-06-10 monitor · 投放 / 付费获客证据",
+      "reason": "该信号来自投放/付费获客 monitor lane，先进入 paid-acquisition evidence audit 的补证路径；只有出现广告素材库、投放平台、CAC/ROAS、买量或投放后下载变化等明确证据时，才把对应产品从方向性渠道升级为明确投放证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://www.northheadlines.com/ai-marketing-tool-adlibrary-com-launches-the-first-cross-platform-ad-library-with-over-1-billion-ads-and-ai-powered-creative-analysis/"
+        }
+      ]
+    },
+    {
+      "name": "Duolingo Revives Lost Streaks Through a Soap-Opera Inspired Campaign",
+      "decision": "投放证据候选",
+      "source": "2026-06-10 monitor · 投放 / 付费获客证据",
+      "reason": "该信号来自投放/付费获客 monitor lane，先进入 paid-acquisition evidence audit 的补证路径；只有出现广告素材库、投放平台、CAC/ROAS、买量或投放后下载变化等明确证据时，才把对应产品从方向性渠道升级为明确投放证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://www.medianews4u.com/duolingo-revives-lost-streaks-through-a-soap-opera-inspired-campaign/"
+        }
+      ]
+    },
+    {
+      "name": "How Brez Is Winning Meta in 2026 With a Radical Creative Rotation System – D2C Times",
       "decision": "投放平台背景",
-      "source": "2026-06-03 monitor · 投放 / 付费获客证据",
+      "source": "2026-06-10 monitor · 投放 / 付费获客证据",
       "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
       "evidence": [
         {
           "label": "投放 / 付费获客证据",
-          "url": "https://d2c-times.com/how-obvi-is-rebuilding-its-entire-meta-ad-stack-around-incremental-lift/"
-        }
-      ]
-    },
-    {
-      "name": "How Cuts Clothing Rebuilt Its Meta Creative Stack to Escape the ROAS Plateau – D2C Times",
-      "decision": "投放平台背景",
-      "source": "2026-06-03 monitor · 投放 / 付费获客证据",
-      "reason": "Caden Lane / D2C 广告归因文章是电商品牌投放与 Meta signal stack 的平台背景信号，可用于 paid-acquisition evidence audit 的补证方法论；当前不指向 AI 社交、语言交换或 IRL 产品的投放行为，不能升级为产品级明确买量证据。",
-      "evidence": [
-        {
-          "label": "投放 / 付费获客证据",
-          "url": "https://d2c-times.com/how-cuts-clothing-rebuilt-its-meta-creative-stack-to-escape-the-roas-plateau/"
-        }
-      ]
-    },
-    {
-      "name": "Board, the new game startup from Mirror founder Brynn Putnam, raises $20M, has already sold thousands | TechCrunch",
-      "decision": "暂缓/泛娱乐边界",
-      "source": "2026-06-03 monitor · 融资 / 商业化",
-      "reason": "Board 的 2000 万美元融资和桌游式社交玩法说明其处在 AI/游戏化娱乐的相邻边界，但当前更像游戏 startup 而非 AI social app、AI companion 或线下真人社交主线；保留为泛娱乐融资观察，不进入核心主表。",
-      "evidence": [
-        {
-          "label": "融资 / 商业化",
-          "url": "https://techcrunch.com/2026/06/02/board-the-new-game-startup-from-mirror-founder-brynn-putnam-raises-20m-has-already-sold-thousands/"
-        }
-      ]
-    },
-    {
-      "name": "Nectar Social Raises $30M, Rebrands Itself as Nectar Agent - Demand Gen Report",
-      "decision": "暂缓/B2B 社交营销",
-      "source": "2026-06-03 monitor · 融资 / 商业化",
-      "reason": "Nectar Social 的 3000 万美元融资和更名为 Nectar Agent 说明 agentic social marketing 赛道升温，但产品定位仍是品牌营销操作系统，不是 consumer AI social app、语言交换或 IRL 真人社交产品；继续作为 B2B 边界融资样本保留。",
-      "evidence": [
-        {
-          "label": "融资 / 商业化",
-          "url": "https://www.demandgenreport.com/industry-news/news-brief/nectar-social-raises-30m-rebrands-itself-as-nectar-agent/53121/"
+          "url": "https://d2c-times.com/how-brez-is-winning-meta-in-2026-with-a-radical-creative-rotation-system/"
         }
       ]
     }
   ],
   "persistence": {
     "monitorHistoryRuns": 30,
-    "monitorLedgerItems": 47,
+    "monitorLedgerItems": 107,
     "sqliteCounts": {
       "products": 42,
-      "funding_events": 40,
-      "monitor_signals": 30,
+      "funding_events": 38,
+      "monitor_signals": 37,
       "source_linkage": 746,
-      "coverage_gaps": 41,
-      "audit_rows": 347,
-      "view_latest_monitor_signals": 30
+      "coverage_gaps": 56,
+      "audit_rows": 346,
+      "view_latest_monitor_signals": 37
     },
     "files": [
       "data/monitor.json",

@@ -1,6 +1,6 @@
 # SQLite 数据库说明
 
-生成时间：2026-06-03T01:04:38.298Z
+生成时间：2026-06-10T09:02:36.908Z
 
 ## 文件
 
@@ -13,15 +13,15 @@
 | 表 | 行数 | 用途 |
 |---|---:|---|
 | products | 42 | 竞品主表产品、赛道、增长信号、渠道、功能差异、IRL 强度和证据评分。 |
-| funding_events | 40 | 近两年融资/新闻事件级审计，包含窗口、金额类型、IRL 相关性、去重和来源 URL。 |
-| monitor_signals | 30 | 最近一次 Exa monitor 近窗信号。 |
+| funding_events | 38 | 近两年融资/新闻事件级审计，包含窗口、金额类型、IRL 相关性、去重和来源 URL。 |
+| monitor_signals | 37 | 最近一次 Exa monitor 近窗信号。 |
 | source_linkage | 746 | Exa 原始/补充来源的 linked、候选、背景、低相关分流状态。 |
-| coverage_gaps | 41 | 未关联来源按复核层级分组后的覆盖缺口 Register。 |
-| audit_rows | 347 | 网页内明细表的通用审计行，保留完整 JSON。 |
+| coverage_gaps | 56 | 未关联来源按复核层级分组后的覆盖缺口 Register。 |
+| audit_rows | 346 | 网页内明细表的通用审计行，保留完整 JSON。 |
 | view_language_adjacent_products | 16 | HelloTalk / Tandem 相邻语言产品视图。 |
-| view_irl_funding_news | 18 | IRL / 线下真人相关融资与新闻视图。 |
-| view_latest_monitor_signals | 30 | 最近一次 monitor 信号视图。 |
-| view_unresolved_coverage_gaps | 30 | 仍有 unresolved_count 的覆盖缺口视图。 |
+| view_irl_funding_news | 17 | IRL / 线下真人相关融资与新闻视图。 |
+| view_latest_monitor_signals | 37 | 最近一次 monitor 信号视图。 |
+| view_unresolved_coverage_gaps | 42 | 仍有 unresolved_count 的覆盖缺口视图。 |
 | view_paid_acquisition_claims | 42 | 投放/付费获客安全表述视图。 |
 
 ## 常用查询

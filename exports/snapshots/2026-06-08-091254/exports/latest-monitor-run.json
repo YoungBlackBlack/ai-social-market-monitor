@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-06-08T09:12:50.872Z",
+  "monitorGeneratedAt": "2026-06-08T09:12:45.598Z",
+  "lookbackDays": 14,
+  "source": "https://api.exa.ai/search",
+  "nativeMonitor": {
+    "checkedAt": "2026-06-08T09:12:42.931Z",
+    "provider": "Exa Websets Monitor API",
+    "docsUrl": "https://docs.exa.ai/reference/websets",
+    "desiredMonitor": {
+      "externalId": "exa-ai-social-market-monitor",
+      "name": "Exa AI social market monitor",
+      "scope": "AI social apps, AI companions, AI entertainment, language-exchange social apps, and IRL/offline real-human social products."
+    },
+    "status": "unavailable",
+    "mode": "codex-cron-search-api-fallback",
+    "fallback": "Codex daily automation runs node scripts/run-all.mjs with Exa Search API monitor lanes.",
+    "probes": [
+      {
+        "path": "/websets",
+        "ok": false,
+        "status": 401,
+        "requestId": "9eb3873c635de67d5b5fd94d9e64eb4c",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      },
+      {
+        "path": "/monitors",
+        "ok": false,
+        "status": 401,
+        "requestId": "a454e2f0890c4b25b9bbf529a693c32c",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      }
+    ],
+    "websets": [],
+    "monitors": [],
+    "reason": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+  },
+  "automation": {
+    "name": "Exa AI social market monitor",
+    "schedule": "Daily 09:00"
+  },
+  "summary": {
+    "monitors": 9,
+    "ok": 9,
+    "totalResults": 90,
+    "recentResults": 33,
+    "newAlerts": 0
+  },
+  "requestIds": [
+    "8c056481a5b741bab5bb393801e5fc23",
+    "0700bb39602a24c90d20c8d4371900b4",
+    "760aacfbbe953761644961599da21c8e",
+    "13d0b7826819371eb833b587394c87d2",
+    "8f1d93b6d7303dcea56047fa1bb30ad3",
+    "c4dd05e3fe79a2c40d80046e1b42c9d1",
+    "9ec7c139db2254d81fd9b2b4dbdff23e",
+    "2df308cf986446fa025f496f09a24d27",
+    "efda2f37d944e871dfb50fd2eb93e9da"
+  ],
+  "runs": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "status": 200,
+      "requestId": "8c056481a5b741bab5bb393801e5fc23",
+      "recentCount": 6,
+      "query": "past two weeks funding raised seed series A AI social app AI companion app AI roleplay app consumer AI app social entertainment startup"
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "status": 200,
+      "requestId": "0700bb39602a24c90d20c8d4371900b4",
+      "recentCount": 6,
+      "query": "past two weeks IRL offline social app AI matching friends dinner strangers meetup event social discovery funding launch 222 Pie Timeleft Meet5 Aglow Breeze group travel"
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "status": 200,
+      "requestId": "760aacfbbe953761644961599da21c8e",
+      "recentCount": 1,
+      "query": "past two weeks HelloTalk Tandem SewaYou Hilokal Slowly Linguado LangPal MatchaLingua language exchange app native speaker chat social language learning growth funding launch"
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "status": 200,
+      "requestId": "13d0b7826819371eb833b587394c87d2",
+      "recentCount": 2,
+      "query": "past two weeks Chinese AI companion app overseas Talkie MiniMax PolyBuzz HiWaifu Linky AI social app downloads revenue funding"
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "status": 200,
+      "requestId": "8f1d93b6d7303dcea56047fa1bb30ad3",
+      "recentCount": 0,
+      "query": "past two weeks AI companion safety loneliness teens regulation lawsuit research paper Character.AI Replika Nomi chatbot companion"
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "status": 200,
+      "requestId": "c4dd05e3fe79a2c40d80046e1b42c9d1",
+      "recentCount": 0,
+      "query": "new companies AI social app AI companion app IRL social app language exchange app launched 2026 startup"
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "status": 200,
+      "requestId": "9ec7c139db2254d81fd9b2b4dbdff23e",
+      "recentCount": 8,
+      "query": "past two weeks AI social app AI companion app language exchange app IRL social app paid acquisition advertising campaign ads library creatives CAC ROAS user acquisition marketing spend app install ads"
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "status": 200,
+      "requestId": "2df308cf986446fa025f496f09a24d27",
+      "recentCount": 5,
+      "query": "past two weeks Add One Eve Inc. Gist IRL Soma IRL social app friends events networking face-to-face launch funding users growth invite-only gatherings"
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "status": 200,
+      "requestId": "efda2f37d944e871dfb50fd2eb93e9da",
+      "recentCount": 5,
+      "query": "past two weeks ai companion funding expansion Kupid AI ვირტუალურ თანამგზავრობასთან გაკავშირებთ FantasyGF: Огляньте свого наступного віртуального компаньйона Вхід до Crushon AI: Отримайте доступ до свого офіційного профілю нецензурованої рольової гри companion long tail Jaimee nunu.ai Candy AI Clone irl social handles Pie Instagram - YouTube Social Media: Definition, Importance, Top Websites, and Apps ai companion roleplay funding news Andreessen Horowitz and Forerunner are betting $55 million on Town's deeply personal AI assistants | Fortune Aippy Raises Tens of Millions of Dollars at a $250 Million Valuation to Build the Future of AI-Native Interactive Entertainment ai dating funding expansion Sitch's new dating app fuses human matchmaking and AI | TechCrunch Sitch Bets on Intentional Dating with AI-Powered Matchmaker Model - Global Dating Insights Single 20-somethings need AI to make first move on da AI social app IRL social app companion app launch funding users revenue downloads official product update"
+    }
+  ],
+  "alertClosure": {
+    "latestAlertReviewRows": 79,
+    "latestAlertPendingRows": 0,
+    "recentSignalReviewRows": 33,
+    "recentSignalPendingRows": 0,
+    "status": "closed"
+  },
+  "latestHandledAlerts": [
+    {
+      "name": "Investing in Town | Andreessen Horowitz",
+      "decision": "候选升级",
+      "source": "2026-06-08 monitor · Coverage signal watchlist",
+      "reason": "Town 的 5500 万美元融资和具人格化 avatar 的 AI assistants 与 AI companion 主线相邻，具备进入融资/产品深挖的价值；但当前更像 personal AI assistant/company thesis 信号，仍需补官方产品形态、社交互动机制和 consumer 分发证据，再决定是否升级进主表或融资时间线。",
+      "evidence": [
+        {
+          "label": "Coverage signal watchlist",
+          "url": "https://a16z.com/announcement/investing-in-town/"
+        }
+      ]
+    },
+    {
+      "name": "Partiful threw its own party, complete with free cigs, a Tamagotchi necklace, and a bong packed with Smarties – DNYUZ",
+      "decision": "已覆盖/继续观察",
+      "source": "2026-06-08 monitor · Residual IRL watchlist",
+      "reason": "Partiful 已在 IRL 主表、官方覆盖和近期票务商业化更新中保留；这条纽约 Tech Week 派对报道更像品牌势能与线下渗透的补充佐证，说明其正从邀请工具延伸为更强的线下活动入口，但不需要重复新增产品卡或融资事件。",
+      "evidence": [
+        {
+          "label": "Residual IRL watchlist",
+          "url": "https://dnyuz.com/2026/06/05/partiful-threw-its-own-party-complete-with-free-cigs-a-tamagotchi-necklace-and-a-bong-packed-with-smarties/"
+        }
+      ]
+    },
+    {
+      "name": "New Billion Dollar Boy Research, Powered By DAIVID, Reveals How Creator Instinct® Drives Brand Impact on Social - ExchangeWire.com",
+      "decision": "投放证据候选",
+      "source": "2026-06-08 monitor · 投放 / 付费获客证据",
+      "reason": "该信号来自投放/付费获客 monitor lane，先进入 paid-acquisition evidence audit 的补证路径；只有出现广告素材库、投放平台、CAC/ROAS、买量或投放后下载变化等明确证据时，才把对应产品从方向性渠道升级为明确投放证据。",
+      "evidence": [
+        {
+          "label": "投放 / 付费获客证据",
+          "url": "https://www.exchangewire.com/blog/2026/06/04/new-billion-dollar-boy-research-powered-by-daivid-reveals-how-creator-instinct-drives-brand-impact-on-social/"
+        }
+      ]
+    },
+    {
+      "name": "Awestruck: the world's first AI for your free time | YourStory",
+      "decision": "候选升级",
+      "source": "2026-06-08 monitor · 线下真人社交",
+      "reason": "Awestruck 把 AI 推荐、附近活动发现和即时预订结合到 free-time planning 场景，和 IRL 真人体验分发主线高度相关；但目前主要还是单篇产品报道，仍需补官方产品页、城市覆盖、用户规模或融资信息后再决定是否升级进核心 IRL 主表。",
+      "evidence": [
+        {
+          "label": "线下真人社交",
+          "url": "https://yourstory.com/2026/06/awestruck-the-worlds-first-ai-for-your-free-time"
+        }
+      ]
+    },
+    {
+      "name": "Town Raises $55M to Expand Personalized AI Assistant  - Ventureburn",
+      "decision": "候选升级",
+      "source": "2026-06-08 monitor · Coverage signal watchlist",
+      "reason": "Town 的 5500 万美元融资与 personalized AI assistant 叙事和 AI companion 主线相邻，说明资本继续押注具备人格化、长期记忆和 workflow integration 的 assistant 产品；但当前仍更像 personal AI assistant/company thesis 信号，需补官方产品形态、社交互动机制和 consumer 分发证据后再决定是否升级进主表或融资时间线。",
+      "evidence": [
+        {
+          "label": "Coverage signal watchlist",
+          "url": "https://ventureburn.com/town-raises-55m-to-expand-personalized-ai-assistant/"
+        }
+      ]
+    }
+  ],
+  "persistence": {
+    "monitorHistoryRuns": 30,
+    "monitorLedgerItems": 82,
+    "sqliteCounts": {
+      "products": 42,
+      "funding_events": 38,
+      "monitor_signals": 33,
+      "source_linkage": 746,
+      "coverage_gaps": 55,
+      "audit_rows": 347,
+      "view_latest_monitor_signals": 33
+    },
+    "files": [
+      "data/monitor.json",
+      "data/monitor-history.json",
+      "data/monitor-ledger.json",
+      "data/brief.json",
+      "exports/latest-alert-review.csv",
+      "exports/monitor-recent-review.csv",
+      "exports/monitor-recent-signals.csv",
+      "exports/exa-social-research.sqlite",
+      "exports/exa-ai-social-report.html"
+    ]
+  },
+  "boundary": "This receipt proves the latest monitor run and its persisted handling status. It does not claim mathematical exhaustiveness for all live-market products or news."
+}

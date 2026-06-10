@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-06-07T09:04:36.809Z",
+  "monitorGeneratedAt": "2026-06-07T09:04:31.061Z",
+  "lookbackDays": 14,
+  "source": "https://api.exa.ai/search",
+  "nativeMonitor": {
+    "checkedAt": "2026-06-07T09:04:25.429Z",
+    "provider": "Exa Websets Monitor API",
+    "docsUrl": "https://docs.exa.ai/reference/websets",
+    "desiredMonitor": {
+      "externalId": "exa-ai-social-market-monitor",
+      "name": "Exa AI social market monitor",
+      "scope": "AI social apps, AI companions, AI entertainment, language-exchange social apps, and IRL/offline real-human social products."
+    },
+    "status": "unavailable",
+    "mode": "codex-cron-search-api-fallback",
+    "fallback": "Codex daily automation runs node scripts/run-all.mjs with Exa Search API monitor lanes.",
+    "probes": [
+      {
+        "path": "/websets",
+        "ok": false,
+        "status": 401,
+        "requestId": "636356603798cf6b4aefbe3c96ed79d7",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      },
+      {
+        "path": "/monitors",
+        "ok": false,
+        "status": 401,
+        "requestId": "82009dae30ce6cf961848da6e394bd65",
+        "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+      }
+    ],
+    "websets": [],
+    "monitors": [],
+    "reason": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
+  },
+  "automation": {
+    "name": "Exa AI social market monitor",
+    "schedule": "Daily 09:00"
+  },
+  "summary": {
+    "monitors": 9,
+    "ok": 9,
+    "totalResults": 90,
+    "recentResults": 34,
+    "newAlerts": 0
+  },
+  "requestIds": [
+    "f4c66f8048f9ee9d7f425786ad3ec335",
+    "c5811a3fe82f2e9dd4114ff328dd8c29",
+    "65f99c7375a5efae33194a46adb367d6",
+    "3180a4c732be752ff162bbe44bf54110",
+    "2d3c2ab7bd0dc3a2bbf2c457ad7d3357",
+    "09a61f80b6787f6ebcad02068a87a700",
+    "c20ed729033b5e1723ce9bc5ec2b9399",
+    "ba50e0d285b1a54289c99d6c8e863505",
+    "fdb089aad925fe2d2740ac07b3a9c69b"
+  ],
+  "runs": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "status": 200,
+      "requestId": "f4c66f8048f9ee9d7f425786ad3ec335",
+      "recentCount": 6,
+      "query": "past two weeks funding raised seed series A AI social app AI companion app AI roleplay app consumer AI app social entertainment startup"
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "status": 200,
+      "requestId": "c5811a3fe82f2e9dd4114ff328dd8c29",
+      "recentCount": 5,
+      "query": "past two weeks IRL offline social app AI matching friends dinner strangers meetup event social discovery funding launch 222 Pie Timeleft Meet5 Aglow Breeze group travel"
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "status": 200,
+      "requestId": "65f99c7375a5efae33194a46adb367d6",
+      "recentCount": 2,
+      "query": "past two weeks HelloTalk Tandem SewaYou Hilokal Slowly Linguado LangPal MatchaLingua language exchange app native speaker chat social language learning growth funding launch"
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "status": 200,
+      "requestId": "3180a4c732be752ff162bbe44bf54110",
+      "recentCount": 3,
+      "query": "past two weeks Chinese AI companion app overseas Talkie MiniMax PolyBuzz HiWaifu Linky AI social app downloads revenue funding"
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "status": 200,
+      "requestId": "2d3c2ab7bd0dc3a2bbf2c457ad7d3357",
+      "recentCount": 0,
+      "query": "past two weeks AI companion safety loneliness teens regulation lawsuit research paper Character.AI Replika Nomi chatbot companion"
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "status": 200,
+      "requestId": "09a61f80b6787f6ebcad02068a87a700",
+      "recentCount": 1,
+      "query": "new companies AI social app AI companion app IRL social app language exchange app launched 2026 startup"
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "status": 200,
+      "requestId": "c20ed729033b5e1723ce9bc5ec2b9399",
+      "recentCount": 8,
+      "query": "past two weeks AI social app AI companion app language exchange app IRL social app paid acquisition advertising campaign ads library creatives CAC ROAS user acquisition marketing spend app install ads"
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "status": 200,
+      "requestId": "ba50e0d285b1a54289c99d6c8e863505",
+      "recentCount": 4,
+      "query": "past two weeks Add One Eve Inc. Gist IRL Soma IRL social app friends events networking face-to-face launch funding users growth invite-only gatherings"
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "status": 200,
+      "requestId": "fdb089aad925fe2d2740ac07b3a9c69b",
+      "recentCount": 5,
+      "query": "past two weeks irl social handles Instagram - YouTube Social Media: Definition, Importance, Top Websites, and Apps The 15 Most Popular Social Media Platforms in 2026 | Salesforce AU ai social handles Discord (@discord) Official | TikTok Meta AI Studio TikTok - YouTube langpal growth Talkpal EZ Speak Plang, Inc. sewayou growth Eyse needyou AI Plang, Inc. ai friend wearables Amazon has big hopes for wearable AI - starting with this US$50 gadget - The Business Times ai social official gap profiles ‎status - sims but social media App - App Store companion long tail Soul AI irl social long tail Locpats offline social discovery companies Pie slowly growth Langly Inc. talk4now growth Viral App Launch AI social app IRL social app companion app launch funding users revenue downloads official product update"
+    }
+  ],
+  "alertClosure": {
+    "latestAlertReviewRows": 72,
+    "latestAlertPendingRows": 0,
+    "recentSignalReviewRows": 34,
+    "recentSignalPendingRows": 0,
+    "status": "closed"
+  },
+  "latestHandledAlerts": [
+    {
+      "name": "AI Reshapes Globalization: Unveiling New Overseas Expansion Opportunities for Chinese Enterprises",
+      "decision": "市场口径佐证",
+      "source": "2026-06-07 monitor · 中国 AI 社交出海",
+      "reason": "36氪月报提供全球原生 AI app 下载与中国大陆投放/下载变化口径，可用于校准 AI companion/export 市场热度；不是单一产品融资或新增社交 app，不进入主表。",
+      "evidence": [
+        {
+          "label": "中国 AI 社交出海",
+          "url": "https://eu.36kr.com/en/p/3839587254827908"
+        }
+      ]
+    },
+    {
+      "name": "Eat No Solo: Eating alone is becoming the norm: One app wants to fix that - Ireland",
+      "decision": "候选升级",
+      "source": "2026-06-07 monitor · 线下真人社交",
+      "reason": "Eat No Solo 直接命中 solo dining / shared table 的线下真人社交需求，属于值得关注的 IRL 新样本；但目前证据主要是媒体故事和区域性上线描述，仍需补官网、城市覆盖、增长或融资信息后再决定是否进入核心主表。",
+      "evidence": [
+        {
+          "label": "线下真人社交",
+          "url": "https://www.europesays.com/ie/518189/"
+        }
+      ]
+    },
+    {
+      "name": "Aippy Raises Tens of Millions of Dollars at a $250 Million Valuation to Build the Future of AI-Native Interactive Entertainment",
+      "decision": "候选升级",
+      "source": "2026-06-07 monitor · 融资 / 商业化",
+      "reason": "Aippy 的融资与 AI-native interactive entertainment 叙事对 AI 泛娱乐主线相关，说明资本正在押注互动内容形态；下一步应补官方产品形态、用户互动机制和是否具备社区/社交层证据，再决定是否升级进主表或融资时间线。",
+      "evidence": [
+        {
+          "label": "融资 / 商业化",
+          "url": "https://www.prnewswire.com/apac/news-releases/aippy-raises-tens-of-millions-of-dollars-at-a-250-million-valuation-to-build-the-future-of-ai-native-interactive-entertainment-302787864.html"
+        }
+      ]
+    },
+    {
+      "name": "WTMF AI",
+      "decision": "边界观察",
+      "source": "2026-06-06 monitor · 新公司 / 新产品",
+      "reason": "WTMF AI 具备 AI companion 邻接性，但当前证据主要是公司目录式简介，缺官方产品页、分发规模、留存或更强第三方报道；先保留为边界观察，不升级进主表或融资时间线。",
+      "evidence": [
+        {
+          "label": "新公司 / 新产品",
+          "url": "https://wtmf.ai/"
+        }
+      ]
+    },
+    {
+      "name": "MiniMax Launches M3 Flagship Model: Million-Token Context, Native Multimodal, as China's AI Firms Charge Into Coding Agent Battle — BigGo Finance",
+      "decision": "已覆盖/继续观察",
+      "source": "2026-06-06 monitor · 中国 AI 社交出海",
+      "reason": "MiniMax 已在中国 AI 社交出海 / companion 邻接观察中有既有覆盖，这条 M3 模型发布更偏基础模型与 coding agent 竞争信号；除非后续补到社交产品形态、出海分发或 companion 互动机制，否则先作为已覆盖的公司动态继续观察。",
+      "evidence": [
+        {
+          "label": "中国 AI 社交出海",
+          "url": "https://finance.biggo.com/news/2YPugp4BLfE1EzqPqZJd"
+        }
+      ]
+    }
+  ],
+  "persistence": {
+    "monitorHistoryRuns": 30,
+    "monitorLedgerItems": 75,
+    "sqliteCounts": {
+      "products": 42,
+      "funding_events": 40,
+      "monitor_signals": 34,
+      "source_linkage": 746,
+      "coverage_gaps": 41,
+      "audit_rows": 351,
+      "view_latest_monitor_signals": 34
+    },
+    "files": [
+      "data/monitor.json",
+      "data/monitor-history.json",
+      "data/monitor-ledger.json",
+      "data/brief.json",
+      "exports/latest-alert-review.csv",
+      "exports/monitor-recent-review.csv",
+      "exports/monitor-recent-signals.csv",
+      "exports/exa-social-research.sqlite",
+      "exports/exa-ai-social-report.html"
+    ]
+  },
+  "boundary": "This receipt proves the latest monitor run and its persisted handling status. It does not claim mathematical exhaustiveness for all live-market products or news."
+}

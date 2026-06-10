@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-06-07T09:04:31.061Z",
+  "headline": "本次没有新增未知 URL，但近 14 天仍有 34 条高相关信号。",
+  "bullets": [
+    "监控主题 9 条，成功 9 条，共返回 90 条结果。",
+    "近窗高相关 34 条；新增提醒 0 条；台账累计 75 条。",
+    "当前最活跃主题是「投放 / 付费获客证据」：近窗 8 条，新增 0 条。"
+  ],
+  "recommendedActions": [
+    "本次可先复核近期高相关信号，尤其是 IRL lane 中的 Meet5、Aglow、Breeze、群组旅行、AI dating、线下约会产品。",
+    "如果连续多天新增为 0，可扩大 lookback 或增加新关键词，例如 WeRoad、Breeze、AI dating、group travel。",
+    "保持每日 09:00 自动化运行，让台账捕捉真正的新 URL。"
+  ],
+  "laneSummaries": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 6,
+      "topRecentTitles": [
+        "Andreessen Horowitz and Forerunner are betting $55 million on Town's deeply personal AI assistants | Fortune",
+        "Nectar Social Raises $30M, Rebrands Itself as Nectar Agent - Demand Gen Report",
+        "Board, the new game startup from Mirror founder Brynn Putnam, raises $20M, has already sold thousands | TechCrunch"
+      ]
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "priority": "critical",
+      "alertCount": 0,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Eat No Solo: Eating alone is becoming the norm: One app wants to fix that - Ireland",
+        "Can We Swipe Our Way to Friendship? | KQED",
+        "Breeze Launches IRL Group Dates Across London - Global Dating Insights"
+      ]
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 2,
+      "topRecentTitles": [
+        "The AI Tutor Trick That Gets Language Learners Talking",
+        "[INTERVIEW] UC Berkeley graduate creates AI-powered app to make learning Korean more immersive - The Korea Times"
+      ]
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 3,
+      "topRecentTitles": [
+        "AI Reshapes Globalization: Unveiling New Overseas Expansion Opportunities for Chinese Enterprises",
+        "MiniMax Launches M3 Flagship Model: Million-Token Context, Native Multimodal, as China's AI Firms Charge Into Coding Agent Battle — BigGo Finance",
+        "China’s MiniMax records 1-million client base, fivefold growth in half a year | South China Morning Post"
+      ]
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 0,
+      "topRecentTitles": []
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 1,
+      "topRecentTitles": [
+        "YaraCircle"
+      ]
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 8,
+      "topRecentTitles": [
+        "Why Admiral Media built an AI creative system that reduced fasting app costs 70% | The Drum",
+        "Meta Advantage+ Shopping Costs Surge 31% as DTC Brands Rethink Paid Social Mix – Online Store News",
+        "Meta’s Advantage+ Creative Is Rewriting DTC Ad Economics in 2026 – Ecommerce Times"
+      ]
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 4,
+      "topRecentTitles": [
+        "TikTok's new Events app rewards users for generating buzz about big events - Tubefilter",
+        "Partiful Launches Ticketing, Bringing Paid Events Into the Social Platform Where People Already Make Plans",
+        "Partiful is turning party invites into a payments business - Startup Fortune"
+      ]
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Introducing Commerce: Make Your Community The Storefront | social.plus",
+        "Meta is building an AI Pendant and this time it has a working wearables business behind it — TFN",
+        "Meta is trying to turn AI glasses into a subscription business"
+      ]
+    }
+  ]
+}

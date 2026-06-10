@@ -1,21 +1,21 @@
-**本次没有新增未知 URL，但近 14 天仍有 30 条高相关信号。**
+**发现 10 条新增提醒，优先复核 投放 / 付费获客证据。**
 
 - 监控主题 9 条，成功 9 条，共返回 90 条结果。
-- 近窗高相关 30 条；新增提醒 0 条；台账累计 47 条。
-- 当前最活跃主题是「投放 / 付费获客证据」：近窗 8 条，新增 0 条。
+- 近窗高相关 37 条；新增提醒 10 条；台账累计 107 条。
+- 当前最活跃主题是「投放 / 付费获客证据」：近窗 9 条，新增 5 条。
 
-**升级队列（9 条，按证据分排序）**
-- [B·67] [China AI Upstart MiniMax Doubles Sales Ahead of New Model](https://www.bloomberg.com/news/articles/2026-05-28/china-ai-upstart-minimax-doubles-sales-ahead-of-new-model-launch) → AI 伴侣 / 出海簇
-- [B·56] [China’s MiniMax records 1-million client base, fivefold growth in half a year](https://www.scmp.com/tech/tech-trends/article/3355156/chinas-minimax-records-1-million-client-base-fivefold-growth-half-year) → AI 伴侣 / 出海簇
-- [B·55] [Board, the new game startup from Mirror founder Brynn Putnam, raises $20M, has already sol](https://techcrunch.com/2026/06/02/board-the-new-game-startup-from-mirror-founder-brynn-putnam-raises-20m-has-already-sold-thousands/) → 融资时间线
-- [B·55] [Sekai raises $20 million as people create 15 million AI mini apps](https://www.axios.com/2026/06/01/sekai-mini-app-startup-funding) → 融资时间线
-- [B·52] [Sesame AI Launches iOS App: Next-Gen Chatbot Mimics Human Conversation](https://headlinez.news/sesame-ai-launches-ios-app-next-gen-chatbot-mimics-human-conversation/) → 覆盖缺口登记
-- [B·52] [Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS -- R](https://www.prnewswire.com/apac/news-releases/teamily-ai-officially-enters-the-singapore-market-launching-its-personal-ai-agent-os--redefining-personal-agi-through-self-improving-aihuman-social-network-302781009.html) → 覆盖缺口登记
-- …其余 3 条见 data/alert-triage.json
+**升级队列（17 条，按证据分排序）**
+- 🆕 [A·82] [Super US-Listed IPO](https://eu.36kr.com/en/p/3845847971858696) → AI 伴侣 / 出海簇
+- [A·80] [Eat No Solo: Eating alone is becoming the norm: One app wants to fix that](https://today.rtl.lu/lifestyle/food/articles/eating-alone-is-becoming-the-norm-one-app-wants-to-fix-that-1980529060) → IRL 线下真人簇
+- 🆕 [A·70] [Neura Closes Strategic Funding Round and Partnerships to Build Emotional AI with Persisten](https://decrypt.co/370507/neura-closes-strategic-funding-round-and-partnerships-to-build-emotional-ai-with-persistent-user-owned-memory?amp=1) → 融资时间线
+- 🆕 [A·70] [Sekai Raises $26M as Platform Reaches 15 Million User-Created Apps](https://www.gate.com/news/detail/sekai-raises-26m-as-platform-reaches-15-million-user-created-apps-21580797) → 融资时间线
+- 🆕 [B·60] [Substance-induced manic psychosis in which delusions were corroborated by a chatbot - case](https://link.springer.com/article/10.1186/s12888-026-08137-3) → 研究与风险信号
+- 🆕 [B·60] [ChatGPT ads reach the UK as ad tech's infrastructure bets pile up](https://ppc.land/chatgpt-ads-reach-the-uk-as-ad-techs-infrastructure-bets-pile-up/) → 渠道 / 投放审计
+- …其余 11 条见 data/alert-triage.json
 
 **建议动作**
-- 本次可先复核近期高相关信号，尤其是 IRL lane 中的 Meet5、Aglow、Breeze、群组旅行、AI dating、线下约会产品。
-- 如果连续多天新增为 0，可扩大 lookback 或增加新关键词，例如 WeRoad、Breeze、AI dating、group travel。
-- 保持每日 09:00 自动化运行，让台账捕捉真正的新 URL。
+- 优先人工打开新增提醒里的 IRL 和融资类证据链接，确认是否需要升级进核心产品图谱。
+- 把确认后的融资金额、增长信号、投放渠道和功能差异补入 data/brief.json。
+- 对低质量来源只保留为 watchlist，不进入核心证据卡。
 
-_监控时间：2026-06-03T01:04:33.812Z · 由 triage-alerts 自动评分_
+_监控时间：2026-06-10T09:02:17.670Z · 由 triage-alerts 自动评分_

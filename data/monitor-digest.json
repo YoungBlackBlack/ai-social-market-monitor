@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-06-03T01:04:33.812Z",
-  "headline": "本次没有新增未知 URL，但近 14 天仍有 30 条高相关信号。",
+  "generatedAt": "2026-06-10T09:02:17.670Z",
+  "headline": "发现 10 条新增提醒，优先复核 投放 / 付费获客证据。",
   "bullets": [
     "监控主题 9 条，成功 9 条，共返回 90 条结果。",
-    "近窗高相关 30 条；新增提醒 0 条；台账累计 47 条。",
-    "当前最活跃主题是「投放 / 付费获客证据」：近窗 8 条，新增 0 条。"
+    "近窗高相关 37 条；新增提醒 10 条；台账累计 107 条。",
+    "当前最活跃主题是「投放 / 付费获客证据」：近窗 9 条，新增 5 条。"
   ],
   "recommendedActions": [
-    "本次可先复核近期高相关信号，尤其是 IRL lane 中的 Meet5、Aglow、Breeze、群组旅行、AI dating、线下约会产品。",
-    "如果连续多天新增为 0，可扩大 lookback 或增加新关键词，例如 WeRoad、Breeze、AI dating、group travel。",
-    "保持每日 09:00 自动化运行，让台账捕捉真正的新 URL。"
+    "优先人工打开新增提醒里的 IRL 和融资类证据链接，确认是否需要升级进核心产品图谱。",
+    "把确认后的融资金额、增长信号、投放渠道和功能差异补入 data/brief.json。",
+    "对低质量来源只保留为 watchlist，不进入核心证据卡。"
   ],
   "laneSummaries": [
     {
       "id": "funding",
       "label": "融资 / 商业化",
       "priority": "high",
-      "alertCount": 0,
-      "recentCount": 6,
+      "alertCount": 2,
+      "recentCount": 7,
       "topRecentTitles": [
-        "Nectar Social Raises $30M, Rebrands Itself as Nectar Agent - Demand Gen Report",
-        "Board, the new game startup from Mirror founder Brynn Putnam, raises $20M, has already sold thousands | TechCrunch",
-        "Aippy Raises Tens of Millions of Dollars at a $250 Million Valuation to Build the Future of AI-Native Interactive Entertainment - TNGlobal"
+        "Neura Closes Strategic Funding Round and Partnerships to Build Emotional AI with Persistent, User-Owned Memory - Decrypt",
+        "Sekai Raises $26M as Platform Reaches 15 Million User-Created Apps | Gate News",
+        "Town Raises $55M to Expand Personalized AI Assistant  - Ventureburn"
       ]
     },
     {
@@ -29,42 +29,44 @@
       "label": "线下真人社交",
       "priority": "critical",
       "alertCount": 0,
-      "recentCount": 4,
+      "recentCount": 2,
       "topRecentTitles": [
-        "Breeze Launches IRL Group Dates Across London - Global Dating Insights",
-        "Airbnb leads €49 million Series C in Italian adventure travel company WeRoad | EU-Startups",
-        "WeRoad raises $58M and expands to the US with Airbnb | WeRoad"
+        "Eat No Solo: Eating alone is becoming the norm: One app wants to fix that - RTL Today",
+        "Breeze Launches IRL Group Dates Across London - Global Dating Insights"
       ]
     },
     {
       "id": "language",
       "label": "语言交换 / 跨文化社交",
       "priority": "medium",
-      "alertCount": 0,
-      "recentCount": 1,
+      "alertCount": 1,
+      "recentCount": 4,
       "topRecentTitles": [
-        "Learning Portuguese in Brazil: Expat Shortcut to Fluency 2026 | The Rio Times"
+        "Language App Ling Challenges Automated Education Trend, Champions 'Human-First' Approach to Fluency | Web3Wire",
+        "Korean language app Teuida surpasses 6 million downloads with AI-driven conversation simulations",
+        "The AI Tutor Trick That Gets Language Learners Talking"
       ]
     },
     {
       "id": "china-export",
       "label": "中国 AI 社交出海",
       "priority": "high",
-      "alertCount": 0,
-      "recentCount": 2,
+      "alertCount": 1,
+      "recentCount": 3,
       "topRecentTitles": [
-        "China’s MiniMax records 1-million client base, fivefold growth in half a year | South China Morning Post",
-        "China AI Upstart MiniMax Doubles Sales Ahead of New Model - Bloomberg"
+        "Super US-Listed IPO: Reshaping Valuation Anchors of MiniMax and Zhipu AI",
+        "4月AI月报：全球原生AI下载3.65亿，豆包、即梦等大陆市场下载量全面收缩-36氪",
+        "China’s MiniMax records 1-million client base, fivefold growth in half a year | South China Morning Post"
       ]
     },
     {
       "id": "research-risk",
       "label": "研究 / 政策风险",
       "priority": "high",
-      "alertCount": 0,
+      "alertCount": 1,
       "recentCount": 1,
       "topRecentTitles": [
-        "Suicide and self-harm in the age of generative artificial intelligence: The case of ChatGPT and rise of suicide-related lawsuits - ScienceDirect"
+        "Substance-induced manic psychosis in which delusions were corroborated by a chatbot - case report | BMC Psychiatry | Springer Nature Link"
       ]
     },
     {
@@ -72,19 +74,21 @@
       "label": "新公司 / 新产品",
       "priority": "medium",
       "alertCount": 0,
-      "recentCount": 0,
-      "topRecentTitles": []
+      "recentCount": 1,
+      "topRecentTitles": [
+        "YaraCircle"
+      ]
     },
     {
       "id": "paid-acquisition",
       "label": "投放 / 付费获客证据",
       "priority": "medium",
-      "alertCount": 0,
-      "recentCount": 8,
+      "alertCount": 5,
+      "recentCount": 9,
       "topRecentTitles": [
-        "How Cuts Clothing Rebuilt Its Meta Creative Stack to Escape the ROAS Plateau – D2C Times",
-        "Meta’s Advantage+ Creative Is Rewriting DTC Ad Economics in 2026 – Ecommerce Times",
-        "Meta’s Advantage+ Overhaul Is Rewriting DTC Acquisition Math – Online Store News"
+        "How Brez Is Winning Meta in 2026 With a Radical Creative Rotation System – D2C Times",
+        "AI Marketing Tool AdLibrary.com Launches the First Cross-Platform Ad Library With Over 1 Billion Ads and AI-Powered Creative Analysis – North Headlines",
+        "Duolingo Revives Lost Streaks Through a Soap-Opera Inspired Campaign"
       ]
     },
     {
@@ -92,11 +96,11 @@
       "label": "Residual IRL watchlist",
       "priority": "medium",
       "alertCount": 0,
-      "recentCount": 4,
+      "recentCount": 5,
       "topRecentTitles": [
-        "Partiful is turning party invites into a payments business - Startup Fortune",
-        "AppLovin Launches Its Own TikTok Rival",
-        "Italy Shocks US Travel Industry as Airbnb-Backed WeRoad Ignites Massive Europe-To-America Adventure Tourism Revolution"
+        "New “what’s happening in Lisbon” app launches today – Portugal Resident",
+        "TikTok's new Events app rewards users for generating buzz about big events - Tubefilter",
+        "Partiful Launches Ticketing, Bringing Paid Events Into the Social Platform Where People Already Make Plans | Morningstar"
       ]
     },
     {
@@ -104,11 +108,11 @@
       "label": "Coverage signal watchlist",
       "priority": "medium",
       "alertCount": 0,
-      "recentCount": 4,
+      "recentCount": 5,
       "topRecentTitles": [
-        "Meta is building an AI Pendant and this time it has a working wearables business behind it — TFN",
-        "Sesame AI Launches iOS App: Next-Gen Chatbot Mimics Human Conversation - Headlinez News",
-        "Teamily AI Officially Enters the Singapore Market, Launching its Personal AI Agent OS -- Redefining Personal AGI Through Self-Improving AI+Human Social Network"
+        "Meta launches Creator Assistant AI for Facebook creators",
+        "Meta business agent global launch whatsapp instagram messenger",
+        "Be There for Every Customer With Meta Business Agent"
       ]
     }
   ]

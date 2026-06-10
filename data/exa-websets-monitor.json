@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-06-03T01:04:31.514Z",
+  "checkedAt": "2026-06-10T09:02:13.666Z",
   "provider": "Exa Websets Monitor API",
   "docsUrl": "https://docs.exa.ai/reference/websets",
   "desiredMonitor": {
@@ -15,14 +15,14 @@
       "path": "/websets",
       "ok": false,
       "status": 401,
-      "requestId": "081565762371e25d294ef404ce1bb788",
+      "requestId": "f2a4803cb7a1f66667406644cac7ca34",
       "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
     },
     {
       "path": "/monitors",
       "ok": false,
       "status": 401,
-      "requestId": "b35e86234b9e9bf87617bd1d6a8fcaae",
+      "requestId": "edc0ac1c4d9c4a31ea00ec9401b9b14c",
       "message": "Your team (周扬's Personal - youngblackblackie@gmail.com) does not have access to the API. Upgrade to a Pro plan to get access."
     }
   ],

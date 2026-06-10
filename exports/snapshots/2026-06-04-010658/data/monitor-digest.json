@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-06-04T01:03:26.483Z",
+  "headline": "发现 9 条新增提醒，优先复核 投放 / 付费获客证据。",
+  "bullets": [
+    "监控主题 9 条，成功 9 条，共返回 90 条结果。",
+    "近窗高相关 34 条；新增提醒 9 条；台账累计 56 条。",
+    "当前最活跃主题是「投放 / 付费获客证据」：近窗 10 条，新增 4 条。"
+  ],
+  "recommendedActions": [
+    "优先人工打开新增提醒里的 IRL 和融资类证据链接，确认是否需要升级进核心产品图谱。",
+    "把确认后的融资金额、增长信号、投放渠道和功能差异补入 data/brief.json。",
+    "对低质量来源只保留为 watchlist，不进入核心证据卡。"
+  ],
+  "laneSummaries": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "priority": "high",
+      "alertCount": 2,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Andreessen Horowitz and Forerunner are betting $55 million on Town's deeply personal AI assistants | Fortune",
+        "Board, the new game startup from Mirror founder Brynn Putnam, raises $20M, has already sold thousands | TechCrunch",
+        "Sekai Raises $26 Million To Build A Social Platform For AI-Created Mini-Apps"
+      ]
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "priority": "critical",
+      "alertCount": 1,
+      "recentCount": 6,
+      "topRecentTitles": [
+        "Bumble set to launch Plans, paid IRL date feature",
+        "Breeze: Can a Dutch app save Brits from swiping past our dismal dating scene? | The Independent",
+        "Breeze Launches IRL Group Dates Across London - Global Dating Insights"
+      ]
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 1,
+      "topRecentTitles": [
+        "K-culture boom fuels global rise of AI Korean-learning app | AJU PRESS"
+      ]
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 2,
+      "topRecentTitles": [
+        "China’s MiniMax records 1-million client base, fivefold growth in half a year | South China Morning Post",
+        "China AI Upstart MiniMax Doubles Sales Ahead of New Model - Bloomberg"
+      ]
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 0,
+      "topRecentTitles": []
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 0,
+      "topRecentTitles": []
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "priority": "medium",
+      "alertCount": 4,
+      "recentCount": 10,
+      "topRecentTitles": [
+        "Temu slashed its U.S. ad spend on nearly every platform",
+        "Meta Advantage+ Shopping Costs Surge 31% as DTC Brands Rethink Paid Social Mix – Online Store News",
+        "How Cuts Clothing Rebuilt Its Meta Creative Stack to Escape the ROAS Plateau – D2C Times"
+      ]
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "priority": "medium",
+      "alertCount": 2,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Partiful Launches Ticketing, Bringing Paid Events Into the Social Platform Where People Already Make Plans",
+        "Partiful is turning party invites into a payments business - Startup Fortune",
+        "Bumble is launching a new paid group-dating feature as it fights to stay competitive with Tinder"
+      ]
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Introducing Commerce: Make Your Community The Storefront | social.plus",
+        "Meta is building an AI Pendant and this time it has a working wearables business behind it — TFN",
+        "Sesame AI Launches iOS App: Next-Gen Chatbot Mimics Human Conversation - Headlinez News"
+      ]
+    }
+  ]
+}

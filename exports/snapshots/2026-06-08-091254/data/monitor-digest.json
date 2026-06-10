@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-06-08T09:12:45.598Z",
+  "headline": "本次没有新增未知 URL，但近 14 天仍有 33 条高相关信号。",
+  "bullets": [
+    "监控主题 9 条，成功 9 条，共返回 90 条结果。",
+    "近窗高相关 33 条；新增提醒 0 条；台账累计 82 条。",
+    "当前最活跃主题是「投放 / 付费获客证据」：近窗 8 条，新增 0 条。"
+  ],
+  "recommendedActions": [
+    "本次可先复核近期高相关信号，尤其是 IRL lane 中的 Meet5、Aglow、Breeze、群组旅行、AI dating、线下约会产品。",
+    "如果连续多天新增为 0，可扩大 lookback 或增加新关键词，例如 WeRoad、Breeze、AI dating、group travel。",
+    "保持每日 09:00 自动化运行，让台账捕捉真正的新 URL。"
+  ],
+  "laneSummaries": [
+    {
+      "id": "funding",
+      "label": "融资 / 商业化",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 6,
+      "topRecentTitles": [
+        "Town Raises $55M to Expand Personalized AI Assistant  - Ventureburn",
+        "Andreessen Horowitz and Forerunner are betting $55 million on Town's deeply personal AI assistants | Fortune",
+        "Sekai Raises $26M in Seed and Series A as Users Create, Play, and Remix 15 Million Mini-Apps - FinanceWire - Financial Press Release Distribution, Finance PR"
+      ]
+    },
+    {
+      "id": "irl",
+      "label": "线下真人社交",
+      "priority": "critical",
+      "alertCount": 0,
+      "recentCount": 6,
+      "topRecentTitles": [
+        "Awestruck: the world's first AI for your free time | YourStory",
+        "Eat No Solo: Eating alone is becoming the norm: One app wants to fix that - Ireland",
+        "Can We Swipe Our Way to Friendship? | KQED"
+      ]
+    },
+    {
+      "id": "language",
+      "label": "语言交换 / 跨文化社交",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 1,
+      "topRecentTitles": [
+        "[INTERVIEW] UC Berkeley graduate creates AI-powered app to make learning Korean more immersive - The Korea Times"
+      ]
+    },
+    {
+      "id": "china-export",
+      "label": "中国 AI 社交出海",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 2,
+      "topRecentTitles": [
+        "MiniMax reports big growth as it plans Mainland China listing",
+        "China’s MiniMax records 1-million client base, fivefold growth in half a year | South China Morning Post"
+      ]
+    },
+    {
+      "id": "research-risk",
+      "label": "研究 / 政策风险",
+      "priority": "high",
+      "alertCount": 0,
+      "recentCount": 0,
+      "topRecentTitles": []
+    },
+    {
+      "id": "company-new",
+      "label": "新公司 / 新产品",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 0,
+      "topRecentTitles": []
+    },
+    {
+      "id": "paid-acquisition",
+      "label": "投放 / 付费获客证据",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 8,
+      "topRecentTitles": [
+        "New Billion Dollar Boy Research, Powered By DAIVID, Reveals How Creator Instinct® Drives Brand Impact on Social - ExchangeWire.com",
+        "Why Admiral Media built an AI creative system that reduced fasting app costs 70% | The Drum",
+        "Meta’s New Video-First Shopping Ads Are Doubling DTC Conversion Rates – Ecommerce Times"
+      ]
+    },
+    {
+      "id": "residual-irl-watchlist",
+      "label": "Residual IRL watchlist",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Partiful threw its own party, complete with free cigs, a Tamagotchi necklace, and a bong packed with Smarties – DNYUZ",
+        "TikTok's new Events app rewards users for generating buzz about big events - Tubefilter",
+        "Partiful Launches Ticketing, Bringing Paid Events Into the Social Platform Where People Already Make Plans"
+      ]
+    },
+    {
+      "id": "coverage-signal-watchlist",
+      "label": "Coverage signal watchlist",
+      "priority": "medium",
+      "alertCount": 0,
+      "recentCount": 5,
+      "topRecentTitles": [
+        "Town Raises $55M to Expand Personalized AI Assistant  - Ventureburn",
+        "Town Raises $55M Series A From a16z and Forerunner to Build the AI Assistant That Learns How You Work | Markets Insider",
+        "Investing in Town | Andreessen Horowitz"
+      ]
+    }
+  ]
+}
