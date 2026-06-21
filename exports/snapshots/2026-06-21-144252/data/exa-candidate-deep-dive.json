@@ -1,0 +1,1418 @@
+{
+  "generatedAt": "2026-06-15T09:37:39.253Z",
+  "startedAt": "2026-06-15T09:37:01.788Z",
+  "source": "https://api.exa.ai/search",
+  "purpose": "Targeted Exa company/news deep dive for product-candidate rows from the raw source linkage review queue.",
+  "candidates": [
+    {
+      "name": "LingoPraxis",
+      "seedUrl": "https://lingopraxis.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "Conversifi",
+      "seedUrl": "https://conversifi.com/",
+      "sourceQueryId": "language_exchange_companies",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "Plannit",
+      "seedUrl": "https://plannit.in/",
+      "sourceQueryId": "offline_social_discovery_companies",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "SoMe AI",
+      "seedUrl": "https://socialwithsome.com/",
+      "sourceQueryId": "offline_social_discovery_companies",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "Meetup.com",
+      "seedUrl": "https://meetup.com/",
+      "sourceQueryId": "local_activity_social_companies",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "Around Me",
+      "seedUrl": "https://aroundme.co/",
+      "sourceQueryId": "offline_social_company_boundary",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "Time2Talk",
+      "seedUrl": "https://time2talk.app/",
+      "sourceQueryId": "lingopraxis_growth",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "Languages Live Gesellschaft Lokalisierung mbH",
+      "seedUrl": "https://mylanguageexchange.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "LingoLooper",
+      "seedUrl": "https://lingolooper.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "LingoQuesto",
+      "seedUrl": "https://lingoquesto.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "sourceCategory": "company"
+    },
+    {
+      "name": "Plang, Inc.",
+      "seedUrl": "https://plang.ai/",
+      "sourceQueryId": "lingopraxis_growth",
+      "sourceCategory": "company"
+    }
+  ],
+  "searches": [
+    {
+      "id": "lingopraxis_company",
+      "candidate": "LingoPraxis",
+      "seedUrl": "https://lingopraxis.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "company",
+      "query": "LingoPraxis social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "2c59bf6f89b5c0a23203a52f0f3a8d69",
+      "results": [
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "Mundo Lingo",
+          "url": "https://mundolingo.org/",
+          "publishedDate": "2026-05-21T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Mundo Lingo is a nonprofit organization. Mundo Lingo is a social media platform that allows users to connect with local people in cities around the world for free. Mundo Lingo employs 28 people (+6.1% YoY, +2 people) and has an annual revenue of $424.5K, founded in 2011. Headquartered in Argentina, operates in 11 countries (including Brazil, Canada, Vietnam, Spain, and Switzerland). [...] We build community hubs in c"
+        },
+        {
+          "title": "Languages Live Gesellschaft Lokalisierung mbH",
+          "url": "https://mylanguageexchange.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# Languages Live Gesellschaft Lokalisierung mbH Languages Live Gesellschaft Lokalisierung mbH. Headquartered in Germany. ## Company Details - Status: active - Ownership: Private - Aliases: languages live gesellschaft lokalisierung mbh, mylanguageexchange, language exchange community - Phone: (514) 448-0588 - SIC Codes: 82, 824 - NAICS Codes: 61, 611 ## Web Presence - Monthly Visits: 354,995 - Traffic Growth: Monthly:"
+        },
+        {
+          "title": "Lingopanda (previously PingoLearn)",
+          "url": "https://lingopanda.app/",
+          "publishedDate": "2026-05-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Lingopanda (previously PingoLearn) is a E-Learning Providers company. PingoLearn is an ai-powered English tutor on your smartphone that offers a range of learning tools and resources for practice speaking in different situations. They provide a voice chat, feedback, practice partner calls, and language audio books. PingoLearn aims to make learning English fun and stress-free. Lingopanda (previously PingoLearn) employ"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "lingopraxis_news",
+      "candidate": "LingoPraxis",
+      "seedUrl": "https://lingopraxis.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "news",
+      "query": "LingoPraxis app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "db4adbc83c298c9eac390e96d0e45a81",
+      "results": [
+        {
+          "title": "LingoPraxis: Practice speaking English online",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LingoPraxis: Practice speaking English online # Start speaking fluently Peer-to-peer online speaking club Friendly communication Chill vibes No pressure Download on theApp Store Get it on theGoogle Play Continue with theTelegram Bot # Why to attend Overcome barriers and shynessA supportive space where making mistakes is okay. The key is being understood! Gain knowledge and inspirationExpand your vocabulary, learn to "
+        },
+        {
+          "title": "LingoPraxis: Language Exchange\n              4+",
+          "url": "https://apps.apple.com/ua/app/lingopraxis-language-exchange/id6446861184",
+          "publishedDate": "2023-07-26T10:34:51.000Z",
+          "author": null,
+          "highlight": "‎LingoPraxis: Language Exchange on the App Store [...] # LingoPraxis: Language Exchange4+ ## Learn Languages & Practice ## Artyom Avanesov ### Designed for iPhone * * Free * Offers In-App Purchases ## iPhone Screenshots [...] Unlock limitless language practicing with LingoPraxis! Boost fluency, connect with like-minded people, and explore cultures. Download now for the ultimate experience! Language practices without "
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://linkedin.com/company/lingopraxis",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "Praktika raises $35.5M to use AI avatars to make learning languages feel more natural | TechCrunch",
+          "url": "https://techcrunch.com/2024/05/22/praktika-raises-35-5m-to-use-ai-avatars-to-make-learning-languages-feel-more-natural/",
+          "publishedDate": "2024-05-22T12:25:49.000Z",
+          "author": "Mike Butcher",
+          "highlight": "Praktika raises $35.5M to use AI avatars to make learning languages feel more natural | TechCrunch [...] # Praktika raises $35.5M to use AI avatars to make learning languages feel more natural [...] 5:25 AM PDT · May 22, 2024 [...] Most apps that help you learn languages have features where you select options or swipe away wrong answer cards — you’re more or less interacting with a machine. Language-learning app Prak"
+        },
+        {
+          "title": "WRD wants to do for language learning what GPS did for navigation — remove the thinking | VentureBeat",
+          "url": "https://venturebeat.com/business/wrd-wants-to-do-for-language-learning-what-gps-did-for-navigation-remove-the-thinking",
+          "publishedDate": "2026-04-24T19:32:14.000Z",
+          "author": "Jon Stojan",
+          "highlight": "That tool became WRD– a mobile-first, AI-powered language learning accelerator that, according to the company, has crossed two million users, surpassed $1.2 million in annual recurring revenue, and grown 3.5x in six months. The company is now seeking a seed round of $3 to $5 million. But the story behind WRD stretches back decades, through IBM supply chains. [...] From that foundation, the team built WRD’s core algor"
+        },
+        {
+          "title": "Danish Founder Bets Against \"Gamified\" Learning: VORLI",
+          "url": "https://www.openpr.com/news/4364719/danish-founder-bets-against-gamified-learning-vorli",
+          "publishedDate": "2026-01-27T11:46:42.000Z",
+          "author": "VORLI",
+          "highlight": "Real-Time Lip-Sync. Live on [...] AARHUS, DENMARK - January 27, 2026 - While millions of people maintain daily \"streaks\" on language apps, a vast majority still freeze when asked to speak in real life. Today, Danish EdTech startup VORLI challenges this \"illusion of fluency\" by launching the world's first AI-Native Language Tutor designed to function as a flight simulator for conversations. Backed by a self-funded $25"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "conversifi_company",
+      "candidate": "Conversifi",
+      "seedUrl": "https://conversifi.com/",
+      "sourceQueryId": "language_exchange_companies",
+      "category": "company",
+      "query": "Conversifi social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "aaab39d9403f15c1a836fa85bb4df0a6",
+      "results": [
+        {
+          "title": "Conversifi",
+          "url": "https://conversifi.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Conversifi is a E-Learning Providers company. Conversifi employs 51 people (+14.5% YoY, +9 people), founded in 2017. Headquartered in Washington, District of Columbia, United States, operates in 13 countries (including Mexico, Colombia, France, Argentina, and Benin). [...] Conversifi connects foreign language learners with native speakers for on-demand language practice and cross-cultural exchange over video chat. We"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "EasyConvo",
+          "url": "https://easyconvo.ai/",
+          "publishedDate": "2026-01-21T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "EasyConvo is a Education company. Founded in 2024. Headquartered in Singapore. [...] At EasyConvo, we’re on a mission to transform how languages are taught and learned—starting with conversation. [...] In a world where AI is rapidly reshaping the way we live and learn, EasyConvo empowers language educators with tools that make speaking practice scalable, personalized, and effective. Our platform supports tutors, teac"
+        },
+        {
+          "title": "MySivi (YC W22)",
+          "url": "https://mysivi.ai/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "MySivi (YC W22) is a E-Learning Providers company. Founded in 2022. Headquartered in Bengaluru, India. with 1 prior funding round. [...] MySivi is India's first AI Tutor that helps in practicing English speaking and also makes you learn faster by correcting your grammar, pronunciation and fluency. [...] - Industry: E-Learning Providers - Type: Privately Held - Headquarters: Bengaluru, India - Founded Year: 2022 - Hom"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "conversifi_news",
+      "candidate": "Conversifi",
+      "seedUrl": "https://conversifi.com/",
+      "sourceQueryId": "language_exchange_companies",
+      "category": "news",
+      "query": "Conversifi app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "3b09c443fa1bac81b34ed8e45e01082e",
+      "results": [
+        {
+          "title": "Language and Cultural Exchange for College Students | Conversifi",
+          "url": "https://conversifi.com/",
+          "publishedDate": "2024-05-15T21:34:14.000Z",
+          "author": null,
+          "highlight": "Language and Cultural Exchange for College Students | Conversifi # Connecting university students around the world in conversation Currently available in Spanish, French, English, Portuguese, and American Sign Language Arabic and Hebrew coming soon! Contact Us “Honestly, my students may not remember much Spanish years from now, but I know they’ll remember talking to people from other countries and that’s just fine wi"
+        },
+        {
+          "title": "X - Connecting Language Learners - Conversifi | Connecting the World in Conversation",
+          "url": "https://conversifi.com/connecting-language-learners/",
+          "publishedDate": "2024-03-21T15:36:54.000Z",
+          "author": null,
+          "highlight": "X - Connecting Language Learners - Conversifi | Connecting the World in Conversation [...] ## Virtual Language Immersion [...] ## 100+ [...] ## 75k [...] ## 12+ [...] ## 90% [...] ## On-Demand or Scheduled [...] ## Conversations Over Video Chat [...] Conversifi connects university language learners with native speaking peers in other countries for authentic conversations over video chat that enrich the skills you’re "
+        },
+        {
+          "title": "Conversifi: AI language coach – Patagonian | Empower your business with strategy & tech",
+          "url": "https://patagonian.com/conversifi/",
+          "publishedDate": "2025-06-12T15:17:23.000Z",
+          "author": null,
+          "highlight": "Conversifi: AI language coach – Patagonian | Empower your business with strategy & tech # Language learning powered by an AI coach Education ### DEVELOPMENT • GENERATIVE AI • DESIGN • DEVELOPMENT • GENERATIVE AI • DESIGN • DEVELOPMENT • GENERATIVE AI • DESIGN Challenge Develop a scalable language learning platform that connects students with native-speaking tutors through personalized matches based on learning goals "
+        },
+        {
+          "title": "Conversifi",
+          "url": "https://linkedin.com/company/conversifi",
+          "publishedDate": "2019-02-01T00:00:00.000Z",
+          "author": null,
+          "highlight": "Conversifi is a E-Learning Providers company. Conversifi employs 51 people (+14.5% YoY, +9 people), founded in 2017. Headquartered in Washington, District of Columbia, United States, operates in 13 countries (including Mexico, Colombia, France, Argentina, and Benin). [...] Conversifi connects foreign language learners with native speakers for on-demand language practice and cross-cultural exchange over video chat. We"
+        },
+        {
+          "title": "Language Exchange for University Students | Conversifi",
+          "url": "https://conversifi.com/students/",
+          "publishedDate": "2024-03-05T14:30:53.000Z",
+          "author": null,
+          "highlight": "Language Exchange for University Students | Conversifi ## Students ## Conversifi connects you with native-speaking students in other countries for authentic conversations over video chat ## Are you an instructor? ## Select Features - Friendly and helpful coaches - On-demand or scheduled conversations - One-on-one discussions with peers - Live customer service team - The most cost-effective option on the market # 10/1"
+        },
+        {
+          "title": "Conversifi Company Overview, Contact Details & Competitors | LeadIQ",
+          "url": "https://leadiq.com/c/conversifi/5f774c1812990524e74777a0",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Growing Revenue Potential Conversifi operates with a revenue range of 10 to 25 million dollars, indicating a solid market presence and potential for expansion into new customer segments or international markets. [...] Niche Language Focus Specializing in connecting learners with native speakers for immersive language practice presents sales opportunities for language education providers, universities, and corporate t"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "plannit_company",
+      "candidate": "Plannit",
+      "seedUrl": "https://plannit.in/",
+      "sourceQueryId": "offline_social_discovery_companies",
+      "category": "company",
+      "query": "Plannit social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "4b5f5390adf7ce84d0e21a6cca97496f",
+      "results": [
+        {
+          "title": "Plannit",
+          "url": "https://plannit.in/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# Plannit Plannit is a Social Networking Platforms company. plannit is a social concierge that allows users to book their seat and match them with groups of like-minded people. They offer a simple process to create profiles, select time and area, and get matched and planned. The company is located in Bangalore, India. Plannit employs 3 people (+100.0% YoY, +2 people), founded in 2024. ## About Meet like-minded people"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "AIGenerator.com",
+          "url": "https://plannit.ai/",
+          "publishedDate": "2026-04-24T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "AIGenerator.com is a Business Intelligence Platforms company. Plannit.ai is an AI-driven business planning platform that helps entrepreneurs, business owners, students and business consultants create professional business plans in minutes. Answer questions about your vision and generate a full professional business plan. AIGenerator.com employs 2 people (-50.0% YoY, -2 people), founded in 2023. Headquartered in Miami"
+        },
+        {
+          "title": "Plannit",
+          "url": "https://plannit.com/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# Plannit (Plannit Inc.) Plannit is a Software Development company. Plannit is a CRM and Operations Software for Home Service Businesses that allows professionals to streamline leads, scheduling, and payments in one app designed for professionals on the go. Plannit employs 9 people (+20.0% YoY, +3 people), founded in 2021. Headquartered in Quebec, Canada. ## About Plannit helps small home service businesses make a bi"
+        },
+        {
+          "title": "plannit",
+          "url": "https://linkedin.com/company/plannit",
+          "publishedDate": "2026-04-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# plannit (Plannit, Inc.) plannit is a Events Services company. Plannit employs 2 people. Headquartered in San Francisco, California, United States. Has $460.0K in total funding. ## Company Details - Industry: Events Services - Type: Partnership - Headquarters: San Francisco, United States - Status: closed - Aliases: plannit, plannit, inc. - LinkedIn: linkedin.com/company/plannit - Linkedin Followers: 35 (Yearly: -10"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "plannit_news",
+      "candidate": "Plannit",
+      "seedUrl": "https://plannit.in/",
+      "sourceQueryId": "offline_social_discovery_companies",
+      "category": "news",
+      "query": "Plannit app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "ecd47ca01b5ab0cbe9b2a23c294f1799",
+      "results": [
+        {
+          "title": "Plannit AI Unveils Revolutionary AI Business Plan Generator",
+          "url": "https://www.openpr.com/news/3443121/plannit-ai-unveils-revolutionary-ai-business-plan-generator",
+          "publishedDate": "2024-03-27T00:04:04.000Z",
+          "author": "Getnews",
+          "highlight": "partnerships with various agencies across the United States. Leveraging the power of the GPT-4 engine, Plannit AI's platform simplifies the creation of detailed financial overviews, including projections for growth, revenue, and expenses. This user-friendly interface makes business planning accessible to all, regardless of their experience level, and significantly reduces the time and effort traditionally required fo"
+        },
+        {
+          "title": "Former Priceline execs debut Plannin, a booking platform that uses travel influencers to help plan trips | TechCrunch",
+          "url": "https://techcrunch.com/2024/05/30/plannin-travel-booking-platform-for-creators/",
+          "publishedDate": "2024-05-30T13:05:00.000Z",
+          "author": "Lauren Forristal",
+          "highlight": "Andrew Loewen and Randy Schartner, co-founders of Hotelsbycity.com and former Priceline executives, just announced their latest project: Plannin, a global travel booking platform that empowers creators to monetize their hotel recommendations and share travel-focused content. [...] As the creator economy continues to ramp up in value, estimated to generate $250 billion in revenue, Plannin wants to put a twist on trave"
+        },
+        {
+          "title": "Plannin.com: Enabling Lifetime Earnings For Travel Creators Through Audience Bookings",
+          "url": "https://www.netinfluencer.com/plannin-com-enabling-lifetime-earnings-for-travel-creators-through-audience-bookings/",
+          "publishedDate": "2025-03-25T18:08:02.000Z",
+          "author": "Cecilia Carloni",
+          "highlight": "This insight comes from Plannin.com, a platform launched by Randy Schartner and Andrew Loewen to address the disconnect by permanently connecting creators to their audience’s bookings, allowing them to earn a 5% commission on every transaction their followers make through the platform—for life. [...] eline in 200 [...] . After the [...] , they developed Priceline [...] Solutions into a [...] operation generating appr"
+        },
+        {
+          "title": "Our Investment in Plannin. We’re excited to announce our… | by Matt Golden | Golden Ventures | Medium",
+          "url": "https://medium.com/golden-ventures/our-investment-in-plannin-6165b60655e2",
+          "publishedDate": "2024-05-30T13:46:30.000Z",
+          "author": "Matt Golden",
+          "highlight": "We’re excited to announce our investment in Plannin, which marks the launch of their creator monetization platform. [...] Plannin helps travellers discover and book trips with recommendations and discounts from the creators they trust, allowing creators to unlock earnings from the decisions they influence. We’re thrilled to partner with Randy Schartner, Andrew Loewen, and the entire Plannin team alongside other incre"
+        },
+        {
+          "title": "‎Plannit App - App Store",
+          "url": "https://apps.apple.com/us/app/plannit/id1437282369",
+          "publishedDate": "2022-01-07T08:36:15.000Z",
+          "author": "AppSn1per",
+          "highlight": "Plannit’s home services app helps Pros save time and win more contracts. Respond to new job requests, create quotes, schedule and dispatch jobs, send invoices, and collect payments all in one place. Customer Service - Keep track of customer records and history - Centralize requests and calls to make follow-ups easier - Send customers a text message to let them know you're on your way - Allow customers to approve quot"
+        },
+        {
+          "title": "PLANIT – AI-Powered Trip Planning with Built-In CO₂ Tracking by Velocity Labs",
+          "url": "https://contra.com/p/kcocscbR-planit-ai-powered-trip-planning-with-built-in-co-tracking",
+          "publishedDate": "2025-10-06T00:00:00.000Z",
+          "author": null,
+          "highlight": "PLANIT – AI-Powered Trip Planning with Built-In CO₂ Tracking by Velocity Labs PLANIT – AI-Powered Trip Planning with Built-In CO₂ Tracking by Velocity LabsPLANIT – AI-Powered Trip Planning with Built-In CO₂ Tracking by Velocity Labs # PLANIT – AI-Powered Trip Planning with Built-In CO₂ Tracking Velocity Labs 0 Planit makes sustainable travel effortless, offering curated itineraries that align with travellers’ values."
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "some_ai_company",
+      "candidate": "SoMe AI",
+      "seedUrl": "https://socialwithsome.com/",
+      "sourceQueryId": "offline_social_discovery_companies",
+      "category": "company",
+      "query": "SoMe AI social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "0c0bfe456c66e8b52bb2d09785d63242",
+      "results": [
+        {
+          "title": "SoMe AI",
+          "url": "https://socialwithsome.com/",
+          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SoMe AI is a Social Networking Platforms company. SoMe is an event-centric social platform that connects people through shared interests and real-world experience. They offer personalized profile-based matches and personalized events tailored to their interests. SoMe also supports local businesses and provides memorable experiences. SoMe AI employs 3 people (+50.0% YoY, +2 people). [...] SoMe is building the infrastr"
+        },
+        {
+          "title": "SocialMe Ai",
+          "url": "https://socialmeai.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SocialMe Ai is a IT Services and IT Consulting company. SocialMe AI is a social media marketing AI that uses advanced socialme AI algorithms to conduct in-depth research on social media trends, audience preferences, and competitive landscape. They provide valuable insights to influence social media strategies and offer personalized content experience. SocialMe Ai employs 4 people (+100.0% YoY, +2 people), founded in "
+        },
+        {
+          "title": "SoMe",
+          "url": "https://some-ai.com/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# SoMe (SoMe AI Pty Ltd) [...] SoMe is a Marketing Services company. SoMe is an automated video editing company that helps businesses turn their raw footage into high-performing short form video. They provide deep-dive analytics powered by data-driven analytics to streamline their content and increase profitability. SoMe offers authentic content that's consistent, high-performing posts more time to grow their busines"
+        },
+        {
+          "title": "SoMe Software",
+          "url": "https://somesoftware.io/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SoMe Software is a Social Networking Platforms company. SoMe Software employs 3 people, founded in 2025. [...] Prova SoMe: www.somesoftware.io [...] Spara upp till 20 timmar i månaden och nå din målgrupp effektivt på sociala medier. [...] Skapa viralt innehåll med hjälp av heta trender och personlig AI. Vår plattform för sociala medier låter dig få analys, schemalägga och skapa allt ditt content på ett ställe. [...] "
+        },
+        {
+          "title": "Datsme AI",
+          "url": "https://datsme.ai/",
+          "publishedDate": "2026-03-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Datsme AI is a Technology, Information and Internet company. Datsme is a social wellness app that helps in learning the science of friendship and developing meaningful connections. They bring in world leading friendship experts to teach the science of friendship and bonding through 80+ audio sessions. They create a community based on the twelve rings test and help users explore, discover, and make new friends nearby."
+        },
+        {
+          "title": "SoMee.Social",
+          "url": "https://somee.social/",
+          "publishedDate": "2025-08-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SoMee.Social is a Online Audio and Video Media company. SoMee.Social employs 3 people, founded in 2013. Headquartered in Las Vegas, Nevada, United States, with presence in United Arab Emirates. [...] SoMee is transforming Social Media by promoting community building, free expression, privacy, and valuing all contributions. [...] - Industry: Online Audio and Video Media - Type: Public Company - Headquarters: Las Vegas"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "some_ai_news",
+      "candidate": "SoMe AI",
+      "seedUrl": "https://socialwithsome.com/",
+      "sourceQueryId": "offline_social_discovery_companies",
+      "category": "news",
+      "query": "SoMe AI app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "525e07c6d58e58b30b6f09197f4cb143",
+      "results": [
+        {
+          "title": "Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage | TechCrunch",
+          "url": "https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/",
+          "publishedDate": "2026-04-24T21:05:59.000Z",
+          "author": "Dominic-Madori Davis",
+          "highlight": "Series, a social networking app, announced that it raised a $5.1 million pre-seed round, with investors including Venmo co-founder Iqram Magdon-Ismail, Pear VC, Reddit CEO Steve Huffman, and GPTZero founder Edward Tian. The company was founded early last year by Yale students Nathaneo Johnson and Sean Hargrow, both still seniors at the university. [...] Series considers itself to be a next-generation social networkin"
+        },
+        {
+          "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch",
+          "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+          "publishedDate": "2026-04-29T13:00:00.000Z",
+          "author": "Aisha Malik",
+          "highlight": "Shapes, an app where humans and AI characters chat together in shared group conversations, is emerging from stealth with $8 million in seed funding. Think Discord, but with AI characters alongside humans. [...] Founded in 2022, Shapes has more than 400,000 monthly active users. The app’s founders, Anushk Mittal and Noorie Dhingra, believe that Shapes can address issues around “ AI psychosis,” which refers to cases wh"
+        },
+        {
+          "title": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch",
+          "url": "https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/",
+          "publishedDate": "2026-05-19T14:00:00.000Z",
+          "author": "Dominic-Madori Davis",
+          "highlight": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch [...] chance to talk about her interests [...] ChatGPT launched in 2022, she [...] potential immediately. “AI could [...] let any user actually [...] , not just [...] or talk about their [...] them,” she told TechCrunch. [...] “The role-play and immersion that fans had always wanted was suddenly possible at scale,”"
+        },
+        {
+          "title": "As AI Is Redefining How Strangers Connect Globally, RoamChat Introduces a New \"Roaming Social\" Platform",
+          "url": "https://www.prnewswire.com/news-releases/as-ai-is-redefining-how-strangers-connect-globally-roamchat-introduces-a-new-roaming-social-platform-302775994.html",
+          "publishedDate": "2026-05-19T00:00:00.000Z",
+          "author": "RoamChat",
+          "highlight": "SAN FRANCISCO and SINGAPORE and LONDON, May 19, 2026 /PRNewswire/ -- As mainstream social platforms continue competing around short videos, recommendation algorithms, and endless content feeds, RoamChat, a new startup, is taking a very different approach to online interaction: helping strangers around the world talk to each other in real time. [...] RoamChat is an AI-powered social platform that combines live maps, v"
+        },
+        {
+          "title": "O hi Secures $1 Million in Pre-Series A Funding to Expand Social Networking Innovation. - Indian Startup Times",
+          "url": "https://www.indianstartuptimes.com/investment/o-hi-secures-1-million-in-pre-series-a-funding-to-expand-social-networking-innovation/",
+          "publishedDate": "2024-06-27T08:01:51.000Z",
+          "author": null,
+          "highlight": "O hi Secures $1 Million in Pre-Series A Funding to Expand Social Networking Innovation. - Indian Startup Times [...] ## O hi Secures $1 Million in Pre-Series A Funding to Expand Social Networking Innovation. [...] Social networking app O hi has successfully raised Rs 8 crore (approximately $1 million USD) in its pre-Series A funding round, with major contributions from existing investors JIIF and a consortium of prom"
+        },
+        {
+          "title": "German founder raises $15M from Benchmark to build a 'world's mutual friend' social platform that bridges filter bubbles | TBPN Digest",
+          "url": "https://www.tbpndigest.com/story/2026-04-16/german-founder-raises-15m-from-benchmark-to-build-a-worlds-mutual-friend-social-platform-that-bridges-filter-bubbles",
+          "publishedDate": "2026-04-16T00:00:00.000Z",
+          "author": null,
+          "highlight": "- Benchmark backs Eigen, a pre-launch social platform designed to deepen existing relationships and counter filter bubble isolation, with a $15 million investment made within three days of initial conversation. - Founder Paul Scherer, a German high school dropout who arrived in San Francisco less than a year ago, rejected building a conventional mobile app in favor of an undefined platform model. - Scherer argues the"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "meetup_com_company",
+      "candidate": "Meetup.com",
+      "seedUrl": "https://meetup.com/",
+      "sourceQueryId": "local_activity_social_companies",
+      "category": "company",
+      "query": "Meetup.com social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "73c27beb33a47940cc9f17195249695a",
+      "results": [
+        {
+          "title": "Meetup.com",
+          "url": "https://meetup.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Meetup.com is a Technology, Information and Internet company. Meetup is a people platform that connects people with interests and offers events and activities. It provides a platform for individuals to connect and share their interests. Meetup.com employs 247 people (-5.2% YoY, -30 people) and has an annual revenue of $30.0M, founded in 2002. Headquartered in New York, New York, United States, operates in 37 countrie"
+        },
+        {
+          "title": "MeetMux",
+          "url": "https://meetmux.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "MeetMux is a Social Networking Platforms company. MeetMux is an AI-powered, activity-first social platform where users discover people around them based on real-time and planned activities like sports, movies, or travel. They bring real, meaningful, in-person connections back into your life. MeetMux employs 25 people (+188.2% YoY), founded in 2024. Headquartered in Bengaluru, Karnataka, India. [...] MeetMux is a purp"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "MateUp",
+          "url": "https://mateup.org/",
+          "publishedDate": "2026-04-16T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# MateUp MateUp is a Events Services company. Founded in 2025. ## About Most matches on dating apps never end up in dates. Traditional apps are built to keep you swiping and give you cheap dopamine while creating ad revenue. MateUp completely flips this model by bringing digital interaction into the offline, real world. It is a dating app built for parties, creating an innovative social game that lets you filter the "
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "meetup_com_news",
+      "candidate": "Meetup.com",
+      "seedUrl": "https://meetup.com/",
+      "sourceQueryId": "local_activity_social_companies",
+      "category": "news",
+      "query": "Meetup.com app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "5bad8319bc164e932f4bc3910e2f353a",
+      "results": [
+        {
+          "title": "Meetup's new mobile app is designed to make it easier to meet people IRL",
+          "url": "https://www.engadget.com/mobile/meetups-new-mobile-app-is-designed-to-make-it-easier-to-meet-people-irl-150000920.html",
+          "publishedDate": "2025-12-18T15:00:00.000Z",
+          "author": null,
+          "highlight": "In 2017, founder Scott Heiferman sold it to WeWork, which offloaded it a few years later before declaring bankruptcy in 2023. As of 2024, Bending Spoons, the Italian tech company that's probably best known for buying Evernote in 2022, has been running Meetup. [...] In the aftermath of the pandemic, the platform has seen something of resurgence. As of late 2025, Gen Z and young Millennials make up 40 percent of Meetup"
+        },
+        {
+          "title": "The grandaddy of IRL apps attempts a comeback",
+          "url": "https://www.morningbrew.com/stories/2026/03/19/the-grandaddy-of-irl-apps-attempts-a-comeback",
+          "publishedDate": "2026-03-22T05:02:00.000Z",
+          "author": null,
+          "highlight": "Before the loneliness epidemic and all the friendship apps that followed, there was Meetup.com, the pre-Facebook platform for hanging out with strangers from the internet. After growing a loyal user base, surviving a stint under WeWork, and then stalling out, Meetup is angling for a second wind—but its turnaround may be turning away longtime fans. [...] Origins: Meetup launched in 2002 after its co-founders noticed a"
+        },
+        {
+          "title": "Meetup Unveils Fresh New Design as Gen Z and Millennials Crave More In-Person Interactions – News Hub",
+          "url": "https://newshub.medianet.com.au/2025/09/meetup-unveils-fresh-new-design-as-gen-z-and-millennials-crave-more-in-person-interactions/121090/",
+          "publishedDate": "2025-09-01T00:00:00.000Z",
+          "author": null,
+          "highlight": "Meetup, the digital platform that has been connecting people in real life for more than two decades, has just unveiled a significant redesign. [...] Combining lively visuals with a streamlined experience, the new look marks Meetup’s biggest design evolution to date and signals a firm belief in the platform’s continued growth and bright future. As of today, Meetup’s new design is live on Web, with Mobile coming soon. "
+        },
+        {
+          "title": "Meetup - 2026 Company Profile & Team - Tracxn",
+          "url": "https://tracxn.com/d/companies/meetup/__T0QtgvjmONA6vTeJyYKvglE9Q5_Fpow3frMZt5MWyYo",
+          "publishedDate": "2021-08-17T11:45:23.000Z",
+          "author": null,
+          "highlight": "Meetup is an acquired company based in United States, founded in 2002 by Scott Heiferman, Matt Meeker, Joseph Wei, Greg Whalin and Brendan Mcgovern. It operates as a Platform connecting individuals with shared interests for in-person and online events. Meetup has raised $9.5M in funding from eBay and Union Square Ventures. The company has 135 active competitors, including 12 funded and 2 that have exited. Its top com"
+        },
+        {
+          "title": "Meetup's new design for a new era of making connections",
+          "url": "https://www.meetup.com/blog/new-design-2025/",
+          "publishedDate": "2025-09-30T12:10:38.000Z",
+          "author": "Chiara",
+          "highlight": "At the heart of this redesign is you: As members and organizers, you’ve built countless connections through Meetup over the years and created the communities that define its legacy. With the new design we set out to honor that foundation while making your experience on the platform more enjoyable and rewarding. At the same time, we wanted to ensure that Meetup continues attracting new people to join your groups, atte"
+        },
+        {
+          "title": "Discover Meetup Events to Connect Over Shared Interests Near You - News Usa Today",
+          "url": "https://news-usa.today/discover-meetup-events-to-connect-over-shared-interests-near-you/",
+          "publishedDate": "2026-04-27T09:48:23.000Z",
+          "author": "Chief Editor: Rhea Montrose",
+          "highlight": "This isn’t a festival. It’s not a city-sponsored event. It’s just another Thursday on Meetup, the 22-year-old platform that has quietly grow one of the most powerful tools for civic connection in America—a digital matchmaker for the lonely, the curious, and the chronically overscheduled. And in neighborhoods like Mt. Washington, where the population has grown 8% since 2020 but the number of community centers has stay"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "around_me_company",
+      "candidate": "Around Me",
+      "seedUrl": "https://aroundme.co/",
+      "sourceQueryId": "offline_social_company_boundary",
+      "category": "company",
+      "query": "Around Me social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "dedd15310890efd351040b0e8f1f87ad",
+      "results": [
+        {
+          "title": "Around Me",
+          "url": "https://aroundme.co/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Around Me is a Social Networking Platforms company. AroundMe is a company that enables instant meetups based on real-time interests. Founded in 2023. Headquartered in Riverside, California, United States. [...] AroundMeet is an AI powered app based solution that enables instant meetup with nearby people based on real time interest. [...] - Industry: Social Networking Platforms - Type: Self-Employed - Headquarters: Ri"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "UBQT",
+          "url": "https://joinubqt.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "UBQT is a Social Networking Platforms company. ubqt is a B2B AI community platform that empowers real-life connections, amplify community engagement, and unlock the full potential of human and social capital. UBQT employs 7 people, founded in 2023. Headquartered in Dubai, United Arab Emirates, United Arab Emirates, operates in 5 countries (including Saudi Arabia, Netherlands, Pakistan, and Belgium). Has $750.0K in to"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "Datsme AI",
+          "url": "https://datsme.ai/",
+          "publishedDate": "2026-03-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Datsme AI is a Technology, Information and Internet company. Datsme is a social wellness app that helps in learning the science of friendship and developing meaningful connections. They bring in world leading friendship experts to teach the science of friendship and bonding through 80+ audio sessions. They create a community based on the twelve rings test and help users explore, discover, and make new friends nearby."
+        },
+        {
+          "title": "LunchME",
+          "url": "https://lunch-me.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LunchME is a Technology, Information and Internet company. LunchME is a networking platform that allows users to connect with mentors, peers, and future collaborators through a shared meal. It offers a flexible and easy way to make money over lunch, with a focus on providing good advice, experience, or good vibes. Headquartered in Toronto, Canada. [...] LunchME is reimagining networking by enabling professionals, stu"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "around_me_news",
+      "candidate": "Around Me",
+      "seedUrl": "https://aroundme.co/",
+      "sourceQueryId": "offline_social_company_boundary",
+      "category": "news",
+      "query": "Around Me app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "8a55acd788a40082c7124f8b80a5d39e",
+      "results": [
+        {
+          "title": "Mate Secures $650,000 to Fuel AI-Powered Real-Life Friendships | Signalbase",
+          "url": "https://www.trysignalbase.com/news/funding/mate-secures-650000-to-fuel-ai-powered-real-life-friendships",
+          "publishedDate": "2025-10-20T00:00:00.000Z",
+          "author": null,
+          "highlight": "Mate Secures $650,000 to Fuel AI-Powered Real-Life Friendships | Signalbase [...] Funding news Published October 20, 2025 [...] Mate, the innovative application designed to connect individuals in real life, has successfully secured $650,000 in investment capital. This funding round marks a significant milestone for the company, which offers an AI-powered app enabling users to instantly meet new friends with shared in"
+        },
+        {
+          "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch",
+          "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+          "publishedDate": "2026-05-27T08:00:00.000Z",
+          "author": "Lauren Forristal",
+          "highlight": "WeRoad, the Milan-based group travel startup, has raised a $58 million Series C round led by Airbnb as it prepares for its first major expansion outside Europe. The funding brings the company’s total capital raised to roughly $100 million and will finance WeRoad’s push into the U.S., beginning with Austin. [...] The new investment reflects a bet that the next generation of travel companies may look less like booking "
+        },
+        {
+          "title": "WeMeet by WeRoad: The Travel Startup’s New App Is Turning Loneliness into a Business Opportunity - Tech User Magazine",
+          "url": "https://tech-user.co.uk/2025/06/16/wemeet-by-weroad-the-travel-startups-new-app-is-turning-loneliness-into-a-business-opportunity/",
+          "publishedDate": "2025-06-16T00:00:00.000Z",
+          "author": "Lisa Baker, Editor",
+          "highlight": "WeMeet by WeRoad: The Travel Startup’s New App Is Turning Loneliness into a Business Opportunity - Tech User Magazine 21,000 downloads, 200 events, 2,000 attendees, in just two weeks. WeRoad, the European group travel brand best known for bringing thousands of solo travellers together on curated adventures, has launched a new app, and this time, the destination is your own city. WeMeet is the company’s bold new move "
+        },
+        {
+          "title": "First Round’s on Me Raises $3M for its Social Daing App that Centers In Person Connection – LA TechWatch",
+          "url": "https://www.latechwatch.com/2024/08/first-rounds-on-me-from-social-dating-plan-real-life-in-person-date-app-joe-feminella/",
+          "publishedDate": "2024-08-01T00:00:00.000Z",
+          "author": null,
+          "highlight": "Dating apps have transformed modern romance, offering convenience and efficiency in connecting potential partners. However, they come with challenges such as ghosting, misrepresentation, choice overload, and time consumption. Many of these issues can be mitigated by prioritizing in-person meetings. First Round’s on Me (FROM) is a social dating app that emphasizes face-to-face connections. The app, launched in 2020, d"
+        },
+        {
+          "title": "Meet5 secures €8M for international expansion - Tech.eu",
+          "url": "https://tech.eu/2025/09/10/meet5-secures-eur8m-for-international-expansion/",
+          "publishedDate": "2025-09-10T00:00:00.000Z",
+          "author": null,
+          "highlight": "# Meet5 secures €8M for international expansion [...] The capital will be used to expand the team, scale internationally, and boost the app’s intelligence to deliver more relevant activities and connections. [...] Tamara Djurickovic 1 [...] September 20 [...] Frankfurt–based Meet5, a socialising app for people over 40, has raised €8 million in Series A funding from European venture capital firm Peak. With this invest"
+        },
+        {
+          "title": "Inshorts' social networking app Public raises $35MN",
+          "url": "https://www.afaqs.com/companies/inshorts-social-networking-app-public-raises-35mn",
+          "publishedDate": null,
+          "author": "Priyanka Chanana",
+          "highlight": "Inshorts' social networking app Public raises $35MN You have successfully subscribed the newsletter. # Inshorts' social networking app Public raises $35MN ## The app has raised funding from Addition, SIG Global and Tanglin Venture Partners. New Update The app has received funding from Addition, SIG Global and Tanglin Venture Partners. Public App, India’s largest location based social network, has secured $35 million "
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "time2talk_company",
+      "candidate": "Time2Talk",
+      "seedUrl": "https://time2talk.app/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "company",
+      "query": "Time2Talk social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "1fb93dd94e08d90b6a3032770f67f256",
+      "results": [
+        {
+          "title": "Time2Talk",
+          "url": "https://time2talk.app/",
+          "publishedDate": "2026-04-20T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and C"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "LanguaTalk Inc.",
+          "url": "https://languatalk.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# LanguaTalk Inc. LanguaTalk Inc. is a Education company. LanguaTalk Inc. employs 47 people (+1.6% YoY, +1 person), founded in 2021. Headquartered in London, England, United Kingdom, operates in 19 countries (including Italy, United States, Mexico, Spain, and Canada). ## About LanguaTalk is a language learning startup offering personalized online tutoring in 16 languages, as well as the world's most advanced AI platf"
+        },
+        {
+          "title": "Speak",
+          "url": "https://speak.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Speak is a Software Development company. Speak is a language learning app that helps people speak out loud, get instant feedback, and become fluent with advanced AI language tutors. They offer personalized curriculum and a on-the-go conversational partner to help individuals improve 24/7. Speak employs 166 people (+30.9% YoY, +69 people) and has an annual revenue of $7.0M. Headquartered in San Francisco, California, "
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "time2talk_news",
+      "candidate": "Time2Talk",
+      "seedUrl": "https://time2talk.app/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "news",
+      "query": "Time2Talk app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "a2d91bf7ddc059811ac2c0cb953832a4",
+      "results": [
+        {
+          "title": "Time2Talk",
+          "url": "https://linkedin.com/company/time2talkapp",
+          "publishedDate": "2021-04-17T00:00:00.000Z",
+          "author": null,
+          "highlight": "Time2Talk is a E-Learning Providers company. Time2Talk is a company that provides on-demand opportunities for Spanish teachers to practice Spanish in over 10 countries throughout Latin America and Spain. They offer flexible scheduling and flexible learning options. Time2Talk employs 3 people (+21.4% YoY, +3 people), founded in 2019. Headquartered in Cleveland, Ohio, United States, with presence in Mexico, Peru, and C"
+        },
+        {
+          "title": "Time2talk (Educational Software) 2026 Company Profile: Valuation, Funding & Investors | PitchBook",
+          "url": "https://pitchbook.com/profiles/company/498175-57",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Time2talk (Educational Software) 2026 Company Profile: Valuation, Funding & Investors | PitchBook [...] 2019 [...] ## Status Out of Business [...] ## Employees 17 [...] ## Latest Deal Type Out of Business [...] ## Investors 1 [...] Developer of language learning platform designed to make practicing Spanish easy, practical, and accessible. The company's platform connects Spanish-learning individuals in North America w"
+        },
+        {
+          "title": "\"Time2Talk\" App Makes Learning, Retaining Spanish Easier",
+          "url": "https://spectrumnews1.com/oh/columbus/news/2021/02/18/-time2talk--app-makes-learning--retaining-spanish-easier",
+          "publishedDate": "2021-02-18T00:00:00.000Z",
+          "author": null,
+          "highlight": "\"Time2Talk\" App Makes Learning, Retaining Spanish Easier [...] ##### The Time2Talk app launched in July 2020The app aims to make learning and retaining Spanish easier by connecting students with native speakersSo far, over 400 coaches have appliedMore than 300 students have signed up [...] She is the founder and CEO of a new app called Time2Talk, which aims to make learning and retaining Spanish easier. [...] The app"
+        },
+        {
+          "title": "Time2Talk - JumpStart Ventures",
+          "url": "https://jumpstart.vc/portfolio-company/time2talk/",
+          "publishedDate": "2022-03-16T17:03:29.000Z",
+          "author": "Freddie Coffey",
+          "highlight": "Time2Talk - JumpStart Ventures Portfolio Company ## Time2Talk Practice Spanish with native speakers On-Demand. Time2Talk Freddie Coffey 2022-03-16T17:03:29-04:00 #### Company Description Time2Talk is a mobile app that connects Spanish learning students in the US with native Spanish speakers in Latin America on-demand. Time2Talk is designed to improve speaking skills while promoting cultural exchange, language fluency"
+        },
+        {
+          "title": "Time2Talk app aims to bridge learning, culture gaps | Local News | clevelandjewishnews.com",
+          "url": "https://www.clevelandjewishnews.com/news/local_news/time2talk-app-aims-to-bridge-learning-culture-gaps/article_bb18937a-d7a2-11ed-a28d-d7034e41d112.html",
+          "publishedDate": "2023-04-11T19:00:00.000Z",
+          "author": "BECKY RASPE  braspe@cjn.org",
+          "highlight": "For native Spanish speaker Marina Jackman, learning another language to connect with her English-speaking husband, who also was working to learn Spanish, came with hurdle after hurdle. [...] Together, the couple was also attempting to learn French, but found it difficult to find native speakers to practice their conversational skills with. Noticing the same could be said about any language, and recognizing their luck"
+        },
+        {
+          "title": "Can we talk? Latina-led startup Time2Talk helps bridge the cultural gap through conversation",
+          "url": "https://www.freshwatercleveland.com/breaking-ground/Time2Talk101320.aspx",
+          "publishedDate": "2020-10-13T00:00:00.000Z",
+          "author": "Nate Paige",
+          "highlight": "The Time2Talk app allows U.S. and Canadian residents access to real-life tutoring with native speakers all over Latin America. Courtesy of Time2Talk [...] Daily interpersonal interactions are a necessity, and with the world now relying heavily on remote learning and smartphones—to an even greater degree because of the COVID-19 pandemic—Marina Jackman has devised a conventional way to learn Spanish with the tech start"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "languages_live_gesellschaft_lokalisierung_mbh_company",
+      "candidate": "Languages Live Gesellschaft Lokalisierung mbH",
+      "seedUrl": "https://mylanguageexchange.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "company",
+      "query": "Languages Live Gesellschaft Lokalisierung mbH social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "b96c6b623b0dfa8c62fc53c122c36cf6",
+      "results": [
+        {
+          "title": "Languages Live Gesellschaft Lokalisierung mbH",
+          "url": "https://mylanguageexchange.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# Languages Live Gesellschaft Lokalisierung mbH Languages Live Gesellschaft Lokalisierung mbH. Headquartered in Germany. ## Company Details - Status: active - Ownership: Private - Aliases: languages live gesellschaft lokalisierung mbh, mylanguageexchange, language exchange community - Phone: (514) 448-0588 - SIC Codes: 82, 824 - NAICS Codes: 61, 611 ## Web Presence - Monthly Visits: 354,995 - Traffic Growth: Monthly:"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "Beelinguapp",
+          "url": "https://beelinguapp.com/",
+          "publishedDate": "2026-05-21T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Beelinguapp is an educational institution. Beelinguapp is a company that helps individuals improve their language skills by reading and listening to novels, news, and music. They offer a real-life context and provide a language and culture experience that caters to different cultures. Their library features stories and news articles for learners at all levels as audiobooks. Beelinguapp employs 13 people (-6.2% YoY, -"
+        },
+        {
+          "title": "LanguaTalk Inc.",
+          "url": "https://languatalk.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# LanguaTalk Inc. LanguaTalk Inc. is a Education company. LanguaTalk Inc. employs 47 people (+1.6% YoY, +1 person), founded in 2021. Headquartered in London, England, United Kingdom, operates in 19 countries (including Italy, United States, Mexico, Spain, and Canada). ## About LanguaTalk is a language learning startup offering personalized online tutoring in 16 languages, as well as the world's most advanced AI platf"
+        },
+        {
+          "title": "Speak",
+          "url": "https://speak.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Speak is a Software Development company. Speak is a language learning app that helps people speak out loud, get instant feedback, and become fluent with advanced AI language tutors. They offer personalized curriculum and a on-the-go conversational partner to help individuals improve 24/7. Speak employs 166 people (+30.9% YoY, +69 people) and has an annual revenue of $7.0M. Headquartered in San Francisco, California, "
+        },
+        {
+          "title": "Parlai",
+          "url": "https://parlai.app/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Parlai is a E-Learning Providers company. Parlai employs 2 people, founded in 2023. Headquartered in Vienna, Vienna, Austria. [...] We help language learners enhance their confidence and conversational abilities by providing a personalized and interactive AI-based chatbot on WhatsApp that enables real-world conversations, offers immediate feedback, and adapts to each learner's needs and goals. [...] - Industry: E-Lea"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "languages_live_gesellschaft_lokalisierung_mbh_news",
+      "candidate": "Languages Live Gesellschaft Lokalisierung mbH",
+      "seedUrl": "https://mylanguageexchange.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "news",
+      "query": "Languages Live Gesellschaft Lokalisierung mbH app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "9804ef3c2a73c1a534e5ab0da969eb6f",
+      "results": [
+        {
+          "title": "Language learning app Sylvi raises £350k in super angel round as it plans to scale its AI-powered conversational practice — EdTech Innovation Hub",
+          "url": "https://www.edtechinnovationhub.com/news/language-learning-app-sylvi-raises-350k-in-super-angel-round-as-it-plans-to-scale-its-ai-powered-conversational-practice",
+          "publishedDate": "2025-06-03T05:00:00.000Z",
+          "author": "Written By  Rachel Lawler",
+          "highlight": "Language learning app Sylvi raises £350k in super angel round as it plans to scale its AI-powered conversational practice — EdTech Innovation Hub [...] # Language learning app Sylvi raises £350k in super angel round as it plans to scale its AI-powered conversational practice [...] #### Sylvi, a language-learning app focused on conversation practice, has announced it has successfully closed a £350,000 super angel fund"
+        },
+        {
+          "title": "WRD wants to do for language learning what GPS did for navigation — remove the thinking | VentureBeat",
+          "url": "https://venturebeat.com/business/wrd-wants-to-do-for-language-learning-what-gps-did-for-navigation-remove-the-thinking",
+          "publishedDate": "2026-04-24T19:32:14.000Z",
+          "author": "Jon Stojan",
+          "highlight": "That tool became WRD– a mobile-first, AI-powered language learning accelerator that, according to the company, has crossed two million users, surpassed $1.2 million in annual recurring revenue, and grown 3.5x in six months. The company is now seeking a seed round of $3 to $5 million. But the story behind WRD stretches back decades, through IBM supply chains. [...] From that foundation, the team built WRD’s core algor"
+        },
+        {
+          "title": "BeeSpeaker raises €2M to help language learners become confident speakers - Tech.eu",
+          "url": "https://tech.eu/2025/09/25/beespeaker-raises-eur2m-to-help-language-learners-become-confident-speakers/",
+          "publishedDate": "2025-09-25T08:00:00.000Z",
+          "author": null,
+          "highlight": "# BeeSpeaker raises €2M to help language learners become confident speakers [...] The startup enables adults and teenagers to practice language speaking skills using AI-driven, video-based virtual tutors. [...] Tamara Djurickovic 25 September 202 [...] Polish language-learning app BeeSpeaker has raised €2 million in seed funding to enter new markets, introduce additional languages, and improve its AI-powered experien"
+        },
+        {
+          "title": "Gemeinsam erleben: App für Freunde finden & Aktivitäten - PresseJournal.fr",
+          "url": "https://pressejournal.fr/technologie/gemeinsam-erleben-app-freunde-finden-aktivitaeten/",
+          "publishedDate": "2026-04-25T03:32:12.000Z",
+          "author": "Maxime Arthur Moreau Garcia",
+          "highlight": "Die App GemeinsamErleben will Menschen ab 60 in Österreich und Deutschland dabei helfen, neue Freunde für gemeinsame Erlebnisse zu finden – von Wanderungen über Kochkurse bis zu Stammtischen. Mit über 1,5 Millionen Mitgliedern im deutschsprachigen Raum zählt die Plattform zu den größten sozialen Netzwerken für aktive Freizeitgestaltung und ist bewusst keine Dating-App. [...] Betreiber: Synexit GmbH, Wien · Kosten: Gr"
+        },
+        {
+          "title": "Localazy secures additional funding to remove language barriers for 1B people worldwide in a new investment round",
+          "url": "https://localazy.com/blog/localazy-secures-eu1m-to-remove-language-barriers-for-1-billion-people-worldwide-in-new-investment-round",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Localazy has recently secured funding from JIC Ventures, Garage Angels, and 12Bullets in our second investment round, resulting in a total valuation of €4.5 million. Read on to learn more information about our latest investment. [...] We've got exciting news to share with you today! 🎊 Localazy has successfully closed a new investment round where it has secured several hundred thousand euros in venture capital from t"
+        },
+        {
+          "title": "Danish Founder Bets Against \"Gamified\" Learning: VORLI",
+          "url": "https://www.openpr.com/news/4364719/danish-founder-bets-against-gamified-learning-vorli",
+          "publishedDate": "2026-01-27T11:46:42.000Z",
+          "author": "VORLI",
+          "highlight": "Real-Time Lip [...] AARHUS, DENMARK - January 27, 2026 - While millions of people maintain daily \"streaks\" on language apps, a vast majority still freeze when asked to speak in real life. Today, Danish EdTech startup VORLI challenges this \"illusion of fluency\" by launching the world's first AI-Native Language Tutor designed to function as a flight simulator for conversations. Backed by a self-funded $250,000 investme"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "lingolooper_company",
+      "candidate": "LingoLooper",
+      "seedUrl": "https://lingolooper.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "company",
+      "query": "LingoLooper social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "d1a3e8d30b463658dc252a0dcb119838",
+      "results": [
+        {
+          "title": "LingoLooper",
+          "url": "https://lingolooper.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LingoLooper is a Technology, Information and Internet company. LingoLooper is an immersive language learning app that allows users to acquire target language in the same way as native speakers acquire their own. It offers interactive conversations with AI avatars to help users achieve native-level fluency. LingoLooper employs 14 people (+200.0% YoY, +8 people), founded in 2022. Headquartered in göteborg, västra götal"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "Linguas Australia Language Exchange & Social",
+          "url": "https://linguas.au/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# Linguas Australia Language Exchange & Social Linguas Australia Language Exchange & Social is a Events Services company. Language Australia is a company that provides language registration services for Oxford scholars and Thursdays. They have a website with a linktree logo and a logo symbol. Linguas Australia Language Exchange & Social employs 3 people, founded in 2021. Headquartered in Melbourne, Victoria, Australi"
+        },
+        {
+          "title": "Lingopanda (previously PingoLearn)",
+          "url": "https://lingopanda.app/",
+          "publishedDate": "2026-05-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Lingopanda (previously PingoLearn) is a E-Learning Providers company. PingoLearn is an ai-powered English tutor on your smartphone that offers a range of learning tools and resources for practice speaking in different situations. They provide a voice chat, feedback, practice partner calls, and language audio books. PingoLearn aims to make learning English fun and stress-free. Lingopanda (previously PingoLearn) employ"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "lingolooper_news",
+      "candidate": "LingoLooper",
+      "seedUrl": "https://lingolooper.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "news",
+      "query": "LingoLooper app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "ebe55d1d256137daaee95ac0fb7b02e1",
+      "results": [
+        {
+          "title": "200,000 users in one year – LingoLooper enters its next phase with new investors -",
+          "url": "https://scienceparkskovde.se/en/articles/200000-users-in-one-year-lingolooper-enters-its-next-phase-with-new-investors/",
+          "publishedDate": "2025-04-02T00:00:00.000Z",
+          "author": null,
+          "highlight": "200,000 users in one year – LingoLooper enters its next phase with new investors - [...] # 200,000 users in one year – LingoLooper enters its next phase with new investors [...] In the fall of 2024, CEO Danielle Karlsson pitched LingoLooper on Swedish TV’s Dragons’ Den. [...] The startup LingoLooper (formerly Lumi Labs), the company behind a language learning app often described as “The Sims with AI for language trai"
+        },
+        {
+          "title": "LingoLooper - AI Language Game on iOS and Android",
+          "url": "https://www.lingolooper.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LingoLooper - AI Language Game on iOS and Android [...] Play your way to fluency with the immersive AI language learning app that gets you speaking from day one. [...] 1.2M+ [...] ## Practice real conversation with AI avatars in 30+ languages & dialects [...] with AI avatars [...] Engage in conversations with 1000+ fun and friendly AI avatars around hundreds of everyday topics such as Things to Do, Work, Family, Shop"
+        },
+        {
+          "title": "‎LingoLooper: AI Language Game App - App Store",
+          "url": "https://apps.apple.com/us/app/lingolooper-ai-language-game/id1670913076",
+          "publishedDate": "2026-02-13T15:00:27.000Z",
+          "author": "liv.g.b",
+          "highlight": "31.8 MB [...] iOS 15.0 [...] . iPhoneRequires iOS 15.0 or later. iPadRequires iPadOS 15.0 or later. iPod touchRequires iOS 15.0 or later. Languages English Age Rating 1 [...] Early Access $14."
+        },
+        {
+          "title": "LingoLooper is hiring a Lead Content Strategist",
+          "url": "https://workwithindies.com/careers/lingo-looper-lead-content-strategist",
+          "publishedDate": "2026-04-09T00:00:00.000Z",
+          "author": null,
+          "highlight": "April 9, 2026 [...] LingoLooper is a language learning app where you practice real conversations with expressive AI avatars in a virtual world — think the Sims meets ChatGPT to help you speak a new language with confidence. [...] We've recently crossed 1.2 million downloads on iOS and Android and grew more than 10X last year. The vast majority of our users discover us through short-form UGC on TT/IG/YT and now we're "
+        },
+        {
+          "title": "LingoLooper: AI Language Game - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.lumilabs.LingoLooper",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "the language barrier and more, LingoLooper is your key to overcoming common language learning obstacles. Beat speaking anxiety and achieve native-level fluency, all in a judgment-free space to practice, be comfortable, and build stronger language skills at your own pace with continuous support.IDEAL LANGUAGE LEARNING EXPERIENCE• Travel in immersive 3D worlds: Journey through interactive environments. Order breakfast "
+        },
+        {
+          "title": "‎LingoLooper: AI Language Game - Ratings & Reviews - App Store",
+          "url": "https://apps.apple.com/us/app/lingolooper-ai-language-game/id1670913076?platform=watch&see-all=reviews",
+          "publishedDate": "2025-08-25T18:21:48.000Z",
+          "author": "Zoelyse",
+          "highlight": "‎LingoLooper: AI Language Game - Ratings & Reviews - App Store [...] # LingoLooper: AI Language Game [...] As a polyglot I am enjoying this app that I find fantastic. If I may make suggestions for perfection: 1- add a chat option, to allow people to practice their writing skills2-add Arabic dialects (Egyptian/lebanese…)3-add Maltese (the only Semitic language in Europe, a mix of Tunisian dialect Italian and English) "
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "lingoquesto_company",
+      "candidate": "LingoQuesto",
+      "seedUrl": "https://lingoquesto.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "company",
+      "query": "LingoQuesto social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "1ea7312000cba44ddd972b87adbb1ee1",
+      "results": [
+        {
+          "title": "LingoQuesto",
+          "url": "https://lingoquesto.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LingoQuesto is a Education company. LingoQuesto is a company that empowers language educators with a speech-based language practice. They help language educators improve their students' speaking skills through interactive and personalized conversations that simulate immersive learning experiences. LingoQuesto employs 7 people (+60.0% YoY, +3 people), founded in 2023. Headquartered in Singapore, Central Region, Singap"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "Mundo Lingo",
+          "url": "https://mundolingo.org/",
+          "publishedDate": "2026-05-21T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Mundo Lingo is a nonprofit organization. Mundo Lingo is a social media platform that allows users to connect with local people in cities around the world for free. Mundo Lingo employs 28 people (+6.1% YoY, +2 people) and has an annual revenue of $424.5K, founded in 2011. Headquartered in Argentina, operates in 11 countries (including Brazil, Canada, Vietnam, Spain, and Switzerland). [...] We build community hubs in c"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "LanguaTalk Inc.",
+          "url": "https://languatalk.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# LanguaTalk Inc. LanguaTalk Inc. is a Education company. LanguaTalk Inc. employs 47 people (+1.6% YoY, +1 person), founded in 2021. Headquartered in London, England, United Kingdom, operates in 19 countries (including Italy, United States, Mexico, Spain, and Canada). ## About LanguaTalk is a language learning startup offering personalized online tutoring in 16 languages, as well as the world's most advanced AI platf"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "lingoquesto_news",
+      "candidate": "LingoQuesto",
+      "seedUrl": "https://lingoquesto.com/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "news",
+      "query": "LingoQuesto app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "080a0c61fb46e264114065c4bb30c0a2",
+      "results": [
+        {
+          "title": "LingoQuesto | Home",
+          "url": "https://www.lingoquesto.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LingoQuesto | Home Empowering language educators with AI # Speech-Based Language Practice We help language educators improve their students' speaking skills through interactive and personalized conversations that simulate immersive learning experiences. ## How it works! ## Supercharge your language classes ##### 3x Speed of Learning Studies show that immersive learning accelerates students' learning speed by 3x. ####"
+        },
+        {
+          "title": "LingoQuesto Secures $100K in Pre-Seed Funding to Revolutionize Language Education with AI Tools | Signalbase",
+          "url": "https://www.trysignalbase.com/news/funding/lingoquesto-secures-100k-in-pre-seed-funding-to-revolutionize-language-education-with-ai-tools",
+          "publishedDate": "2024-09-17T08:49:29.000Z",
+          "author": null,
+          "highlight": "LingoQuesto Secures $100K in Pre-Seed Funding to Revolutionize Language Education with AI Tools | Signalbase [...] Funding news Published September 17, 2024 [...] We are thrilled to announce that LingoQuesto, an innovative leader in the field of language education technology, has successfully raised $100,000 in funding to enhance our mission of empowering educators and students alike. Our cutting-edge platform utiliz"
+        },
+        {
+          "title": "Neue App von Bremer Ex-Constructor-Student: Englisch lernen dank KI",
+          "url": "https://www.weser-kurier.de/bremen/wirtschaft/neue-app-von-bremer-ex-constructor-student-englisch-lernen-dank-ki-doc7x7znndw4znphakeoyk",
+          "publishedDate": "2024-09-20T03:00:00.000Z",
+          "author": "Florian Schwiegershausen",
+          "highlight": "Questo. Vor einem Jahr hat er an der Hochschule seinen [...] in Wirtschaftswissenschaften gemacht. Constructor University [...] Aber er stellte sich die Frage, warum es einigen Menschen leicht falle, eine Sprache zu lernen und anderen sehr viel schwerer. Und dann begann er zu überlegen, wie man denn eine App entwickeln könnte, die einem beim Lernen der englischen Sprache hilft. Zusammen mit drei Freunden hat er nun d"
+        },
+        {
+          "title": "START Summit 2026 Celebrates Innovation, Community, and  Three Decades of Entrepreneurial Impact - FoundersToday",
+          "url": "https://www.founderstoday.news/start-summit-2026-celebrates-innovation/",
+          "publishedDate": "2026-03-25T19:00:30.000Z",
+          "author": null,
+          "highlight": "• EWOR Grand Pitch – Featuring unique startups, like Tumbleweed, Ghost and Global Citizens • START Fellowship Pitching Competition: Runni, BioClé, LingoQuesto, Notary OS – Winning from a Prize Pool of CHF 120’000 in equity-free funding [...] Behind every name on that list is a story, and few capture the spirit of START Summit better than that of the Fellowship winners. The START Fellowship Program, a selective four-m"
+        },
+        {
+          "title": "La Revista Forbes también reconoce el valor de LingoQuesto - DIgital Content",
+          "url": "https://digital-content.co/lingo-questo/la-revista-forbes-tambien-reconoce-el-valor-de-lingoquesto/",
+          "publishedDate": "2025-11-25T15:57:35.000Z",
+          "author": "Julián Gomez",
+          "highlight": "La Revista Forbes también reconoce el valor de LingoQuesto - DIgital Content A comienzos de este mes de noviembre, la Revista Forbes seleccionó a LingoQuesto como una de Las 100 startups para ver en Colombia. Este listado reconoce a compañías en etapas tempranas que se destacan por su equipo, tracción y productos innovadores. En esta convocatoria participaron más de 360 empresas para el proceso de selección, de las c"
+        },
+        {
+          "title": "LingoQuesto: herramienta esencial en la ruta de bilingüismo de los colegios de Bogotá - DIgital Content",
+          "url": "https://digital-content.co/lingo-questo/lingoquesto-herramienta-esencial-en-la-ruta-de-bilinguismo-de-los-colegios-de-bogota/",
+          "publishedDate": "2025-11-25T00:00:00.000Z",
+          "author": "Julián Gomez",
+          "highlight": "LingoQuesto: herramienta esencial en la ruta de bilingüismo de los colegios de Bogotá - DIgital Content El Liceo Colombia en la localidad de Suba, Bogotá, es una de las instituciones que ya están aprovechando el potencial de LingoQuesto para impulsar la ruta del bilingüismo que ha trazado la administración distrital. Aquí, como en otros colegios de la capital, los estudiantes ya están utilizando nuestra plataforma pa"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "plang_inc__company",
+      "candidate": "Plang, Inc.",
+      "seedUrl": "https://plang.ai/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "company",
+      "query": "Plang, Inc. social app company official website users features funding growth language exchange AI offline social",
+      "ok": true,
+      "status": 200,
+      "requestId": "73615c17d5532626d2cde0e90251540b",
+      "results": [
+        {
+          "title": "Plang, Inc.",
+          "url": "https://plang.ai/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Plang, Inc. is a Education company. Plang is an app that provides learning methods to help individuals become English masters. It offers a variety of language options and features such as an app store, Google Play, and app store. The app allows users to easily learn English language and make natural English speech. Plang, Inc. employs 4 people (-37.5% YoY, -3 people). Headquartered in South Korea. Has $824.6K in tota"
+        },
+        {
+          "title": "LingoPraxis - English Speaking Club",
+          "url": "https://lingopraxis.com/",
+          "publishedDate": "2026-04-26T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LingoPraxis - English Speaking Club is an educational institution. LingoPraxis is a calendar of online English speaking meetings that allows individuals to practice English and other languages with language partners. They offer endless opportunities for individuals to enhance their speaking skills and practice with language partners. LingoPraxis - English Speaking Club employs 3 people (-20.0% YoY, -1 person), founde"
+        },
+        {
+          "title": "INT'L CAFE",
+          "url": "https://intlcafe.io/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "INT'L CAFE is a Technology, Information and Media company. INT'L CAFE is a social language exchange platform that allows users to meet new friends while speaking/signing languages. They provide a lifetime of fluency for their users. INT'L CAFE employs 2 people, founded in 2021. Headquartered in chicago, illinois, United States. [...] INT'L CAFE is a community app and media aggregate enabling speakers/signers of all l"
+        },
+        {
+          "title": "SewaYou",
+          "url": "https://sewayou.com/",
+          "publishedDate": "2026-05-02T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "SewaYou is a Technology, Information and Internet company. SewaYou is a language exchange platform that allows users to find and meet native speakers on a map for in-person practice. SewaYou employs 2 people, founded in 2017. Headquartered in Japan. [...] SewaYou - a social network app fostering new connections with people nearby and around the world 🌏 [...] - Industry: Technology, Information and Internet - Type: S"
+        },
+        {
+          "title": "LangPal",
+          "url": "https://lang-pal.com/",
+          "publishedDate": "2026-05-01T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "LangPal is a E-Learning Providers company. LangPal employs 13 people, founded in 2025. Headquartered in Seattle, Washington, United States, with presence in Canada. [...] LangPal is an AI-powered language learning platform designed to help users achieve real-world fluency through immersive, conversation-based practice. Unlike traditional language learning apps that focus on memorization, flashcards, and passive exerc"
+        },
+        {
+          "title": "Plangamy",
+          "url": "https://plangamy.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Plangamy is a E-Learning Providers company. Plangamy is an ed-tech platform that offers customized, scientifically designed language learning curriculums to cater to diverse needs. They partner with reputed academic institutions to enhance the quality of education through mutually beneficial collaborations. They provide comprehensive resources, including study materials, assessments, and recorded sessions at competit"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    },
+    {
+      "id": "plang_inc__news",
+      "candidate": "Plang, Inc.",
+      "seedUrl": "https://plang.ai/",
+      "sourceQueryId": "lingopraxis_growth",
+      "category": "news",
+      "query": "Plang, Inc. app funding launch growth users AI social language exchange offline social 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "4a121f6c9a225aa150cb9b01905ee8b5",
+      "results": [
+        {
+          "title": "[StarupRecipe] Binge watching the Korean Online Demo Day (Sep to Oct) - startuprecipe",
+          "url": "https://en.startuprecipe.co.kr/archives/invest-newsletter/25",
+          "publishedDate": "2020-11-02T07:58:43.000Z",
+          "author": null,
+          "highlight": "| Company | Inudustry | Amount | Round | Investors | | --- | --- | --- | --- | --- | | 5minlab | Game | 6 billion | AJU IB INVESTMENT, korea credit guarantee fund, LINE Games, HYK | | Plang | Consumer | 500 million | Pre-Series A | Kakao Ventures, Shinhan Capital | | Cheonggeurami | Consumer | - | Seed | Newblack | | Deargen | Bio/Healthcare | 3 billion | Pre-Series A | TS Investment, Hanaventures, Amyloid Solution |"
+        },
+        {
+          "title": "[경기창경센터 창업도약] 병오년 한 해를 질주할 ‘적토마’ 같은 스타트업 (4)｜동아일보",
+          "url": "https://www.donga.com/news/It/article/all/20260106/133105847/1",
+          "publishedDate": "2026-01-06T12:13:34.000Z",
+          "author": null,
+          "highlight": "중 작년 한해 주목 [...] 성과를 거둬 2026년 활약이 기대되는 우수기업을 간 [...] 려 소개한다. [...] 코칭으로 [...] 콩글리시’ 교 [...] 플랭(Plang, 대표 강민규)은 AI 기술을 활용해 한국인의 영어 말하기 난제를 해결하는 에듀테크 스타트업으로 2020년 설립됐다. ‘언어의 장벽 없는 세상’을 비전으로, 사용자가 구사하는 영어 문장을 실시간으로 분석하고 더욱 자연스러운 원어민 표현으로 교정해 주는 AI 영어 회화 솔루션을 제공한다. 즉 사용자의 발음과 문장 구조를 정밀하게 진단하여 개인 맞춤형 학습 경험을 제공하는 데 초점을 맞췄다.자체 개발한 AI 기반의 문장 분석 및 교정 기술이 플랭의 경쟁력이다. 사용자가 영어로 문장을 말하면 AI가 이를 즉시 인식하여 문법적 오류뿐만 아니라, 어색한 표현(소위 ‘콩글리시"
+        },
+        {
+          "title": "A new milestone as we bring language learning to all: Raising $78M Series C at a $1B valuation",
+          "url": "https://www.speak.com/blog/series-c",
+          "publishedDate": "2024-12-10T00:00:00.000Z",
+          "author": null,
+          "highlight": "Today, we’re marking the next chapter in Speak’s growth as we’ve raised $78 million in Series C funding at a $1 billion valuation. Our vision hasn’t changed since we started Speak eight years ago, and we remain laser focused on building the best way to get to spoken fluency with our AI tutor. We’ve come a long way in disrupting a historically offline and outdated way of learning, and we are only just beginning. [...]"
+        },
+        {
+          "title": "AI Enters the Group Chat: Startup Shapes Emerges from Stealth with $8M Seed Round, Addresses AI Psychosis with First App Where You Can Talk to AI with Friends\n\n | The Manila Times",
+          "url": "https://www.manilatimes.net/2026/04/29/tmt-newswire/globenewswire/ai-enters-the-group-chat-startup-shapes-emerges-from-stealth-with-8m-seed-round-addresses-ai-psychosis-with-first-app-where-you-can-talk-to-ai-with-friends/2331557",
+          "publishedDate": "2026-04-29T13:16:30.000Z",
+          "author": null,
+          "highlight": "SAN FRANCISCO, April 29, 2026(GLOBE NEWSWIRE)-- Shapes.inc, the only app in the world where you can talk to AI with friends, emerged from stealth today with $8M in seed funding and a new fix for AI Psychosis: a place where AI and human friends can group chat together. [...] The funding round was led by Lightspeed, with participation from AI Capital Partners (Alpha Intelligence Capital’s US-based fund), AI Grant and o"
+        },
+        {
+          "title": "Two college kids raise $5.1 million pre-seed to build an AI social network in iMessage - The Real World Times",
+          "url": "https://therealworldtimes.com/two-college-kids-raise-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/",
+          "publishedDate": "2026-04-24T21:33:39.000Z",
+          "author": "realnews",
+          "highlight": "Series, a social networking app, announced it has raised a pre-seed round of $5.1 million, with investors including Venmo co-founder Ikram Magdon-Ismail, Pear VC, Reddit CEO Steve Huffman, and GPTZero founder Edward Tian. The company was founded early last year by Yale students Nathanio Johnson and Sean Hargrow, both still seniors at the university. [...] CEO Johnson told TechCrunch that Series considers itself a nex"
+        },
+        {
+          "title": "[Startup Leap] “Red Horse” Startups to Surge in Year of the Fire Rat (4) | DBR",
+          "url": "https://dbr.donga.com/kfocus/view/en/article_no/1555",
+          "publishedDate": "2026-01-06T12:13:34.000Z",
+          "author": null,
+          "highlight": "Since launching its service, Plang has recorded high retention (reuse rate), secured a top-tier position in the education category on Google Play and the App Store, and successfully attracted early-stage investment from venture capital (VC). It was also selected for the TIPS program, thereby securing R&D funding for advancing its AI engine.Plang aims to provide a service where AI understands learners’ intentions like"
+        }
+      ],
+      "costDollars": {
+        "total": 0.007,
+        "search": {
+          "neural": 0.007
+        }
+      }
+    }
+  ]
+}

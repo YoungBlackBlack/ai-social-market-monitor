@@ -1164,6 +1164,112 @@ h1 {
   border-top: 5px solid var(--green);
 }
 
+/* ── What's New / 最新动向 feed ─────────────────────────── */
+.feed-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--blue);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.feed-banner.is-new {
+  border-left-color: var(--coral);
+  background: linear-gradient(90deg, rgba(255, 86, 60, 0.08), rgba(255, 255, 255, 0.85) 60%);
+}
+
+.feed-banner-title {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.feed-banner-sub {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.feed-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.feed-key-toggle {
+  margin-left: auto;
+}
+
+.feed-count {
+  color: var(--muted);
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.feed-day-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 22px 0 12px;
+}
+
+.feed-day-head h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.feed-day-head span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.feed-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feed-card.is-new {
+  box-shadow: 0 0 0 2px var(--coral);
+}
+
+.badge-new {
+  display: inline-block;
+  background: var(--coral);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+
+@media (max-width: 1100px) {
+  .feed-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .feed-grid {
+    grid-template-columns: 1fr;
+  }
+  .feed-key-toggle {
+    margin-left: 0;
+  }
+}
+
 .lane-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(220px, 1fr));

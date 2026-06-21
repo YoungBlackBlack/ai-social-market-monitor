@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI 社交与线下真人连接机会图谱</title>
-    <link rel="stylesheet" href="styles.css?v=20260602-v102" />
+    <link rel="stylesheet" href="styles.css?v=20260621-feed" />
   </head>
-  <body data-active-view="home">
+  <body data-active-view="feed">
     <div id="loading-overlay"><div class="spinner" aria-label="加载中"></div></div>
     <div class="app-shell">
       <aside class="sidebar">
@@ -15,6 +15,7 @@
           <span>Exa market intelligence</span>
         </div>
         <nav class="topbar" aria-label="页面导航">
+          <a href="#feed" data-route="feed">🆕 最新动向</a>
           <a href="#home" data-route="home">总览</a>
           <a href="#matrix" data-route="matrix">对照表</a>
           <a href="#funding" data-route="funding">融资新闻</a>
@@ -62,6 +63,18 @@
         </header>
         <div class="view-toc" id="view-toc" aria-label="本视图小节导航"></div>
         <main>
+          <section class="section route-section feed" id="feed" data-view="feed">
+            <div class="section-head">
+              <p class="section-label">what's new · 最新动向</p>
+              <h2>最新动向：竞品与 AI 社交赛道的新新闻和新动作</h2>
+              <p>按"发现时间"倒序排列监控台账里抓到的每一条动向，自上次访问以来的新增会高亮标记，让你一眼看到第一手变化。</p>
+            </div>
+            <div class="feed-banner" id="feed-banner"></div>
+            <div class="feed-controls" id="feed-controls" aria-label="筛选最新动向"></div>
+            <p class="feed-count" id="feed-count" aria-live="polite"></p>
+            <div class="feed-stream" id="feed-stream"></div>
+          </section>
+
           <section class="section route-section dashboard" id="dashboard" data-view="home">
             <div class="section-head">
               <p class="section-label">listening dashboard</p>
@@ -341,6 +354,6 @@
 
     <button id="back-to-top" type="button" aria-label="回到顶部" hidden>↑ 顶部</button>
 
-    <script src="app.js?v=20260602-v102"></script>
+    <script src="app.js?v=20260621-feed"></script>
   </body>
 </html>

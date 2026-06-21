@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T14:16:08.042Z",
-  "title": "AI 社交监控 · 1 条新增提醒待复核",
-  "color": "orange",
+  "generatedAt": "2026-06-21T14:42:34.874Z",
+  "title": "AI 社交监控 · 今日无新增，复核近窗信号",
+  "color": "blue",
   "buttonText": "查看最高优先级证据",
   "buttonUrl": "https://tech.eu/2026/06/17/tryll-launches-ai-gaming-engine-alpha-and-secures-600k-pre-seed-funding/",
-  "shouldSend": true,
-  "promotionQueueSize": 5,
-  "newUrls": 1
+  "shouldSend": false,
+  "promotionQueueSize": 4,
+  "newUrls": 0
 }

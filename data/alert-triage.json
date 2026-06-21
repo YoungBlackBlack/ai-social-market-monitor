@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T14:16:08.042Z",
+  "generatedAt": "2026-06-21T14:42:34.874Z",
   "source": "data/monitor.json",
-  "monitorGeneratedAt": "2026-06-21T14:16:08.042Z",
+  "monitorGeneratedAt": "2026-06-21T14:42:34.874Z",
   "lookbackDays": 14,
   "rubric": {
     "base": {
@@ -32,24 +32,23 @@
     }
   },
   "summary": {
-    "totalCandidates": 15,
-    "newUrls": 1,
-    "alreadyTracked": 1,
-    "needsReview": 13,
+    "totalCandidates": 12,
+    "newUrls": 0,
+    "alreadyTracked": 0,
+    "needsReview": 11,
     "lowSignal": 1,
     "gradeA": 0,
-    "gradeB": 5,
-    "gradeC": 8,
-    "gradeD": 2,
-    "promotionQueueSize": 5,
+    "gradeB": 4,
+    "gradeC": 7,
+    "gradeD": 1,
+    "promotionQueueSize": 4,
     "byLane": {
-      "融资 / 商业化": 1,
-      "中国 AI 社交出海": 2,
-      "线下真人社交": 2,
-      "投放 / 付费获客证据": 6,
+      "融资 / 商业化": 2,
+      "中国 AI 社交出海": 1,
+      "线下真人社交": 1,
       "Coverage signal watchlist": 2,
       "研究 / 政策风险": 1,
-      "语言交换 / 跨文化社交": 1
+      "投放 / 付费获客证据": 5
     }
   },
   "promotionQueue": [
@@ -110,32 +109,6 @@
       "rank": 2
     },
     {
-      "candidateName": "FTLO Launches South of France & Barcelona Trip for Single Travelers Who Want to Mingle",
-      "monitorId": "irl",
-      "monitorLabel": "线下真人社交",
-      "lanePriority": "critical",
-      "routeTo": "IRL 线下真人簇",
-      "routeTarget": "clusters:irl",
-      "triageScore": 56,
-      "grade": "B",
-      "signals": [
-        "launch"
-      ],
-      "sourceDomain": "travelawaits.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认线下撮合机制 / 城市运营 / 真人见面闭环",
-      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
-      "status": "needs-review",
-      "title": "FTLO Launches South of France & Barcelona Trip for Single Travelers Who Want to Mingle | TravelAwaits",
-      "url": "https://www.travelawaits.com/3026774/ftlo-launches-trip-for-single-travelers-in-south-of-france-and-barcelona/",
-      "publishedDate": "2026-06-18T12:55:00.000Z",
-      "highlight": "# FTLO Launches South of France & Barcelona Trip for Single Travelers Who Want to Mingle | TravelAwaits ... FTLO is a travel company that creates immersive trips for travelers aged 25-29 years. ... Their goal? To empower solo travelers to get out in the world without going it alone. Their specialty? Helping travelers m",
-      "rank": 3
-    },
-    {
       "candidateName": "OpenToBites Launches App That Enables Diners to Find Company by Sharing Tables",
       "monitorId": "irl",
       "monitorLabel": "线下真人社交",
@@ -159,31 +132,33 @@
       "url": "https://www.pureeconomic.com/2026/06/18/opentobites-launches-app-that-enables-diners-to-find-company-by-sharing-tables/",
       "publishedDate": "2026-06-18T00:00:00.000Z",
       "highlight": "OpenToBites Launches App That Enables Diners to Find Company by Sharing Tables ... By helping people find friendly company for a meal out, the app is suitable for solo travelers, newcomers to town, and locals who are open to sharing a meal with someone new ... United States, 18th Jun 2026 —OpenToBites has launched its ",
-      "rank": 4
+      "rank": 3
     },
     {
-      "candidateName": "OpenAI Automates Ad Creative for ChatGPT Ads",
-      "monitorId": "paid-acquisition",
-      "monitorLabel": "投放 / 付费获客证据",
-      "lanePriority": "medium",
-      "routeTo": "渠道 / 投放审计",
-      "routeTarget": "channelSummary",
+      "candidateName": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
+      "monitorId": "funding",
+      "monitorLabel": "融资 / 商业化",
+      "lanePriority": "high",
+      "routeTo": "融资时间线",
+      "routeTarget": "fundingTimeline",
       "triageScore": 50,
       "grade": "B",
-      "signals": [],
-      "sourceDomain": "letsdatascience.com",
+      "signals": [
+        "funding"
+      ],
+      "sourceDomain": "knowstartup.com",
       "reputableSource": false,
-      "isNewUrl": true,
+      "isNewUrl": false,
       "isRecent": true,
       "matchedTracked": null,
-      "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
+      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
       "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
       "status": "needs-review",
-      "title": "OpenAI Automates Ad Creative for ChatGPT Ads | Let's Data Science",
-      "url": "https://letsdatascience.com/news/openai-automates-ad-creative-for-chatgpt-ads-8ce461d0",
-      "publishedDate": "2026-06-17T00:00:00.000Z",
-      "highlight": "Digiday reports that OpenAI updated its Ad Tools Terms Document to state that \"OpenAI may make available AI-powered Creative Tools that allow you to generate, modify, transform, optimize, localize, or translate advertising creatives using Ad Materials.\" OpenAI's ads landing page and industry coverage show a broader rol",
-      "rank": 5
+      "title": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
+      "url": "https://knowstartup.com/news/maya-research-raises-1-9-million-voice-ai-south-park-commons/",
+      "publishedDate": "2026-06-17T11:26:57.000Z",
+      "highlight": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Bengaluru- and San Francisco-based Maya Research has raised $1.9 million in a seed round to build voice AI that speaks, thinks, and responds like a native speaker — a bet o",
+      "rank": 4
     }
   ],
   "candidates": [
@@ -244,32 +219,6 @@
       "rank": 2
     },
     {
-      "candidateName": "FTLO Launches South of France & Barcelona Trip for Single Travelers Who Want to Mingle",
-      "monitorId": "irl",
-      "monitorLabel": "线下真人社交",
-      "lanePriority": "critical",
-      "routeTo": "IRL 线下真人簇",
-      "routeTarget": "clusters:irl",
-      "triageScore": 56,
-      "grade": "B",
-      "signals": [
-        "launch"
-      ],
-      "sourceDomain": "travelawaits.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认线下撮合机制 / 城市运营 / 真人见面闭环",
-      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
-      "status": "needs-review",
-      "title": "FTLO Launches South of France & Barcelona Trip for Single Travelers Who Want to Mingle | TravelAwaits",
-      "url": "https://www.travelawaits.com/3026774/ftlo-launches-trip-for-single-travelers-in-south-of-france-and-barcelona/",
-      "publishedDate": "2026-06-18T12:55:00.000Z",
-      "highlight": "# FTLO Launches South of France & Barcelona Trip for Single Travelers Who Want to Mingle | TravelAwaits ... FTLO is a travel company that creates immersive trips for travelers aged 25-29 years. ... Their goal? To empower solo travelers to get out in the world without going it alone. Their specialty? Helping travelers m",
-      "rank": 3
-    },
-    {
       "candidateName": "OpenToBites Launches App That Enables Diners to Find Company by Sharing Tables",
       "monitorId": "irl",
       "monitorLabel": "线下真人社交",
@@ -293,31 +242,33 @@
       "url": "https://www.pureeconomic.com/2026/06/18/opentobites-launches-app-that-enables-diners-to-find-company-by-sharing-tables/",
       "publishedDate": "2026-06-18T00:00:00.000Z",
       "highlight": "OpenToBites Launches App That Enables Diners to Find Company by Sharing Tables ... By helping people find friendly company for a meal out, the app is suitable for solo travelers, newcomers to town, and locals who are open to sharing a meal with someone new ... United States, 18th Jun 2026 —OpenToBites has launched its ",
-      "rank": 4
+      "rank": 3
     },
     {
-      "candidateName": "OpenAI Automates Ad Creative for ChatGPT Ads",
-      "monitorId": "paid-acquisition",
-      "monitorLabel": "投放 / 付费获客证据",
-      "lanePriority": "medium",
-      "routeTo": "渠道 / 投放审计",
-      "routeTarget": "channelSummary",
+      "candidateName": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
+      "monitorId": "funding",
+      "monitorLabel": "融资 / 商业化",
+      "lanePriority": "high",
+      "routeTo": "融资时间线",
+      "routeTarget": "fundingTimeline",
       "triageScore": 50,
       "grade": "B",
-      "signals": [],
-      "sourceDomain": "letsdatascience.com",
+      "signals": [
+        "funding"
+      ],
+      "sourceDomain": "knowstartup.com",
       "reputableSource": false,
-      "isNewUrl": true,
+      "isNewUrl": false,
       "isRecent": true,
       "matchedTracked": null,
-      "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
+      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
       "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
       "status": "needs-review",
-      "title": "OpenAI Automates Ad Creative for ChatGPT Ads | Let's Data Science",
-      "url": "https://letsdatascience.com/news/openai-automates-ad-creative-for-chatgpt-ads-8ce461d0",
-      "publishedDate": "2026-06-17T00:00:00.000Z",
-      "highlight": "Digiday reports that OpenAI updated its Ad Tools Terms Document to state that \"OpenAI may make available AI-powered Creative Tools that allow you to generate, modify, transform, optimize, localize, or translate advertising creatives using Ad Materials.\" OpenAI's ads landing page and industry coverage show a broader rol",
-      "rank": 5
+      "title": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
+      "url": "https://knowstartup.com/news/maya-research-raises-1-9-million-voice-ai-south-park-commons/",
+      "publishedDate": "2026-06-17T11:26:57.000Z",
+      "highlight": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Bengaluru- and San Francisco-based Maya Research has raised $1.9 million in a seed round to build voice AI that speaks, thinks, and responds like a native speaker — a bet o",
+      "rank": 4
     },
     {
       "candidateName": "Pixi's new iOS app turns text messages into interactive AR experiences",
@@ -344,7 +295,7 @@
       "url": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/",
       "publishedDate": "2026-06-18T12:00:00.000Z",
       "highlight": "Pixi's new iOS app turns text messages into interactive AR experiences | TechCrunch ... Pixi’s new iOS app turns text messages into interactive AR experiences ... Forget stickers, GIFs, and emoji reactions. Pixi is betting that the next evolution of messaging is interactive augmented reality (AR). ... The startup launc",
-      "rank": 6
+      "rank": 5
     },
     {
       "candidateName": "Character.AI is adding new tools for chatbot creators.",
@@ -371,33 +322,7 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/951461/character-ai-is-adding-new-tools-for-chatbot-creators",
       "publishedDate": "2026-06-17T16:00:00.000Z",
       "highlight": "Character.AI is adding new tools for chatbot creators. | The Verge The homepageThe Verge logo. The homepageThe Verge logo. Posted Jun 17, 2026 at 4:00 PM UTC E Emma Roth Character.AI is adding new tools for chatbot creators. A new dashboard will show a creator’s most popular AI characters, along with metrics including ",
-      "rank": 7
-    },
-    {
-      "candidateName": "引爆港股A股两地行情，市场为何「抢购」MiniMax？",
-      "monitorId": "china-export",
-      "monitorLabel": "中国 AI 社交出海",
-      "lanePriority": "high",
-      "routeTo": "AI 伴侣 / 出海簇",
-      "routeTarget": "clusters:companions",
-      "triageScore": 46,
-      "grade": "C",
-      "signals": [
-        "china-export"
-      ],
-      "sourceDomain": "36kr.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认出海地区 / 下载或收入口径",
-      "suggestedAction": "保留为 watchlist，持续观察",
-      "status": "needs-review",
-      "title": "引爆港股A股两地行情，市场为何「抢购」MiniMax？-36氪",
-      "url": "https://36kr.com/p/3631961200722951",
-      "publishedDate": "2026-06-18T02:42:11.000Z",
-      "highlight": "MiniMax港交所上市，AI板块沸腾。 ... 1月9日，MiniMax正式登陆港交所。交易数据显示，MiniMax开盘后涨幅持续拉升，最终收涨109%，市值突破千亿港元大关。 ... 港股和A股市场的AI板块也被全面引燃。从收盘 ... 看，港股市场中，讯飞医疗科技上涨约20%，第四范式上涨约7%。A股人工智能板块出现罕见共振，其中昆仑万 ... 19.99%涨停，三六 ... 上涨超6%，带动万得多模态 ... 这一切都有迹可循。根据MiniMax此前公布的配发结果，其公开发售部分获得1837倍超额认购，国际发售部分最终获配37倍认购。热烈的市场环境下，公司超额配售选择权（绿鞋机制）也有望全额行使，最终募集资金总额可达约55.",
-      "rank": 8
+      "rank": 6
     },
     {
       "candidateName": "Frontiers | The adaptive ecological trap",
@@ -423,7 +348,7 @@
       "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1839672/full",
       "publishedDate": "2026-06-18T01:32:34.000Z",
       "highlight": "Regarding emotional function compensation, generative AI serves as a low-risk, highly controllable “ideal partner”. Through algorithmic analysis of user input, it provides seemingly precise, empathetic, and tirelessly responsive feedback. This undoubtedly offers a safe, non-judgmental emotional outlet for adolescents e",
-      "rank": 9
+      "rank": 7
     },
     {
       "candidateName": "MojiMoshi Embeds AI Agents Inside Telegram and Line, No App Needed",
@@ -450,7 +375,7 @@
       "url": "https://ainews.cool/article/20260620-mojimoshi-ai-agent-telegram-line",
       "publishedDate": "2026-06-20T02:32:06.000Z",
       "highlight": "MojiMoshi has quietly launched a platform that embeds persistent, context-aware AI agents directly into existing messaging apps—starting with Telegram and Line. Users do not download a new app or learn a new interface; they simply add an agent to a chat, and it stays there, remembering past conversations, answering que",
-      "rank": 10
+      "rank": 8
     },
     {
       "candidateName": "CloudX Takes A Swing At Black‑Box Mobile UA With Agentic Buying Tools",
@@ -476,7 +401,7 @@
       "url": "https://www.adexchanger.com/mobile/cloudx-takes-a-swing-at-black-box-mobile-ua-with-agentic-buying/",
       "publishedDate": "2026-06-17T13:00:22.000Z",
       "highlight": "CloudX, which launched into general availability in February, uses AI agents to handle mobile monetization tasks, such as setting price floors, updating line items and managing SDK integrations. ... On Wednesday, the company launched agentic buying, which lets publishers acquire users directly from other apps without g",
-      "rank": 11
+      "rank": 9
     },
     {
       "candidateName": "Twice As Many Americans Are Now Using AI Companions Than Dating Apps",
@@ -502,7 +427,7 @@
       "url": "https://officechai.com/ai/twice-as-many-americans-are-now-using-ai-companions-than-dating-apps-sensortower-data/",
       "publishedDate": "2026-06-17T10:25:34.000Z",
       "highlight": "New data from SensorTower, part of its upcoming State of AI 2026 report, tracks total hours Americans spent on AI companion apps versus dating and social discovery platforms every quarter from early 2025 through the start of 2026. The two lines don’t just diverge, they swap places entirely on what used to be a settled ",
-      "rank": 12
+      "rank": 10
     },
     {
       "candidateName": "Happn Expands Its Presence in London With First Outdoor Advertising Campaign",
@@ -528,10 +453,10 @@
       "url": "https://www.topgmnews.com/2026/06/17/happn-expands-its-presence-in-london-with-first-outdoor-advertising-campaign/",
       "publishedDate": "2026-06-17T00:00:00.000Z",
       "highlight": "Happn Expands Its Presence in London With First Outdoor Advertising Campaign – Topgmnews ... Dating platform Happn is making a bold move in the UK market with the launch of its first-ever outdoor advertising campaign across London. The initiative highlights the company’s unique location-based dating experience and refl",
-      "rank": 13
+      "rank": 11
     },
     {
-      "candidateName": "Meta’s Advantage+ Creative Is Quietly Rewiring DTC Ad Strategy",
+      "candidateName": "Sensor Tower State of AI 2026 Report: Global Time Spent on Generative AI Apps Projected to",
       "monitorId": "paid-acquisition",
       "monitorLabel": "投放 / 付费获客证据",
       "lanePriority": "medium",
@@ -540,7 +465,7 @@
       "triageScore": 30,
       "grade": "D",
       "signals": [],
-      "sourceDomain": "onlinestorenews.com",
+      "sourceDomain": "prnewswire.com",
       "reputableSource": false,
       "isNewUrl": false,
       "isRecent": true,
@@ -548,35 +473,11 @@
       "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
       "suggestedAction": "低信号：暂不处理，仅留痕",
       "status": "low-signal",
-      "title": "Meta’s Advantage+ Creative Is Quietly Rewiring DTC Ad Strategy – Online Store News",
-      "url": "https://onlinestorenews.com/metas-advantage-creative-is-quietly-rewiring-dtc-ad-strategy/",
-      "publishedDate": "2026-06-20T02:59:38.000Z",
-      "highlight": "For the past six months, a quiet but consequential shift has been rippling through DTC advertising teams, performance agencies, and Shopify-native brands with five- and six-figure monthly Meta budgets. Meta’s Advantage+ Creative — the platform’s suite of AI-powered tools that automatically adjusts ad formats, headlines",
-      "rank": 14
-    },
-    {
-      "candidateName": "HelloTalk - Learn Languages",
-      "monitorId": "language",
-      "monitorLabel": "语言交换 / 跨文化社交",
-      "lanePriority": "medium",
-      "routeTo": "语言交换簇",
-      "routeTarget": "clusters:language",
-      "triageScore": 30,
-      "grade": "D",
-      "signals": [],
-      "sourceDomain": "play.google.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": "hellotalk",
-      "missingEvidence": "—（已跟踪）",
-      "suggestedAction": "已在对照表，复核是否需要更新增长 / 融资 / 渠道字段",
-      "status": "already-tracked",
-      "title": "HelloTalk - Learn Languages - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.hellotalk",
-      "publishedDate": "2026-06-18T14:16:12.287Z",
-      "highlight": "Tandem: Language exchangeTripod Technology GmbH4.1 ... Hilokal - AI Language LearningHiLokal3.9",
-      "rank": 15
+      "title": "Sensor Tower State of AI 2026 Report: Global Time Spent on Generative AI Apps Projected to More Than Double Year-Over-Year",
+      "url": "https://www.prnewswire.com/news-releases/sensor-tower-state-of-ai-2026-report-global-time-spent-on-generative-ai-apps-projected-to-more-than-double-year-over-year-302800844.html",
+      "publishedDate": "2026-06-16T10:30:00.000Z",
+      "highlight": "SAN FRANCISCO, June 16, 2026 /PRNewswire/ -- Sensor Tower, a leading provider of data on the digital economy, today released its State of AI 2026 report, delivering a comprehensive look at the explosive growth in engagement, spending, and advertising on Generative AI across mobile apps and the web. The report reveals t",
+      "rank": 12
     }
   ]
 }

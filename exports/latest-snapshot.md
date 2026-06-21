@@ -1,12 +1,12 @@
 # Latest Snapshot Pointer
 
-Saved at: 2026-06-21T14:16:26.704Z
+Saved at: 2026-06-21T14:42:52.307Z
 
 ## Snapshot
 
-- Snapshot directory: `exports/snapshots/2026-06-21-141626/`
-- Manifest: `exports/snapshots/2026-06-21-141626/manifest.json`
-- Local absolute snapshot: `/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-21-141626/`
+- Snapshot directory: `exports/snapshots/2026-06-21-144252/`
+- Manifest: `exports/snapshots/2026-06-21-144252/manifest.json`
+- Local absolute snapshot: `/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-21-144252/`
 
 ## Status
 
@@ -19,13 +19,13 @@ Saved at: 2026-06-21T14:16:26.704Z
 - Funding timeline events: 25
 - Unique funding/news events: 34
 - Monitor lanes: 9
-- Recent monitor items: 16
-- New monitor alerts: 1
+- Recent monitor items: 13
+- New monitor alerts: 0
 - Monitor history runs: 30
 - Monitor ledger items: 171
 - SQLite products: 42
 - SQLite funding events: 37
-- SQLite monitor signals: 16
+- SQLite monitor signals: 13
 - Original objective audit rows: 9
 
 ## Main Entrypoints
@@ -43,4 +43,4 @@ Saved at: 2026-06-21T14:16:26.704Z
 ## Retention
 
 - Retained snapshot count: 30
-- Pruned in this run: `2026-06-02-054121`
+- Pruned in this run: `2026-06-02-054251`

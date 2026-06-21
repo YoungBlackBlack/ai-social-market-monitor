@@ -1,6 +1,7 @@
 const accentClasses = ["accent-blue", "accent-green", "accent-coral", "accent-yellow"];
 const routeAliases = {
-  "": "home",
+  "": "feed",
+  feed: "feed",
   home: "home",
   executive: "home",
   thesis: "home",
@@ -829,12 +830,192 @@ function renderComparisonTable(data) {
 
 function fmtDate(value) {
   if (!value) return "No date";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "No date";
   return new Intl.DateTimeFormat("zh-CN", {
     month: "2-digit",
     day: "2-digit",
     hour: "2-digit",
     minute: "2-digit",
-  }).format(new Date(value));
+  }).format(date);
+}
+
+const FEED_LAST_VISIT_KEY = "exa-feed-last-visit";
+
+function feedDayBucket(value, now) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return { key: "unknown", label: "未知时间" };
+  const startOfDay = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+  const dayMs = 86400000;
+  const diffDays = Math.round((startOfDay(new Date(now)) - startOfDay(date)) / dayMs);
+  const dayLabel = new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit" }).format(date);
+  let rel = "";
+  if (diffDays <= 0) rel = "今天";
+  else if (diffDays === 1) rel = "昨天";
+  else if (diffDays <= 7) rel = `${diffDays} 天前`;
+  return {
+    key: startOfDay(date),
+    label: rel ? `${dayLabel} · ${rel}` : dayLabel,
+  };
+}
+
+function renderFeed(ledger, monitor, digest) {
+  const stream = document.querySelector("#feed-stream");
+  if (!stream) return;
+  const banner = document.querySelector("#feed-banner");
+  const controls = document.querySelector("#feed-controls");
+  const countLine = document.querySelector("#feed-count");
+
+  const items = (ledger.items ?? [])
+    .filter((item) => item.firstSeenAt)
+    .map((item) => ({ ...item, firstSeenTime: new Date(item.firstSeenAt).getTime() }))
+    .filter((item) => !Number.isNaN(item.firstSeenTime))
+    .sort((a, b) => b.firstSeenTime - a.firstSeenTime);
+
+  // "Since last visit" — read the previous visit BEFORE overwriting it.
+  let lastVisitTime = null;
+  try {
+    const stored = window.localStorage.getItem(FEED_LAST_VISIT_KEY);
+    if (stored) {
+      const parsed = Number(stored);
+      if (!Number.isNaN(parsed)) lastVisitTime = parsed;
+    }
+  } catch {
+    lastVisitTime = null;
+  }
+  const isNew = (item) => lastVisitTime != null && item.firstSeenTime > lastVisitTime;
+  const newSinceVisit = lastVisitTime != null ? items.filter(isNew).length : 0;
+
+  // Banner: one-line "what changed" summary anchored to the user's goal.
+  if (banner) {
+    banner.replaceChildren();
+    banner.classList.toggle("is-new", newSinceVisit > 0);
+    const latestRun = monitor.generatedAt ? fmtDate(monitor.generatedAt) : "—";
+    let title;
+    if (lastVisitTime == null) {
+      title = `已为你整理 ${items.length} 条监控动向（按发现时间倒序）`;
+    } else if (newSinceVisit > 0) {
+      title = `自你上次访问以来，新发现 ${newSinceVisit} 条动向`;
+    } else {
+      title = "自你上次访问以来暂无新动向";
+    }
+    banner.append(el("strong", "feed-banner-title", title));
+    if (lastVisitTime != null) {
+      banner.append(el("span", "feed-banner-sub", `上次访问：${fmtDate(new Date(lastVisitTime).toISOString())}`));
+    }
+    banner.append(el("span", "feed-banner-sub", `最近一次监控：${latestRun} · ${digest?.headline ?? ""}`));
+  }
+
+  // Lane + priority filters so the user can zoom into the competitor/track they care about.
+  const laneOrder = [];
+  const laneSeen = new Set();
+  items.forEach((item) => {
+    if (!laneSeen.has(item.monitorLabel)) {
+      laneSeen.add(item.monitorLabel);
+      laneOrder.push(item.monitorLabel);
+    }
+  });
+
+  let activeLane = "all";
+  let keyOnly = false;
+
+  const renderStream = () => {
+    stream.replaceChildren();
+    const now = Date.now();
+    const filtered = items.filter((item) => {
+      if (activeLane !== "all" && item.monitorLabel !== activeLane) return false;
+      if (keyOnly && item.priority !== "high" && item.priority !== "critical") return false;
+      return true;
+    });
+
+    if (countLine) {
+      const newInView = filtered.filter(isNew).length;
+      countLine.textContent =
+        `当前显示 ${filtered.length} 条` + (newInView > 0 ? ` · 其中 ${newInView} 条为新增` : "");
+    }
+
+    if (filtered.length === 0) {
+      stream.append(el("p", "empty-state", "没有符合当前筛选的动向，换个赛道或关掉「只看重点」试试。"));
+      return;
+    }
+
+    let currentBucketKey = null;
+    let group = null;
+    filtered.forEach((item) => {
+      const bucket = feedDayBucket(item.firstSeenAt, now);
+      if (bucket.key !== currentBucketKey) {
+        currentBucketKey = bucket.key;
+        const head = el("div", "feed-day-head");
+        const dayItems = filtered.filter(
+          (other) => feedDayBucket(other.firstSeenAt, now).key === bucket.key,
+        );
+        head.append(el("h3", null, bucket.label));
+        head.append(el("span", null, `${dayItems.length} 条`));
+        stream.append(head);
+        group = el("div", "feed-grid");
+        stream.append(group);
+      }
+      const fresh = isNew(item);
+      const card = el("article", `recent-card feed-card priority-${item.priority}${fresh ? " is-new" : ""}`);
+      const tagRow = el("div", "feed-tag-row");
+      tagRow.append(el("span", "tag", item.monitorLabel));
+      if (fresh) tagRow.append(el("span", "badge-new", "NEW"));
+      card.append(tagRow);
+      card.append(el("h4", null, item.title));
+      card.append(
+        el(
+          "p",
+          "date-line",
+          `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
+        ),
+      );
+      card.append(el("p", null, item.highlight || "Exa monitor 捕捉到的新动向。"));
+      if (item.url) {
+        const link = el("a", null, "查看证据");
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        card.append(link);
+      }
+      group.append(card);
+    });
+  };
+
+  if (controls) {
+    controls.replaceChildren();
+    const makeChip = (label, onClick, selected) => {
+      const btn = el("button", `filter-button feed-lane-chip${selected ? " selected" : ""}`, label);
+      btn.type = "button";
+      btn.addEventListener("click", () => {
+        onClick();
+        controls.querySelectorAll(".feed-lane-chip").forEach((b) => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        renderStream();
+      });
+      return btn;
+    };
+    controls.append(makeChip("全部赛道", () => { activeLane = "all"; }, true));
+    laneOrder.forEach((lane) => {
+      controls.append(makeChip(lane, () => { activeLane = lane; }, false));
+    });
+    const keyToggle = el("button", "filter-button feed-key-toggle", "只看重点");
+    keyToggle.type = "button";
+    keyToggle.addEventListener("click", () => {
+      keyOnly = !keyOnly;
+      keyToggle.classList.toggle("selected", keyOnly);
+      renderStream();
+    });
+    controls.append(keyToggle);
+  }
+
+  renderStream();
+
+  // Record this visit so the next load can compute "new since last visit".
+  try {
+    window.localStorage.setItem(FEED_LAST_VISIT_KEY, String(Date.now()));
+  } catch {
+    /* localStorage unavailable — feed still works, just without the since-visit highlight */
+  }
 }
 
 function renderMonitor(monitor, history, ledger, digest, data) {
@@ -3135,6 +3316,7 @@ async function loadReportData() {
 
 async function boot() {
   const { brief: data, monitor, history, ledger, digest, triage } = await loadReportData();
+  renderFeed(ledger, monitor, digest);
   renderHero(data);
   renderDashboard(data, monitor, history, triage);
   renderExecutiveSummary(data);

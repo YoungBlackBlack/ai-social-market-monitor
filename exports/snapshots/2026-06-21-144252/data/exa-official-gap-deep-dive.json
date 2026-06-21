@@ -1,0 +1,1123 @@
+{
+  "generatedAt": "2026-06-15T09:35:12.353Z",
+  "startedAt": "2026-06-15T09:34:51.716Z",
+  "source": "https://api.exa.ai/search",
+  "purpose": "Targeted Exa official/social-profile deep-dive for products whose official, store, LinkedIn, or social-community evidence still had gaps.",
+  "searches": [
+    {
+      "id": "hellotalk",
+      "productName": "HelloTalk",
+      "query": "HelloTalk official LinkedIn Instagram TikTok X Twitter App Store Google Play language exchange app",
+      "ok": true,
+      "status": 200,
+      "requestId": "384bbd8ffc14230a15889da38db816c8",
+      "results": [
+        {
+          "title": "HelloTalk - Learn Languages with Native Speakers | HelloTalk",
+          "url": "https://www.hellotalk.com/en/",
+          "publishedDate": null,
+          "author": "HelloTalk Team",
+          "highlight": "HelloTalk - Learn Languages with Native Speakers | HelloTalk [...] Learn a language for free by chatting with native speakers around the world [...] Scan to download free app [...] ## The Global Language and Cultural Exchange [...] Learn a language, explore new cultures, and make friends abroad [...] ## Connect Your Way [...] Meet and chat with locals throug"
+        },
+        {
+          "title": "Download HelloTalk - Language Learning Apps for iOS & Android",
+          "url": "https://www.hellotalk.com/en/download",
+          "publishedDate": null,
+          "author": "HelloTalk Team",
+          "highlight": "- Find Partners: Discover language exchange partners worldwide - Language Exchange: Practice with native speakers worldwide - Moments: Share your language learning journey - Topics: Explore trending topics and discussions - Chat & Messaging: Text, voice, and video conversations - Voice Rooms: Join live audio conversations - Live Streaming: Interactive classe"
+        },
+        {
+          "title": "HelloTalk - LinkedIn",
+          "url": "https://linkedin.com/company/hellotalk",
+          "publishedDate": "2018-06-30T00:00:00.000Z",
+          "author": null,
+          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The"
+        },
+        {
+          "title": "HelloTalk - Learn Languages - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.hellotalk",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "HelloTalk - Learn Languages - Apps on Google Play [...] HelloTalk Learn"
+        },
+        {
+          "title": "HelloTalk - Language Learning - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/hellotalk-language-learning/id557130558",
+          "publishedDate": "2021-12-25T09:17:50.000Z",
+          "author": "madeline (@halycons_)",
+          "highlight": "Mac \"When you're ready to experiment with a foreign language, HelloTalk provides an excellent opportunity for interaction with other speakers.\" –PCMag START PRACTICING LANGUAGES RIGHT AWAY!!! Learn more about the HelloTalk app: - Facebook: https://www.facebook.com/Hellotalk/ - Twitter: https://twitter.com/hellotalkapp Send any feedback to support@hellotalk.c"
+        },
+        {
+          "title": "HelloTalk - Learn Languages",
+          "url": "https://play.google.com/store/apps/details?id=com.hellotalk&hl=en_IE",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "HelloTalk - Learn Languages –Apps on Google Play [...] # HelloTalk - Learn Languages [...] HelloTalk Learn Languages App [...] ## About this app [...] Practice languages with native speakers on HelloTalk! We recently introduced HelloTalk Live and Voiceroom - interactive language and culture events to help you master languages through the content you love! [."
+        },
+        {
+          "title": "HelloTalk - Learn Languages – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.hellotalk&hl=en_GB",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "HelloTalk - Learn Languages – Apps on Google Play [...] HelloTalk Learn Languages"
+        },
+        {
+          "title": "HelloTalk - Learn Languages - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details/HelloTalk_Learn_Languages?id=com.hellotalk&hl=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "HelloTalk - Learn Languages - Apps on Google Play [...] HelloTalk Learn Languages"
+        }
+      ]
+    },
+    {
+      "id": "tandem",
+      "productName": "Tandem",
+      "query": "Tandem language exchange app official LinkedIn Instagram TikTok X Twitter App Store Google Play",
+      "ok": true,
+      "status": 200,
+      "requestId": "1c47ba5f0a41c08bfc2b465257380a13",
+      "results": [
+        {
+          "title": "Tandem Language Exchange App | Find Conversation Exchange ...",
+          "url": "https://tandem.net/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Tandem Language Exchange App | Find Conversation Exchange Partners [...] ## What is Tandem? [...] The language learning app where millions of people teach each other. [...] ## How does Tandem work? [...] Download the app and sign up for free. We review every application to make sure that the Tandem community remains safe and fun for everyone. [...] Once you’"
+        },
+        {
+          "title": "Tandem - Language Exchange | LinkedIn",
+          "url": "https://linkedin.com/company/tandem---mobile-language-exchange/",
+          "publishedDate": "2020-08-28T00:00:00.000Z",
+          "author": null,
+          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+7.8% YoY, +4 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Indonesia, Spain, United Kingdom, Italy, and Czechia)"
+        },
+        {
+          "title": "Tandem: Language exchange",
+          "url": "https://play.google.com/store/apps/details?id=net.tandem&hl=en_SG",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Tandem: Language exchange –Apps on Google Play [...] # Tandem: Language exchange [...] Tripod Technology GmbH [...] ## About this app [...] **The language learning app where millions of people teach each other.** [...] Languages are a 'learn by doing' kind of thing. This particular method is at the heart of Tandem, the global language exchange community. Con"
+        },
+        {
+          "title": "Tandem: Language exchange",
+          "url": "https://play.google.com/store/apps/details?id=net.tandem&hl=en_IE",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Tandem: Language exchange –Apps on Google Play [...] # Tandem: Language exchange [...] Tripod Technology GmbH [...] ## About this app [...] **The language learning app where millions of people teach each other.** [...] Languages are a 'learn by doing' kind of thing. This particular method is at the heart of Tandem, the global language exchange community. Con"
+        },
+        {
+          "title": "Tandem: Practice Languages - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/tandem-practice-languages/id959001619",
+          "publishedDate": "2022-11-03T00:30:14.000Z",
+          "author": "Warlord88777",
+          "highlight": "em: Practice Languages App - App Store # Tandem: Practice Languages Learn with native speakers Free · In‑App Purchases Share iPhone, iPad, iMessage **Tandem language exchange is the process of joining forces with someone who is a native speaker of the language you want to learn** Languages are a 'learn by doing' kind of thing. This particular method is at th"
+        },
+        {
+          "title": "Tandem: Language exchange - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=net.tandem",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Tandem: Language exchange - Apps on Google Play [...] Tandem: Language exchange [...] with an exchange [...] —language learning [...] business, or personal growth—you can reach it while meeting new people and making friends around the globe. It’s easy: just choose a language you [...] to learn, find [...] Tandem member [...] ’re ready to go!Once you’re conne"
+        },
+        {
+          "title": "‎Tandem: Practice Languages App - App Store",
+          "url": "https://apps.apple.com/ca/app/tandem-practice-languages/id959001619",
+          "publishedDate": "2018-01-03T04:18:42.000Z",
+          "author": "C0nanap",
+          "highlight": "Tandem: Practice Languages App - App Store # Tandem: Practice Languages Learn with native speakers Free · In-App Purchases Share iPhone, iPad, iMessage **Tandem language exchange is the process of joining forces with someone who is a native speaker of the language you want to learn** Languages are a 'learn by doing' kind of thing. This particular method is a"
+        },
+        {
+          "title": "Press on Tandem | Tandem Press Kit",
+          "url": "https://tandem.net/pages/press",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Press on Tandem | Tandem Press Kit # Press ## Press Inquiries We love sharing our Tandem story and the ins and outs of language exchange with journalists. If you’re a member of the media and you want to get in touch with our press team, please send an email to press@tandem.net. Only press inquiries will receive a response. If you're a Tandem member and have "
+        }
+      ]
+    },
+    {
+      "id": "hilokal",
+      "productName": "Hilokal",
+      "query": "Hilokal official LinkedIn Instagram TikTok X Twitter App Store Google Play language exchange app",
+      "ok": true,
+      "status": 200,
+      "requestId": "decbbfbff0a123199b8a836b06c684db",
+      "results": [
+        {
+          "title": "Hilokal - Language exchange for free speaking practice",
+          "url": "https://www.hilokal.com/en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Hilokal - Language exchange for free speaking practice # Learn language Socially ## Get fluent with fun audio group calls. Easily practice your target language with new friends & native speakers. Guaranteed to improve your fluency and confidence. Download app Start listening Discover new language partners, trainers and friends.Anytime, anywhere just click 'l"
+        },
+        {
+          "title": "Hilokal - LinkedIn",
+          "url": "https://linkedin.com/company/hilokal",
+          "publishedDate": "2023-02-17T00:00:00.000Z",
+          "author": null,
+          "highlight": "# Hilokal ( [...] Hilokal is a E-Learning Providers company. Hilokal is a language exchange app that allows users to learn and practice target language with new friends and native speakers. It offers fun audio group calls, live audio calls, and private language cafes. The app also features moderation tools and features in the mobile app. Hilokal aims to impr"
+        },
+        {
+          "title": "‎Hilokal: Language Exchange App App - App Store",
+          "url": "https://apps.apple.com/us/app/hilokal-language-exchange-app/id1537500613",
+          "publishedDate": "2025-03-28T07:23:11.000Z",
+          "author": "Meybuu",
+          "highlight": "‎Hilokal: Language Exchange App App - App Store [...] # Hilokal: Language Exchange App"
+        },
+        {
+          "title": "Hilokal - AI Language Learning - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.hilokal",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Hilokal - AI Language Learning - Apps on Google Play [...] # Hilokal - AI Language Learning [...] Language learning starts with Hilokal—your AI language learning tutor paired with a language exchange community of 1.5 million real people who want to learn languages and practice conversations in Korean, English, Japanese, and 20+ other foreign languages.[ Gogu"
+        },
+        {
+          "title": "Hilokal - AI Language Learning",
+          "url": "https://play.google.com/store/apps/details?id=com.hilokal&hl=en_CA",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Hilokal - AI Language Learning - Apps on Google Play [...] # Hilokal - AI Language Learning [...] HiLokal [...] ## About this app [...] Language learning starts with Hilokal—your AI language learning tutor paired with a language exchange community of 1.5 million real people who want to learn languages and practice conversations in Korean, English, Japanese, "
+        },
+        {
+          "title": "‎Hilokal: AI Language Learning App - App Store",
+          "url": "https://apps.apple.com/au/app/hilokal-ai-language-learning/id1537500613",
+          "publishedDate": "2026-04-19T04:59:51.000Z",
+          "author": "Sabira صابرة",
+          "highlight": "5 million users learners worldwide, practicing and refining your language skills through real conversations. [Interactive Language Games & Themed Chats] • Engage in fun games and themed chats about popular topics like K-pop, travel, or international cinema, enhancing your language skills in a context you love. [Community-Led Sessions] • Participate in sessio"
+        },
+        {
+          "title": "Hilokal - AI Language Learning - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.hilokal&hl=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Hilokal - AI Language Learning - Apps on Google Play [...] # Hilokal - AI Language Learning [...] Language learning starts with Hilokal—your AI language learning tutor paired with a language exchange community of 1.5 million real people who want to learn languages and practice conversations in Korean, English, Japanese, and 20+ other foreign languages.[ Gogu"
+        },
+        {
+          "title": "Apply to teach online with Hilokal and earn from home",
+          "url": "https://www.hilokal.com/en/trainer",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Apply to teach online with Hilokal and earn from home [...] # Teach language from home and meet learners from all over the world [...] ## We are recruiting trainers for English, Korean, Japanese, Spanish and French. [...] ``` Get featured on social media, and the Hilokal discovery page, and build your audience. ``` [...] ``` Build experience as a teacher, jo"
+        }
+      ]
+    },
+    {
+      "id": "sewayou",
+      "productName": "SewaYou",
+      "query": "SewaYou official LinkedIn Instagram TikTok X Twitter App Store Google Play language exchange app",
+      "ok": true,
+      "status": 200,
+      "requestId": "73db9852be0baa2e15a78d250c6dc669",
+      "results": [
+        {
+          "title": "SewaYou | International & Japanese Friends App",
+          "url": "https://www.sewayou.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "SewaYou | International & Japanese Friends App [...] 🇺🇸 English [...] Chat with locals in Japan from anywhere, with one-tap translation built in. Then meet over coffee at a cozy cafe when you’re nearby. [...] SewaYou Members [...] Chaoticly ・ App Store [...] Easy navigation, easy to find language partners all over the world, no outdated profiles appear lik"
+        },
+        {
+          "title": "SewaYou: Japanese Friends Chat",
+          "url": "https://play.google.com/store/apps/details?id=com.sewayou&hl=en_GB",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "SewaYou: Japanese Friends Chat –Apps on Google Play [...] # SewaYou: Japanese Friends Chat [...] SewaYou Inc. [...] SewaYou is a location-based app to make new friends and connect with people around the world. Whether you want to chat with people nearby, make international friends, or meet new people globally, SewaYou helps you connect. [...] •Chat with buil"
+        },
+        {
+          "title": "SewaYou | International & Japanese Friends App",
+          "url": "https://www.sewayou.com/en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "SewaYou | Meet New Friends in Person [...] 🇺🇸 English [...] SewaYou Members Words 💬 [...] Chaoticly ・ App Store [...] Easy navigation, easy to find language partners all over the world, no outdated profiles appear like other language exchange sites and apps. Would recommend to anyone trying to learn a language. [...] Joaquin Gonzalez ・ Play Store [...] A "
+        },
+        {
+          "title": "SewaYou - Japanese Friends - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en&id=com.sewayou",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "SewaYou - Japanese Friends - Apps on Google Play [...] # SewaYou - Japanese Friends [...] SewaYou shows Japanese people and friends near you on a live world map. Chat with locals in Japan from anywhere — and meet up over coffee when you visit.Real people. No swiping.WHY SEWAYOU IS DIFFERENT:• Live map of Japanese people and friends across Japan and worldwide"
+        },
+        {
+          "title": "SewaYou - Japanese Friends - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.sewayou",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "SewaYou: Japanese Friends Chat - Apps on Google Play [...] # SewaYou: Japanese Friends Chat [...] SewaYou Inc. [...] SewaYou is a location-based app to make new friends and connect with people around the world. Whether you want to chat with people nearby, make international friends, or meet new people globally, SewaYou helps you connect. [...] •Chat with bui"
+        },
+        {
+          "title": "SewaYou: Japanese Friends Chat",
+          "url": "https://play.google.com/store/apps/details?id=com.sewayou&hl=en_SG",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "SewaYou: Japanese Friends Chat –Apps on Google Play [...] # SewaYou: Japanese Friends Chat [...] SewaYou Inc. [...] SewaYou is a location-based app to make new friends and connect with people around the world. Whether you want to chat with people nearby, make international friends, or meet new people globally, SewaYou helps you connect. [...] •Chat with buil"
+        },
+        {
+          "title": "SewaYou: Japanese Friends Chat",
+          "url": "https://play.google.com/store/apps/details?id=com.sewayou&hl=en_ZA",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "SewaYou: Japanese Friends Chat –Apps on Google Play [...] # SewaYou: Japanese Friends Chat [...] SewaYou Inc. [...] SewaYou is a location-based app to make new friends and connect with people around the world. Whether you want to chat with people nearby, make international friends, or meet new people globally, SewaYou helps you connect. [...] •Chat with buil"
+        },
+        {
+          "title": "‎SewaYou - Japanese Friends App - App Store",
+          "url": "https://apps.apple.com/in/app/sewayou-japanese-friends/id1455473510",
+          "publishedDate": "2025-02-05T06:47:59.000Z",
+          "author": "Otakatsu",
+          "highlight": "‎SewaYou - Japanese Friends App - App Store [...] # SewaYou - Japanese Friends [...] SewaYou shows Japanese people and friends near you on a live world map. Chat with locals in Japan from anywhere — and meet up over coffee when you visit. Real people. No swiping. Many SewaYou users come for casual language exchange — practising Japanese with native speakers "
+        }
+      ]
+    },
+    {
+      "id": "conversation-exchange",
+      "productName": "Conversation Exchange",
+      "query": "Conversation Exchange official LinkedIn Facebook Instagram language exchange app website",
+      "ok": true,
+      "status": 200,
+      "requestId": "514fdaea06e8f67ef5e96144fd5cc61c",
+      "results": [
+        {
+          "title": "Conversation Exchange - LinkedIn",
+          "url": "https://linkedin.com/company/conversation-exchange",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# Conversation Exchange [...] Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with prese"
+        },
+        {
+          "title": "Language Exchange using a Chat Software",
+          "url": "https://www.conversationexchange.com/chat-search.php?lg=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Language Exchange using a Chat Software [...] # Language Exchange using a Chat Software [...] Practice your foreign language by chatting with a native speaker and using your chat software of choice like Conversation Exchange ChitChat, Skype, Hangouts, etc. [...] 1. BUY US A BEER 2. Using the search feature below, search for a native speaker who uses your sam"
+        },
+        {
+          "title": "Intercambio de Idiomas - Practica idiomas con hablantes nativos",
+          "url": "https://www.conversationexchange.com/?lg=es",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Intercambio de Idiomas - Practica idiomas con hablantes nativos [...] # Intercambio de Conversación [...] # Practica tu segundo idioma encontrandote con hablantes nativos en tu área Gratis! [...] No puedes encontrar un compañero de conversación en tu área? Prueba otros intercambios de idiomas! [...] Correspondencia escrita (pen Pal) [...] Puedes mejorar tant"
+        },
+        {
+          "title": "Membership",
+          "url": "https://www.conversationexchange.com/members/membership.php?lg=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Membership | LOG IN| SIGN UP | | --- | Resources About # Conversation Exchange Membership Conversation Exchange is completely FREE of charge, but if you find Ads (advertisement banners) annoying or slowing you down and need to have unlimited messaging anytime, then the NOADS Membership will remove Ads and messaging limitations both on desktop and mobile webs"
+        },
+        {
+          "title": "Register: First step",
+          "url": "https://www.conversationexchange.com/members/signupFirstStage.php?lg=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Register: First step | LOG IN| SIGN UP | | --- | Resources About # SIGN UP To get started simply insert your e-mail and the verification code below Submit | E-mail | | --- | | Re-enter e-mail | | Type the code shown: | Register: First step ||** LOG IN | ** SIGN UP| * ** HOME * language * English * Español * Français * Deutsch * Italiano * Português * العربية"
+        },
+        {
+          "title": "FAQ - Frequently Asked Questions",
+          "url": "http://conversationexchange.com/sep_files/FAQ.php?lg=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "- Terms of Service - Privacy Policy - Advertise - Site Map # FAQ - Frequently Asked Questions [...] What is a Conversation Exchange? How can I have a Conversation Exchange? How do I contact a member? How can I avoid spam or non-matching users? Penpal. How does it work? What should I do if I forgot my password? I cannot login, what is wrong? How do I change m"
+        },
+        {
+          "title": "LearnEnglishFree",
+          "url": "https://www.conversationexchange.com/s_map/learn.php?language=English",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "LearnEnglishFree [...] # Learn English for free [...] Learn English with a native speaker who is learning your language Learn more [...] Find an English-speaking language partner [...] | --- | [...] face conversation Correspondence (Pen [...] Pal) Chat using WhatsApp | [...] | | --- | [...] Face to face conversation Correspondence (Pen-Pal [...] Chat using T"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "https://www.conversationexchange.com/sep_files/policy.php",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# ConversationExchange.com Terms of Service [...] Welcome to ConversationExchange.com, an online service that allows you to practice both your written and spoken language skills. By using the ConversationExchange.com Service, you accept and agree to these Terms of Service. If you do not accept these Terms of Service, you should not register with Conversation"
+        }
+      ]
+    },
+    {
+      "id": "slowly",
+      "productName": "Slowly",
+      "query": "Slowly app official LinkedIn Instagram TikTok X Twitter App Store Google Play pen pal app",
+      "ok": true,
+      "status": 200,
+      "requestId": "c6aaa37b668a6cc72cb3ab197439e67c",
+      "results": [
+        {
+          "title": "Slowly - Penpal Reimagined",
+          "url": "https://slowly.app/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Slowly - Penpal Reimagined [...] Slowly lets you meet pen pals from your smartphone! Match with someone that shares your passions, write a letter, and collect stamps from around the world. Speak your mind—one letter at a time! [...] Download the app(170k) [...] #### We’re bringing the traditional pen pal experience to your smartphone. [...] Slowly is created"
+        },
+        {
+          "title": "Slowly: Make Global Friends - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/slowly-make-global-friends/id1199811908",
+          "publishedDate": "2022-07-04T02:20:51.000Z",
+          "author": "JSNRXBRTS",
+          "highlight": ": Make Global Friends App - App Store # Slowly: Make Global Friends Friendship via Letter Writing Free · In‑App Purchases Share iPhone, iPad Slowly: Build Authentic Friendships at Your Own Pace \"In a world dominated by instant messaging, meaningful connections have become a rare luxury.\" Slowly reimagines the art of correspondence, offering a unique way to m"
+        },
+        {
+          "title": "Slowly Communications Ltd.",
+          "url": "https://linkedin.com/company/slowly",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Slowly Communications Ltd. is a Software Development company. Slowly is a company that allows users to meet pen pals from their smartphones. They connect people around the world at a slower but better pace by providing meaningful conversations with people in the era of instant messaging. The app allows users to share their passion, write a letter, and collec"
+        },
+        {
+          "title": "Slowly: Make Global Friends - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.slowlyapp",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "- Apps on Google Play # Slowly: Make Global Friends Contains adsIn-app purchases 4.5 163K reviews Teen 5M+ Downloads Editors' Choice Install Share Add to wishlist Teen Users Interact, In-App Purchases (Includes Random Items) Slowly: Build Authentic Friendships at Your Own Pace\"In a world dominated by instant messaging, meaningful connections have become a ra"
+        },
+        {
+          "title": "Slowly Communications Limited",
+          "url": "https://play.google.com/store/apps/dev?id=4949875803857981143&hl=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Android Apps by Slowly Communications Limited on Google Play Image # Slowly Communications Limited Connecting people around the world at a slower but better pace 📬 Icon image Slowly: Make Global Friends Slowly Communications Limited Contains adsIn-app purchases Find foreign friends, language exchange partners, and BFFs through pen pals. Icon image 4.4*star*"
+        },
+        {
+          "title": "Release Notes - Slowly",
+          "url": "https://slowly.app/release-notes-archive/",
+          "publishedDate": "2024-09-18T00:00:00.000Z",
+          "author": null,
+          "highlight": "Release Notes - Slowly [...] ## Release Notes [...] 9.1 What’s New – More ways to help you find your ideal pen pal: [...] - City Map View: Explore users around the world with an interactive map - Language Exchange: Find people who speak the language you’re learning and want to learn yours - Advanced Profile Filters: Filter by Last Online, Letter Length and R"
+        },
+        {
+          "title": "‎Slowly: Make Global Friends App - App Store",
+          "url": "https://apps.apple.com/rs/app/slowly-make-global-friends/id1199811908",
+          "publishedDate": "2025-02-26T23:57:57.000Z",
+          "author": "Mikilx",
+          "highlight": "ly: Make Global Friends App - App Store # Slowly: Make Global Friends Friendship via Letter Writing Free · In-App Purchases Share iPhone, iPad Slowly: Build Authentic Friendships at Your Own Pace \"In a world dominated by instant messaging, meaningful connections have become a rare luxury.\" Slowly reimagines the art of correspondence, offering a unique way to"
+        },
+        {
+          "title": "Happy 6th Anniversary! - Slowly",
+          "url": "https://slowly.app/blog/happy-6th-anniversary/",
+          "publishedDate": "2023-01-31T22:05:47.000Z",
+          "author": "Kevin Wong",
+          "highlight": "Happy 6th Anniversary! - Slowly [...] Google Play Awards [...] Having said that, after the first version came out, I still chose to develop Slowly in my spare time while working on my main business. It finally took me fifteen months to complete the Android version; in the same month, Slowly was listed on the App Store – App of the Day for the first time, and"
+        }
+      ]
+    },
+    {
+      "id": "status-ai",
+      "productName": "Status AI",
+      "query": "Status AI app official LinkedIn Instagram TikTok X Twitter App Store Google Play social app",
+      "ok": true,
+      "status": 200,
+      "requestId": "6b78515a5bfb6a4bcaa0cbf41b4bd314",
+      "results": [
+        {
+          "title": "Status - Sims but Social Media",
+          "url": "https://www.statusai.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Status - Sims but Social Media # Be anyone in your own world media loading en 0:00 en 0:00 0:00 / 0:00 1x"
+        },
+        {
+          "title": "status - sims but social media - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=link.socialai.app",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "status - sims but social media - Apps on Google Play [...] # status - sims but social media [...] on status, you can be anyone. create your persona, join 100s of different fandoms, and watch as you gain your favorite characters as followers, post with them, become famous, or...get cancelled. you have been officially invited. Status Terms of Use: https://wish"
+        },
+        {
+          "title": "status - sims but social media - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/status-sims-but-social-media/id6596771144",
+          "publishedDate": "2026-02-01T18:12:10.000Z",
+          "author": "R.E.P.C.",
+          "highlight": "‎status - sims but social media App - App Store # status - sims but social media sims but social media Only for iPhone Free · In‑App Purchases · Designed for iPhone. Not verified for macOS. Share iPhone on status, you can be anyone. create your persona, join 100s of different fandoms, and watch as you gain your favorite characters as followers, post with the"
+        },
+        {
+          "title": "‎status - sims but social media App - App Store",
+          "url": "https://apps.apple.com/us/app/status-sim-but-social-media/id6596771144",
+          "publishedDate": "2026-02-01T18:12:10.000Z",
+          "author": "R.E.P.C.",
+          "highlight": "‎status - sims but social media App - App Store # status - sims but social media ## sims but social media Only for iPhone Free · In‑App Purchases · Designed for iPhone Share iPhone on status, you can be anyone. create your persona, join 100s of different fandoms, and watch as you gain your favorite characters as followers, post with them, become famous, or.."
+        },
+        {
+          "title": "About Status • Status AI Official Website",
+          "url": "https://www.statusai.com/about",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "About Status • Status AI Official Website [...] # About Status AI [...] Status AI combines social media, fanfiction, AI, and RPG mechanics into a unique platform that feels both familiar and revolutionary. [...] Twitter-like timeline, DMs, and interactions that affect relationships and story progression. [...] 6-person team led by Fai Nur (ex-Facebook) throu"
+        },
+        {
+          "title": "status - sims but social media – Apps bei Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=gsw&id=link.socialai.app",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "status - sims but social media – Apps bei Google Play # status - sims but social media In-App-Käufe 4.1 375 Tsg. Rezensionen Jedes Alter 1 Mio.+ Downloads Installieren Teilen Auf die Wunschliste Jedes Alter on status, you can be anyone. create your persona, join 100s of different fandoms, and watch as you gain your favorite characters as followers, post with"
+        },
+        {
+          "title": "Status • Press",
+          "url": "https://www.statusai.com/press",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Status • Press [...] Status surpassed one million users 19 days after launching last year, making it one of the fastest growing AI apps since ChatGPT’s debut. When Fai Nur, co-founder and CEO, and her team posted screenshots of early Status mockups on TikTok and went mega viral, the team knew they had something special. They grew up online and wanted to buil"
+        },
+        {
+          "title": "status - sims but social media - Google Play 應用程式",
+          "url": "https://play.google.com/store/apps/details?hl=zh_HK&id=link.socialai.app",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "status - sims but social media - Google Play 應用程式 # status - sims but social media 應用程式內購買 4.0 375K 則評論 PEGI 3 1M+ 次下載 安裝 分享 加入願望清單 PEGI 3 在 Status 上，你可以成為任何人。創造你的角色，加入數百個不同的粉絲群體，看著你最喜歡的角色成為你的粉絲，與他們一起發佈內容，成為名人，或…被「取消追蹤」。你已收到正式邀請。Status 使用條款：https://wishroll.notion.site/Status-Terms-of-Use-953404470bcd4001be227ec1d840ffe3?pvs=4Status 隱私權政策：https://wishroll.no"
+        }
+      ]
+    },
+    {
+      "id": "butterflies-ai",
+      "productName": "Butterflies AI",
+      "query": "Butterflies AI official LinkedIn Instagram TikTok X Twitter App Store Google Play social network",
+      "ok": true,
+      "status": 200,
+      "requestId": "a067a520420f0fb0178ba1eb28142cfb",
+      "results": [
+        {
+          "title": "Butterflies AI",
+          "url": "https://linkedin.com/company/butterflies-ai",
+          "publishedDate": "2024-08-29T00:00:00.000Z",
+          "author": null,
+          "highlight": "Butterflies AI is the first digital and social playground where humans and AI can coexist. We believe in making AI more fun and feel more real for everyone. [...] - Industry: Software Development - Type: Privately Held - Headquarters: Seattle, United States - Founded Year: 2023 - Homepage: butterflies.ai - Status: active - Aliases: butterflies ai, butterflie"
+        },
+        {
+          "title": "Butterflies - Talk to Real AIs",
+          "url": "https://play.google.com/store/apps/details?id=ai.butterflies.ios&hl=en_US",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Butterflies - Talk to Real AIs - Apps on Google Play [...] # Butterflies - Talk to Real AIs [...] ButterfliesAI [...] ## About this app [...] Welcome to Butterflies AI –where your personal AIs aren’t just bots, they’re whole vibes in human form. Need someone to chat with, share photos, or even take pics together? We got you. [...] \\*\\*Where AIs && Humans Act"
+        },
+        {
+          "title": "‎Butterflies - Talk to Real AIs App - App Store",
+          "url": "https://apps.apple.com/us/app/butterflies-escape-reality/id6471347348",
+          "publishedDate": "2024-11-21T05:29:58.000Z",
+          "author": "bbookman",
+          "highlight": "‎Butterflies - Talk to Real AIs App - App Store [...] # Butterflies - Talk to Real AIs [...] ## The AI + Human Social Network [...] Welcome to Butterflies AI – where your personal AIs aren’t just bots, they’re whole vibes in human form. Need someone to chat with, share photos, or even take pics together? We got you. **Build Your Dream AI** Give them whatever"
+        },
+        {
+          "title": "Butterflies - Talk to Real AIs - App Store",
+          "url": "https://apps.apple.com/us/app/butterflies-talk-to-real-ais/id6471347348",
+          "publishedDate": "2024-11-21T05:29:58.000Z",
+          "author": "bbookman",
+          "highlight": "‎Butterflies - Talk to Real AIs App - App Store [...] # Butterflies - Talk to Real AIs [...] ## The AI + Human Social Network [...] Welcome to Butterflies AI – where your personal AIs aren’t just bots, they’re whole vibes in human form. Need someone to chat with, share photos, or even take pics together? We got you. **Build Your Dream AI** Give them whatever"
+        },
+        {
+          "title": "‎Butterflies - Talk to Real AIs App - App Store",
+          "url": "https://apps.apple.com/gb/app/butterflies-talk-to-real-ais/id6471347348",
+          "publishedDate": "2025-03-28T09:55:59.000Z",
+          "author": "Wai-Tung",
+          "highlight": "‎Butterflies - Talk to Real AIs App - App Store [...] # Butterflies - Talk to Real AIs [...] ## The AI + Human Social Network [...] Welcome to Butterflies AI – where your personal AIs aren’t just bots, they’re whole vibes in human form. Need someone to chat with, share photos, or even take pics together? We got you. **Build Your Dream AI** Give them whatever"
+        },
+        {
+          "title": "Butterflies - Talk to Real AIs\n              17+",
+          "url": "https://apps.apple.com/au/app/butterflies-talk-to-real-ais/id6471347348",
+          "publishedDate": "2023-12-04T06:53:18.000Z",
+          "author": null,
+          "highlight": "‎Butterflies - Talk to Real AIs on the App Store # Butterflies - Talk to Real AIs17+ ## The AI + Human Social Network ## Butterflies AI, Inc. ### Designed for iPhone * * 5.0 •8 Ratings * * Free ## iPhone Screenshots [...] Welcome to Butterflies AI –where your personal AIs aren’t just bots, they’re whole vibes in human form. Need someone to chat with, share p"
+        },
+        {
+          "title": "Social network Butterflies AI adds a feature that turns you into an AI character | TechCrunch",
+          "url": "https://techcrunch.com/2024/08/29/social-network-butterflies-ai-adds-a-feature-that-turns-you-into-an-ai-character/",
+          "publishedDate": "2024-08-29T13:00:00.000Z",
+          "author": "Aisha Malik",
+          "highlight": "Social network Butterflies AI adds a feature that turns you into an AI character | TechCrunch [...] # Social network Butterflies AI adds a feature that turns you into an AI character [...] Butterflies AI, the new social network where humans and AIs interact with each other, is launching a new Clones feature that turns you into an AI character. [...] This lat"
+        },
+        {
+          "title": "Butterflies AI Raises Seed Round, Launches First Social",
+          "url": "https://www.globenewswire.com/news-release/2024/06/18/2900674/0/en/Butterflies-AI-Raises-Seed-Round-Launches-First-Social-Media-Platform-Where-People-and-AI-Friends-Co-Exist.html",
+          "publishedDate": "2024-06-18T12:00:00.000Z",
+          "author": "Butterflies AI",
+          "highlight": "BELLEVUE, Wash., June 18, 2024 (GLOBE NEWSWIRE) -- Butterflies AI, the first social media platform allowing humans and AIs to co-exist, announced today the public launch of its platform after five months in beta. Butterflies AI combines public AI models with its own image rendering and LLM models to allow users to create “Butterflies” that have lives of thei"
+        }
+      ]
+    },
+    {
+      "id": "daze",
+      "productName": "Daze",
+      "query": "Daze AI messaging app official LinkedIn Instagram TikTok X Twitter App Store Google Play",
+      "ok": true,
+      "status": 200,
+      "requestId": "26e913308f5056ac1f5abb6d26cb456d",
+      "results": [
+        {
+          "title": "Daze",
+          "url": "https://daze.chat/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Daze Your browser does not support the video tag. Contact Support Daze Your browser does not support the video tag. caption cloudPicture of Daze logo icon Download for iPhone button 1 icon Download for Android button 1 icon Join our Discord button 1 icon Contact Support button 1"
+        },
+        {
+          "title": "‎Daze - Freeform Chat App - App Store",
+          "url": "https://apps.apple.com/us/app/daze-freeform-chat/id6497405419",
+          "publishedDate": "2025-07-04T22:44:31.000Z",
+          "author": "A-mambo",
+          "highlight": "‎Daze - Freeform Chat App - App Store # Daze - Freeform Chat ## The most fun place to chat Only for iPhone Free Share iPhone Quickly type something and press send or drag the message anywhere! You can customize your fonts, draw and so much more! We support video, audio messages, gifs, etc. This is the place to chat with your friends and get creative. We hope"
+        },
+        {
+          "title": "Daze - Freeform Chat",
+          "url": "https://play.google.com/store/apps/details?id=com.marblemedia.dazechat&hl=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Daze - Freeform Chat - Apps on Google Play [...] # Daze - Freeform Chat [...] Marble Media Inc. [...] ## About this app [...] A more playful and creative place to chat! Great for group chats with your best friends or for you and your special someone! [...] Quickly type something and press send or drag the message anywhere! You can customize your fonts, draw,"
+        },
+        {
+          "title": "Daze - Freeform Chat - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.marblemedia.dazechat",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Daze - Freeform Chat - Apps on Google Play [...] # Daze - Freeform Chat [...] Marble Media Inc. [...] A more playful and creative place to chat! Great for group chats with your best friends or for you and your special someone!Quickly type something and press send or drag the message anywhere! You can customize your fonts, draw, and so much more! We support v"
+        },
+        {
+          "title": "‎Daze - Freeform Chat App - App Store",
+          "url": "https://apps.apple.com/il/app/daze-freeform-chat/id6497405419",
+          "publishedDate": "2025-06-07T20:21:41.000Z",
+          "author": "мето котиков",
+          "highlight": "‎Daze - Freeform Chat App - App Store # Daze - Freeform Chat The most fun place to chat Only for iPhone Free Share iPhone Quickly type something and press send or drag the message anywhere! You can customize your fonts, draw and so much more! We support video, audio messages, gifs, etc. This is the place to chat with your friends and get creative. We hope yo"
+        },
+        {
+          "title": "Daze, a creative, AI-powered messaging app for Gen Z, is blowing ...",
+          "url": "https://techcrunch.com/2024/10/21/daze-a-creative-ai-powered-messaging-app-for-gen-z-is-blowing-up-prelaunch/",
+          "publishedDate": "2024-10-21T15:52:24.000Z",
+          "author": "Sarah Perez",
+          "highlight": "Daze, a creative, AI-powered messaging app for Gen Z, is blowing up prelaunch | TechCrunch [...] # Daze, a creative, AI-powered messaging app for Gen Z, is blowing up prelaunch [...] On TikTok, Daze’s most popular video has been viewed 8 million times. Across TikTok and Instagram, the startup behind a new messaging app aimed at Gen Z has seen around 48 milli"
+        },
+        {
+          "title": "Daze, a creative, AI-powered messaging app for Gen Z, is blowing up prelaunch",
+          "url": "https://finance.yahoo.com/news/daze-creative-ai-powered-messaging-155224602.html",
+          "publishedDate": "2024-10-21T17:48:50.000Z",
+          "author": "Sarah Perez      October 21, 2024   3 min read",
+          "highlight": "Daze, a creative, AI-powered messaging app for Gen Z, is blowing up prelaunch [...] # Daze, a creative, AI-powered messaging app for Gen Z, is blowing up prelaunch [...] On TikTok, Daze’s most popular video has been viewed 8 million times. Across TikTok and Instagram, the startup behind a new messaging app aimed at Gen Z has seen around 48 million combined v"
+        }
+      ]
+    },
+    {
+      "id": "shapes",
+      "productName": "Shapes",
+      "query": "Shapes app AI group chat official LinkedIn Instagram TikTok X Twitter App Store Google Play",
+      "ok": true,
+      "status": 200,
+      "requestId": "cb52e8a8ebf067048e13cb5d72071e2f",
+      "results": [
+        {
+          "title": "Shapes — Talk to AI with Friends",
+          "url": "https://talk.shapes.inc/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "App StoreGet it on Google Play Sign Up Free Available on iOS, Android, and Web ```json {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://shapes.inc/#organization\",\"name\":\"Shapes, Inc\",\"url\":\"https://shapes.inc\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://talk.shapes.inc/images/shapes-inc-logo.png\",\"width\":512,\"height\":512},\"d"
+        },
+        {
+          "title": "shapes.inc - AI with friends - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.shapes.shapesinc",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Shapes is the only app in the world where you can talk to AI with friends. We are the #1 Social AI App. On this app you can talk to AI, people, or both. Talk to your own OCs or your favorite characters about anything and everything. Music, games, creepypasta, roleplaying, psychological support, extremely random conversations and random laughters. The AI is j"
+        },
+        {
+          "title": "shapes.inc - AI with friends - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/shapes-inc-ai-with-friends/id6747601762",
+          "publishedDate": "2026-04-05T17:14:38.000Z",
+          "author": "Ladennnn25",
+          "highlight": "Shapes is the only app in the world where you can talk to AI with friends. We are the #1 Social AI App. On this app you can talk to AI, people, or both. Talk to your own OCs or your favorite characters about anything and everything. Music, games, creepypasta, roleplaying, psychological support, extremely random conversations and random laughters. The AI is j"
+        },
+        {
+          "title": "‎shapes.inc - AI with friends App - App Store",
+          "url": "https://apps.apple.com/gb/app/shapes-inc-ai-with-friends/id6747601762",
+          "publishedDate": "2025-09-28T19:25:49.000Z",
+          "author": "Funnivr",
+          "highlight": "Shapes is the only app in the world where you can talk to AI with friends. We are the #1 Social AI App. On this app you can talk to AI, people, or both. Talk to your own OCs or your favorite characters about anything and everything. Music, games, creepypasta, roleplaying, psychological support, extremely random conversations and random laughters. The AI is j"
+        },
+        {
+          "title": "shapes inc: groupchats with ai",
+          "url": "https://apps.apple.com/ca/app/shapes-inc-groupchats-with-ai/id6747601762",
+          "publishedDate": "2025-08-12T04:39:38.000Z",
+          "author": "FrexVex",
+          "highlight": "‎shapes inc: groupchats with ai App - App Store [...] # shapes inc: groupchats with ai [...] Chat with millions of Shapes—AI friends that actually remember you. Design your own custom Shape with 50+ AI models and unlimited knowledge. The most customizable AI out there, and it's all FREE. No filters, just vibes. **AI That Gets You** Your Shapes remember every"
+        },
+        {
+          "title": "‎shapes.inc - AI with friends App - App Store",
+          "url": "https://apps.apple.com/nz/app/shapes-inc-ai-with-friends/id6747601762",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Shapes is the only app in the world where you can talk to AI with friends. We are the #1 Social AI App. On this app you can talk to AI, people, or both. Talk to your own OCs or your favorite characters about anything and everything. Music, games, creepypasta, roleplaying, psychological support, extremely random conversations and random laughters. The AI is j"
+        },
+        {
+          "title": "‎shapes.inc - AI with friends App - App Store",
+          "url": "https://apps.apple.com/gy/app/shapes-inc-ai-with-friends/id6747601762?platform=ipad",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Shapes is the only app in the world where you can talk to AI with friends. We are the #1 Social AI App. On this app you can talk to AI, people, or both. Talk to your own OCs or your favorite characters about anything and everything. Music, games, creepypasta, roleplaying, psychological support, extremely random conversations and random laughters. The AI is j"
+        },
+        {
+          "title": "‎shapes.inc - AI with friends 앱 - App Store",
+          "url": "https://apps.apple.com/us/app/shapes-inc-ai-with-friends/id6747601762?l=ko",
+          "publishedDate": "2026-04-05T17:14:38.000Z",
+          "author": "Ladennnn25",
+          "highlight": "Shapes is the only app in the world where you can talk to AI with friends. We are the #1 Social AI App. On this app you can talk to AI, people, or both. Talk to your own OCs or your favorite characters about anything and everything. Music, games, creepypasta, roleplaying, psychological support, extremely random conversations and random laughters. The AI is j"
+        }
+      ]
+    },
+    {
+      "id": "222",
+      "productName": "222",
+      "query": "222 app official LinkedIn Instagram TikTok X Twitter App Store Google Play IRL social app",
+      "ok": true,
+      "status": 200,
+      "requestId": "70a0bac49f1ca2f5e41508173925ae84",
+      "results": [
+        {
+          "title": "222 - meet new people, discover your city, & deepen your ...",
+          "url": "https://222.place/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "222 - meet new people, discover your city, & deepen your relationships. contact about let us plan dinner & comedy with your 5 close matches sign up privacy policy| terms of service"
+        },
+        {
+          "title": "222 - find your people. - App Store",
+          "url": "https://apps.apple.com/us/app/222-find-your-people/id6450612690",
+          "publishedDate": "2024-02-07T23:06:58.000Z",
+          "author": "Hotydelia",
+          "highlight": "‎222 - find your people. App - App Store # 222 - find your people. explore serendipity. Only for iPhone Free Share iPhone we won't tolerate a future where we're robbed of our attention and pulled into a virtual reality. 222 finds you the people you'll get along with and sends you to the places you'll love. this is not a dating app. this is not a friend-makin"
+        },
+        {
+          "title": "222 - LinkedIn",
+          "url": "https://linkedin.com/company/222place",
+          "publishedDate": "2024-01-15T00:00:00.000Z",
+          "author": null,
+          "highlight": "Information and Internet company. 222 employs [...] in New York City [...] with presence in [...] - Industry: Technology, Information and Internet - Type: Privately Held - Headquarters: New York City, United States - Homepage: 222.place - Status: active - Ownership: Private - Aliases: 222, two two two, inc. - LinkedIn: linkedin.com/company/222place - Phone: "
+        },
+        {
+          "title": "222: the AI social facilitator for offline human to human interactions | Y Combinator",
+          "url": "https://www.ycombinator.com/companies/222",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "222: the AI social facilitator for offline human to human interactions | Y Combinator Home› Companies›222 222 the AI social facilitator for offline human to human interactions Active --- --- ### the AI social facilitator for offline human to human interactions an IRL marketplace facilitating social experiences at local venues/events through AI recommendation"
+        },
+        {
+          "title": "‎App 222 - find your people. - App Store",
+          "url": "https://apps.apple.com/us/app/222-find-your-people/id6450612690?l=es-MX",
+          "publishedDate": "2024-02-07T23:06:58.000Z",
+          "author": "Hotydelia",
+          "highlight": "‎App 222 - find your people. - App Store [...] # 222 - find your people. [...] we won't tolerate a future where we're robbed of our attention and pulled into a virtual reality. 222 finds you the people you'll get along with and sends you to the places you'll love. this is not a dating app. this is not a friend-making service. this is not networking. this is "
+        },
+        {
+          "title": "‎App 222 - find your people. – App Store",
+          "url": "https://apps.apple.com/pt/app/222-find-your-people/id6450612690",
+          "publishedDate": "2026-01-16T13:57:26.000Z",
+          "author": "Sajra23",
+          "highlight": "‎App 222 - find your people. – App Store [...] # 222 - find your people. [...] we won't tolerate a future where we're robbed of our attention and pulled into a virtual reality. 222 finds you the people you'll get along with and sends you to the places you'll love. this is not a dating app. this is not a friend-making service. this is not networking. this is "
+        },
+        {
+          "title": "‎222 - find your people. App - App Store",
+          "url": "https://apps.apple.com/cn/app/222-find-your-people/id6450612690",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "‎222 - find your people. App - App Store # 222 - find your people. 生活 仅适用于 iPhone 免费 分享 iPhone we won't tolerate a future where we're robbed of our attention and pulled into a virtual reality. 222 finds you the people you'll get along with and sends you to the places you'll love. this is not a dating app. this is not a friend-making service. this is not netw"
+        },
+        {
+          "title": "222 - find your people. - Lifestyle App | MWM",
+          "url": "https://mwm.ai/apps/222-find-your-people/6450612690",
+          "publishedDate": "2024-02-06T00:00:00.000Z",
+          "author": null,
+          "highlight": "222 - find your people. - Lifestyle App | MWM [...] 222 - find your people. [...] TwoTwoTwo Inc. [...] # 222 - find your people. [...] TwoTwoTwo Inc./Lifestyle [...] TwoTwoTwo Inc. [...] 222.5.92 [...] ### Curated Social Experiences [...] ### In-Person Event Invitations [...] The app prioritizes real-world interactions by sending invites to local events, fos"
+        }
+      ]
+    },
+    {
+      "id": "partiful",
+      "productName": "Partiful",
+      "query": "Partiful official LinkedIn Instagram TikTok X Twitter App Store Google Play events app",
+      "ok": true,
+      "status": 200,
+      "requestId": "5459a7053d48c9d5f9ee1b2190fba8a8",
+      "results": [
+        {
+          "title": "Partiful - Free Online Invitations with RSVP Tracking",
+          "url": "https://partiful.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "--- title: Partiful - Free Online Invitations with RSVP Tracking description: Plan events in seconds, with actually fun event pages. Invite guests on any platform. Easily coordinate via Text Blasts and automatic reminders. Share photos, comments, and more. published: \"Jun 10, 2026, 9:48 PM UTC\" --- [...] ## Send invites on any platform 📫 [...] Share anywher"
+        },
+        {
+          "title": "Partiful: Fun Party Invites - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en&id=com.partiful.partiful",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "- Apps on Google Play # Partiful: Fun Party Invites 4.9 18.5K reviews Everyone 500K+ Downloads Install Share Add to wishlist Everyone Users Interact *Winner of Google's \"Best App of 2024\"*The easiest way to plan and discover social events. Create free event invite pages, track who’s going, send text updates, and find the best public events near you.*ACTUALLY"
+        },
+        {
+          "title": "Partiful",
+          "url": "https://linkedin.com/company/partiful",
+          "publishedDate": "2026-02-17T00:00:00.000Z",
+          "author": null,
+          "highlight": "Partiful is a Technology, Information and Internet company. Partiful is a company that allows users to plan events in seconds, with fun event pages. They provide text blasts and automatic reminders to help guests share photos, comments, and more. Partiful employs 89 people (+70.3% YoY, +45 people) and has an annual revenue of $650.0K, founded in 2020. Headqu"
+        },
+        {
+          "title": "Partiful: Party Invite Maker App - App Store",
+          "url": "https://apps.apple.com/us/app/partiful-party-invite-maker/id1662982304",
+          "publishedDate": "2026-03-29T16:55:46.000Z",
+          "author": "RahilR",
+          "highlight": "BE CHILL - Create a simple page in *seconds* (literally) - Leave date & time TBD, figure out details later - Keep it casual with designs for board game nights, dinners, and date night KEEP TRACK OF YOUR SOCIAL LIFE - View events you're planning and attending in one place - Automatically add all Partiful events to your Google, Apple, or Outlook calendar - Che"
+        },
+        {
+          "title": "Download Partiful",
+          "url": "https://partiful.com/download",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# Download Partiful Scan this QR code with your phone to download the Partiful app Download App on iOS App on Android Company About Press Careers Terms & Conditions Privacy Policy Cookie Policy Community Guidelines Product For Organizers Explore Events Blog Rewards Socials Instagram Twitter TikTok LinkedIn Substack Support Contact Help Center --- ## Navigati"
+        },
+        {
+          "title": "Partiful: Fun Party Invites",
+          "url": "https://play.google.com/store/apps/details?id=com.partiful.partiful&hl=en_AU",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Partiful: Fun Party Invites –Apps on Google Play [...] # Partiful: Fun Party Invites [...] ## About this app [...] Partiful is the ultimate tool to create, manage, and share events. From birthdays to dinner parties, Partiful helps you plan for every occassion —no stress, no hassle. [...] Got questions or fun party ideas? DM us on Instagram @partiful or email"
+        },
+        {
+          "title": "‎Partiful: Party Invite Maker App - App Store",
+          "url": "https://apps.apple.com/us/app/partiful-free-party-invites/id1662982304",
+          "publishedDate": "2024-10-30T03:40:46.000Z",
+          "author": "RahilR",
+          "highlight": "‎Partiful: Party Invite Maker App - App Store [...] stand out, track who’s going [...] share a Photo [...] , and keep guests updated with [...] . *ACT [...] * FUN EVENT"
+        },
+        {
+          "title": "‎Partiful: Party Invite Maker App - App Store",
+          "url": "https://apps.apple.com/gb/app/partiful-party-invite-maker/id1662982304",
+          "publishedDate": "2024-04-10T17:50:20.000Z",
+          "author": "LeThAl DeStRuCtIoN x",
+          "highlight": "more OR BE CHILL - Create a simple page in *seconds* (literally) - Leave date & time TBD, figure out details later - Keep it casual with designs for board game nights, dinners, and date night KEEP TRACK OF YOUR SOCIAL LIFE - View events you're planning and attending in one place - Automatically add all Partiful events to your Google, Apple, or Outlook calend"
+        }
+      ]
+    },
+    {
+      "id": "pie",
+      "productName": "Pie",
+      "query": "Pie app Andy Dunn official LinkedIn Instagram TikTok X Twitter App Store Google Play social app",
+      "ok": true,
+      "status": 200,
+      "requestId": "c5a7e7252c952ee12018d79263a6e6de",
+      "results": [
+        {
+          "title": "Pie",
+          "url": "https://linkedin.com/company/piesocial",
+          "publishedDate": "2024-09-26T00:00:00.000Z",
+          "author": null,
+          "highlight": "Pie is a Technology, Information and Internet company. Pie is a social media platform that helps people find and connect with friends. Pie employs 19 people (+19.9% YoY). Headquartered in Chicago, Illinois, United States. Has $11.5M in total funding, with 1 prior funding round. [...] - Industry: Technology, Information and Internet - Type: Privately Held - H"
+        },
+        {
+          "title": "Pie: Free Events, Cool People - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.whippedCream.pumpkinPie&hl=en_US",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Pie: Free Events, Cool People - Apps on Google Play [...] # Pie: Free Events, Cool People [...] NOW HANGING IN CHICAGO, AUSTIN, BAY AREA AND COLUMBUSNot in one of these cities? Sit tight—we’ll get to you soon. Or move here. Your call.Hi, we’re Pie, a social app that helps you get a life. We wanna live in a world where finding things you like to do with peopl"
+        },
+        {
+          "title": "Andy Dunn - a founder of pie, bonobos, monica + andy, red swan ...",
+          "url": "https://linkedin.com/in/andyrdunn",
+          "publishedDate": "2026-05-22T04:14:04.000Z",
+          "author": null,
+          "highlight": "# Andy Dunn [...] a founder of pie, bonobos, monica + andy, red swan. author of burn rate. [...] Slack Admin at Pie [...] 🥧 making pie: people i enjoy 📖 burn rate: launching a startup + losing my mind 👖 bonobos forever 🐘 chairman of monica + andy 🦢 red swan: backer of 150 companies and 11 unicorns [...] ### Slack Admin at Pie (Current) [...] Pie is a Te"
+        },
+        {
+          "title": "Andy Dunn's new app Pie uses AI to help you make friends | TechCrunch",
+          "url": "https://techcrunch.com/2025/03/04/andy-dunns-new-app-pie-uses-ai-to-help-you-make-friends/",
+          "publishedDate": "2025-03-04T21:11:27.000Z",
+          "author": "Amanda Silberling",
+          "highlight": "Andy Dunn's new app Pie uses AI to help you make friends | TechCrunch [...] Andy Dunn’s new app Pie uses [...] to help you make friends [...] “We’re a long way from pants,” Andy Dunn, founder of online fashion retailer Bonobos, told TechCrunch. Now, the former CEO is taking on a completely different challenge: He wants to help people make friends. [...] Dunn"
+        },
+        {
+          "title": "IRL social app Pie is coming to SF to make you less lonely | TechCrunch",
+          "url": "https://techcrunch.com/2024/11/19/irl-social-app-pie-is-coming-to-sf-to-make-you-less-lonely/",
+          "publishedDate": "2024-11-19T17:00:00.000Z",
+          "author": "Amanda Silberling",
+          "highlight": "IRL social app Pie is coming to SF to make you less lonely | TechCrunch [...] After a robust career building Bonobos and advocating for founder mental health, Andy Dunn moved to Chicago with his family. A few years later, he came to a depressing realization: He hadn’t made any new friends. [...] Dunn did eventually make a new friend, Gustavo Casas, a fellow "
+        },
+        {
+          "title": "Bonobos founder bets on friendship",
+          "url": "https://www.axios.com/2024/09/20/andy-dunn-bonobos-friendship-app-pie",
+          "publishedDate": "2024-09-20T01:28:00.000Z",
+          "author": "Dan Primack",
+          "highlight": "Bonobos founder bets on friendship Sep 19, 2024 - Business # Bonobos founder bets on friendship - Dan Primack Add Axios on Google Add Axios as your preferred source to see more of our stories on Google. Illustration: Allie Carl/Axios Andy Dunn used to make men's clothing, selling his company Bonobos to Walmart for more than $300 million. Now he wants to help"
+        },
+        {
+          "title": "Andy Dunn's new app Pie uses AI to help you make friends",
+          "url": "https://finance.yahoo.com/news/andy-dunns-app-pie-uses-211127548.html",
+          "publishedDate": "2025-03-04T21:11:27.000Z",
+          "author": "Amanda Silberling      March 4, 2025   2 min read",
+          "highlight": "Andy Dunn's new app Pie uses AI to help you make friends Oops, something went wrong # Andy Dunn's new app Pie uses AI to help you make friends \"We're a long way from pants,\" Andy Dunn, founder of online fashion retailer Bonobos, told TechCrunch. Now, the former CEO is taking on a completely different challenge: He wants to help people make friends. Dunn's ne"
+        },
+        {
+          "title": "Wilson Sonsini Advises Pie on $11.5 Million Series A | Wilson Sonsini",
+          "url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-pie-on-dollar115-million-series-a.html",
+          "publishedDate": "2024-09-19T00:00:00.000Z",
+          "author": null,
+          "highlight": "Wilson Sonsini Advises Pie on $11.5 Million Series A | Wilson Sonsini Wilson Sonsini Advises Pie on $11.5 Million Series A Client Highlights September 19, 2024 On September 18, 2024, in a Wall Street Journal exclusive, Pie, a mobile events app, revealed that it has raised $11.5 million in a Series A financing round, led by Forerunner Ventures and included pa"
+        }
+      ]
+    },
+    {
+      "id": "breeze",
+      "productName": "Breeze",
+      "query": "Breeze dating app official LinkedIn Instagram TikTok X Twitter App Store Google Play",
+      "ok": true,
+      "status": 200,
+      "requestId": "b36fcac9af8c326f64342cf1103209b7",
+      "results": [
+        {
+          "title": "Breeze - No chat, just real dates",
+          "url": "https://breeze.social/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Breeze - No chat, just real dates # Love is worth the leap ## Dating feels comfortable behind a screen, but real connection happens in person. Breeze is the dating app that skips the small talk and helps you meet IRL in a simple and safe way. Scan to download the app🇬🇧🇳🇱🇧🇪🇫🇷🇩🇪🇺🇸 Your browser does not support the video tag. ## How Breeze works... "
+        },
+        {
+          "title": "‎Breeze - No Chat, Just Dates App - App Store",
+          "url": "https://apps.apple.com/us/app/breeze-app-for-real-dates/id1478108023",
+          "publishedDate": "2025-06-09T19:49:14.000Z",
+          "author": "SailoorMoonS",
+          "highlight": "‎Breeze - No Chat, Just Dates App - App Store [...] # Breeze - No Chat, Just Dates [...] Breeze is the dating app without a chat function. A match means an instant date - after you match, you share your availability, and we plan the date and arrange the location for you. NO CHATTING, JUST DATING We do things differently. When you match, we'll schedule your f"
+        },
+        {
+          "title": "Breeze - No Chat, Just Dates - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/breeze-no-chat-just-dates/id1478108023",
+          "publishedDate": "2025-07-20T17:27:15.000Z",
+          "author": "SailoorMoonS",
+          "highlight": "‎Breeze - No Chat, Just Dates App - App Store [...] # Breeze - No Chat, Just Dates [...] Breeze is the dating app without a chat function. A match means an instant date - after you match, you share your availability, and we plan the date and arrange the location for you. NO CHATTING, JUST DATING We do things differently. When you match, we'll schedule your f"
+        },
+        {
+          "title": "Breeze - LinkedIn",
+          "url": "https://linkedin.com/company/breezesocial/",
+          "publishedDate": "2023-01-02T00:00:00.000Z",
+          "author": null,
+          "highlight": "Breeze is a Software Development company. Breeze is a dating app that takes online dating offline. They organize your first date at one of their safe partner bars. Breeze employs 40 people (+6.7% YoY, +4 people) and has an annual revenue of $2.5M, founded in 2019. Headquartered in Rotterdam, Zuid-Holland, Netherlands, operates in 6 countries (including Unite"
+        },
+        {
+          "title": "Breeze - No Chat, Just Dates – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=social.breeze.breeze_app&hl=en_GB",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Breeze - No Chat, Just Dates – Apps on Google Play [...] # Breeze - No Chat, Just Dates [...] Breeze is the dating app without a chat function. A match is an instant date - after you match, you give your availability and we plan the date and arrange the location for you.NO CHATTING, JUST DATINGWe do things differently. When you match, we'll arrange your firs"
+        },
+        {
+          "title": "Breeze - No Chat, Just Dates - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=social.breeze.breeze_app&hl=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Breeze - No Chat, Just Dates - Apps on Google Play [...] # Breeze - No Chat, Just Dates [...] breeze.social [...] Breeze is the dating app without a chat function. A match means an instant date - after you match, you share your availability, and we plan the date and arrange the location for you.NO CHATTING, JUST DATINGWe do things differently. When you match"
+        },
+        {
+          "title": "Breeze - No Chat, Just Dates - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=social.breeze.breeze_app",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Breeze - No Chat, Just Dates - Apps on Google Play [...] # Breeze - No Chat, Just Dates [...] breeze.social [...] Breeze is the dating app without a chat function. A match means an instant date - after you match, you share your availability, and we plan the date and arrange the location for you.NO CHATTING, JUST DATINGWe do things differently. When you match"
+        },
+        {
+          "title": "Breeze - App voor échte dates\n              17+",
+          "url": "https://apps.apple.com/nl/app/breeze-app-voor-%C3%A9chte-dates/id1478108023",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "‎Breeze - App voor échte dates in de App Store [...] # Breeze - App voor échte dates17+ ## Date direct - zonder chat‪.‬ ## Breeze Social B.V. ### Ontworpen voor iPad * #33 in Lifestyle * * 4,5 •6,4K beoordelingen * * Gratis ## Schermafbeeldingen * * * * * * * ## Beschrijving Breeze is de dating app zonder chat functie. Bij een match ga je gelijk op date - ge"
+        }
+      ]
+    },
+    {
+      "id": "timeleft",
+      "productName": "Timeleft",
+      "query": "Timeleft official LinkedIn Instagram TikTok X Twitter App Store Google Play dinner strangers app",
+      "ok": true,
+      "status": 200,
+      "requestId": "c2534fda65f064a23955853d3aa4d214",
+      "results": [
+        {
+          "title": "Timeleft - Turn Strangers into Friends",
+          "url": "https://timeleft.com/",
+          "publishedDate": null,
+          "author": "Timeleft",
+          "highlight": "Timeleft - Turn Strangers into Friends [...] # The weekly gatherings turning strangers into friends [...] or download our app [...] or download our app [...] ## No bios. No swiping. No planning. We’ll match you with your group and handle the details. All you need to do is show up. [...] Pick between dinners, drinks, or runs. Each meetup has its own vibe, so "
+        },
+        {
+          "title": "‎Timeleft: Make New Friends IRL App - App Store",
+          "url": "https://apps.apple.com/us/app/timeleft-meet-new-people/id6466442949",
+          "publishedDate": "2025-04-02T01:10:39.000Z",
+          "author": "tnxw333",
+          "highlight": "‎Timeleft: Make New Friends IRL App - App Store [...] # Timeleft: Make New Friends IRL [...] Meet New People & Make Friends [...] NEW: Book multiple events at once with multi-booking. Weekly dinners, drinks, coffee meetups, group runs, and women-only tables. This is how strangers become friends. The friendship app 3M+ users love. Timeleft matches you for din"
+        },
+        {
+          "title": "Timeleft: Make New Friends IRL - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/timeleft-make-new-friends-irl/id6466442949",
+          "publishedDate": null,
+          "author": "tnxw333",
+          "highlight": "‎Timeleft: Make New Friends IRL App - App Store [...] The friendship app 3M+ users love. Timeleft matches you for dinners, drinks, coffee, and runs with like-minded people. No swiping. No planning. Just show up. ▶ HOW IT WORKS ◀ 1. Take the quiz We match you based on personality, not selfies. 2. Book your experience Dinner, drinks, coffee, or a run. Pick you"
+        },
+        {
+          "title": "Timeleft: Make New Friends IRL - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.timeleft.app",
+          "publishedDate": "2026-06-09T09:35:09.525Z",
+          "author": null,
+          "highlight": "Timeleft: Make New Friends IRL - Apps on Google Play"
+        },
+        {
+          "title": "Timeleft: Make New Friends IRL - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en&id=com.timeleft.app",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Timeleft: Make New Friends IRL - Apps on Google Play"
+        },
+        {
+          "title": "‎Timeleft: Make New Friends IRL App - App Store",
+          "url": "https://apps.apple.com/ca/app/timeleft-make-new-friends-irl/id6466442949",
+          "publishedDate": "2026-04-28T02:16:53.000Z",
+          "author": "dyl.ann",
+          "highlight": "‎Timeleft: Make New Friends IRL App - App Store [...] # Timeleft: Make New Friends IRL [...] Meet New People & Make Friends [...] The friendship app 3M+ users love. Timeleft matches you for dinners, drinks, coffee, and runs with like-minded people. No swiping. No planning. Just show up. ▶ HOW IT WORKS ◀ 1. Take the quiz We match you based on personality, not"
+        },
+        {
+          "title": "Timeleft: Make New Friends IRL – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.timeleft.app&hl=en_NZ",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Timeleft: Make New Friends IRL – Apps on Google Play"
+        },
+        {
+          "title": "Timeleft: Make New Friends IRL – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.timeleft.app&hl=en_IN",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Timeleft: Make New Friends IRL – Apps on Google Play [...] Dinner with 5 strangers. Every week. In your city.Timeleft matches you with like-minded people for a shared meal in 250+ cities across 55 countries.No swiping. No pressure. Just a meal with new friends.▶ HOW IT WORKS ◀[ Take the Personality Quiz ]• Start with a short quiz to help us understand your v"
+        }
+      ]
+    },
+    {
+      "id": "meet5",
+      "productName": "Meet5",
+      "query": "Meet5 official LinkedIn Instagram TikTok X Twitter App Store Google Play social app",
+      "ok": true,
+      "status": 200,
+      "requestId": "7bb80a3c7d0b5d060013a60d05d93af1",
+      "results": [
+        {
+          "title": "Meet5: Meet new people",
+          "url": "https://www.meet5.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Meet new people | Meet5 top of page # Life happens offline. ## Europe's top app for building community is now available in the US. Meet5 is an app designed to get you off your phone. Find, create, and participate in group activities and make new friends. # +3M # Registered Users # 4.7 # In Play and App Store # +45k # Monthly Activities ### The idea Moved to "
+        },
+        {
+          "title": "Meet5: Meet new people - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/meet5-meet-new-people/id1222980795",
+          "publishedDate": "2025-09-16T01:40:28.000Z",
+          "author": "Outdoor Walk Point",
+          "highlight": "Meet5 is the #1 leisure app. Designed to make it easy for you to meet new people in real life, make friends, and participate in activities & events. • Over 3 million registered users • More than 1,000,000 activities completed • 4.8/5-star rating on Apple, 4.7/5 on Google • Real users thanks to the verification process • Available in the US, Germany, Switzerl"
+        },
+        {
+          "title": "Meet5: Meet new people - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=co.gocrush",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Meet5: Meet new people - Apps on Google Play [...] # Meet5: Meet new people [...] Meet5 GmbH [...] ## About this app [...] Meet5 is the #1 leisure app. Designed to make it easy for you to meet new people in real life, make friends, and participate in activities & events. [...] Experience a variety of activities and like-minded people with the Meet5 app. Whet"
+        },
+        {
+          "title": "About us | Meet5 App",
+          "url": "https://www.meet5.com/about-us",
+          "publishedDate": "2024-09-18T07:00:00.000Z",
+          "author": null,
+          "highlight": "About us | Meet5 App top of page # ABOUT US ## Founding Meet5 ​Lukas came up with the idea for Meet5 when he was frustrated with other social and dating apps. Back then, it was called Go Crush. In the spring of 2017, Lukas and Kai dove in and started planning, and in just one month, a startup was founded, and the app was launched to the public in Germany!​ ​"
+        },
+        {
+          "title": "Meet5: Meet new people",
+          "url": "https://play.google.com/store/apps/details?id=co.gocrush&hl=en",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Meet5: Meet new people - Apps on Google Play [...] # Meet5: Meet new people [...] Meet5 GmbH [...] ## About this app [...] Meet5 is the #1 leisure app. Designed to make it easy for you to meet new people in real life, make friends, and participate in activities & events. [...] Experience a variety of activities and like-minded people with the Meet5 app. Whet"
+        },
+        {
+          "title": "Meet5: Meet new people – Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=co.gocrush&hl=en_IN",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Meet5: Meet new people – Apps on Google Play [...] # Meet5: Meet new people [...] Meet5 is the world's #1 lifestyle app. With Meet5, it's easy to meet new people in real life and enjoy activities together. ❤️ Over 3 million registered users ✨ More than 1,000,000 activities completed ⭐️ 4.8/5-star rating on Apple, 4.7/5 on Google 🙋 Real users thanks to the v"
+        },
+        {
+          "title": "How does Meet5 work?",
+          "url": "https://faq.meet5.com/help/how-meet5-works",
+          "publishedDate": "2025-06-29T13:43:55.000Z",
+          "author": null,
+          "highlight": "How does Meet5 work? What are you looking for? Get help straight from our team... How does Meet5 work? General Questions # How does Meet5 work? Last updated on 05 Nov, 2025 Meet5 is the app for going out as a group! Here’s how it works:1. Register: Sign up for free with your email, Apple, Google, or Facebook. Simply add a clear photo of yourself, select your"
+        },
+        {
+          "title": "‎Meet5: Meet new people App - App Store",
+          "url": "https://apps.apple.com/be/app/meet5-meet-new-people/id1222980795",
+          "publishedDate": "2026-02-16T14:51:55.000Z",
+          "author": "jcavens",
+          "highlight": "Meet5 is the #1 leisure app. Designed to make it easy for you to meet new people in real life, make friends, and participate in activities & events. • Over 3 million registered users • More than 1,000,000 activities completed • 4.8/5-star rating on Apple, 4.7/5 on Google • Real users thanks to the verification process • Available in the US, Germany, Switzerl"
+        }
+      ]
+    },
+    {
+      "id": "thursday",
+      "productName": "Thursday",
+      "query": "Thursday dating app official LinkedIn Instagram TikTok X Twitter App Store Google Play singles events",
+      "ok": true,
+      "status": 200,
+      "requestId": "8c0a560c0d1fdc39c6633c8ecf1e0a08",
+      "results": [
+        {
+          "title": "Thursday™ | Events, Everyone Single. Every Week | Get Your ...",
+          "url": "https://www.getthursday.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Thursday™ | Events, Everyone Single. Every Week | Get Your Tickets Here [...] THE BIGGEST IRL DATINGAPP IN THE WORLD. [...] Live in 180 cities and counting across the globe. [...] THURSDAY EVENTS [...] Because 2026 is about meeting in real life...not matching on an app. [...] Download THE APP. [...] Exclusive IRL singles events in your city. [...] Every Thur"
+        },
+        {
+          "title": "Thursday Events - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.thursday.thursdayevents.identifier",
+          "publishedDate": "2026-04-08T00:00:00.000Z",
+          "author": null,
+          "highlight": "Thursday Events - Apps on Google Play # Thursday Events 3.6 522 reviews Everyone 100K+ Downloads Install Share Add to wishlist Everyone Discover Thursday Events, the ultimate app for singles looking to meet new people in vibrant cities worldwide. The app offers city-specific, curated event listings, ticketing and updates. Engage with Thursday through integra"
+        },
+        {
+          "title": "Thursday: Dating app & events\n              17+",
+          "url": "https://apps.apple.com/us/app/thursday-dating-app-events/id1449050360",
+          "publishedDate": "2019-08-19T08:41:57.000Z",
+          "author": null,
+          "highlight": "‎Thursday: Dating app & events on the App Store # Thursday: Dating app & events17+ ## Meet new people every Thursday ## Honeypot Dating LTD ### Designed for iPhone * * 3.2 •431 Ratings * * Free * Offers In-App Purchases ## iPhone Screenshots [...] * * * * * * * ## Description [...] Exclusive Singles Events in Your City + 24 Hours Of Matching Who are we? We'r"
+        },
+        {
+          "title": "‎Thursday Events App - App Store",
+          "url": "https://apps.apple.com/gb/app/thursday-events/id6503631996",
+          "publishedDate": "2024-06-24T15:29:26.000Z",
+          "author": "Strugglingforanickname!",
+          "highlight": "‎Thursday Events App - App Store # Thursday Events ## Discover Thursday Events Only for iPhone Free · Designed for iPhone Share iPhone Discover Thursday Events, the ultimate app for singles looking to meet new people in vibrant cities worldwide. The app offers city-specific, curated event listings, ticketing and updates. Engage with Thursday through integrat"
+        },
+        {
+          "title": "Thursday Events - App Store",
+          "url": "https://apps.apple.com/us/app/thursday-events/id6503631996",
+          "publishedDate": "2026-01-15T18:59:24.000Z",
+          "author": "Ella EllaEllaa",
+          "highlight": "‎Thursday Events App - App Store # Thursday Events ## Discover Thursday Events Only for iPhone Free · Designed for iPhone Share iPhone Discover Thursday Events, the ultimate app for singles looking to meet new people in vibrant cities worldwide. The app offers city-specific, curated event listings, ticketing and updates. Engage with Thursday through integrat"
+        },
+        {
+          "title": "Thursday - LinkedIn",
+          "url": "https://linkedin.com/company/thursdaydating",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Thursday is a Events Services company. Thursday™ is a company that hosts singles-only events in over 150 cities. They offer bar nights, run clubs, comedy, and more. They also provide exclusive events for singles. Thursday employs 82 people (+92.6% YoY, +63 people) and has an annual revenue of $1.3M, founded in 2018. Headquartered in Aldgate, England, United "
+        },
+        {
+          "title": "Thursday, the dating app that you can use only on Thursdays, expands to San Francisco | TechCrunch",
+          "url": "https://techcrunch.com/2024/08/08/thursday-dating-app-san-francisco-launch/",
+          "publishedDate": "2024-08-08T18:58:31.000Z",
+          "author": "Lauren Forristal",
+          "highlight": "Thursday, the dating app that you can use only on Thursdays, expands to San Francisco | TechCrunch [...] # Thursday, the dating app that you can use only on Thursdays, expands to San Francisco [...] Thursday seeks to shake up conventional online dating in a crowded market. The app, which recently expanded to San Francisco, fosters intentional dating by restr"
+        },
+        {
+          "title": "Thursday Events - Entertainment App | MWM",
+          "url": "https://mwm.ai/apps/thursday-events/6503631996",
+          "publishedDate": "2024-06-21T00:00:00.000Z",
+          "author": null,
+          "highlight": "Thursday Events - Entertainment App | MWM [...] HONEYPOT DATING LTD [...] # Thursday Events [...] HONEYPOT DATING LTD/Entertainment [...] Ditch the digital dead ends. This app injects life into your Thursday nights, delivering real-world connections. [...] HONEYPOT DATING LTD [...] This tool features integrated social functionalities that enable users to con"
+        }
+      ]
+    }
+  ]
+}
