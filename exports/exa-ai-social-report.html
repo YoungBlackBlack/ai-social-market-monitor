@@ -1171,6 +1171,112 @@ h1 {
   border-top: 5px solid var(--green);
 }
 
+/* ── What's New / 最新动向 feed ─────────────────────────── */
+.feed-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--blue);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.feed-banner.is-new {
+  border-left-color: var(--coral);
+  background: linear-gradient(90deg, rgba(255, 86, 60, 0.08), rgba(255, 255, 255, 0.85) 60%);
+}
+
+.feed-banner-title {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.feed-banner-sub {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.feed-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.feed-key-toggle {
+  margin-left: auto;
+}
+
+.feed-count {
+  color: var(--muted);
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.feed-day-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 22px 0 12px;
+}
+
+.feed-day-head h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.feed-day-head span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.feed-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feed-card.is-new {
+  box-shadow: 0 0 0 2px var(--coral);
+}
+
+.badge-new {
+  display: inline-block;
+  background: var(--coral);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+
+@media (max-width: 1100px) {
+  .feed-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .feed-grid {
+    grid-template-columns: 1fr;
+  }
+  .feed-key-toggle {
+    margin-left: 0;
+  }
+}
+
 .lane-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(220px, 1fr));
@@ -3302,7 +3408,7 @@ h1 { letter-spacing: -0.035em; }
 
 </style>
   </head>
-  <body data-active-view="home">
+  <body data-active-view="feed">
     <div id="loading-overlay"><div class="spinner" aria-label="加载中"></div></div>
     <div class="app-shell">
       <aside class="sidebar">
@@ -3311,6 +3417,7 @@ h1 { letter-spacing: -0.035em; }
           <span>Exa market intelligence</span>
         </div>
         <nav class="topbar" aria-label="页面导航">
+          <a href="#feed" data-route="feed">🆕 最新动向</a>
           <a href="#home" data-route="home">总览</a>
           <a href="#matrix" data-route="matrix">对照表</a>
           <a href="#funding" data-route="funding">融资新闻</a>
@@ -3358,6 +3465,18 @@ h1 { letter-spacing: -0.035em; }
         </header>
         <div class="view-toc" id="view-toc" aria-label="本视图小节导航"></div>
         <main>
+          <section class="section route-section feed" id="feed" data-view="feed">
+            <div class="section-head">
+              <p class="section-label">what's new · 最新动向</p>
+              <h2>最新动向：竞品与 AI 社交赛道的新新闻和新动作</h2>
+              <p>按"发现时间"倒序排列监控台账里抓到的每一条动向，自上次访问以来的新增会高亮标记，让你一眼看到第一手变化。</p>
+            </div>
+            <div class="feed-banner" id="feed-banner"></div>
+            <div class="feed-controls" id="feed-controls" aria-label="筛选最新动向"></div>
+            <p class="feed-count" id="feed-count" aria-live="polite"></p>
+            <div class="feed-stream" id="feed-stream"></div>
+          </section>
+
           <section class="section route-section dashboard" id="dashboard" data-view="home">
             <div class="section-head">
               <p class="section-label">listening dashboard</p>
@@ -3643,7 +3762,8 @@ window.__EXA_REPORT_DATA__ = {"brief":{"generatedFrom":"Exa Search API","generat
 <script>
 const accentClasses = ["accent-blue", "accent-green", "accent-coral", "accent-yellow"];
 const routeAliases = {
-  "": "home",
+  "": "feed",
+  feed: "feed",
   home: "home",
   executive: "home",
   thesis: "home",
@@ -4472,12 +4592,192 @@ function renderComparisonTable(data) {
 
 function fmtDate(value) {
   if (!value) return "No date";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "No date";
   return new Intl.DateTimeFormat("zh-CN", {
     month: "2-digit",
     day: "2-digit",
     hour: "2-digit",
     minute: "2-digit",
-  }).format(new Date(value));
+  }).format(date);
+}
+
+const FEED_LAST_VISIT_KEY = "exa-feed-last-visit";
+
+function feedDayBucket(value, now) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return { key: "unknown", label: "未知时间" };
+  const startOfDay = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+  const dayMs = 86400000;
+  const diffDays = Math.round((startOfDay(new Date(now)) - startOfDay(date)) / dayMs);
+  const dayLabel = new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit" }).format(date);
+  let rel = "";
+  if (diffDays <= 0) rel = "今天";
+  else if (diffDays === 1) rel = "昨天";
+  else if (diffDays <= 7) rel = `${diffDays} 天前`;
+  return {
+    key: startOfDay(date),
+    label: rel ? `${dayLabel} · ${rel}` : dayLabel,
+  };
+}
+
+function renderFeed(ledger, monitor, digest) {
+  const stream = document.querySelector("#feed-stream");
+  if (!stream) return;
+  const banner = document.querySelector("#feed-banner");
+  const controls = document.querySelector("#feed-controls");
+  const countLine = document.querySelector("#feed-count");
+
+  const items = (ledger.items ?? [])
+    .filter((item) => item.firstSeenAt)
+    .map((item) => ({ ...item, firstSeenTime: new Date(item.firstSeenAt).getTime() }))
+    .filter((item) => !Number.isNaN(item.firstSeenTime))
+    .sort((a, b) => b.firstSeenTime - a.firstSeenTime);
+
+  // "Since last visit" — read the previous visit BEFORE overwriting it.
+  let lastVisitTime = null;
+  try {
+    const stored = window.localStorage.getItem(FEED_LAST_VISIT_KEY);
+    if (stored) {
+      const parsed = Number(stored);
+      if (!Number.isNaN(parsed)) lastVisitTime = parsed;
+    }
+  } catch {
+    lastVisitTime = null;
+  }
+  const isNew = (item) => lastVisitTime != null && item.firstSeenTime > lastVisitTime;
+  const newSinceVisit = lastVisitTime != null ? items.filter(isNew).length : 0;
+
+  // Banner: one-line "what changed" summary anchored to the user's goal.
+  if (banner) {
+    banner.replaceChildren();
+    banner.classList.toggle("is-new", newSinceVisit > 0);
+    const latestRun = monitor.generatedAt ? fmtDate(monitor.generatedAt) : "—";
+    let title;
+    if (lastVisitTime == null) {
+      title = `已为你整理 ${items.length} 条监控动向（按发现时间倒序）`;
+    } else if (newSinceVisit > 0) {
+      title = `自你上次访问以来，新发现 ${newSinceVisit} 条动向`;
+    } else {
+      title = "自你上次访问以来暂无新动向";
+    }
+    banner.append(el("strong", "feed-banner-title", title));
+    if (lastVisitTime != null) {
+      banner.append(el("span", "feed-banner-sub", `上次访问：${fmtDate(new Date(lastVisitTime).toISOString())}`));
+    }
+    banner.append(el("span", "feed-banner-sub", `最近一次监控：${latestRun} · ${digest?.headline ?? ""}`));
+  }
+
+  // Lane + priority filters so the user can zoom into the competitor/track they care about.
+  const laneOrder = [];
+  const laneSeen = new Set();
+  items.forEach((item) => {
+    if (!laneSeen.has(item.monitorLabel)) {
+      laneSeen.add(item.monitorLabel);
+      laneOrder.push(item.monitorLabel);
+    }
+  });
+
+  let activeLane = "all";
+  let keyOnly = false;
+
+  const renderStream = () => {
+    stream.replaceChildren();
+    const now = Date.now();
+    const filtered = items.filter((item) => {
+      if (activeLane !== "all" && item.monitorLabel !== activeLane) return false;
+      if (keyOnly && item.priority !== "high" && item.priority !== "critical") return false;
+      return true;
+    });
+
+    if (countLine) {
+      const newInView = filtered.filter(isNew).length;
+      countLine.textContent =
+        `当前显示 ${filtered.length} 条` + (newInView > 0 ? ` · 其中 ${newInView} 条为新增` : "");
+    }
+
+    if (filtered.length === 0) {
+      stream.append(el("p", "empty-state", "没有符合当前筛选的动向，换个赛道或关掉「只看重点」试试。"));
+      return;
+    }
+
+    let currentBucketKey = null;
+    let group = null;
+    filtered.forEach((item) => {
+      const bucket = feedDayBucket(item.firstSeenAt, now);
+      if (bucket.key !== currentBucketKey) {
+        currentBucketKey = bucket.key;
+        const head = el("div", "feed-day-head");
+        const dayItems = filtered.filter(
+          (other) => feedDayBucket(other.firstSeenAt, now).key === bucket.key,
+        );
+        head.append(el("h3", null, bucket.label));
+        head.append(el("span", null, `${dayItems.length} 条`));
+        stream.append(head);
+        group = el("div", "feed-grid");
+        stream.append(group);
+      }
+      const fresh = isNew(item);
+      const card = el("article", `recent-card feed-card priority-${item.priority}${fresh ? " is-new" : ""}`);
+      const tagRow = el("div", "feed-tag-row");
+      tagRow.append(el("span", "tag", item.monitorLabel));
+      if (fresh) tagRow.append(el("span", "badge-new", "NEW"));
+      card.append(tagRow);
+      card.append(el("h4", null, item.title));
+      card.append(
+        el(
+          "p",
+          "date-line",
+          `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
+        ),
+      );
+      card.append(el("p", null, item.highlight || "Exa monitor 捕捉到的新动向。"));
+      if (item.url) {
+        const link = el("a", null, "查看证据");
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        card.append(link);
+      }
+      group.append(card);
+    });
+  };
+
+  if (controls) {
+    controls.replaceChildren();
+    const makeChip = (label, onClick, selected) => {
+      const btn = el("button", `filter-button feed-lane-chip${selected ? " selected" : ""}`, label);
+      btn.type = "button";
+      btn.addEventListener("click", () => {
+        onClick();
+        controls.querySelectorAll(".feed-lane-chip").forEach((b) => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        renderStream();
+      });
+      return btn;
+    };
+    controls.append(makeChip("全部赛道", () => { activeLane = "all"; }, true));
+    laneOrder.forEach((lane) => {
+      controls.append(makeChip(lane, () => { activeLane = lane; }, false));
+    });
+    const keyToggle = el("button", "filter-button feed-key-toggle", "只看重点");
+    keyToggle.type = "button";
+    keyToggle.addEventListener("click", () => {
+      keyOnly = !keyOnly;
+      keyToggle.classList.toggle("selected", keyOnly);
+      renderStream();
+    });
+    controls.append(keyToggle);
+  }
+
+  renderStream();
+
+  // Record this visit so the next load can compute "new since last visit".
+  try {
+    window.localStorage.setItem(FEED_LAST_VISIT_KEY, String(Date.now()));
+  } catch {
+    /* localStorage unavailable — feed still works, just without the since-visit highlight */
+  }
 }
 
 function renderMonitor(monitor, history, ledger, digest, data) {
@@ -6778,6 +7078,7 @@ async function loadReportData() {
 
 async function boot() {
   const { brief: data, monitor, history, ledger, digest, triage } = await loadReportData();
+  renderFeed(ledger, monitor, digest);
   renderHero(data);
   renderDashboard(data, monitor, history, triage);
   renderExecutiveSummary(data);
