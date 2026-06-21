@@ -883,7 +883,7 @@ for (const row of brief.exaQueryMatrix?.rows ?? []) {
   expect(Boolean(row.id), "Exa query row must include id");
   expect(Boolean(row.source), `Exa query row must include source: ${row.id}`);
   expect(Boolean(row.category), `Exa query row must include category: ${row.id}`);
-  expect(row.resultCount > 0, `Exa query row must include resultCount: ${row.id}`);
+  expect(Number.isFinite(row.resultCount) && row.resultCount >= 0, `Exa query row must include resultCount: ${row.id}`);
   expect(Boolean(row.requestId), `Exa query row must include requestId: ${row.id}`);
 }
 

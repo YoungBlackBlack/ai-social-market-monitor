@@ -154,7 +154,12 @@ expect(app.includes("本地 JSON + SQLite 数据层"), "data persistence card mu
 expect(app.includes("CSV 不是唯一数据源"), "data persistence card must explain CSV is an export, not the only data source");
 expect(app.includes("网页内可直接查看"), "data persistence card must explain frontend display coverage");
 expect(app.includes("监控与快照已持久化"), "data persistence card must explain monitor and snapshot persistence");
-expect(app.includes("Search API + Codex 定时刷新 fallback"), "monitor section must disclose fallback mode");
+expect(
+  app.includes("降级 fallback") &&
+    app.includes("Search API") &&
+    app.includes("每日 09:00 Codex 定时刷新兜底"),
+  "monitor section must disclose fallback mode",
+);
 expect(app.includes("新增提醒已闭环"), "monitor section must render alert closure status");
 expect(app.includes("exports/latest-alert-review.csv"), "monitor section must link latest alert review CSV");
 expect(app.includes("每周一 09:30"), "refresh workflow must mention weekly full rebuild automation");

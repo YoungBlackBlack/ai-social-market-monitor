@@ -68,7 +68,9 @@ async function ensureEnvFile() {
 }
 
 async function ensureStateLinks() {
-  const configuredStateDir = process.env.STATE_DIR?.trim();
+  const configuredStateDir =
+    process.env.STATE_DIR?.trim() ||
+    ((await pathExists("/data")) ? "/data/ai-social-market-monitor" : "");
   if (!configuredStateDir) {
     return {
       linkedState: false,

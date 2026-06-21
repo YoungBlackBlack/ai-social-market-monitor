@@ -73,7 +73,7 @@ const workflows = {
   ],
 };
 
-if (!existsSync(new URL("../.env", import.meta.url))) {
+if (!existsSync(new URL("../.env", import.meta.url)) && !process.env.EXA_API_KEY) {
   throw new Error("Missing .env. Add EXA_API_KEY before running Exa workflows.");
 }
 

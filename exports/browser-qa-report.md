@@ -18,7 +18,7 @@ This QA pass verified the local presentation website for the Exa AI social resea
 | `#home` | 总览 | Loaded; executive summary, thesis, priority shortlist, and channel sections visible |
 | `#matrix` | 对照表 | Loaded; competitive matrix visible with 42 / 42 products |
 | `#funding` | 融资新闻 | Loaded; funding/news timeline and near-two-year summary visible |
-| `#monitor` | 持续监控 | Loaded; daily Exa monitor digest visible with 9 lanes, 33 recent items, 0 new alerts |
+| `#monitor` | 持续监控 | Loaded; daily Exa monitor digest visible with 9 lanes, 18 recent items, 3 new alerts |
 | `#evidence` | 证据审计 | Loaded; company/team background and evidence audit sections visible |
 | `#playbook` | Exa 检索 | Loaded; Exa category run log, refresh workflow, export pack, and SQLite query handoff visible |
 
@@ -63,10 +63,10 @@ The Monitor route now exposes the alert review closure directly in the webpage:
 - Browser URL checked: `http://127.0.0.1:8000/?v=<cache-bust>#monitor`
 - Monitor closure card present: yes
 - Closure headline: `新增提醒已闭环`
-- Latest alert review: 79 rows, pending 0
-- Recent signal review: 33 rows, pending 0
-- Latest handled alert: `Investing in Town | Andreessen Horowitz`
-- Latest decision: `候选升级`
+- Latest alert review: 171 rows, pending 0
+- Recent signal review: 18 rows, pending 0
+- Latest handled alert: `OpenAI Launches ChatGPT Advertising Business in Japan Amid Rising AI Costs | AJU PRESS`
+- Latest decision: `投放证据候选`
 
 ## Evidence Data Display Check
 

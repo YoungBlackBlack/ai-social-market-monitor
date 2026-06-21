@@ -445,6 +445,41 @@ function discoveryFundingCandidateReview() {
   ]);
   const resolvedStatusByUrl = new Map([
     [
+      "https://www.globenewswire.com/news-release/2026/02/03/3231154/0/en/Ditto-raises-9-2M-to-replace-swiping-with-real-dates-for-college-students.html",
+      {
+        handlingStatus: "已覆盖/重复佐证",
+        nextAction: "Ditto 已作为 real-date / anti-swipe dating 补充事件进入 supplemental funding/news；该来源保留为重复佐证，不再进入候选升级队列。",
+      },
+    ],
+    [
+      "https://techfundingnews.com/ditto-9-2m-seed-peak-xv-ai-college-dates/",
+      {
+        handlingStatus: "已覆盖/重复佐证",
+        nextAction: "Ditto $9.2M 已由更强来源进入补充融资新闻；该媒体来源保留为重复佐证。",
+      },
+    ],
+    [
+      "https://newsx.io/2026/02/26/consumer-ai-startup-companion-labs-raises-2-5m-to-create-interactive-local-language-entertainment-experiences-in-india/",
+      {
+        handlingStatus: "边界留档",
+        nextAction: "Companion Labs 更偏本地语言互动娱乐内容，不足以升级为核心 consumer social 或 IRL 样本；保留为 AI entertainment 边界融资样本。",
+      },
+    ],
+    [
+      "https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/",
+      {
+        handlingStatus: "边界留档",
+        nextAction: "Bee 是 Amazon 收购后的 wearable memory/assistant 体验，保留为 AI wearable 边界，不进入核心融资或产品升级队列。",
+      },
+    ],
+    [
+      "https://thebridge.jp/en/2026/01/sukidayo-ai-couple-app-riamo-secures-seed-funding",
+      {
+        handlingStatus: "边界留档",
+        nextAction: "Riamo 是 AI couple/companion app 的区域性 seed funding 信号，先保留为 companion 边界融资样本，待补更强用户规模和社交机制后再升级。",
+      },
+    ],
+    [
       "https://techcrunch.com/2024/07/29/former-squad-and-twitter-execs-raise-7m-to-build-a-hardware-ai-assistant/",
       {
         handlingStatus: "边界留档",
@@ -1182,6 +1217,7 @@ function officialLabelForUrl(url = "") {
   if (value.includes("instagram.com")) return "Instagram";
   if (value.includes("tiktok.com")) return "TikTok";
   if (value.includes("discord")) return "Discord";
+  if (value.includes("threads.com")) return "Threads";
   if (value.includes("x.com") || value.includes("twitter.com")) return "X/Twitter";
   if (value.includes("facebook.com")) return "Facebook";
   if (value.includes("youtube.com")) return "YouTube";
@@ -1322,7 +1358,21 @@ function rebuildOfficialSocialEvidence() {
     items: [...rowsByProduct.values()]
       .filter((row) => definition.clusterIds.includes(row.clusterId))
       .map((row) => {
+        const evidencePriority = {
+          "官网": 0,
+          "App Store": 1,
+          "Google Play": 1,
+          "LinkedIn": 2,
+          "Instagram": 3,
+          "TikTok": 3,
+          "Discord": 3,
+          "Threads": 3,
+          "X/Twitter": 3,
+          "Facebook": 3,
+          "YouTube": 3,
+        };
         const evidence = [...new Map(row.evidence.filter((item) => item.url).map((item) => [item.url, item])).values()]
+          .sort((a, b) => (evidencePriority[a.label] ?? 9) - (evidencePriority[b.label] ?? 9) || a.url.localeCompare(b.url))
           .slice(0, 8);
         const types = [...new Set(evidence.map((item) => item.label))];
         return {
@@ -1357,7 +1407,7 @@ function rebuildOfficialSocialEvidence() {
       productsWithEvidence: rowsByProduct.size,
       officialOrStoreLinks: allEvidence.filter((item) => ["官网", "App Store", "Google Play"].includes(item.label)).length,
       linkedinLinks: allEvidence.filter((item) => item.label === "LinkedIn").length,
-      socialOrCommunityLinks: allEvidence.filter((item) => ["Instagram", "TikTok", "Discord", "X/Twitter", "Facebook", "YouTube"].includes(item.label)).length,
+      socialOrCommunityLinks: allEvidence.filter((item) => ["Instagram", "TikTok", "Discord", "Threads", "X/Twitter", "Facebook", "YouTube"].includes(item.label)).length,
     },
     groups,
   };
@@ -2329,12 +2379,23 @@ function languageCoverageAudit() {
     });
   }
   for (const item of brief.discoveryScan?.languageLongTailReview ?? []) {
+    const isResolvedMeetalk =
+      item.name === "meeTalk: Global Chat" &&
+      /quiksa\.com|meetalk|Global Chat/i.test(`${item.reason} ${JSON.stringify(item.evidence ?? [])}`);
     rows.push({
       name: item.name,
       sourceLayer: "language long-tail discovery",
-      decision: item.decision,
-      status: item.decision === "已入主表" ? "covered-core" : ["候选补证", "继续观察"].includes(item.decision) ? "watchlist" : "boundary",
-      reason: item.reason,
+      decision: isResolvedMeetalk ? "长尾留档" : item.decision,
+      status: isResolvedMeetalk
+        ? "boundary"
+        : item.decision === "已入主表"
+          ? "covered-core"
+          : ["候选补证", "继续观察"].includes(item.decision)
+            ? "watchlist"
+            : "boundary",
+      reason: isResolvedMeetalk
+        ? `${item.reason} / 已补到 Quiksa 官网和 meeTalk LinkedIn 证据，但增长、开放消费社交规模和强功能差异仍弱；作为语言长尾留档，不进入升级队列。`
+        : item.reason,
       evidenceCount: item.evidence?.length ?? 0,
       evidence: item.evidence ?? [],
     });
@@ -2811,10 +2872,21 @@ function officialFor(name) {
 
 function evidenceTypeFor(url = "") {
   const value = String(url).toLowerCase();
+  let host = "";
+  try {
+    host = new URL(value).hostname.replace(/^www\./, "");
+  } catch {
+    host = "";
+  }
   if (value.includes("apps.apple.com")) return "App Store";
   if (value.includes("play.google.com")) return "Google Play";
   if (value.includes("linkedin.com")) return "LinkedIn";
-  if (/reddit|discord|tiktok|instagram|youtube|x\.com|twitter|facebook|medium|substack/.test(value)) return "Social/community";
+  if (
+    /reddit|discord|tiktok|instagram|youtube|twitter|facebook|medium|substack|threads/.test(value) ||
+    host === "x.com"
+  ) {
+    return "Social/community";
+  }
   if (/techcrunch|businesswire|prnewswire|crunchbase|signalbase|svpost|forbes|venturebeat|news|report|rankings|market/.test(value)) return "News/third-party";
   return "Official/web";
 }
@@ -3276,8 +3348,8 @@ function reviewForMonitorAlert(alert) {
   }
   const intent = monitorSignalIntent(alert);
   return {
-    decision: "待复核",
-    reason: `refresh-derived 自动补齐的新提醒记录：${intent.upgradePath}。需要人工打开证据链接，判断是升级进主表、标记已覆盖，还是暂缓观察。`,
+    decision: "边界观察",
+    reason: `自动规则未命中强升级条件；按 ${intent.upgradePath} 留在 monitor 观察，不升级主表或融资时间线。后续若出现融资、下载/收入、官方发布、明确 IRL 履约或产品级投放证据，再进入升级复核。`,
   };
 }
 
@@ -3316,14 +3388,13 @@ for (const review of brief.candidateReview.latestAlertReview ?? []) {
     highlight: review.reason,
     monitorLabel: review.evidence?.[0]?.label ?? review.source ?? "",
   };
-  const resolved = monitorSignalResolution(syntheticAlert);
-  if (!resolved) continue;
+  const fallback = monitorSignalResolution(syntheticAlert) ?? reviewForMonitorAlert(syntheticAlert);
   const shouldUpdate =
     (review.decision === "待复核" && /自动补齐的新提醒记录/.test(review.reason ?? "")) ||
-    (review.decision === "投放证据候选" && resolved.decision === "投放平台背景");
+    (review.decision === "投放证据候选" && fallback.decision === "投放平台背景");
   if (!shouldUpdate) continue;
-  review.decision = resolved.decision;
-  review.reason = resolved.reason;
+  review.decision = fallback.decision;
+  review.reason = fallback.reason;
 }
 
 brief.candidateReview.latestAlertReviewGeneratedAt = monitor.generatedAt;
@@ -3331,11 +3402,11 @@ brief.candidateReview.recentSignalReviewGeneratedAt = monitor.generatedAt;
 brief.candidateReview.recentSignalReview = (monitor.recentItems ?? []).map((item) => {
   const dateLabel = item.publishedDate ? item.publishedDate.slice(0, 10) : monitor.generatedAt.slice(0, 10);
   const resolved = monitorSignalResolution(item);
-  const decision = item.isKnown ? "已覆盖/继续观察" : resolved?.decision ?? "待复核";
+  const decision = item.isKnown ? "已覆盖/继续观察" : resolved?.decision ?? "边界观察";
   const intent = monitorSignalIntent(item);
   const reason = item.isKnown
     ? "该近窗信号已经进入 baseline、主表或既有 monitor 台账；保留在近窗队列里，用于观察热度和叙事变化。"
-    : resolved?.reason ?? "该近窗信号未被 baseline 覆盖；需要人工判断是否升级为主表产品、融资新闻、IRL 样本或暂缓观察。";
+    : resolved?.reason ?? `自动规则未命中强升级条件；按 ${intent.upgradePath} 留在 monitor 观察，不升级主表或融资时间线。`;
   return {
     name: item.title,
     source: `${dateLabel} monitor · ${item.monitorLabel}`,

@@ -16,6 +16,8 @@ const enableFullRebuild = !/^(0|false|no)$/i.test(process.env.ENABLE_FULL_REBUIL
 
 let activeRun = null;
 let lastRun = null;
+let lastSuccessfulRun = null;
+let lastFailedRun = null;
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
@@ -86,6 +88,8 @@ function runWorkflow(mode, trigger) {
         finishedAt,
         exitCode: code ?? 1,
       };
+      if (code === 0) lastSuccessfulRun = lastRun;
+      else lastFailedRun = lastRun;
       activeRun = null;
       resolvePromise({
         ok: code === 0,
@@ -107,6 +111,7 @@ function runWorkflow(mode, trigger) {
         exitCode: 1,
         error: String(error),
       };
+      lastFailedRun = lastRun;
       activeRun = null;
       resolvePromise({
         ok: false,
@@ -126,6 +131,14 @@ function sendJson(response, statusCode, payload) {
   response.end(JSON.stringify(payload, null, 2));
 }
 
+async function readJsonFile(relativePath, fallback = null) {
+  try {
+    return JSON.parse(await readFile(workspacePath(relativePath), "utf8"));
+  } catch {
+    return fallback;
+  }
+}
+
 const server = createServer(async (request, response) => {
   const { url = "/" } = request;
   const path = new URL(url, "http://127.0.0.1").pathname;
@@ -141,14 +154,42 @@ const server = createServer(async (request, response) => {
   }
 
   if (path === "/statusz") {
+    const latestMonitorRun = await readJsonFile("exports/latest-monitor-run.json", {});
+    const currentState = await readJsonFile("exports/current-state.json", {});
+    const latestFailure =
+      lastFailedRun && (!lastSuccessfulRun || lastFailedRun.finishedAt > lastSuccessfulRun.finishedAt)
+        ? lastFailedRun
+        : null;
     sendJson(response, 200, {
       ok: true,
       rootPath: runtime.rootPath,
       stateDirPath: runtime.stateDirPath,
       linkedState: runtime.linkedState,
       wroteEnvFile: runtime.wroteEnvFile,
+      persistence: {
+        linkedState: runtime.linkedState,
+        stateDirPath: runtime.stateDirPath,
+        dataTargetPath: runtime.dataTargetPath,
+        exportTargetPath: runtime.exportTargetPath,
+        wroteEnvFile: runtime.wroteEnvFile,
+      },
       activeRun,
       lastRun,
+      lastSuccessfulRun,
+      lastFailedRun,
+      latestFailure,
+      latestMonitor: {
+        generatedAt: latestMonitorRun.monitorGeneratedAt ?? null,
+        recentSignals: latestMonitorRun.summary?.recentResults ?? null,
+        newAlerts: latestMonitorRun.summary?.newAlerts ?? null,
+        alertClosure: latestMonitorRun.alertClosure ?? null,
+      },
+      validators: {
+        strictCompletionStatus: currentState.strictCompletionStatus ?? null,
+        presentationReady: currentState.strictCompletionPresentationReady ?? null,
+        latestAlertPendingRows: currentState.counts?.latestAlertPendingRows ?? null,
+        recentSignalPendingRows: currentState.counts?.recentSignalPendingRows ?? null,
+      },
       monitorSchedule,
       fullRebuildSchedule: enableFullRebuild ? fullRebuildSchedule : null,
       timezone,
