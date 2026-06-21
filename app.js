@@ -1,4 +1,6 @@
 const accentClasses = ["accent-blue", "accent-green", "accent-coral", "accent-yellow"];
+// Single source of truth for the export-entry count, set when the export pack renders.
+let exportEntryCount = 0;
 const routeAliases = {
   "": "feed",
   feed: "feed",
@@ -29,6 +31,37 @@ const routeAliases = {
   "detail-tables": "evidence",
   playbook: "playbook",
 };
+
+let toastTimer = null;
+function showToast(message) {
+  let toast = document.querySelector(".export-toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.className = "export-toast";
+    toast.setAttribute("role", "status");
+    document.body.append(toast);
+  }
+  toast.textContent = message;
+  // force reflow so the transition replays on repeated calls
+  void toast.offsetWidth;
+  toast.classList.add("show");
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
+function debounce(fn, wait = 160) {
+  let timer = null;
+  return (...args) => {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), wait);
+  };
+}
+
+// A single ASCII char (e.g. "a") matches almost everything and is just noise;
+// a single CJK char is meaningful, so only ASCII single-char queries are treated as "too short".
+function tooShortQuery(query) {
+  return query.length === 1 && /[a-z0-9]/i.test(query);
+}
 
 function el(tag, className, text) {
   const node = document.createElement(tag);
@@ -74,15 +107,22 @@ function applyRoute() {
   renderViewToc(route);
 }
 
+let viewTocObserver = null;
+
 function renderViewToc(route) {
   const toc = document.querySelector("#view-toc");
   if (!toc) return;
   toc.replaceChildren();
+  if (viewTocObserver) {
+    viewTocObserver.disconnect();
+    viewTocObserver = null;
+  }
   const sections = [...document.querySelectorAll(".route-section")].filter(
     (section) => section.dataset.view === route,
   );
   // Only show in-view sub-nav when a view stacks multiple sections.
   if (sections.length <= 1) return;
+  const chipBySection = new Map();
   sections.forEach((section) => {
     const heading =
       section.querySelector(".section-head h2")?.textContent ||
@@ -96,7 +136,24 @@ function renderViewToc(route) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     });
     toc.append(chip);
+    chipBySection.set(section, chip);
   });
+
+  // Highlight the chip for whichever stacked section is currently in view.
+  if ("IntersectionObserver" in window) {
+    viewTocObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            chipBySection.forEach((chip) => chip.classList.remove("active"));
+            chipBySection.get(entry.target)?.classList.add("active");
+          }
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 },
+    );
+    sections.forEach((section) => viewTocObserver.observe(section));
+  }
 }
 
 function scrollToActiveView() {
@@ -173,12 +230,37 @@ function setupSignalMap() {
 
 function renderHero(data) {
   const metrics = document.querySelectorAll(".metric-row div");
-  data.heroMetrics.forEach((metric, index) => {
-    const box = metrics[index];
-    if (!box) return;
-    box.querySelector("strong").textContent = metric.value;
-    box.querySelector("span").textContent = metric.label;
+  const heroMetrics = data?.heroMetrics ?? [];
+  metrics.forEach((box, index) => {
+    const metric = heroMetrics[index];
+    // Hide any metric box that has no data so the hero never shows an empty placeholder.
+    if (!metric || (!metric.value && !metric.label)) {
+      box.hidden = true;
+      return;
+    }
+    box.hidden = false;
+    box.querySelector("strong").textContent = metric.value ?? "";
+    box.querySelector("span").textContent = metric.label ?? "";
   });
+}
+
+// Persistent "data freshness" marker in the sidebar so every view shows how current the data is.
+function renderDataFreshness(monitor, history) {
+  const host = document.querySelector("#sidebar-fresh");
+  if (!host) return;
+  host.replaceChildren();
+  const generatedAt = monitor?.generatedAt;
+  if (!generatedAt) {
+    host.hidden = true;
+    return;
+  }
+  host.hidden = false;
+  host.append(el("span", "fresh-dot"));
+  const wrap = el("div", "fresh-text");
+  wrap.append(el("strong", null, `数据更新于 ${fmtDate(generatedAt)}`));
+  const runs = history?.runs?.length ?? 0;
+  wrap.append(el("span", null, `回看 ${monitor?.lookbackDays ?? "—"} 天 · 每日 09:00 自动刷新${runs ? ` · 累计 ${runs} 次` : ""}`));
+  host.append(wrap);
 }
 
 const SVG_NS = "http://www.w3.org/2000/svg";
@@ -252,17 +334,33 @@ function renderDashboard(data, monitor, history, triage) {
 
   const productCount = (data.clusters ?? []).reduce((sum, c) => sum + (c.items?.length ?? 0), 0);
   const mSummary = monitor?.summary ?? {};
+  // Compare against the previous run so monitor KPIs show change-over-time, not just a static number.
+  const kpiRuns = history?.runs ?? [];
+  const prev = kpiRuns.length > 1 ? kpiRuns[1]?.summary ?? {} : null;
+  const deltaOf = (current, previous) => {
+    if (prev == null || typeof current !== "number" || typeof previous !== "number") return null;
+    return current - previous;
+  };
   const kpis = [
     { label: "覆盖产品 / 公司", value: productCount, sub: `${data.clusters?.length ?? 0} 个赛道簇`, accent: true },
     { label: "Exa 查询组", value: data.coverage?.queries ?? "—", sub: `${data.coverage?.results ?? "—"} 条原始结果` },
     { label: "来源域名", value: data.coverage?.uniqueDomains ?? "—", sub: `${data.coverage?.uniqueUrls ?? "—"} 个唯一 URL` },
-    { label: "监控主题", value: mSummary.monitors ?? "—", sub: `本次返回 ${mSummary.totalResults ?? "—"} 条` },
-    { label: "近窗高相关", value: mSummary.recentResults ?? "—", sub: `回看 ${monitor?.lookbackDays ?? "—"} 天`, accent: true },
-    { label: "新增提醒", value: mSummary.newAlerts ?? "—", sub: triage?.summary ? `升级队列 ${triage.summary.promotionQueueSize ?? 0} 条` : "待人工复核", accent: true },
+    { label: "监控主题", value: mSummary.monitors ?? "—", sub: `本次返回 ${mSummary.totalResults ?? "—"} 条`, delta: deltaOf(mSummary.totalResults, prev?.totalResults) },
+    { label: "近窗高相关", value: mSummary.recentResults ?? "—", sub: `回看 ${monitor?.lookbackDays ?? "—"} 天`, accent: true, delta: deltaOf(mSummary.recentResults, prev?.recentResults) },
+    { label: "新增提醒", value: mSummary.newAlerts ?? "—", sub: triage?.summary ? `升级队列 ${triage.summary.promotionQueueSize ?? 0} 条` : "待人工复核", accent: true, delta: deltaOf(mSummary.newAlerts, prev?.newAlerts) },
   ];
   kpis.forEach((kpi) => {
     const tile = el("article", kpi.accent ? "kpi-tile kpi-accent" : "kpi-tile");
-    tile.append(el("p", "kpi-label", kpi.label));
+    const labelRow = el("div", "kpi-label-row");
+    labelRow.append(el("p", "kpi-label", kpi.label));
+    if (kpi.delta != null) {
+      const dir = kpi.delta > 0 ? "up" : kpi.delta < 0 ? "down" : "flat";
+      const arrow = dir === "up" ? "↑" : dir === "down" ? "↓" : "→";
+      const trend = el("span", `kpi-trend ${dir}`, `${arrow} ${kpi.delta > 0 ? "+" : ""}${kpi.delta}`);
+      trend.title = "较上一次监控的变化";
+      labelRow.append(trend);
+    }
+    tile.append(labelRow);
     tile.append(el("div", "kpi-value", String(kpi.value)));
     tile.append(el("p", "kpi-sub", kpi.sub));
     kpiRoot.append(tile);
@@ -749,7 +847,9 @@ function renderComparisonTable(data) {
 
   function applyFilter(filter = currentFilter) {
     currentFilter = filter;
-    const query = searchInput.value.trim().toLowerCase();
+    const raw = searchInput.value.trim().toLowerCase();
+    const isTooShort = tooShortQuery(raw);
+    const query = isTooShort ? "" : raw;
     let visible = 0;
     rows.forEach((row) => {
       const matchesFilter =
@@ -767,9 +867,13 @@ function renderComparisonTable(data) {
       button.classList.toggle("selected", selected);
       button.setAttribute("aria-pressed", String(selected));
     });
-    count.textContent = query
-      ? `当前显示 ${visible} / ${rows.length} 个产品或公司 · 搜索：“${searchInput.value.trim()}”`
-      : `当前显示 ${visible} / ${rows.length} 个产品或公司`;
+    if (isTooShort) {
+      count.textContent = "搜索关键词太短，请至少输入 2 个字符（中文 1 个字也可）。";
+    } else {
+      count.textContent = query
+        ? `当前显示 ${visible} / ${rows.length} 个产品或公司 · 搜索：“${searchInput.value.trim()}”`
+        : `当前显示 ${visible} / ${rows.length} 个产品或公司`;
+    }
 
     if (visible === 0) {
       emptyState.textContent = query
@@ -789,7 +893,7 @@ function renderComparisonTable(data) {
     controls.append(button);
   });
 
-  searchInput.addEventListener("input", () => applyFilter());
+  searchInput.addEventListener("input", debounce(() => applyFilter()));
   clearSearch.addEventListener("click", () => {
     searchInput.value = "";
     searchInput.focus();
@@ -823,6 +927,7 @@ function renderComparisonTable(data) {
     link.click();
     link.remove();
     URL.revokeObjectURL(url);
+    showToast(`已导出 ${visibleRecords.length} 行到 CSV`);
   });
 
   applyFilter("all");
@@ -841,6 +946,62 @@ function fmtDate(value) {
 }
 
 const FEED_LAST_VISIT_KEY = "exa-feed-last-visit";
+const FEED_STATUS_KEY = "exa-feed-status";
+
+// Per-item triage state (keyed by URL), persisted locally so it survives reloads and daily refreshes.
+const FEED_STATUSES = {
+  read: { label: "已读", short: "已读" },
+  promote: { label: "升级进主表", short: "升级" },
+  watch: { label: "仅观察", short: "观察" },
+  ignore: { label: "忽略", short: "忽略" },
+};
+
+function loadFeedStatusMap() {
+  try {
+    const raw = window.localStorage.getItem(FEED_STATUS_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveFeedStatusMap(map) {
+  try {
+    window.localStorage.setItem(FEED_STATUS_KEY, JSON.stringify(map));
+  } catch {
+    /* localStorage unavailable — triage just won't persist */
+  }
+}
+
+const FEED_WATCH_KEY = "exa-feed-watch-keywords";
+
+// User-defined watch keywords (e.g. a competitor name) so they can pin the topics they care about.
+function loadWatchKeywords() {
+  try {
+    const raw = window.localStorage.getItem(FEED_WATCH_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.filter((k) => typeof k === "string" && k.trim()) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveWatchKeywords(list) {
+  try {
+    window.localStorage.setItem(FEED_WATCH_KEY, JSON.stringify(list));
+  } catch {
+    /* localStorage unavailable — watch keywords just won't persist */
+  }
+}
+
+function itemMatchesKeywords(item, keywords) {
+  if (!keywords.length) return false;
+  const haystack = `${item.title ?? ""} ${item.highlight ?? ""} ${item.monitorLabel ?? ""}`.toLowerCase();
+  return keywords.some((kw) => haystack.includes(kw.toLowerCase()));
+}
 
 function feedDayBucket(value, now) {
   const date = new Date(value);
@@ -918,6 +1079,35 @@ function renderFeed(ledger, monitor, digest) {
 
   let activeLane = "all";
   let keyOnly = false;
+  let hideProcessed = false;
+  let watchOnly = false;
+  const statusMap = loadFeedStatusMap();
+  let watchKeywords = loadWatchKeywords();
+
+  const setStatus = (url, status) => {
+    if (!url) return;
+    if (statusMap[url] === status) {
+      delete statusMap[url];
+    } else {
+      statusMap[url] = status;
+    }
+    saveFeedStatusMap(statusMap);
+    renderStream();
+  };
+
+  const buildActions = (item) => {
+    const row = el("div", "feed-actions");
+    const current = statusMap[item.url];
+    Object.entries(FEED_STATUSES).forEach(([key, meta]) => {
+      const btn = el("button", `feed-action-btn${current === key ? " active" : ""}`, meta.short);
+      btn.type = "button";
+      btn.title = meta.label;
+      btn.setAttribute("aria-pressed", String(current === key));
+      btn.addEventListener("click", () => setStatus(item.url, key));
+      row.append(btn);
+    });
+    return row;
+  };
 
   const renderStream = () => {
     stream.replaceChildren();
@@ -925,17 +1115,22 @@ function renderFeed(ledger, monitor, digest) {
     const filtered = items.filter((item) => {
       if (activeLane !== "all" && item.monitorLabel !== activeLane) return false;
       if (keyOnly && item.priority !== "high" && item.priority !== "critical") return false;
+      if (hideProcessed && statusMap[item.url]) return false;
+      if (watchOnly && !itemMatchesKeywords(item, watchKeywords)) return false;
       return true;
     });
 
     if (countLine) {
       const newInView = filtered.filter(isNew).length;
+      const processed = items.filter((item) => statusMap[item.url]).length;
       countLine.textContent =
-        `当前显示 ${filtered.length} 条` + (newInView > 0 ? ` · 其中 ${newInView} 条为新增` : "");
+        `当前显示 ${filtered.length} 条` +
+        (newInView > 0 ? ` · 其中 ${newInView} 条为新增` : "") +
+        (processed > 0 ? ` · 已处理 ${processed} 条` : "");
     }
 
     if (filtered.length === 0) {
-      stream.append(el("p", "empty-state", "没有符合当前筛选的动向，换个赛道或关掉「只看重点」试试。"));
+      stream.append(el("p", "empty-state", "没有符合当前筛选的动向，换个赛道或调整上面的筛选试试。"));
       return;
     }
 
@@ -956,10 +1151,18 @@ function renderFeed(ledger, monitor, digest) {
         stream.append(group);
       }
       const fresh = isNew(item);
-      const card = el("article", `recent-card feed-card priority-${item.priority}${fresh ? " is-new" : ""}`);
+      const status = statusMap[item.url];
+      const isWatchHit = itemMatchesKeywords(item, watchKeywords);
+      const classes = ["recent-card", "feed-card", `priority-${item.priority}`];
+      if (fresh) classes.push("is-new");
+      if (status) classes.push(`status-${status}`, "is-processed");
+      if (isWatchHit) classes.push("feed-watch-hit");
+      const card = el("article", classes.join(" "));
       const tagRow = el("div", "feed-tag-row");
       tagRow.append(el("span", "tag", item.monitorLabel));
       if (fresh) tagRow.append(el("span", "badge-new", "NEW"));
+      if (isWatchHit) tagRow.append(el("span", "badge-watch", "★ 关注"));
+      if (status) tagRow.append(el("span", "badge-status", FEED_STATUSES[status].label));
       card.append(tagRow);
       card.append(el("h4", null, item.title));
       card.append(
@@ -977,26 +1180,28 @@ function renderFeed(ledger, monitor, digest) {
         link.rel = "noreferrer";
         card.append(link);
       }
+      card.append(buildActions(item));
       group.append(card);
     });
   };
 
   if (controls) {
     controls.replaceChildren();
+    const laneRow = el("div", "feed-control-row");
     const makeChip = (label, onClick, selected) => {
       const btn = el("button", `filter-button feed-lane-chip${selected ? " selected" : ""}`, label);
       btn.type = "button";
       btn.addEventListener("click", () => {
         onClick();
-        controls.querySelectorAll(".feed-lane-chip").forEach((b) => b.classList.remove("selected"));
+        laneRow.querySelectorAll(".feed-lane-chip").forEach((b) => b.classList.remove("selected"));
         btn.classList.add("selected");
         renderStream();
       });
       return btn;
     };
-    controls.append(makeChip("全部赛道", () => { activeLane = "all"; }, true));
+    laneRow.append(makeChip("全部赛道", () => { activeLane = "all"; }, true));
     laneOrder.forEach((lane) => {
-      controls.append(makeChip(lane, () => { activeLane = lane; }, false));
+      laneRow.append(makeChip(lane, () => { activeLane = lane; }, false));
     });
     const keyToggle = el("button", "filter-button feed-key-toggle", "只看重点");
     keyToggle.type = "button";
@@ -1005,7 +1210,52 @@ function renderFeed(ledger, monitor, digest) {
       keyToggle.classList.toggle("selected", keyOnly);
       renderStream();
     });
-    controls.append(keyToggle);
+    laneRow.append(keyToggle);
+
+    const hideToggle = el("button", "filter-button", "隐藏已处理");
+    hideToggle.type = "button";
+    hideToggle.addEventListener("click", () => {
+      hideProcessed = !hideProcessed;
+      hideToggle.classList.toggle("selected", hideProcessed);
+      renderStream();
+    });
+    laneRow.append(hideToggle);
+    controls.append(laneRow);
+
+    // Watch-keyword box (task: configurable keywords) — highlight/pin the topics the user cares about.
+    const watchRow = el("div", "feed-watch-row");
+    watchRow.append(el("label", "feed-watch-label", "关注关键词（逗号分隔，如 Timeleft, AI dating）"));
+    const inputWrap = el("div", "feed-watch-input");
+    const input = el("input");
+    input.type = "text";
+    input.placeholder = "输入竞品名或关键词，回车保存";
+    input.value = watchKeywords.join(", ");
+    const watchOnlyToggle = el("button", "filter-button", "只看关注");
+    watchOnlyToggle.type = "button";
+    const commit = () => {
+      watchKeywords = input.value
+        .split(/[,，]/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+      saveWatchKeywords(watchKeywords);
+      renderStream();
+    };
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        commit();
+      }
+    });
+    input.addEventListener("blur", commit);
+    watchOnlyToggle.addEventListener("click", () => {
+      if (!watchKeywords.length) return;
+      watchOnly = !watchOnly;
+      watchOnlyToggle.classList.toggle("selected", watchOnly);
+      renderStream();
+    });
+    inputWrap.append(input, watchOnlyToggle);
+    watchRow.append(inputWrap);
+    controls.append(watchRow);
   }
 
   renderStream();
@@ -1060,11 +1310,24 @@ function renderMonitor(monitor, history, ledger, digest, data) {
   meta.append(el("p", null, `生成时间：${fmtDate(monitor.generatedAt)} · 回看窗口：${monitor.lookbackDays} 天`));
   meta.append(el("p", null, `自动化：${monitor.automationName} · ${monitor.automationSchedule ?? "Daily 09:00"}`));
   if (monitor.nativeMonitor) {
-    const nativeLine =
-      monitor.nativeMonitor.status === "available"
-        ? `Exa Websets Monitor：可用，已探测 ${monitor.nativeMonitor.monitors?.length ?? 0} 个 monitor。`
-        : `Exa Websets Monitor：${monitor.nativeMonitor.status}，当前使用 Search API + Codex 定时刷新 fallback。`;
-    meta.append(el("p", null, nativeLine));
+    const available = monitor.nativeMonitor.status === "available";
+    const statusRow = el("p", available ? "native-monitor-status" : "native-monitor-status is-fallback");
+    const badge = el("span", available ? "native-badge ok" : "native-badge warn", available ? "可用" : "降级 fallback");
+    statusRow.append(badge);
+    if (available) {
+      statusRow.append(el("span", null, `Exa Websets Monitor 已探测 ${monitor.nativeMonitor.monitors?.length ?? 0} 个 monitor。`));
+    } else {
+      // Make the long-standing 401 explicit instead of a quiet "unavailable".
+      const reason = monitor.nativeMonitor.reason ? `（${monitor.nativeMonitor.reason}）` : "";
+      statusRow.append(
+        el(
+          "span",
+          null,
+          `Exa Websets Monitor 不可用${reason}——这是预期降级：当前由 Search API + 每日 09:00 Codex 定时刷新兜底，功能不受影响。`,
+        ),
+      );
+    }
+    meta.append(statusRow);
     const docs = el("a", null, "Exa Websets Monitor 文档");
     docs.href = monitor.nativeMonitor.docsUrl;
     docs.target = "_blank";
@@ -1119,15 +1382,32 @@ function renderMonitor(monitor, history, ledger, digest, data) {
   recentHead.append(el("h3", null, "近期高相关信号"));
   recentRoot.append(recentHead);
 
-  const recentItems = (monitor.recentItems ?? []).slice(0, 8);
+  // Surface the genuinely new signals first; within each group, most recent published date first.
+  const recentItems = (monitor.recentItems ?? [])
+    .map((item, index) => ({ item, index }))
+    .sort((a, b) => {
+      const aNew = a.item.isKnown ? 1 : 0;
+      const bNew = b.item.isKnown ? 1 : 0;
+      if (aNew !== bNew) return aNew - bNew;
+      const aTime = new Date(a.item.publishedDate).getTime() || 0;
+      const bTime = new Date(b.item.publishedDate).getTime() || 0;
+      if (bTime !== aTime) return bTime - aTime;
+      return a.index - b.index;
+    })
+    .map((entry) => entry.item)
+    .slice(0, 8);
   if (recentItems.length === 0) {
     recentRoot.append(el("p", "empty-state", "近窗内没有返回高相关结果。"));
   } else {
     const recentGrid = el("div", "recent-grid");
     recentItems.forEach((item) => {
-      const card = el("article", `recent-card priority-${item.priority}`);
+      const isFresh = !item.isKnown;
+      const card = el("article", `recent-card priority-${item.priority}${isFresh ? " is-new" : ""}`);
       const status = item.isKnown ? "已知" : "新增";
-      card.append(el("span", "tag", `${item.monitorLabel} · ${status}`));
+      const tagRow = el("div", "feed-tag-row");
+      tagRow.append(el("span", "tag", `${item.monitorLabel} · ${status}`));
+      if (isFresh) tagRow.append(el("span", "badge-new", "NEW"));
+      card.append(tagRow);
       card.append(el("h4", null, item.title));
       card.append(el("p", "date-line", fmtDate(item.publishedDate)));
       card.append(el("p", null, item.highlight || "Exa returned this as a recent relevant item."));
@@ -1660,11 +1940,14 @@ function renderFunding(data) {
     if (filter === "companion") return /companion|roleplay|character/.test(lane);
     if (filter === "irl") return /irl/.test(lane);
     if (filter === "china") return /china/.test(lane);
-    return true;
+    // Unknown filter → match nothing, so a typo surfaces instead of silently showing everything.
+    return false;
   }
 
   function applyTimelineFilter(filter = "all") {
-    const query = searchInput.value.trim().toLowerCase();
+    const raw = searchInput.value.trim().toLowerCase();
+    const isTooShort = tooShortQuery(raw);
+    const query = isTooShort ? "" : raw;
     let visible = 0;
     cards.forEach((card) => {
       const isVisible = matchesTimelineFilter(card, filter) && (!query || card.dataset.searchText.includes(query));
@@ -1678,9 +1961,13 @@ function renderFunding(data) {
       button.setAttribute("aria-pressed", String(selected));
     });
     controls.dataset.currentFilter = filter;
-    count.textContent = query
-      ? `当前显示 ${visible} / ${cards.length} 条融资/新闻 · 搜索：“${searchInput.value.trim()}”`
-      : `当前显示 ${visible} / ${cards.length} 条融资/新闻`;
+    if (isTooShort) {
+      count.textContent = "搜索关键词太短，请至少输入 2 个字符（中文 1 个字也可）。";
+    } else {
+      count.textContent = query
+        ? `当前显示 ${visible} / ${cards.length} 条融资/新闻 · 搜索：“${searchInput.value.trim()}”`
+        : `当前显示 ${visible} / ${cards.length} 条融资/新闻`;
+    }
 
     if (visible === 0) {
       timelineEmpty.textContent = query
@@ -1700,7 +1987,7 @@ function renderFunding(data) {
     controls.append(button);
   });
 
-  searchInput.addEventListener("input", () => applyTimelineFilter(controls.dataset.currentFilter ?? "all"));
+  searchInput.addEventListener("input", debounce(() => applyTimelineFilter(controls.dataset.currentFilter ?? "all")));
   clearSearch.addEventListener("click", () => {
     searchInput.value = "";
     searchInput.focus();
@@ -1723,6 +2010,7 @@ function renderFunding(data) {
     link.click();
     link.remove();
     URL.revokeObjectURL(url);
+    showToast(`已导出 ${visibleRecords.length} 行融资/新闻到 CSV`);
   });
 
   applyTimelineFilter("all");
@@ -2503,7 +2791,7 @@ function renderDataPersistence(data, monitor, history, ledger) {
     {
       label: "exports",
       title: "CSV / Markdown / HTML 是附件",
-      signal: "55 个导出入口 · 单文件 HTML 可离线展示",
+      signal: `${exportEntryCount || "全部"} 个导出入口 · 单文件 HTML 可离线展示`,
       body: "CSV 用于下载复核和二次分析，Markdown 用于交接说明，standalone HTML 用于给别人打开展示。",
       proof: ["exports/*.csv", "exports/current-state.md", "exports/exa-ai-social-report.html"],
     },
@@ -2986,10 +3274,10 @@ function renderDetailTables(data) {
     tableWrap.replaceChildren(table);
   }
 
-  search.addEventListener("input", () => {
+  search.addEventListener("input", debounce(() => {
     query = search.value;
     render();
-  });
+  }));
   clear.addEventListener("click", () => {
     search.value = "";
     query = "";
@@ -3054,7 +3342,7 @@ function renderRunLog(data) {
   exportPack.append(exportHead);
 
   const exportGrid = el("div", "export-grid");
-  [
+  const exportEntries = [
     ["单文件报告 HTML", "exports/exa-ai-social-report.html", "可离线打开的完整展示页"],
     ["SQLite 数据库", "exports/exa-social-research.sqlite", "可查询的本地数据库：products、funding_events、monitor_signals、source_linkage、coverage_gaps、audit_rows"],
     ["SQLite 数据库说明", "exports/sqlite-database-guide.md", "数据库表结构、行数和常用 SQL 查询示例"],
@@ -3117,7 +3405,9 @@ function renderRunLog(data) {
     ["原始目标逐条审计 CSV", "exports/original-objective-audit.csv", "逐项验收表，可筛选需求、状态、证据工件和 monitor 边界"],
     ["功能与版本记录 MD", "功能与版本记录.md", "本网页的功能清单、版本表、验证口径和维护规则"],
     ["时间戳快照目录", "exports/snapshots/", "保存页面、数据、导出附件和 manifest 的历史版本"],
-  ].forEach(([title, href, description]) => {
+  ];
+  exportEntryCount = exportEntries.length;
+  exportEntries.forEach(([title, href, description]) => {
     const card = el("article", "export-card");
     card.append(el("h4", null, title));
     card.append(el("p", null, description));
@@ -3282,68 +3572,103 @@ function renderSqliteGuide(data) {
   root.append(link);
 }
 
+async function loadJson(path, cacheKey) {
+  const response = await fetch(`${path}?v=${cacheKey}`, { cache: "no-store" });
+  if (!response.ok) throw new Error(`${path} → HTTP ${response.status}`);
+  return response.json();
+}
+
 async function loadReportData() {
   if (window.__EXA_REPORT_DATA__) {
-    return window.__EXA_REPORT_DATA__;
+    return { ...window.__EXA_REPORT_DATA__, failures: [] };
   }
 
   const cacheKey = Date.now();
-  const [briefResponse, monitorResponse, historyResponse, ledgerResponse, digestResponse] = await Promise.all([
-    fetch(`data/brief.json?v=${cacheKey}`, { cache: "no-store" }),
-    fetch(`data/monitor.json?v=${cacheKey}`, { cache: "no-store" }),
-    fetch(`data/monitor-history.json?v=${cacheKey}`, { cache: "no-store" }),
-    fetch(`data/monitor-ledger.json?v=${cacheKey}`, { cache: "no-store" }),
-    fetch(`data/monitor-digest.json?v=${cacheKey}`, { cache: "no-store" }),
-  ]);
+  const sources = [
+    ["brief", "data/brief.json"],
+    ["monitor", "data/monitor.json"],
+    ["history", "data/monitor-history.json"],
+    ["ledger", "data/monitor-ledger.json"],
+    ["digest", "data/monitor-digest.json"],
+    ["triage", "data/alert-triage.json"],
+  ];
 
-  let triage = null;
+  // Load every file independently so a single 404/timeout cannot blank the whole page.
+  const settled = await Promise.allSettled(sources.map(([, path]) => loadJson(path, cacheKey)));
+  const result = { failures: [] };
+  settled.forEach((outcome, index) => {
+    const [key, path] = sources[index];
+    if (outcome.status === "fulfilled") {
+      result[key] = outcome.value;
+    } else {
+      result[key] = null;
+      result.failures.push({ key, path, error: String(outcome.reason?.message ?? outcome.reason) });
+      console.error(`Failed to load ${path}`, outcome.reason);
+    }
+  });
+  return result;
+}
+
+// Run a render step in isolation: if it throws, log it and keep rendering the rest of the page.
+function safeRender(label, fn) {
   try {
-    const triageResponse = await fetch(`data/alert-triage.json?v=${cacheKey}`, { cache: "no-store" });
-    if (triageResponse.ok) triage = await triageResponse.json();
-  } catch {
-    triage = null;
+    fn();
+  } catch (error) {
+    console.error(`渲染失败：${label}`, error);
   }
+}
 
-  return {
-    brief: await briefResponse.json(),
-    monitor: await monitorResponse.json(),
-    history: await historyResponse.json(),
-    ledger: await ledgerResponse.json(),
-    digest: await digestResponse.json(),
-    triage,
-  };
+function renderLoadFailureBanner(failures) {
+  if (!failures || failures.length === 0) return;
+  const host = document.querySelector(".app-body") ?? document.body;
+  const banner = el("div", "load-failure-banner");
+  banner.setAttribute("role", "alert");
+  const names = failures.map((f) => f.path).join("、");
+  banner.append(el("strong", null, "部分数据未能加载"));
+  banner.append(el("span", null, `以下文件加载失败，相关板块可能为空或缺失：${names}。其余内容已照常显示，可刷新重试。`));
+  host.insertBefore(banner, host.firstChild);
 }
 
 async function boot() {
-  const { brief: data, monitor, history, ledger, digest, triage } = await loadReportData();
-  renderFeed(ledger, monitor, digest);
-  renderHero(data);
-  renderDashboard(data, monitor, history, triage);
-  renderExecutiveSummary(data);
-  renderThesis(data);
-  renderPriorityShortlist(data);
-  renderChannelSummary(data);
-  renderOpportunityRanking(data);
-  renderComparisonTable(data);
-  renderSynthesis(data);
-  renderProductCapability(data);
-  renderMonitor(monitor, history, ledger, digest, data);
-  renderAlertTriage(triage);
-  renderClusters(data);
-  renderFunding(data);
-  renderIrl(data);
-  renderPeople(data);
-  renderFinancial(data);
-  renderMarketDecisionMap(data);
-  renderOfficialEvidence(data);
-  renderResearch(data);
-  renderCoverageAudit(data);
-  renderDiscoveryScan(data);
-  renderCompletionAudit(data);
-  renderCandidateReview(data);
-  renderDataPersistence(data, monitor, history, ledger);
-  renderDetailTables(data);
-  renderRunLog(data);
+  const { brief: data, monitor, history, ledger, digest, triage, failures } = await loadReportData();
+  renderLoadFailureBanner(failures);
+
+  const safeData = data ?? {};
+  const safeMonitor = monitor ?? { summary: {}, recentItems: [], alertItems: [], runs: [] };
+  const safeHistory = history ?? { runs: [] };
+  const safeLedger = ledger ?? { items: [], totalItems: 0 };
+  const safeDigest = digest ?? { headline: "", bullets: [], recommendedActions: [] };
+
+  safeRender("最新动向", () => renderFeed(safeLedger, safeMonitor, safeDigest));
+  safeRender("hero", () => renderHero(safeData));
+  safeRender("仪表盘", () => renderDashboard(safeData, safeMonitor, safeHistory, triage));
+  safeRender("数据新鲜度", () => renderDataFreshness(safeMonitor, safeHistory));
+  safeRender("executive", () => renderExecutiveSummary(safeData));
+  safeRender("thesis", () => renderThesis(safeData));
+  safeRender("shortlist", () => renderPriorityShortlist(safeData));
+  safeRender("channels", () => renderChannelSummary(safeData));
+  safeRender("opportunities", () => renderOpportunityRanking(safeData));
+  safeRender("对照表", () => renderComparisonTable(safeData));
+  safeRender("synthesis", () => renderSynthesis(safeData));
+  safeRender("capability", () => renderProductCapability(safeData));
+  safeRender("监控", () => renderMonitor(safeMonitor, safeHistory, safeLedger, safeDigest, safeData));
+  safeRender("triage", () => renderAlertTriage(triage));
+  safeRender("clusters", () => renderClusters(safeData));
+  safeRender("funding", () => renderFunding(safeData));
+  safeRender("irl", () => renderIrl(safeData));
+  safeRender("people", () => renderPeople(safeData));
+  safeRender("financial", () => renderFinancial(safeData));
+  safeRender("decision-map", () => renderMarketDecisionMap(safeData));
+  safeRender("official", () => renderOfficialEvidence(safeData));
+  safeRender("research", () => renderResearch(safeData));
+  safeRender("coverage-audit", () => renderCoverageAudit(safeData));
+  safeRender("discovery", () => renderDiscoveryScan(safeData));
+  safeRender("completion", () => renderCompletionAudit(safeData));
+  safeRender("candidate-review", () => renderCandidateReview(safeData));
+  safeRender("detail-tables", () => renderDetailTables(safeData));
+  // run-log renders the export pack and sets exportEntryCount, so render data-persistence after it.
+  safeRender("run-log", () => renderRunLog(safeData));
+  safeRender("data-persistence", () => renderDataPersistence(safeData, safeMonitor, safeHistory, safeLedger));
   setupRouting();
   setupSignalMap();
   setupBackToTop();

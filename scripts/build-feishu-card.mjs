@@ -26,6 +26,13 @@ async function readJson(url, fallback) {
 const digest = await readJson(new URL("../data/monitor-digest.json", import.meta.url), null);
 const triage = await readJson(new URL("../data/alert-triage.json", import.meta.url), null);
 const monitor = await readJson(new URL("../data/monitor.json", import.meta.url), { generatedAt: null });
+const ledger = await readJson(new URL("../data/monitor-ledger.json", import.meta.url), { items: [] });
+
+// "今日新增动向" — ledger items first discovered on the latest run's day, mirroring the website feed.
+const runDay = (monitor.generatedAt ?? "").slice(0, 10);
+const todayItems = (ledger.items ?? [])
+  .filter((item) => item.firstSeenAt && item.firstSeenAt.slice(0, 10) === runDay)
+  .sort((a, b) => new Date(b.firstSeenAt) - new Date(a.firstSeenAt));
 
 if (!digest && !triage) {
   throw new Error("Need data/monitor-digest.json or data/alert-triage.json. Run exa-monitor.mjs and triage-alerts.mjs first.");
@@ -50,6 +57,17 @@ if (digest?.headline) {
 }
 for (const bullet of digest?.bullets ?? []) {
   lines.push(`- ${bullet}`);
+}
+
+if (todayItems.length > 0) {
+  lines.push("");
+  lines.push(`**🆕 今日新增动向（${todayItems.length} 条）**`);
+  todayItems.slice(0, 8).forEach((item) => {
+    lines.push(`- [${item.monitorLabel}] [${item.title}](${item.url})`);
+  });
+  if (todayItems.length > 8) {
+    lines.push(`- …其余 ${todayItems.length - 8} 条见网站「最新动向」`);
+  }
 }
 
 if (promotionQueue.length > 0) {
@@ -86,9 +104,10 @@ const meta = {
   buttonText: "查看最高优先级证据",
   buttonUrl: topUrl,
   // Convenience: shouldSend lets a scheduler skip empty days.
-  shouldSend: newUrls > 0 || hasGradeA,
+  shouldSend: newUrls > 0 || hasGradeA || todayItems.length > 0,
   promotionQueueSize: promotionQueue.length,
   newUrls,
+  todayNewCount: todayItems.length,
 };
 
 await mkdir(new URL("../exports", import.meta.url), { recursive: true });

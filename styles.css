@@ -128,6 +128,12 @@ a {
   color: #17202a;
 }
 
+.view-toc button.active {
+  border-color: #17202a;
+  background: #17202a;
+  color: #fff;
+}
+
 .topbar a,
 .doc-link {
   border: 1px solid var(--line);
@@ -1268,6 +1274,245 @@ h1 {
   .feed-key-toggle {
     margin-left: 0;
   }
+}
+
+/* feed controls layout */
+.feed-control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.feed-watch-row {
+  margin-top: 10px;
+}
+
+.feed-watch-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.feed-watch-input {
+  display: flex;
+  gap: 8px;
+}
+
+.feed-watch-input input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 14px;
+}
+
+/* feed per-item triage actions */
+.feed-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--line);
+}
+
+.feed-action-btn {
+  border: 1px solid var(--line);
+  background: #f8fbff;
+  color: #475569;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+
+.feed-action-btn:hover {
+  border-color: rgba(36, 107, 254, 0.5);
+}
+
+.feed-action-btn.active {
+  border-color: #17202a;
+  background: #17202a;
+  color: #fff;
+}
+
+.badge-status,
+.badge-watch {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 900;
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+
+.badge-status {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.badge-watch {
+  background: var(--yellow, #f5b301);
+  color: #3a2c00;
+}
+
+.feed-card.is-processed {
+  opacity: 0.62;
+}
+
+.feed-card.status-ignore {
+  opacity: 0.4;
+}
+
+.feed-card.feed-watch-hit {
+  box-shadow: 0 0 0 2px var(--yellow, #f5b301);
+}
+
+/* KPI trend arrows */
+.kpi-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.kpi-trend {
+  font-size: 13px;
+  font-weight: 900;
+  border-radius: 6px;
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+
+.kpi-trend.up {
+  background: rgba(12, 143, 110, 0.16);
+  color: #0c8f6e;
+}
+
+.kpi-trend.down {
+  background: rgba(216, 68, 44, 0.16);
+  color: #d8442c;
+}
+
+.kpi-trend.flat {
+  background: #eef2f7;
+  color: #64748b;
+}
+
+/* native monitor status row */
+.native-monitor-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.native-badge {
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 900;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.native-badge.ok {
+  background: rgba(12, 143, 110, 0.16);
+  color: #0c8f6e;
+}
+
+.native-badge.warn {
+  background: rgba(216, 68, 44, 0.16);
+  color: #d8442c;
+}
+
+/* sidebar data freshness */
+.sidebar-fresh {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.fresh-dot {
+  width: 8px;
+  height: 8px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #2ecc71;
+  box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.18);
+  flex-shrink: 0;
+}
+
+.fresh-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fresh-text strong {
+  font-size: 13px;
+  color: #fff;
+}
+
+.fresh-text span {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.4;
+}
+
+/* load failure banner */
+.load-failure-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 12px 16px 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(216, 68, 44, 0.4);
+  border-left: 6px solid #d8442c;
+  border-radius: 10px;
+  background: rgba(216, 68, 44, 0.06);
+}
+
+.load-failure-banner strong {
+  color: #d8442c;
+}
+
+.load-failure-banner span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* CSV export toast */
+.export-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #17202a;
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 200;
+  pointer-events: none;
+}
+
+.export-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .lane-grid {

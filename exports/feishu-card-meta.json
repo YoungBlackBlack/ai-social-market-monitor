@@ -4,7 +4,8 @@
   "color": "blue",
   "buttonText": "查看最高优先级证据",
   "buttonUrl": "https://tech.eu/2026/06/17/tryll-launches-ai-gaming-engine-alpha-and-secures-600k-pre-seed-funding/",
-  "shouldSend": false,
+  "shouldSend": true,
   "promotionQueueSize": 4,
-  "newUrls": 0
+  "newUrls": 0,
+  "todayNewCount": 6
 }

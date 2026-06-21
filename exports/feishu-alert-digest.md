@@ -4,6 +4,14 @@
 - 近窗高相关 13 条；新增提醒 0 条；台账累计 171 条。
 - 当前最活跃主题是「投放 / 付费获客证据」：近窗 6 条，新增 0 条。
 
+**🆕 今日新增动向（6 条）**
+- [投放 / 付费获客证据] [OpenAI Automates Ad Creative for ChatGPT Ads | Let's Data Science](https://letsdatascience.com/news/openai-automates-ad-creative-for-chatgpt-ads-8ce461d0)
+- [融资 / 商业化] [Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons](https://knowstartup.com/news/maya-research-raises-1-9-million-voice-ai-south-park-commons/)
+- [融资 / 商业化] [Turnout Announces $35M Series A to Put an AI Advocate in Every American’s Corner](https://theaiinsider.tech/2026/06/19/turnout-announces-35m-series-a-to-put-an-ai-advocate-in-every-americans-corner/)
+- [投放 / 付费获客证据] [Human-First, AI-Enabled: Snap’s Latest Ads Innovations | Snapchat for Business](https://forbusiness.snapchat.com/blog/human-first-ai-enabled-snaps-latest-ads-innovations)
+- [投放 / 付费获客证据] [Meta’s Advantage+ Creative Is Quietly Rewiring DTC Ad Strategy – Online Store News](https://onlinestorenews.com/metas-advantage-creative-is-quietly-rewiring-dtc-ad-strategy/)
+- [投放 / 付费获客证据] [MojiMoshi Embeds AI Agents Inside Telegram and Line, No App Needed - AINews](https://ainews.cool/article/20260620-mojimoshi-ai-agent-telegram-line)
+
 **升级队列（4 条，按证据分排序）**
 - [B·62] [Tryll launches AI gaming engine alpha and secures $600K pre-seed funding](https://tech.eu/2026/06/17/tryll-launches-ai-gaming-engine-alpha-and-secures-600k-pre-seed-funding/) → 融资时间线
 - [B·62] [China&#039;s AI Companion Apps Hit $7 Billion — Tech Giants Race to Cash In](https://singaporeinformer.com/2026/06/17/chinas-ai-companion-apps-hit-7-billion-tech-giants-race-to-cash-in/) → AI 伴侣 / 出海簇
