@@ -1,0 +1,17 @@
+{
+  "name": "ai-social-market-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "monitor": "node scripts/run-all.mjs",
+    "monitor:full": "node scripts/run-all.mjs --full"
+  },
+  "dependencies": {
+    "node-cron": "^4.2.1"
+  }
+}

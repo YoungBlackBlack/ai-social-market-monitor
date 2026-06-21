@@ -1,11 +1,11 @@
 {
-  "savedAt": "2026-06-08T09:12:54.710Z",
-  "snapshot": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-08-091254/",
-  "manifest": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-08-091254/manifest.json",
-  "relativeSnapshot": "exports/snapshots/2026-06-08-091254/",
-  "relativeManifest": "exports/snapshots/2026-06-08-091254/manifest.json",
+  "savedAt": "2026-06-21T14:16:26.704Z",
+  "snapshot": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-21-141626/",
+  "manifest": "/Users/youngzhou/Documents/exa/exports/snapshots/2026-06-21-141626/manifest.json",
+  "relativeSnapshot": "exports/snapshots/2026-06-21-141626/",
+  "relativeManifest": "exports/snapshots/2026-06-21-141626/manifest.json",
   "strictCompletionStatus": "not-mathematically-complete",
-  "presentationReady": true,
+  "presentationReady": false,
   "entrypoints": {
     "standaloneHtml": "exports/exa-ai-social-report.html",
     "sqliteDatabase": "exports/exa-social-research.sqlite",
@@ -23,21 +23,21 @@
   "counts": {
     "products": 42,
     "fundingTimelineEvents": 25,
-    "uniqueFundingNewsEvents": 35,
+    "uniqueFundingNewsEvents": 34,
     "monitorLanes": 9,
-    "monitorRecentItems": 33,
-    "monitorNewAlerts": 0,
+    "monitorRecentItems": 16,
+    "monitorNewAlerts": 1,
     "monitorHistoryRuns": 30,
-    "monitorLedgerItems": 82,
+    "monitorLedgerItems": 171,
     "sqliteProducts": 42,
-    "sqliteFundingEvents": 38,
-    "sqliteMonitorSignals": 33,
+    "sqliteFundingEvents": 37,
+    "sqliteMonitorSignals": 16,
     "originalObjectiveAuditRows": 9
   },
   "retention": {
     "keep": 30,
     "pruned": [
-      "2026-06-02-053637"
+      "2026-06-02-054121"
     ]
   }
 }

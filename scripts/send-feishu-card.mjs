@@ -22,13 +22,6 @@ function envValue(key) {
     ?.replace(/^"|"$/g, "");
 }
 
-const webhookUrl = process.env.FEISHU_WEBHOOK_URL || envValue("FEISHU_WEBHOOK_URL");
-const secret = process.env.FEISHU_WEBHOOK_SECRET || envValue("FEISHU_WEBHOOK_SECRET");
-
-if (!webhookUrl) {
-  throw new Error("Missing FEISHU_WEBHOOK_URL in .env (Feishu custom-bot webhook).");
-}
-
 const meta = JSON.parse(await readFile(new URL("../exports/feishu-card-meta.json", import.meta.url), "utf8"));
 const body = await readFile(new URL("../exports/feishu-alert-digest.md", import.meta.url), "utf8");
 
@@ -39,6 +32,13 @@ if (!meta.shouldSend && !force) {
     reason: "meta.shouldSend is false (no new URLs or grade-A candidates). Use --force to send anyway.",
   }, null, 2));
   process.exit(0);
+}
+
+const webhookUrl = process.env.FEISHU_WEBHOOK_URL || envValue("FEISHU_WEBHOOK_URL");
+const secret = process.env.FEISHU_WEBHOOK_SECRET || envValue("FEISHU_WEBHOOK_SECRET");
+
+if (!webhookUrl) {
+  throw new Error("Missing FEISHU_WEBHOOK_URL in .env or process env (Feishu custom-bot webhook).");
 }
 
 // Feishu header template colors must be from the supported palette.
