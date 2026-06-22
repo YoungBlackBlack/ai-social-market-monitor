@@ -1293,9 +1293,13 @@ h1 {
 
 .feed-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   align-items: stretch;
+}
+
+.feed-sentinel {
+  height: 1px;
 }
 
 .feed-card {
@@ -1427,7 +1431,13 @@ h1 {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1200px) {
+  .feed-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
   .feed-list {
     display: block;
   }

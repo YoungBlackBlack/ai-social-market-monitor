@@ -1300,9 +1300,13 @@ h1 {
 
 .feed-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   align-items: stretch;
+}
+
+.feed-sentinel {
+  height: 1px;
 }
 
 .feed-card {
@@ -1434,7 +1438,13 @@ h1 {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1200px) {
+  .feed-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
   .feed-list {
     display: block;
   }
@@ -5329,10 +5339,86 @@ function renderFeed(ledger, monitor, digest) {
     return row;
   };
 
-  const renderStream = () => {
-    stream.replaceChildren();
+  const buildCard = (item) => {
+    const fresh = isNew(item);
+    const status = statusMap[item.url];
+    const isWatchHit = itemMatchesKeywords(item, watchKeywords);
+    const classes = ["feed-card", `priority-${item.priority}`];
+    if (fresh) classes.push("is-new");
+    if (status) classes.push(`status-${status}`, "is-processed");
+    if (isWatchHit) classes.push("feed-watch-hit");
+    const card = el("article", classes.join(" "));
+    const tagRow = el("div", "feed-tag-row");
+    tagRow.append(el("span", "tag", item.monitorLabel));
+    if (fresh) tagRow.append(el("span", "badge-new", "NEW"));
+    if (isWatchHit) tagRow.append(el("span", "badge-watch", "★ 关注"));
+    if (status) tagRow.append(el("span", "badge-status", FEED_STATUSES[status].label));
+    card.append(tagRow);
+    appendItemTitle(card, item);
+    card.append(
+      el(
+        "p",
+        "date-line",
+        `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
+      ),
+    );
+    card.append(el("p", "feed-summary", localizedHighlight(item, "Exa monitor 捕捉到的新动向。")));
+    if (item.url) {
+      const link = el("a", null, "查看证据");
+      link.href = item.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      card.append(link);
+    }
+    card.append(buildActions(item));
+    return card;
+  };
+
+  // Incremental rendering: render in batches and load more as the user scrolls,
+  // keeping day groups continuous across batches so the long list stays light.
+  const FEED_BATCH = 30;
+  let feedFiltered = [];
+  let renderedCount = 0;
+  let lastBucketKey = null;
+  let lastGroup = null;
+  let sentinel = null;
+  let feedObserver = null;
+
+  const appendBatch = () => {
+    if (sentinel?.parentNode) sentinel.remove();
     const now = Date.now();
-    const filtered = items.filter((item) => {
+    const end = Math.min(renderedCount + FEED_BATCH, feedFiltered.length);
+    for (; renderedCount < end; renderedCount += 1) {
+      const item = feedFiltered[renderedCount];
+      const bucket = feedDayBucket(item.firstSeenAt, now);
+      if (bucket.key !== lastBucketKey) {
+        lastBucketKey = bucket.key;
+        const head = el("div", "feed-day-head");
+        const dayCount = feedFiltered.filter(
+          (other) => feedDayBucket(other.firstSeenAt, now).key === bucket.key,
+        ).length;
+        head.append(el("h3", null, bucket.label));
+        head.append(el("span", null, `${dayCount} 条`));
+        stream.append(head);
+        lastGroup = el("div", "feed-list");
+        stream.append(lastGroup);
+      }
+      lastGroup.append(buildCard(item));
+    }
+    if (renderedCount < feedFiltered.length) {
+      stream.append(sentinel);
+    } else if (feedObserver) {
+      feedObserver.disconnect();
+    }
+  };
+
+  const renderStream = () => {
+    if (feedObserver) feedObserver.disconnect();
+    stream.replaceChildren();
+    renderedCount = 0;
+    lastBucketKey = null;
+    lastGroup = null;
+    feedFiltered = items.filter((item) => {
       if (activeSegment === "run-new" && !monitorAlertUrls.has(item.url)) return false;
       if (activeSegment === "recent" && !monitorRecentUrls.has(item.url)) return false;
       if (activeLane !== "all" && item.monitorLabel !== activeLane) return false;
@@ -5343,68 +5429,30 @@ function renderFeed(ledger, monitor, digest) {
     });
 
     if (countLine) {
-      const newInView = filtered.filter(isNew).length;
+      const newInView = feedFiltered.filter(isNew).length;
       const processed = items.filter((item) => statusMap[item.url]).length;
       countLine.textContent =
-        `当前显示 ${filtered.length} 条` +
+        `当前显示 ${feedFiltered.length} 条` +
         (newInView > 0 ? ` · 其中 ${newInView} 条为新增` : "") +
         (processed > 0 ? ` · 已处理 ${processed} 条` : "");
     }
 
-    if (filtered.length === 0) {
+    if (feedFiltered.length === 0) {
       stream.append(el("p", "empty-state", "没有符合当前筛选的动向，换个赛道或调整上面的筛选试试。"));
       return;
     }
 
-    let currentBucketKey = null;
-    let group = null;
-    filtered.forEach((item) => {
-      const bucket = feedDayBucket(item.firstSeenAt, now);
-      if (bucket.key !== currentBucketKey) {
-        currentBucketKey = bucket.key;
-        const head = el("div", "feed-day-head");
-        const dayItems = filtered.filter(
-          (other) => feedDayBucket(other.firstSeenAt, now).key === bucket.key,
-        );
-        head.append(el("h3", null, bucket.label));
-        head.append(el("span", null, `${dayItems.length} 条`));
-        stream.append(head);
-        group = el("div", "feed-list");
-        stream.append(group);
-      }
-      const fresh = isNew(item);
-      const status = statusMap[item.url];
-      const isWatchHit = itemMatchesKeywords(item, watchKeywords);
-      const classes = ["feed-card", `priority-${item.priority}`];
-      if (fresh) classes.push("is-new");
-      if (status) classes.push(`status-${status}`, "is-processed");
-      if (isWatchHit) classes.push("feed-watch-hit");
-      const card = el("article", classes.join(" "));
-      const tagRow = el("div", "feed-tag-row");
-      tagRow.append(el("span", "tag", item.monitorLabel));
-      if (fresh) tagRow.append(el("span", "badge-new", "NEW"));
-      if (isWatchHit) tagRow.append(el("span", "badge-watch", "★ 关注"));
-      if (status) tagRow.append(el("span", "badge-status", FEED_STATUSES[status].label));
-      card.append(tagRow);
-      appendItemTitle(card, item);
-      card.append(
-        el(
-          "p",
-          "date-line",
-          `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
-        ),
+    sentinel = el("div", "feed-sentinel");
+    if ("IntersectionObserver" in window) {
+      feedObserver = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) appendBatch();
+        },
+        { rootMargin: "600px 0px" },
       );
-      card.append(el("p", "feed-summary", localizedHighlight(item, "Exa monitor 捕捉到的新动向。")));
-      if (item.url) {
-        const link = el("a", null, "查看证据");
-        link.href = item.url;
-        link.target = "_blank";
-        link.rel = "noreferrer";
-        card.append(link);
-      }
-      card.append(buildActions(item));
-      group.append(card);
-    });
+    }
+    appendBatch();
+    if (feedObserver && sentinel.parentNode) feedObserver.observe(sentinel);
   };
 
   if (controls) {
