@@ -109,36 +109,72 @@ async function translateMany(uniqueTexts) {
   }
 }
 
+// A headline is a multi-word English string worth translating — this skips brand/platform
+// names like "LinkedIn", "App Store", "Google Play" that should stay in their original form.
+function looksHeadline(text) {
+  return looksEnglish(text) && String(text).trim().split(/\s+/).length >= 4;
+}
+
+// Walk any nested structure and apply a visitor to every object node.
+function walkObjects(node, visit) {
+  if (Array.isArray(node)) {
+    node.forEach((child) => walkObjects(child, visit));
+  } else if (node && typeof node === "object") {
+    visit(node);
+    for (const value of Object.values(node)) walkObjects(value, visit);
+  }
+}
+
+// For brief.json: translate evidence headlines (label next to a url) and English highlights,
+// while leaving product/brand names and already-Chinese analysis untouched.
+function visitBriefNode(collect, apply, node) {
+  if (typeof node.label === "string" && typeof node.url === "string" && looksHeadline(node.label)) {
+    if (collect) collect(node.label);
+    if (apply && cache[node.label]) node.labelZh = cache[node.label];
+  }
+  if (typeof node.highlight === "string" && looksEnglish(node.highlight)) {
+    if (collect) collect(node.highlight);
+    if (apply && cache[node.highlight]) node.highlightZh = cache[node.highlight];
+  }
+}
+
 // Collect every English string that needs a translation across the data files.
-const targets = [
+const arrayTargets = [
   { url: new URL("data/monitor.json", root), arrays: ["recentItems", "alertItems"] },
   { url: new URL("data/monitor-ledger.json", root), arrays: ["items"] },
 ];
 
-const docs = [];
 const allStrings = new Set();
-for (const target of targets) {
+const collect = (s) => allStrings.add(s);
+
+const docs = [];
+for (const target of arrayTargets) {
   const json = await readJson(target.url, null);
   if (!json) continue;
   docs.push({ ...target, json });
   for (const key of target.arrays) {
     for (const item of json[key] ?? []) {
-      if (looksEnglish(item.title)) allStrings.add(item.title);
-      if (looksEnglish(item.highlight)) allStrings.add(item.highlight);
+      if (looksEnglish(item.title)) collect(item.title);
+      if (looksEnglish(item.highlight)) collect(item.highlight);
     }
   }
 }
 
+const briefUrl = new URL("data/brief.json", root);
+const brief = await readJson(briefUrl, null);
+if (brief) walkObjects(brief, (node) => visitBriefNode(collect, false, node));
+
 await translateMany([...allStrings]);
 
 // Write the translations back onto the items and persist.
-let annotated = 0;
+let annotatedTitles = 0;
+let annotatedLabels = 0;
 for (const doc of docs) {
   for (const key of doc.arrays) {
     for (const item of doc.json[key] ?? []) {
       if (looksEnglish(item.title) && cache[item.title]) {
         item.titleZh = cache[item.title];
-        annotated += 1;
+        annotatedTitles += 1;
       }
       if (looksEnglish(item.highlight) && cache[item.highlight]) {
         item.highlightZh = cache[item.highlight];
@@ -146,6 +182,14 @@ for (const doc of docs) {
     }
   }
   await writeFile(doc.url, `${JSON.stringify(doc.json, null, 2)}\n`);
+}
+
+if (brief) {
+  walkObjects(brief, (node) => {
+    visitBriefNode(false, true, node);
+    if (node.labelZh) annotatedLabels += 1;
+  });
+  await writeFile(briefUrl, `${JSON.stringify(brief, null, 2)}\n`);
 }
 
 await writeFile(CACHE_URL, `${JSON.stringify(cache, null, 2)}\n`);
@@ -156,5 +200,6 @@ console.log(JSON.stringify({
   uniqueStrings: allStrings.size,
   apiCalls,
   cacheSize: Object.keys(cache).length,
-  annotatedTitles: annotated,
+  annotatedTitles,
+  annotatedEvidenceLabels: annotatedLabels,
 }, null, 2));

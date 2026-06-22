@@ -74,7 +74,9 @@ function el(tag, className, text) {
 function appendItemTitle(card, item) {
   card.append(el("h4", null, item.titleZh || item.title || ""));
   if (item.titleZh && item.title && item.titleZh !== item.title) {
-    card.append(el("p", "orig-line", `原文：${item.title}`));
+    const orig = el("p", "orig-line", item.title);
+    orig.title = item.title; // full original on hover; CSS truncates to one line
+    card.append(orig);
   }
 }
 
@@ -86,7 +88,9 @@ function localizedHighlight(item, fallback) {
 function linkList(items) {
   const wrap = el("div", "evidence-links");
   items.forEach((item) => {
-    const link = el("a", null, item.label);
+    const link = el("a", null, item.labelZh || item.label);
+    // Keep the English headline available on hover when we show the translation.
+    if (item.labelZh && item.label && item.labelZh !== item.label) link.title = item.label;
     link.href = item.url;
     link.target = "_blank";
     link.rel = "noreferrer";

@@ -1291,11 +1291,19 @@ h1 {
 }
 
 .orig-line {
-  margin: -4px 0 8px;
+  margin: -2px 0 8px;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.4;
-  opacity: 0.72;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orig-line::before {
+  content: "原文 ";
+  opacity: 0.7;
 }
 
 .badge-new {
