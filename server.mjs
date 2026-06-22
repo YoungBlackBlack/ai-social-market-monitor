@@ -193,6 +193,8 @@ const server = createServer(async (request, response) => {
         latestAlertPendingRows: currentState.counts?.latestAlertPendingRows ?? null,
         recentSignalPendingRows: currentState.counts?.recentSignalPendingRows ?? null,
       },
+      scheduler: enableScheduler,
+      runMonitorOnStartup,
       monitorSchedule,
       fullRebuildSchedule: enableFullRebuild ? fullRebuildSchedule : null,
       timezone,
