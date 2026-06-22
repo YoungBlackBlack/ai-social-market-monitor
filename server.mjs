@@ -45,8 +45,8 @@ async function fileExists(path) {
 
 async function resolveRequestPath(urlPath) {
   if (urlPath === "/" || urlPath === "") {
-    const standalonePath = workspacePath("exports/exa-ai-social-report.html");
-    if (await fileExists(standalonePath)) return standalonePath;
+    // Serve the live app at root so the homepage always reflects the deployed code.
+    // The standalone single-file report stays available at /exports/exa-ai-social-report.html.
     return workspacePath("index.html");
   }
 

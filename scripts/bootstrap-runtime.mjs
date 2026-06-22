@@ -24,9 +24,13 @@ async function ensureDirectory(path) {
 async function seedDirectory(sourcePath, targetPath) {
   if (!(await pathExists(sourcePath))) return;
   await ensureDirectory(targetPath);
+  // force: true so each deploy refreshes the volume from the freshly committed git files.
+  // The daily automation commits data/+exports/ to git, and the on-host monitor run is the
+  // only other writer — force:true makes git the source of truth and stops the persistent
+  // volume from shadowing newly pushed data and the regenerated standalone report.
   await cp(sourcePath, targetPath, {
     recursive: true,
-    force: false,
+    force: true,
     errorOnExist: false,
   });
 }
