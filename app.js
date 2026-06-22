@@ -1106,7 +1106,8 @@ function renderFeed(ledger, monitor, digest) {
   });
 
   let activeLane = "all";
-  let activeSegment = monitorAlertUrls.size > 0 ? "run-new" : "recent";
+  // Default to the full ledger in reverse-chronological order so the feed opens as a news stream.
+  let activeSegment = "history";
   let keyOnly = false;
   let hideProcessed = false;
   let watchOnly = false;
@@ -1178,13 +1179,13 @@ function renderFeed(ledger, monitor, digest) {
         head.append(el("h3", null, bucket.label));
         head.append(el("span", null, `${dayItems.length} 条`));
         stream.append(head);
-        group = el("div", "feed-grid");
+        group = el("div", "feed-list");
         stream.append(group);
       }
       const fresh = isNew(item);
       const status = statusMap[item.url];
       const isWatchHit = itemMatchesKeywords(item, watchKeywords);
-      const classes = ["recent-card", "feed-card", `priority-${item.priority}`];
+      const classes = ["feed-card", `priority-${item.priority}`];
       if (fresh) classes.push("is-new");
       if (status) classes.push(`status-${status}`, "is-processed");
       if (isWatchHit) classes.push("feed-watch-hit");
@@ -1203,7 +1204,7 @@ function renderFeed(ledger, monitor, digest) {
           `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
         ),
       );
-      card.append(el("p", null, localizedHighlight(item, "Exa monitor 捕捉到的新动向。")));
+      card.append(el("p", "feed-summary", localizedHighlight(item, "Exa monitor 捕捉到的新动向。")));
       if (item.url) {
         const link = el("a", null, "查看证据");
         link.href = item.url;
@@ -1220,9 +1221,9 @@ function renderFeed(ledger, monitor, digest) {
     controls.replaceChildren();
     const segmentRow = el("div", "feed-segment-row");
     const segmentDefinitions = [
+      ["history", "全部动向", items.length, "全部已发现 URL，按发现时间倒序"],
       ["run-new", "本轮新增", monitorAlertUrls.size, "本次 monitor 新发现的 URL"],
       ["recent", "近窗高相关", monitorRecentUrls.size, `回看 ${monitor?.lookbackDays ?? "—"} 天内的高相关结果`],
-      ["history", "历史台账", items.length, "所有已发现 URL 的长期台账"],
     ];
     segmentDefinitions.forEach(([key, label, value, description]) => {
       const btn = el("button", `feed-segment${activeSegment === key ? " selected" : ""}`);
