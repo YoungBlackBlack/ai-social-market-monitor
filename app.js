@@ -78,6 +78,13 @@ function appendItemTitle(card, item) {
     orig.title = item.title; // full original on hover; CSS truncates to one line
     card.append(orig);
   }
+  // One-line "why this is recommended to you" note.
+  if (item.whyZh) {
+    const why = el("p", "why-line");
+    why.append(el("span", "why-label", "为什么看"));
+    why.append(el("span", "why-text", item.whyZh));
+    card.append(why);
+  }
 }
 
 // Prefer the Chinese highlight when present, else the original, else a fallback string.

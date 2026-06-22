@@ -10,6 +10,7 @@ import { readFile, writeFile } from "node:fs/promises";
 const root = new URL("..", import.meta.url);
 const MODEL = process.env.GEMINI_TRANSLATE_MODEL || "gemini-2.5-flash";
 const CACHE_URL = new URL("data/translation-cache.json", root);
+const RELEVANCE_URL = new URL("data/relevance-cache.json", root);
 
 function envValue(envText, key) {
   return envText
@@ -55,6 +56,7 @@ const cache = await readJson(CACHE_URL, {});
 for (const key of Object.keys(cache)) {
   cache[key] = cleanTranslation(cache[key]);
 }
+const relevanceCache = await readJson(RELEVANCE_URL, {});
 let apiCalls = 0;
 
 async function translateBatch(texts) {
@@ -103,6 +105,73 @@ async function translateMany(uniqueTexts) {
           cache[src] = one;
         } catch (innerError) {
           console.warn(`translate failed: ${String(innerError).slice(0, 80)}`);
+        }
+      }
+    }
+  }
+}
+
+// Generate a one-line "why this matters to you" note per item, anchored to the user's goal:
+// tracking AI-social / AI-companion / offline-real-human-social competitors and their moves.
+async function relevanceBatch(entries) {
+  const numbered = entries
+    .map((e, i) => `${i + 1}. 【${e.lane || "未分类"}】${String(e.title).replace(/\s+/g, " ").trim()}`)
+    .join("\n");
+  const prompt =
+    `用户在持续监控 AI 社交、AI 伴侣、AI 泛娱乐、语言交换和线下真人社交这些赛道的竞品与新动向，目标是第一时间发现新融资、新产品和类似玩法。` +
+    `下面每条是一篇监控到的资讯（前面方括号是赛道）。请为每条用一句中文说明"为什么值得他看 / 和他的关注点有什么关系"，` +
+    `要求：不超过 18 个汉字、具体、给结论、不要空泛套话、不要标点结尾、不要序号。` +
+    `仅返回一个长度为 ${entries.length} 的 JSON 字符串数组，顺序一致，不要 markdown。\n\n${numbered}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${apiKey}`;
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.2, thinkingConfig: { thinkingBudget: 0 } },
+    }),
+  });
+  apiCalls += 1;
+  if (!response.ok) throw new Error(`Gemini HTTP ${response.status}`);
+  const data = await response.json();
+  let textOut = data?.candidates?.[0]?.content?.parts?.map((p) => p.text).join("") ?? "";
+  textOut = textOut.trim().replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```$/i, "").trim();
+  const arr = JSON.parse(textOut);
+  if (!Array.isArray(arr) || arr.length !== entries.length) {
+    throw new Error(`Relevance batch mismatch: got ${Array.isArray(arr) ? arr.length : "non-array"}, expected ${entries.length}`);
+  }
+  return arr.map((s) => cleanTranslation(s).replace(/[。.!！]+$/, ""));
+}
+
+function relevanceKey(item) {
+  return `${item.monitorLabel || ""}::${item.titleZh || item.title || ""}`;
+}
+
+async function generateRelevance(items) {
+  const pending = [];
+  const seen = new Set();
+  for (const item of items) {
+    const key = relevanceKey(item);
+    if (!key.endsWith("::") && !(key in relevanceCache) && !seen.has(key)) {
+      seen.add(key);
+      pending.push({ key, title: item.titleZh || item.title, lane: item.monitorLabel });
+    }
+  }
+  const BATCH = 20;
+  for (let i = 0; i < pending.length; i += BATCH) {
+    const slice = pending.slice(i, i + BATCH);
+    try {
+      const out = await relevanceBatch(slice);
+      slice.forEach((entry, idx) => {
+        relevanceCache[entry.key] = out[idx];
+      });
+    } catch (error) {
+      for (const entry of slice) {
+        try {
+          const [one] = await relevanceBatch([entry]);
+          relevanceCache[entry.key] = one;
+        } catch (innerError) {
+          console.warn(`relevance failed: ${String(innerError).slice(0, 80)}`);
         }
       }
     }
@@ -166,9 +235,10 @@ if (brief) walkObjects(brief, (node) => visitBriefNode(collect, false, node));
 
 await translateMany([...allStrings]);
 
-// Write the translations back onto the items and persist.
+// Apply translations onto the items (no write yet — relevance keys off the Chinese title).
 let annotatedTitles = 0;
 let annotatedLabels = 0;
+const monitorItems = [];
 for (const doc of docs) {
   for (const key of doc.arrays) {
     for (const item of doc.json[key] ?? []) {
@@ -179,8 +249,23 @@ for (const doc of docs) {
       if (looksEnglish(item.highlight) && cache[item.highlight]) {
         item.highlightZh = cache[item.highlight];
       }
+      monitorItems.push(item);
     }
   }
+}
+
+// Generate a concise "why it's recommended to you" note for every monitor item.
+await generateRelevance(monitorItems);
+let annotatedWhy = 0;
+for (const item of monitorItems) {
+  const why = relevanceCache[relevanceKey(item)];
+  if (why) {
+    item.whyZh = why;
+    annotatedWhy += 1;
+  }
+}
+
+for (const doc of docs) {
   await writeFile(doc.url, `${JSON.stringify(doc.json, null, 2)}\n`);
 }
 
@@ -193,13 +278,16 @@ if (brief) {
 }
 
 await writeFile(CACHE_URL, `${JSON.stringify(cache, null, 2)}\n`);
+await writeFile(RELEVANCE_URL, `${JSON.stringify(relevanceCache, null, 2)}\n`);
 
 console.log(JSON.stringify({
   ok: true,
   model: MODEL,
   uniqueStrings: allStrings.size,
   apiCalls,
-  cacheSize: Object.keys(cache).length,
+  translationCacheSize: Object.keys(cache).length,
+  relevanceCacheSize: Object.keys(relevanceCache).length,
   annotatedTitles,
   annotatedEvidenceLabels: annotatedLabels,
+  annotatedWhy,
 }, null, 2));
