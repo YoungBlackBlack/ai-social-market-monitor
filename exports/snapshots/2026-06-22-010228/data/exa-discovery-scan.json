@@ -1,0 +1,804 @@
+{
+  "generatedAt": "2026-06-15T09:35:29.785Z",
+  "startedAt": "2026-06-15T09:35:12.407Z",
+  "source": "https://api.exa.ai/search",
+  "purpose": "Additional broad discovery scan for AI social, AI friend, AI dating, AI companion long tail, IRL social, and language-exchange blind spots.",
+  "scans": [
+    {
+      "id": "ai_friend_wearables",
+      "label": "AI friend / wearable companion",
+      "category": "news",
+      "query": "2024 2025 2026 AI friend wearable companion app funding launch Friend Dot Limitless Bee Plaud pendant social AI companion consumer",
+      "ok": true,
+      "status": 200,
+      "requestId": "b8ddd3f0b9cd8c00dde46bb9cc70cb50",
+      "results": [
+        {
+          "title": "Friend's $99 necklace uses AI to help combat loneliness | TechCrunch",
+          "url": "https://techcrunch.com/2024/07/30/friend-is-an-ai-companion-backed-by-founders-of-solana-perplexity-and-zfellows/",
+          "publishedDate": "2024-07-30T16:00:00.000Z",
+          "author": "Ivan Mehta",
+          "highlight": "Friend's $99 necklace uses AI to help combat loneliness | TechCrunch [...] AI hardware is all the rage in startup land — though receptions have thus far been mixed. Two notable examples, Rabbit and Humane, released devices to disappointing results. a16z-backed Limitless and Exor-backed Bee AI, meanwhile, are working on their own screenless AI wearables. [..."
+        },
+        {
+          "title": "Friend",
+          "url": "https://friend.com/",
+          "publishedDate": null,
+          "author": "Friend Global, Inc.",
+          "highlight": "Friend # A new kind of companion Digital conscience for when humans get boring. or chat on the web"
+        },
+        {
+          "title": "Bee raises $7M for its wearable AI assistant that learns from your conversations | TechCrunch",
+          "url": "https://techcrunch.com/2024/07/29/former-squad-and-twitter-execs-raise-7m-to-build-a-hardware-ai-assistant/",
+          "publishedDate": "2024-07-29T17:10:00.000Z",
+          "author": "Ivan Mehta",
+          "highlight": "Bee raises $7M for its wearable AI assistant that learns from your conversations | TechCrunch [...] # Bee raises $7M for its wearable AI assistant that learns from your conversations [...] 10:10 AM PDT · July 29, 2024 [...] The promise of [...] and large language [...] in their day-to- [...] The latest entrant in this space is Bee, and it has raised $7 milli"
+        },
+        {
+          "title": "Limitless",
+          "url": "https://www.limitless.ai/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "# Limitless has been acquired by Meta [...] I'm excited to share that Limitless has been acquired by Meta. I'm going to share why we joined forces, what this means for customers, and what comes next. [...] Meta recently announced a new vision to bring personal superintelligence to everyone and a key part of that vision is building incredible AI-enabled weara"
+        },
+        {
+          "title": "Friend’s AI chatbots have issues — and they want your help | The Verge",
+          "url": "https://www.theverge.com/2024/12/9/24315126/friend-pendant-artificial-intelligence-companionship-avi-schiffmann",
+          "publishedDate": "2024-12-09T16:58:54.000Z",
+          "author": "Kylie Robison",
+          "highlight": "Friend just raised another $5.4 million to bring AI friends into the real world. [...] Friend’s turn toward moodiness has sparked some confusion online, but as Schiffmann will happily explain, it’s entirely intentional. “If they just opened with ‘Hey, what’s up?’ like most other bots do, you don’t really know what to talk about,” he tells me. As Friend prepa"
+        },
+        {
+          "title": "Hands-on with Bee, Amazon's latest AI wearable | TechCrunch",
+          "url": "https://techcrunch.com/2026/01/12/hands-on-with-bee-amazons-latest-ai-wearable/",
+          "publishedDate": "2026-01-13T00:00:00.000Z",
+          "author": "Sarah Perez",
+          "highlight": "Hands-on with Bee, Amazon's latest AI wearable | TechCrunch [...] # Hands-on with Bee, Amazon’s latest AI wearable [...] 4:00 PM PST · January 12, 2026 [...] In early tests with a review unit of Bee, we found the device itself was easy to use. It’s just a press of a button to turn recording on or off. In the app, you can configure whether a double press book"
+        },
+        {
+          "title": "Meta Acquires Limitless, Halts Sales Of AI Pendant Wearable",
+          "url": "https://techcrawlr.com/meta-acquires-limitless-halts-sales-of-ai-pendant-wearable/",
+          "publishedDate": "2025-12-07T19:45:00.000Z",
+          "author": "Hrvoje Milakovic",
+          "highlight": "Meta Platforms has acquired Limitless, the developer of an AI-powered pendant that records and transcribes conversations, integrating the startup’s team into its Reality Labs wearables division. The deal, announced by Limitless CEO Dan Siroker, aligns with Meta’s push to expand beyond smart glasses into broader AI hardware. Limitless, previously known as Rew"
+        },
+        {
+          "title": "I tried Amazon's Bee wearable and am both intrigued and slightly creeped out | TechCrunch",
+          "url": "https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/",
+          "publishedDate": "2026-05-24T00:00:00.000Z",
+          "author": "Lucas Ropek",
+          "highlight": "I recently had the opportunity to test out a wearable from Bee, the AI wrist gadget that Amazon acquired last year and has since updated with a number of new features. [...] Like other AI wearables, Bee is designed as a kind personal assistant: it records, transcribes, and summarizes the user’s conversations throughout the day, providing an ongoing note-taki"
+        },
+        {
+          "title": "Friend: Funding, Team & Investors | Startup Intros",
+          "url": "https://startupintros.com/orgs/friend",
+          "publishedDate": "2026-04-16T00:00:00.000Z",
+          "author": "Startup Intros",
+          "highlight": "Friend develops a wearable AI pendant that functions as a screenless companion by continuously processing voice interactions and sending real-time text responses to a connected smartphone. The hardware device utilizes large language models from technology providers such as Anthropic and Google to facilitate conversational engagement without storing long-term"
+        },
+        {
+          "title": "‎Friend - Wearable Companion App - App Store",
+          "url": "https://apps.apple.com/us/app/friend-wearable-companion/id6739473884",
+          "publishedDate": "2025-09-27T22:46:08.000Z",
+          "author": "Lycanna",
+          "highlight": "‎Friend - Wearable Companion App - App Store # Friend - Wearable Companion ## Entertainment Only for iPhone Free Share iPhone Friend let's you talk to your friend. more ## Ratings & Reviews 3.3 out of 5 96 Ratings ## What’s New Bug fixes and improvements more #### Version 1.12 Mar 4 ## App Privacy The developer, Friend Global, Inc., indicated that the app’s "
+        }
+      ]
+    },
+    {
+      "id": "ai_native_social_networks",
+      "label": "AI-native social networks",
+      "category": "news",
+      "query": "2024 2025 2026 AI native social network app funding launch SocialAI Butterflies Status Daze Oasiz Series consumer social",
+      "ok": true,
+      "status": 200,
+      "requestId": "91bf8b966e2ff7eb6cf87926734474e3",
+      "results": [
+        {
+          "title": "SocialAI offers a Twitter-like diary where AI bots respond to your posts | TechCrunch",
+          "url": "https://techcrunch.com/2024/09/17/socialai-offers-a-twitter-like-diary-where-ai-bots-respond-to-your-posts/",
+          "publishedDate": "2024-09-17T14:39:29.000Z",
+          "author": "Natasha Lomas",
+          "highlight": "7:39 AM PDT · September 17, 2024 [...] Are we at peak social media yet? It’s an interesting question to ponder after the launch of an iOS app offering a social media experience just for one. At a glance, SocialAI— which is billed as a pure “AI Social Network” — looks like Twitter, but there’s one very big twist on traditional microblogging: There are no othe"
+        },
+        {
+          "title": "Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage | TechCrunch",
+          "url": "https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/",
+          "publishedDate": "2026-04-24T21:05:59.000Z",
+          "author": "Dominic-Madori Davis",
+          "highlight": "-seed to [...] Series, a social networking app, announced that it raised a $5.1 million pre-seed round, with investors including Venmo co-founder Iqram Magdon-Ismail, Pear VC, Reddit CEO Steve Huffman, and GPTZero founder Edward Tian. The company was founded early last year by Yale students Nathaneo Johnson and Sean Hargrow, both still seniors at the univers"
+        },
+        {
+          "title": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch",
+          "url": "https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/",
+          "publishedDate": "2026-05-19T14:00:00.000Z",
+          "author": "Dominic-Madori Davis",
+          "highlight": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch [...] # Forget the feed: Status AI raises $17M to turn social media into interactive entertainment [...] 7:00 AM PDT · May 19, 2026 [...] Like many young people of her generation, Fai Nur was what she called a “chronically online teenager.” She obsessed ov"
+        },
+        {
+          "title": "Butterflies takes flight with $4.8M, launches social media platform combining AI and human content – GeekWire",
+          "url": "https://www.geekwire.com/2024/butterflies-takes-flight-with-4-8m-launches-social-media-platform-combining-ai-and-human-content/",
+          "publishedDate": "2024-06-18T22:15:00.000Z",
+          "author": "Kurt Schlosser",
+          "highlight": "Butterflies takes flight with $4.8M, launches social media platform combining AI and human content – GeekWire Share iPhone screenshots of the Butterflies AI app. (App Store Images) Butterflies, a Bellevue, Wash.-based social media platform that combines human and AI-generated content, launched Tuesday after raising $4.8 million in seed funding. After five mo"
+        },
+        {
+          "title": "Oasiz raises $2.5M seed round for viral playable content - GamesBeat",
+          "url": "https://gamesbeat.com/oasiz-raises-2-5m-seed-round-for-viral-playable-content/",
+          "publishedDate": "2025-10-08T12:00:00.000Z",
+          "author": "Dean Takahashi",
+          "highlight": "Oasiz raises $2.5M seed round for viral playable content - GamesBeat [...] Oasiz, a social creation platform built for instant interactive experiences, said it raised $2.5 million in seed funding. [...] A16z Speedrun and The Venture Reality Fund led the round, with participation from industry executives Tabish Ahmed and Mike Abbott. [...] Oasiz is pioneering"
+        },
+        {
+          "title": "‎SocialAI - AI Social Network App - App Store",
+          "url": "https://apps.apple.com/us/app/socialai-ai-social-network/id6670229993",
+          "publishedDate": "2024-09-23T13:08:36.000Z",
+          "author": "Greglena",
+          "highlight": "‎SocialAI - AI Social Network App - App Store # SocialAI - AI Social Network ## Chat with 1M+ AI followers Only for iPhone Free · Designed for iPhone Share iPhone SocialAI is your personal AI-powered social network designed just for you. With SocialAI, you can: • Post status updates and get infinite replies from millions of AI followers • Enjoy your own priv"
+        },
+        {
+          "title": "Butterflies AI Raises Seed Round, Launches First Social",
+          "url": "https://www.globenewswire.com/news-release/2024/06/18/2900674/0/en/Butterflies-AI-Raises-Seed-Round-Launches-First-Social-Media-Platform-Where-People-and-AI-Friends-Co-Exist.html",
+          "publishedDate": "2024-06-18T12:00:00.000Z",
+          "author": "Butterflies AI",
+          "highlight": "AI Raises Seed Round, Launches First Social Media Platform Where People and AI Friends Co-Exist [...] BELLEVUE, Wash., June 18, 2024 (GLOBE NEWSWIRE) -- Butterflies AI, the first social media platform allowing humans and AIs to co-exist, announced today the public launch of its platform after five months in beta. Butterflies AI combines public AI models with"
+        },
+        {
+          "title": "Oasiz raises $2.5M to make TikTok-style “playable content” a thing — here’s what that actually means | FinalBoss | FinalBoss.io",
+          "url": "https://finalboss.io/oasiz-raises-2-5m-to-make-tiktok-style",
+          "publishedDate": "2025-10-09T14:31:44.000Z",
+          "author": "GAIA",
+          "highlight": "Oasiz just raised $2.5 million to chase a big idea: a TikTok-style feed where the posts aren’t videos or photos, but tiny multiplayer games you can make, remix, and share in seconds. This caught my attention because I’ve watched platform after platform try to mash TikTok’s virality with Roblox’s creation tools-and most of them either run into moderation hell"
+        },
+        {
+          "title": "Series hits 1m iMessage posts as users shun public feeds",
+          "url": "https://telconews.ca/story/series-hits-1m-imessage-posts-as-users-shun-public-feeds",
+          "publishedDate": "2025-12-23T00:00:00.000Z",
+          "author": "Sean Mitchell",
+          "highlight": "# Series hits 1m iMessage posts as users shun public feeds [...] Mon, 2 [...] Series, a social messaging platform that runs inside Apple's iMessage, has passed one million messages exchanged and is recording 10,000 daily active users after six months of operation, as it bets on a shift away from public social media feeds. [...] The New York-based start-up po"
+        }
+      ]
+    },
+    {
+      "id": "ai_dating_discovery",
+      "label": "AI dating / offline dating",
+      "category": "news",
+      "query": "2024 2025 2026 AI dating app offline dating anti swipe IRL singles events funding Breeze Thursday Hinge Bumble Tinder live events",
+      "ok": true,
+      "status": 200,
+      "requestId": "109601b862a32d1603046ae2a6ccab8e",
+      "results": [
+        {
+          "title": "How dating apps are fighting swipe fatigue | The Week",
+          "url": "https://theweek.com/culture-life/personal-technology/how-dating-apps-are-fighting-swipe-fatigue",
+          "publishedDate": "2026-06-02T13:58:19.000Z",
+          "author": "By\n Will Barker, The Week UK   \n \n \n \npublished\n \n2 June 2026",
+          "highlight": "Dating apps are “rooted in rejection and judgement” and that’s “not healthy”, Bumble founder Whitney Wolfe Herd told Fortune. She had an “epiphany” during a 14-month leave of absence that users are just “hurt people hurting people”, and has vowed to bring “more joy and satisfaction” to her app. [...] Bumble is now shifting to matching-making driven by AI – a"
+        },
+        {
+          "title": "The Anti-Tinder Arbitrage",
+          "url": "https://www.startupheist.com/the-anti-tinder-arbitrage/",
+          "publishedDate": "2026-02-05T09:11:28.000Z",
+          "author": null,
+          "highlight": "Between May 2023 and May 2024, Tinder lost 594,000 users in the UK. Hinge shed 131,000. Bumble dropped 368,000. By Q2 2025, Bumble's paying users had fallen 8.7% to 3.8 million. Match Group—owner of both Tinder and Hinge—just reported its eighth consecutive quarter of declining payers. [...] Meanwhile, attendance at in-person dating events surged 42% between"
+        },
+        {
+          "title": "Dating Apps Bet on IRL Events | Dating Industry Insights",
+          "url": "https://www.datingindustryinsights.com/resources/singles-economy/thursday-hinge-experience-led-dating-shift",
+          "publishedDate": null,
+          "author": "Dating Industry Insights",
+          "highlight": "This report examines the strategic pivot by major dating platforms toward experience-led models combining digital matching with in-person events. It analyses why app-only formats are failing to retain Gen Z users and evaluates the commercial viability of event-based dating models emerging across the industry. The research draws on user data from Ofcom, Hinge"
+        },
+        {
+          "title": "Taking Online Dates Offline: Dating App Breeze Launches in the U.S., Starting with NYC",
+          "url": "https://www.businesswire.com/news/home/20250325708326/en/Taking-Online-Dates-Offline-Dating-App-Breeze-Launches-in-the-U.S.-Starting-with-NYC",
+          "publishedDate": "2025-03-25T14:08:00.000Z",
+          "author": null,
+          "highlight": "The successful European platform aims to bring singles together IRL in the city with one of the highest amounts of dating app users in the world. [...] NEW YORK--(BUSINESS WIRE)-- Breeze, the dating app for real dates, announces its expansion into the United States. Starting with New York City, the platform targets online dating fatigue by encouraging users "
+        },
+        {
+          "title": "Bumble’s AI assistant Bee will learn what you want from a relationship",
+          "url": "https://thenextweb.com/news/bumble-bee-ai-assistant-dating-swipe",
+          "publishedDate": "2026-03-13T09:08:24.000Z",
+          "author": "Allison Steffens Herrera",
+          "highlight": "The dating app unveiled Bee at its Q4 earnings alongside a broader ‘Bumble 2.0’ overhaul, as the company attempts to reverse years of declining user numbers by replacing gamified swiping with AI-driven compatibility. [...] There is a version of the future, Bumble’s version, at least, where you never swipe on a dating app again. Instead, you have a private co"
+        },
+        {
+          "title": "Bumble introduces an AI dating assistant, 'Bee' | TechCrunch",
+          "url": "https://techcrunch.com/2026/03/12/bumble-introduces-an-ai-dating-assistant-bee/",
+          "publishedDate": "2026-03-12T16:52:17.000Z",
+          "author": "Sarah Perez",
+          "highlight": "Dating app maker Bumble is venturing into generative AI. During the company’s fourth-quarter earnings on Wednesday, Bumble introduced a new AI assistant it’s calling “Bee,” designed to become a personal matchmaker that learns users’ “values, relationship goals, communication style, lifestyle, and dating intentions” through private chats. It then uses those i"
+        },
+        {
+          "title": "Breeze: Can a Dutch app save Brits from swiping past our dismal dating scene? | The Independent",
+          "url": "https://www.independent.co.uk/life-style/breeze-dating-app-tinder-hinge-b2983703.html",
+          "publishedDate": "2026-05-31T05:00:00.000Z",
+          "author": null,
+          "highlight": "The Dutch couple are one of many success stories spawning from the dating app Breeze, which launched in Europe in 2020 before landing in London in 2025. Breeze promises date nights without endless swiping, and banishes the talking stage (what’s your favourite colour? How many siblings do you have?”) by only opening the chat window two hours before the date. "
+        },
+        {
+          "title": "Breeze Launches IRL Group Dates Across London - Global Dating Insights",
+          "url": "https://www.globaldatinginsights.com/featured/breeze-launches-irl-group-dates-across-london/",
+          "publishedDate": "2026-05-28T10:10:47.000Z",
+          "author": "Staff Writer",
+          "highlight": "Breeze Launches IRL Group Dates Across London - Global Dating Insights 28th May 2026 Staff Writer Breeze has launched real-life group date events across London, marking the first time since the platform has moved beyond the conventional one-on-one dating format in any official capacity. The current structure allows for up to eight singles at a venue, with no"
+        },
+        {
+          "title": "Tinder Launches “Events,” a New In-App Feature, Bringing Online Sparks Into Real Life",
+          "url": "https://www.tinderpressroom.com/2026-03-16-Tinder-Launches-Events,-a-New-In-App-Feature,-Bringing-Online-Sparks-Into-Real-Life",
+          "publishedDate": "2026-03-16T00:00:00.000Z",
+          "author": null,
+          "highlight": "A new in-app Events feature helps singles discover local experiences and see who’s interested—making meeting IRL feel more natural, social and fun. [...] LOS ANGELES, March 16, 2026 - At Tinder’s inaugural Product Keynote, the company unveiled Events, a new in-app feature designed to help singles take the spark made online and bring it offline. [...] Launchi"
+        },
+        {
+          "title": "MTCH 8-K 2026.02.03 EX99.2",
+          "url": "https://www.sec.gov/Archives/edgar/data/891103/000089110326000020/mtch8-k20260203ex992.htm",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "In 2026, we expect Tinder Y/Y Direct Revenue declines to be similar to 2025 as we [...] , but with short [...] term revenue trade-offs. Across the rest of the [...] portfolio, we expect continued strong Direct Revenue growth at Hinge, while Evergreen & [...] Emerging (“E&E”) and MG Asia continue to face headwinds. [...] women (and in [...] example, we’ve bee"
+        }
+      ]
+    },
+    {
+      "id": "companion_long_tail",
+      "label": "AI companion long tail",
+      "category": "company",
+      "query": "AI companion roleplay apps company Candy AI CrushOn Janitor AI Lovescape FantasyGF Muah AI Kupid AI SoulFun users revenue 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "1fdb85cee5657436a96758a797bc67b7",
+      "results": [
+        {
+          "title": "janitorai",
+          "url": "https://janitorai.com/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "janitorai is a Software Development company. Janitorai employs 7 people (+160.0% YoY). with presence in United States, Australia, Indonesia, and Poland. [...] janitorai is a platform for creators building immersive worlds and readers seeking living stories. We are where human creativity meets AI magic. [...] - Industry: Software Development - Type: Privately"
+        },
+        {
+          "title": "Blush AI",
+          "url": "https://blush.ai/",
+          "publishedDate": "2026-04-24T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# Blush AI Blush AI is a Technology, Information and Internet company. Blush AI employs 4 people. Headquartered in San Francisco, California, United States, with presence in Poland, Spain, Portugal, and Colombia. ## About 🎯 Making dating less daunting, one conversation at a time. Blush is the AI-powered dating simulator that's revolutionizing how people lea"
+        },
+        {
+          "title": "DreamGF",
+          "url": "https://dreamgf.ai/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# DreamGF DreamGF is a Software Development company. DreamGF.ai is an AI girlfriend generator that allows users to create custom personalities, outfits, and more. They offer a platform for users to chat, sex, and create content for their AI girlfriends. DreamGF employs 10 people (+10.0% YoY, +1 person). Headquartered in Bucharest, Romania. ## About DreamGF, "
+        },
+        {
+          "title": "Janitor AI",
+          "url": "https://janitor-ai.org/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# Janitor AI Janitor AI is a Software Development company. Founded in 2024. ## About At Janitor AI, we build intelligent, customizable chatbots that transform how people interact with digital platforms. From customer support to creative role-play, Janitor AI combines natural language understanding, automation, and security to make AI conversations seamless a"
+        },
+        {
+          "title": "Dippy AI",
+          "url": "https://dippy.ai/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Dippy AI is a Technology, Information and Media company. Dippy is a company that provides a platform for users to chat with proactive AI characters. They offer unlimited messaging, advanced roleplay, seamless character creation, and no ads. The company provides a perfect memory and limitless fun. Dippy AI employs 9 people (-15.4% YoY, -2 people). Headquarter"
+        },
+        {
+          "title": "ChatFai",
+          "url": "https://chatfai.com/",
+          "publishedDate": "2026-04-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "ChatFai is a Software Development company. ChatFAI is a company that allows users to chat with their favorite characters from movies, TV shows, books, and more. ChatFai employs 4 people, founded in 2023. Headquartered in Lewes, Delaware, United States, with presence in Pakistan. [...] An AI-powered experience that allows you to chat with your favorite charac"
+        },
+        {
+          "title": "Replika",
+          "url": "https://replika.com/",
+          "publishedDate": "2026-05-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Replika is a Software Development company. Replika is a company that provides adult entertainment services. They offer a chatbot called Replika, which is a conversational and human-like adult chatbot. They have a platform for users to chat with people and connect with them. Replika employs 44 people (+7.5% YoY, +8 people) and has an annual revenue of $1.0M-$"
+        },
+        {
+          "title": "Jaimee",
+          "url": "https://jaimee.ai/",
+          "publishedDate": "2026-05-01T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Jaimee is a Mobile Computing Software Products company. Jaimee is a company that builds an ai companion for women, specifically designed to bring joy, comfort, and fun. They offer features such as stress management, confidence building, relationship enhancement, emotional resilience, life transitions, personal growth, goal achievement, and career development"
+        },
+        {
+          "title": "EverAI",
+          "url": "https://everai.ai/",
+          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "EverAI is a Technology, Information and Internet company. EverAI specializes in creating conversational ai experiences for roleplay, gaming, social interactions, and creative writing. They offer interactive gaming with ai characters that think, react, and engage dynamically. They also provide creative companions for writers to unleash creativity with ai. Eve"
+        },
+        {
+          "title": "PolyBuzz",
+          "url": "https://polyai.ai/",
+          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "PolyBuzz is a Software Development company. Founded in 2023. [...] PolyBuzz, a leading AI technology company, excels in delivering advanced chatbot services with a focus on virtual companionship. Utilizing cutting-edge technology, PolyBuzz enables bots to think and respond like humans, generating lifelike voices that provide users with a free, private, and i"
+        }
+      ]
+    },
+    {
+      "id": "irl_social_long_tail",
+      "label": "IRL social long tail",
+      "category": "company",
+      "query": "offline IRL social discovery app meet friends local activities dinners strangers 2024 2025 2026 Posh Luma 222 Timeleft Pie Aglow Meet5",
+      "ok": true,
+      "status": 200,
+      "requestId": "d29761d4f031649b516374e78d80c259",
+      "results": [
+        {
+          "title": "Timeleft",
+          "url": "https://timeleft.com/",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "Timeleft is a Entertainment Providers company. Timeleft is a company that allows users to meet strangers every wednesday evening in their city. They offer a platform for users to book seats and download the app for weekly dinners worldwide. The company provides effortless meet and dine with new faces, new places, and zero hassle. They also offer icebreaker g"
+        },
+        {
+          "title": "Pie",
+          "url": "https://getpie.app/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Pie is a Technology, Information and Internet company. Pie is a social media platform that helps people find and connect with friends. Pie employs 19 people (+19.9% YoY). Headquartered in Chicago, Illinois, United States. Has $11.5M in total funding, with 1 prior funding round. [...] social media, community, events, friends, privacy policy, apps, b2c, conten"
+        },
+        {
+          "title": "Aglow Life",
+          "url": "https://aglow.life/",
+          "publishedDate": "2026-04-22T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Aglow Life is a Social Networking Platforms company. Aglow Life is a company that aims to build genuine connection through shared values. They are coming soon to the Google Play store. Aglow Life employs 5 people (+100.0% YoY, +2 people). Headquartered in San Francisco, California, United States. [...] We are the next evolution of social: Local, unfiltered, "
+        },
+        {
+          "title": "Meet5",
+          "url": "https://meet5.de/",
+          "publishedDate": "2026-04-28T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Meet5 is a Technology, Information and Internet company. meet5 is a company that allows users to connect and create meets, organize activities, and organize events. They cater to individuals in the middle age, who have a strong connection with each other. The app provides a simple and secure approach to meeting and providing a safe and enjoyable experience f"
+        },
+        {
+          "title": "Meet5 Club",
+          "url": "https://meet5.club/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Meet5 Club is an invite-only IRL club for urban professionals in Bangalore. [...] We run weekly curated hangouts - dinners, brunches, and drinks - matched by AI based on who you are and whom you'd find interesting. Every hangout is a small group of 6-8 members, designed for real conversations and meaningful connections. [...] No name tags [...] social club, "
+        },
+        {
+          "title": "MeetMux",
+          "url": "https://meetmux.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "MeetMux is a Social Networking Platforms company. MeetMux is an AI-powered, activity-first social platform where users discover people around them based on real-time and planned activities like sports, movies, or travel. They bring real, meaningful, in-person connections back into your life. MeetMux employs 25 people (+188.2% YoY), founded in 2024. Headquart"
+        },
+        {
+          "title": "Homii World",
+          "url": "https://homiiworld.com/",
+          "publishedDate": "2026-04-15T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Homii World is a Social Networking Platforms company. Homii Life is a company that supports those looking for work in Japan. They provide fully furnished rooms for rent, flexible contract lengths, and online accommodation. They aim to enrich the new life in Japan by offering a memorable experience with their host family. Homii World employs 2 people (+300.0%"
+        },
+        {
+          "title": "Paxmeet",
+          "url": "https://paxmeet.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Paxmeet is a Social Networking Platforms company. Paxmeet employs 5 people, founded in 2025. Headquartered in New Delhi, India. [...] Paxmeet is a social platform that transforms strangers into stories through real-world events. Whether it’s a house party, poetry slam, wellness workshop, or food crawl — Paxmeet helps you discover and join events curated by r"
+        },
+        {
+          "title": "Gist IRL",
+          "url": "https://gistirl.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Gist IRL is a Social Networking Platforms company. Gist IRL employs 2 people. Headquartered in San Francisco, California, United States. [...] Finding real community takes both values alignment and personality fit, and the only way to find your people is to meet a lot of them. Most of adult life isn't built for that. Work friendships fade when jobs change. C"
+        },
+        {
+          "title": "Eve Inc.",
+          "url": "https://meetwitheve.com/",
+          "publishedDate": "2026-05-01T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Eve Inc. is a Social Networking Platforms company. Eve Inc. employs 3 people, founded in 2025. Headquartered in Dover, Delaware, United States. [...] Eve is a new social platform that turns everyday tasks, spontaneous whims, and niche interests into real, face-to-face connections. Whether it’s finding someone to join a spur-of-the-moment grocery run or watch"
+        }
+      ]
+    },
+    {
+      "id": "language_exchange_long_tail",
+      "label": "Language exchange long tail",
+      "category": "company",
+      "query": "HelloTalk Tandem alternatives language exchange social app native speaker voice chat Speaky Lingbe Lingopie Ling App 2024 2025 2026",
+      "ok": true,
+      "status": 200,
+      "requestId": "97e7d024d093d7e3d5bac1250a292c1e",
+      "results": [
+        {
+          "title": "Lingbe",
+          "url": "https://lingbe.com/",
+          "publishedDate": "2026-04-29T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Lingbe is a Technology, Information and Internet company. Lingbe.com is a language practice platform that allows users to practice with native speakers anytime, anywhere. Users can practice with native speakers and earn rewards and special features. The platform allows users to connect with other learners and make new friends from around the world. Lingbe em"
+        },
+        {
+          "title": "Lingopie",
+          "url": "https://lingopie.com/",
+          "publishedDate": "2026-05-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Lingopie is a E-Learning Providers company. Lingopie is a company that provides language learning services for students. They offer a wide range of TV shows with subtitles, allowing users to learn and access various language skills. They also provide live group lessons and live group lessons to improve language skills. Lingopie aims to help students improve "
+        },
+        {
+          "title": "Conversation Exchange",
+          "url": "https://conversationexchange.com/",
+          "publishedDate": "2026-04-23T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Conversation Exchange is a E-learning company. Conversation Exchange is a language learning platform that offers three types of language exchange: face to face conversation, correspondence, text and voice chat. Conversation Exchange employs 2 people, founded in 2005. Headquartered in San Antonio, Texas, United States, with presence in Brazil and Italy. [...]"
+        },
+        {
+          "title": "Talk4Now",
+          "url": "https://talk4now.com/",
+          "publishedDate": "2026-05-03T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Talk4Now is a Language Schools company. Talk4Now employs 2 people, founded in 2026. Headquartered in Dhaka, Bangladesh, with presence in Pakistan. [...] That’s why we built Talk4Now — a global platform where you can practice any language by talking to real people from around the world 💬🌎 [...] You can create or join rooms labeled by language, meet learners"
+        },
+        {
+          "title": "meeTalk: Global Chat",
+          "url": "https://quiksa.com/",
+          "publishedDate": "2026-04-25T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "meeTalk: Global Chat is a Social Networking Platforms company. MeeTalk: Global Chat employs 2 people. Headquartered in İstanbul, Turkey. [...] meeTalk Global Chat is a next-generation language exchange and social messaging platform that connects you with native speakers from all around the world. 🌍 [...] Whether you want to practice a new language, make int"
+        },
+        {
+          "title": "Tandem",
+          "url": "https://tandem.net/",
+          "publishedDate": "2026-05-21T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Tandem is a E-Learning Providers company. Tandem is a language learning app that allows users to connect with native speakers and practice their target languages. Tandem employs 41 people (+7.8% YoY, +4 people), founded in 2015. Headquartered in Berlin, Berlin, Germany, operates in 15 countries (including Indonesia, Spain, United Kingdom, Italy, and Czechia)"
+        },
+        {
+          "title": "Fluently",
+          "url": "https://fluently.chat/",
+          "publishedDate": "2026-04-22T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "# Fluently Fluently is a E-Learning Providers company. Fluently is a company that offers live language exchange services for individuals to master any language. They provide free membership with early access and have a team of native speakers in their own dialects. The company aims to help individuals speak naturally and comfortably by learning from native s"
+        },
+        {
+          "title": "LangPal",
+          "url": "https://lang-pal.com/",
+          "publishedDate": "2026-05-01T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "E-Learning Providers company. LangPal [...] in 2025 [...] Headquartered in Seattle, Washington, United States, [...] LangPal is an AI-powered language learning platform designed to help users achieve real-world fluency through immersive, conversation-based practice. Unlike traditional language learning apps that focus on memorization, flashcards, and passive"
+        },
+        {
+          "title": "Linguado",
+          "url": "https://linguado.com/",
+          "publishedDate": "2026-04-30T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "Linguado is a E-Learning Providers company. Linguado is a free mobile app that allows users to instantly link with native speakers of the language they desire, by proximity or worldwide. They offer language learning, accent reduction, travel, cultural exchange, and business solutions. Linguado represents over 250 countries, nationalities, and languages, and "
+        },
+        {
+          "title": "HelloTalk",
+          "url": "https://hellotalk.com/",
+          "publishedDate": "2026-05-27T00:00:00.000Z",
+          "author": "Exa",
+          "highlight": "HelloTalk, also abbreviated as HT, is a language exchange app and website released in 2013. It is monetized using the freemium model. It was created by Chinese developer Zackery Ngai. As of December 2025, the platform supports learning and communication in more than 260 languages, including English, Japanese, Spanish, French, Chinese, Korean, and German. The"
+        }
+      ]
+    },
+    {
+      "id": "ai_social_games_funding",
+      "label": "AI social games / playable social funding",
+      "category": "news",
+      "query": "2024 2025 2026 AI social game playable social platform generative AI friends startup funding seed Series Oasiz Status AI Series Daze social entertainment",
+      "ok": true,
+      "status": 200,
+      "requestId": "e310466426d775a8a72c66c5e7fd9ccc",
+      "results": [
+        {
+          "title": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch",
+          "url": "https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/",
+          "publishedDate": "2026-05-19T14:00:00.000Z",
+          "author": "Dominic-Madori Davis",
+          "highlight": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch [...] # Forget the feed: Status AI raises $17M to turn social media into interactive entertainment [...] Like many young people of her generation, Fai Nur was what she called a “chronically online teenager.” She obsessed over music groups, TV shows, and mo"
+        },
+        {
+          "title": "Oasiz raises $2.5M seed round for viral playable content - GamesBeat",
+          "url": "https://gamesbeat.com/oasiz-raises-2-5m-seed-round-for-viral-playable-content/",
+          "publishedDate": "2025-10-08T12:00:00.000Z",
+          "author": "Dean Takahashi",
+          "highlight": "Oasiz raises $2.5M seed round for viral playable content - GamesBeat [...] Oasiz, a social creation platform built for instant interactive experiences, said it raised $2.5 million in seed funding. [...] A16z Speedrun and The Venture Reality Fund led the round, with participation from industry executives Tabish Ahmed and Mike Abbott. [...] Oasiz is pioneering"
+        },
+        {
+          "title": "Astrocade Raises $56M in New Funding to Build a New Era of Interactive Entertainment | Astrocade Blog",
+          "url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
+          "publishedDate": "2026-05-05T06:32:50.000Z",
+          "author": "Astrocade",
+          "highlight": "We're thrilled to announce $56M in new funding. The funding includes a Series B led by Sequoia Capital and a Series A led by Sea, with participation from Google's AI Futures Fund, NVIDIA, LG Technology Ventures, Dentsu Ventures, Conviction Embed, Chaac Ventures, Rogue VC, and many more, to build a new kind of interactive entertainment platform. In just eight"
+        },
+        {
+          "title": "Oasiz raises $2.5M to make TikTok-style “playable content” a thing — here’s what that actually means | FinalBoss | FinalBoss.io",
+          "url": "https://finalboss.io/oasiz-raises-2-5m-to-make-tiktok-style",
+          "publishedDate": "2025-10-09T14:31:44.000Z",
+          "author": "GAIA",
+          "highlight": "Oasiz just raised $2.5 million to chase a big idea: a TikTok-style feed where the posts aren’t videos or photos, but tiny multiplayer games you can make, remix, and share in seconds. This caught my attention because I’ve watched platform after platform try to mash TikTok’s virality with Roblox’s creation tools-and most of them either run into moderation hell"
+        },
+        {
+          "title": "Sekai raises $20 million as people create 15 million AI mini apps",
+          "url": "https://www.axios.com/2026/06/01/sekai-mini-app-startup-funding",
+          "publishedDate": "2026-06-01T13:00:04.000Z",
+          "author": "Kerry Flynn",
+          "highlight": "Sekai raises $20 million as people create 15 million AI mini apps [...] # Exclusive: Sekai raises $20M for AI app creation [...] Sekai has raised a $20 million Series A to grow a platform for creating mini apps through text prompts, founder and CEO Lucky Zhang exclusively tells Axios. [...] Why it matters: The founder, who previously sold startups to Apple a"
+        },
+        {
+          "title": "Oasiz Raises $2.5M Seed Round Funding—TikTok Meets Roblox",
+          "url": "https://www.digitalmusicnews.com/2025/10/09/oasiz-raises-2-5m-seed-round/",
+          "publishedDate": "2025-10-09T18:44:52.000Z",
+          "author": "Ashley King",
+          "highlight": "Oasiz Raises $2.5M Seed Round Funding—TikTok Meets Roblox [...] # Oasiz Raises $2.5 Million In Seed Round Funding—But Will ‘TikTok Meets Roblox’ Fly? [...] October 9, 2025 [...] ## Oasiz, a new social creation platform based in San Francisco, has closed a $2.5 million seed round. The platform targets the intersection of gaming, social sharing, and virality—t"
+        },
+        {
+          "title": "Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage | TechCrunch",
+          "url": "https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/",
+          "publishedDate": "2026-04-24T21:05:59.000Z",
+          "author": "Dominic-Madori Davis",
+          "highlight": "Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage | TechCrunch [...] Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage [...] Series, a social networking app, announced that it raised a $5.1 million pre-seed round, with investors including Venmo co-founder Iqram Magdon-Ismail, Pear "
+        },
+        {
+          "title": "\"Oasiz Raises $2.5M Seed Round to Launch Social Platform for Viral Playable Content\" - Games Press",
+          "url": "https://www.gamespress.com/Oasiz-Raises-25M-Seed-Round-to-Launch-Social-Platform-for-Viral-Playab",
+          "publishedDate": "2025-10-08T15:32:21.000Z",
+          "author": null,
+          "highlight": "# Oasiz Raises $2.5M Seed Round to Launch Social Platform for Viral Playable Content [...] ## With 5,000+ games already built in beta, Oasiz combines the viral momentum of TikTok with the creative depth of Roblox"
+        },
+        {
+          "title": "Launch YC: Playabl.ai - TikTok for user-generated games. | Y Combinator",
+          "url": "https://www.ycombinator.com/launches/QeI-playabl-ai-tiktok-for-user-generated-games",
+          "publishedDate": "2026-06-02T15:46:52.000Z",
+          "author": null,
+          "highlight": "# Launch YC: Playabl.ai - TikTok for user-generated games. | Y Combinator [...] Published: 2026-06-02T15:46:52+00:00 [...] Launch YC: Playabl.ai - TikTok for user-generated games. | Y Combinator [...] # Playabl.ai - TikTok for user-generated games. [...] Anyone can play, create, publish, and monetize games. [...] The next big social platform won’t start with"
+        },
+        {
+          "title": "Status AI Raises $17 Million to Turn Social Media Into Worlds Users Can Live Inside - Fundraise Insider",
+          "url": "https://fundraiseinsider.com/blog/status-ai-raises-17-million-to-turn-social-media-into-worlds-users-can-live-inside/",
+          "publishedDate": "2026-05-28T21:18:10.000Z",
+          "author": "Chris Walker",
+          "highlight": "Status AI Raises $17 Million to Turn Social Media Into Worlds Users Can Live Inside - Fundraise Insider [...] Status AI, an interactive social media app, has announced $17 million in combined seed and Series A funding. The backers include General Catalyst, Y Combinator, LightShed Partners, and Abstract. The raise reflects a wager that the next chapter of con"
+        }
+      ]
+    },
+    {
+      "id": "ai_companion_funding_expansion",
+      "label": "AI companion funding expansion",
+      "category": "news",
+      "query": "2024 2025 2026 AI companion app raises funding seed Series revenue downloads Candy AI Kupid AI SoulFun FantasyGF Janitor AI CrushOn Dippy Tolan",
+      "ok": true,
+      "status": 200,
+      "requestId": "3c01082889ff2762e9a684b86b866417",
+      "results": [
+        {
+          "title": "AI companionship app Tolan raises $20M to help more people grow with a virtual alien friend – GeekWire",
+          "url": "https://www.geekwire.com/2025/ai-companionship-app-tolan-raises-20m-to-help-more-people-grow-with-a-virtual-alien-friend/",
+          "publishedDate": "2025-07-07T17:26:11.000Z",
+          "author": "Kurt Schlosser",
+          "highlight": "AI companionship app Tolan raises $20M to help more people grow with a virtual alien friend – GeekWire [...] The Tolan app features AI companions from Planet Portola. They are designed to help users feel grounded and confident, according to the startup that created them. (Tolan Image) [...] The startup behind the colorful, animated AI companions called Tolan"
+        },
+        {
+          "title": "Three Dudes Run The Biggest AI Romantic Fantasy Site For Women",
+          "url": "https://worldwiretimes.com/three-dudes-run-the-biggest-ai-romantic-fantasy-site-for-women/",
+          "publishedDate": "2026-05-08T17:25:07.000Z",
+          "author": "News Room",
+          "highlight": "After moving to a new city in North Carolina in 2024, Cookie (a pseudonym) felt the weight of a new city. Their husband was traveling a lot for work, and as a stay-at-home parent with a now 4-year-old daughter, the days were “very draining”. Since Cookie didn’t know anybody in their new town, they turned to Janitor AI, a social chatbot site known for its unb"
+        },
+        {
+          "title": "Dippy AI Raises $2.1M in Pre-Seed Funding",
+          "url": "https://www.finsmes.com/2024/10/dippy-ai-raises-2-1m-in-pre-seed-funding.html",
+          "publishedDate": "2024-10-23T12:38:12.000Z",
+          "author": "FinSMEs",
+          "highlight": "Dippy AI Raises $2.1M in Pre-Seed Funding Sign in Join Sign in Welcome!Log into your account your username your password Forgot your password? Create an account Sign up Welcome!Register for an account your email your username A password will be e-mailed to you. Password recovery Recover your password your email Search FinSMEs The Website About Venture Capita"
+        },
+        {
+          "title": "Sukidayo, AI Couple App “Riamo” Secures Seed Funding – BRIDGE",
+          "url": "https://thebridge.jp/en/2026/01/sukidayo-ai-couple-app-riamo-secures-seed-funding",
+          "publishedDate": "2026-01-16T09:21:29.000Z",
+          "author": null,
+          "highlight": "Sukidayo, AI Couple App “Riamo” Secures Seed Funding – BRIDGE - Share this article - x - facebook Image Credit: Sukidayo On the 14th,すきだよ, the developer and operator of the AI couple app “Riamo,” announced that it has raised a total of ¥85 million in a seed round. Investors include mint, i-nest, UNERI, ANRI, and Kayac. Riamo is an AI couple app designed to d"
+        },
+        {
+          "title": "This AI companion app hit $500,000/month, just 11 months after launch. | by Sahil S (Venture Radar) | Medium",
+          "url": "https://medium.com/@ventureradar/this-ai-companion-app-hit-500-000-month-just-11-months-after-launch-a22b0293bc63",
+          "publishedDate": "2025-06-16T10:08:51.000Z",
+          "author": "Sahil S (Venture Radar)",
+          "highlight": "This AI companion app hit $500,000/month, just 11 months after launch. | by Sahil S (Venture Radar) | Medium [...] # This AI companion app hit $500,000/month, just 11 months after launch. [...] Jun 16, 2025 [...] Today’s story? A friendly little alien that makes $500,000 per month, just by talking to people. [...] - Name: Tolans - What it does: AI-powered al"
+        },
+        {
+          "title": "Dippy AI Launches Censorship-Free, Proactive AI Companions to Help People Deal with Loneliness and Personal Concerns - EIN Presswire",
+          "url": "https://www.einnews.com/pr_news/754052618/dippy-ai-launches-censorship-free-proactive-ai-companions-to-help-people-deal-with-loneliness-and-personal-concerns",
+          "publishedDate": "2024-10-23T11:20:08.000Z",
+          "author": "EIN News",
+          "highlight": ", October 23, 2024 / EINPresswire.com/ -- Today Dippy AI, a mobile-first AI app product company, emerges from stealth with the Dippy AI character companion app to help people who want a character, or many characters, for immersive roleplay and interaction. Companion characters range from therapists, to friends, fictional characters from movies and books, rom"
+        },
+        {
+          "title": "Charms closes $1.5M pre-seed to launch the AI character economy | TechCrunch",
+          "url": "https://techcrunch.com/press-release/charms-closes-1-5m-pre-seed-to-launch-the-ai-character-economy/",
+          "publishedDate": "2026-05-12T13:00:00.000Z",
+          "author": null,
+          "highlight": "Charms closes $1.5M pre-seed to launch the AI character economy | TechCrunch [...] Technology Newswire— May 12, 2026 [...] # Charms closes $1.5M pre-seed to launch the AI character economy [...] Charms.ai lets anyone create AI characters with soul, memory, ownership, and an economy that grows around them. [...] Charms Interactive, Inc., the company building "
+        },
+        {
+          "title": "Caveduck's $3.2M Series A Validates the AI Roleplay Creator Economy | StartupXO",
+          "url": "https://startupxo.com/en/news/2026/04/caveduck-s-3-2m-series-a-validates-the-ai-roleplay-creator-economy/",
+          "publishedDate": "2026-04-02T00:56:56.000Z",
+          "author": null,
+          "highlight": "WarpSpace, operator of the AI character platform Caveduck, has secured a 4.3 billion KRW ($3.2M) Series A round led by ID Ventures. As the global conversational AI market races toward $61.69 billion by 2032, this funding highlights a massive shift from utility-based AI to high-engagement entertainment. Founders must note the power of creator monetization and"
+        },
+        {
+          "title": "Consumer AI Startup Companion Labs Raises $2.5M to Create Interactive, Local‑Language Entertainment Experiences in India - NEWSx.io",
+          "url": "https://newsx.io/2026/02/26/consumer-ai-startup-companion-labs-raises-2-5m-to-create-interactive-local-language-entertainment-experiences-in-india/",
+          "publishedDate": "2026-02-26T06:22:00.000Z",
+          "author": "NewsX io",
+          "highlight": "Consumer AI Startup Companion Labs Raises $2.5M to Create Interactive, Local‑Language Entertainment Experiences in India - NEWSx.io [...] Peak XV Surge backs Companion Labs in building interactive, local‑language AI experiences. [...] Companion Labs, a consumer AI company building interactive, entertainment-led experiences for India’s vernacular and cultural"
+        },
+        {
+          "title": "Sekai raises $20 million as people create 15 million AI mini apps",
+          "url": "https://www.axios.com/2026/06/01/sekai-mini-app-startup-funding",
+          "publishedDate": "2026-06-01T13:00:04.000Z",
+          "author": "Kerry Flynn",
+          "highlight": "Sekai raises $20 million as people create 15 million AI mini apps [...] # Exclusive: Sekai raises $20M for AI app creation [...] Sekai has raised a $20 million Series A to grow a platform for creating mini apps through text prompts, founder and CEO Lucky Zhang exclusively tells Axios. [...] How it works: Sekai is available as an iOS and Android app where peo"
+        }
+      ]
+    },
+    {
+      "id": "irl_social_funding_expansion",
+      "label": "IRL social funding expansion",
+      "category": "news",
+      "query": "2024 2025 2026 IRL social app raises funding seed Series events friends dinners strangers Partiful 222 Pie Timeleft Meet5 Posh Luma Aglow Life",
+      "ok": true,
+      "status": 200,
+      "requestId": "97554edacc8fc61c0800f8a7f18ef26a",
+      "results": [
+        {
+          "title": "Exclusive: Posh lands $37M Series B to crack the 'what are we doing tonight?' problem | Fortune",
+          "url": "https://fortune.com/2026/03/19/exclusive-posh-lands-37m-series-b-what-are-we-doing-tonight-problem/",
+          "publishedDate": "2026-03-19T11:25:56.000Z",
+          "author": "Lily Mae Lazarus",
+          "highlight": "Exclusive: Posh lands $37M Series B to crack the 'what are we doing tonight?' problem | Fortune [...] # Exclusive: Posh lands $37M Series B to crack the ‘what are we doing tonight?’ problem [...] March 19, 2026, 7:25 AM ET [...] Posh has also poached talent from Meta, Reddit, Amazon, Hinge, Spotify, Block, and Canva.Courtesy of Posh [...] Event platform Posh"
+        },
+        {
+          "title": "Andy Dunn's new app Pie uses AI to help you make friends | TechCrunch",
+          "url": "https://techcrunch.com/2025/03/04/andy-dunns-new-app-pie-uses-ai-to-help-you-make-friends/",
+          "publishedDate": "2025-03-04T21:11:27.000Z",
+          "author": "Amanda Silberling",
+          "highlight": "Andy Dunn's new app Pie uses AI to help you make friends | TechCrunch [...] # Andy Dunn’s new app Pie uses AI to help you make friends [...] 1:11 PM PST · March 4, 2025 [...] “We’re a long way from pants,” Andy Dunn, founder of online fashion retailer Bonobos, told TechCrunch. Now, the former CEO is taking on a completely different challenge: He wants to hel"
+        },
+        {
+          "title": "Meet5, Europe’s largest social app for over-40s, grabs €8M to fuel global expansion — TFN",
+          "url": "https://techfundingnews.com/meet5-europes-largest-social-app-for-over-40s-grabs-e8m-to-fuel-global-expansion/",
+          "publishedDate": "2025-09-10T07:00:00.000Z",
+          "author": "Sofia Chesnokova",
+          "highlight": "# Meet5, Europe’s largest social app for over-40s, grabs €8M to fuel global expansion [...] Loneliness is increasingly being recognised as a public health crisis, with a June 2025 WHO study revealing that one in six people struggles with it. While most social platforms chase younger audiences with short-form entertainment, Frankfurt-based startup Meet5 has t"
+        },
+        {
+          "title": "Meet the founders who just raised $37M to turn IRL community into the next big social platform",
+          "url": "https://www.founded.com/posh-event-platform-founders/",
+          "publishedDate": "2026-03-30T10:12:23.000Z",
+          "author": "Jennifer Sieg",
+          "highlight": "Meet the founders who just raised $37M to turn IRL community into the next big social platform [...] # Meet the founders who just raised $37M to turn IRL community into the next big social platform [...] Avante Price and Eli Taylor-Lemire founded social event platform Posh to make discovering and hosting events feel less like a chore and more like the cultur"
+        },
+        {
+          "title": "Smartphones are making people lonely. This app thinks it has the cure - Fast Company",
+          "url": "https://www.fastcompany.com/91265745/smartphones-are-making-people-lonely-this-app-thinks-it-has-the-cure",
+          "publishedDate": "2025-01-23T09:30:00.000Z",
+          "author": "Patrick Sisson",
+          "highlight": "Smartphones are making people lonely. This app thinks it has the cure - Fast Company Next Big Things in Tech Awards Final Deadline This Friday, 6/12 LOGIN | - IBM - Texas A&M University Last night, at more than 1,600 restaurants in 325-plus cities around the globe, approximately 20,000 people gathered for dinner with complete strangers. It’s what the creator"
+        },
+        {
+          "title": "Startuply.vc: 222",
+          "url": "https://startuply.vc/startup/222-nn5rhh",
+          "publishedDate": null,
+          "author": null,
+          "highlight": "222 is a New York-based consumer social startup that uses machine learning to match strangers into small groups for in-person gatherings at curated venues, positioning itself as an antidote to digital-only social networks [Business Insider, Feb 2024] [Y Combinator]. The company was founded in 2023 by Danial Hashemi, Keyan Kazemian, and Arman Roshannai, and w"
+        },
+        {
+          "title": "Meet Partiful, the Gen Z party-planning staple that’s taking on Apple – NBC Los Angeles",
+          "url": "https://www.nbclosangeles.com/news/business/money-report/meet-partiful-the-gen-z-party-planning-staple-thats-taking-on-apple/3682716/",
+          "publishedDate": "2025-04-19T00:00:00.000Z",
+          "author": null,
+          "highlight": "- Despite launching in the middle of the Covid-19 pandemic, Partiful survived to become a popular app for event planning among users ages 20 to 30. - Partiful has added 2 million new users in 2025, the startup said. In the first quarter of 2025, the service averaged 500,000 monthly users, up 400% year over year, according to estimates from Sensor Tower. - Pa"
+        },
+        {
+          "title": "An IRL social startup that aims to help strangers connect in group hangouts raised $11.5 million. Read its pitch deck. - B17 News",
+          "url": "https://b17news.com/an-irl-social-startup-that-aims-to-help-strangers-connect-in-group-hangouts-raised-11-5-million-read-its-pitch-deck/",
+          "publishedDate": "2024-10-05T14:21:32.000Z",
+          "author": "ChiTown Darren",
+          "highlight": "An IRL social startup that aims to help strangers connect in group hangouts raised $11.5 million. Read its pitch deck. - B17 News [...] The team behind Pie, an IRL-social startup founded by Andy Dunn, is based in Chicago. [...] Pie, a Chicago-based startup founded by menswear brand Bonobos’ Andy Dunn, is joining the race to help people make friends. [...] On"
+        },
+        {
+          "title": "Timeleft App Pairs You With Strangers for Dinner",
+          "url": "https://raleighmag.com/2025/04/29/timeleft-raleigh-app/",
+          "publishedDate": "2025-04-29T12:00:00.000Z",
+          "author": "Elliott Harrell",
+          "highlight": "Timeleft App Pairs You With Strangers for Dinner Photo by Liesel Fritsch, courtesy of Timeleft Share this Post My palms are sweaty, knees weak, arms are heavy… as I’m about to have dinner with five complete strangers—something completely out of my comfort zone—in the name of IRL socializing. And, no, I didn’t pick these strangers up on Craigslist. The dinner"
+        }
+      ]
+    },
+    {
+      "id": "ai_dating_funding_expansion",
+      "label": "AI dating / matchmaking funding expansion",
+      "category": "news",
+      "query": "2024 2025 2026 AI dating app raises funding seed Series matchmaking anti swipe offline dates Sitch Breeze Thursday Bumble Tinder Hinge Stanford app",
+      "ok": true,
+      "status": 200,
+      "requestId": "0e6e8d8a7904fa7f028586eb860bc5fb",
+      "results": [
+        {
+          "title": "Sitch's new dating app fuses human matchmaking and AI | TechCrunch",
+          "url": "https://techcrunch.com/2025/06/25/sitch-wants-to-fuse-human-personality-and-ai-for-matchmaking/",
+          "publishedDate": "2025-06-25T16:00:00.000Z",
+          "author": "Ivan Mehta",
+          "highlight": "Can AI improve the dating app market? A new dating app called Sitch aims to find out by leveraging human expertise in matchmaking to power its AI model. [...] Sitch aims to take a more thoughtful approach with its onboarding process and uses large language models (LLMs) to bring a human matchmaker’s expertise to the dating app experience, helping people find"
+        },
+        {
+          "title": "Stanford dropouts raise nearly $10M to launch AI dating app – NBC Bay Area",
+          "url": "https://www.nbcbayarea.com/news/local/stanford-known-dating-app-ai/4091043/",
+          "publishedDate": "2026-05-28T22:31:41.000Z",
+          "author": null,
+          "highlight": "Stanford dropouts raise nearly $10M to launch AI dating app – NBC Bay Area # Stanford dropouts raise nearly $10M to launch AI-driven dating app ## The new app, called Known, uses an interactive chatbot to build personality profiles and gives users a strict 24-hour window to agree to a face-to-face date. NBC Universal, Inc. Two Stanford dropouts, Celeste Amad"
+        },
+        {
+          "title": "Exclusive: Peak XV leads Ditto's $9.2M to end college swipe fatigue with AI dates — TFN",
+          "url": "https://techfundingnews.com/ditto-9-2m-seed-peak-xv-ai-college-dates/",
+          "publishedDate": "2026-02-03T12:45:00.000Z",
+          "author": "Sofia Chesnokova",
+          "highlight": "Exclusive: Peak XV leads Ditto's $9.2M to end college swipe fatigue with AI dates — TFN [...] # Exclusive: Peak XV leads Ditto’s $9.2M to end college swipe fatigue with AI dates [...] February 3, 2026 [...] A lot of college students get tired of endless swiping and messaging on dating apps, and often never meet in person. Ditto uses iMessage to match people "
+        },
+        {
+          "title": "Bumble introduces an AI dating assistant, 'Bee' | TechCrunch",
+          "url": "https://techcrunch.com/2026/03/12/bumble-introduces-an-ai-dating-assistant-bee/",
+          "publishedDate": "2026-03-12T16:52:17.000Z",
+          "author": "Sarah Perez",
+          "highlight": "Dating app maker Bumble is venturing into generative AI. During the company’s fourth-quarter earnings on Wednesday, Bumble introduced a new AI assistant it’s calling “Bee,” designed to become a personal matchmaker that learns users’ “values, relationship goals, communication style, lifestyle, and dating intentions” through private chats. It then uses those i"
+        },
+        {
+          "title": "How dating apps are fighting swipe fatigue | The Week",
+          "url": "https://theweek.com/culture-life/personal-technology/how-dating-apps-are-fighting-swipe-fatigue",
+          "publishedDate": "2026-06-02T13:58:19.000Z",
+          "author": "By\n Will Barker, The Week UK   \n \n \n \npublished\n \n2 June 2026",
+          "highlight": "Dating apps are “rooted in rejection and judgement” and that’s “not healthy”, Bumble founder Whitney Wolfe Herd told Fortune. She had an “epiphany” during a 14-month leave of absence that users are just “hurt people hurting people”, and has vowed to bring “more joy and satisfaction” to her app. [...] Bumble is now shifting to matching-making driven by AI – a"
+        },
+        {
+          "title": "30-year-old founder is using AI to help singles find love",
+          "url": "https://www.cnbc.com/2025/08/07/30-year-old-founder-is-using-ai-to-help-singles-find-love.html",
+          "publishedDate": "2025-08-07T15:04:21.000Z",
+          "author": "Gili Malinsky",
+          "highlight": "attended boarding school in [...] U.S., then Georgetown University for undergrad and eventually Stanford for a combined MBA and master's in education. It was there that she was confronted with one of the [...] with modern dating: [...] were tired of swiping. [...] In 2023, Mullaji, who was part of the team that launched Bumble in India years prior, went to w"
+        },
+        {
+          "title": "Sitch launches AI matchmaking app to reinvent modern dating",
+          "url": "https://www.m13.co/article/sitch-launches-ai-matchmaking-app-to-reinvent-modern-dating",
+          "publishedDate": "2025-06-25T00:00:00.000Z",
+          "author": null,
+          "highlight": "# Sitch launches AI matchmaking app to reinvent modern dating [...] The newly-launched AI match-making app, created by co-founders Nandini Mullaji and Chad DePue, already has over 10,000 profiles in New York City. [...] M13 is excited to lead the $5M seed in Sitch, AI dating startup co-founded by Bumble and Snap alumni. The company, co-founded by Nandini Mul"
+        },
+        {
+          "title": "Breeze: Can a Dutch app save Brits from swiping past our dismal dating scene? | The Independent",
+          "url": "https://www.independent.co.uk/life-style/breeze-dating-app-tinder-hinge-b2983703.html",
+          "publishedDate": "2026-05-31T00:00:00.000Z",
+          "author": null,
+          "highlight": "The Dutch couple are one of many success stories spawning from the dating app Breeze, which launched in Europe in 2020 before landing in London in 2025. Breeze promises date nights without endless swiping, and banishes the talking stage (what’s your favourite colour? How many siblings do you have?”) by only opening the chat window two hours before the date. "
+        },
+        {
+          "title": "Bumble’s AI assistant Bee will learn what you want from a relationship",
+          "url": "https://thenextweb.com/news/bumble-bee-ai-assistant-dating-swipe",
+          "publishedDate": "2026-03-13T09:08:24.000Z",
+          "author": "Allison Steffens Herrera",
+          "highlight": "The dating app unveiled Bee at its Q4 earnings alongside a broader ‘Bumble 2.0’ overhaul, as the company attempts to reverse years of declining user numbers by replacing gamified swiping with AI-driven compatibility. [...] There is a version of the future, Bumble’s version, at least, where you never swipe on a dating app again. Instead, you have a private co"
+        },
+        {
+          "title": "Ditto raises $9.2M to replace swiping with real dates for",
+          "url": "https://www.globenewswire.com/news-release/2026/02/03/3231154/0/en/Ditto-raises-9-2M-to-replace-swiping-with-real-dates-for-college-students.html",
+          "publishedDate": "2026-02-03T14:00:00.000Z",
+          "author": "Ditto",
+          "highlight": "Berkeley, Feb. 03, 2026 (GLOBE NEWSWIRE) -- For a generation that lives on their phones, dating has somehow become more time-consuming and less social. College students swipe endlessly, juggle multiple chats, and still struggle to turn matches into actual dates. Ditto was created to remove that friction entirely. Today, the company announced a $9.2 million f"
+        }
+      ]
+    }
+  ]
+}

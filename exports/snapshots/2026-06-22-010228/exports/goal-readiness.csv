@@ -1,0 +1,8 @@
+﻿"类型","检查项","状态","数值","证据/原因"
+"hard-gate","candidatePromotionQueue","pass","0","No remaining language or funding/news promotion queue rows."
+"hard-gate","latestAlertReviewPendingRows","pass","0","Latest alert review has no unresolved auto-filled monitor items."
+"hard-gate","monitorRecentReviewPendingRows","pass","0","Monitor recent signal review has no unresolved pending items."
+"hard-gate","blockingProductCandidateGapRows","pass","0","High-priority product-candidate gaps have all been handled by candidate deep-dive."
+"coverage-gap","blocking-product-candidate","pass","0","Unresolved product-candidate gaps would block claiming broad coverage of relevant products."
+"coverage-gap","monitored-signal-candidate","monitoring","22","Signal-candidate gaps are not promoted into conclusions until monitor finds stronger launch, funding, revenue, download, official, or IRL evidence."
+"coverage-gap","background-low-relevance","retained","63","Background and low-relevance rows are retained for auditability but do not count as missing products or funding events."

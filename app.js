@@ -70,6 +70,19 @@ function el(tag, className, text) {
   return node;
 }
 
+// Show the Chinese translation as the title when available, keeping the English original viewable.
+function appendItemTitle(card, item) {
+  card.append(el("h4", null, item.titleZh || item.title || ""));
+  if (item.titleZh && item.title && item.titleZh !== item.title) {
+    card.append(el("p", "orig-line", `原文：${item.title}`));
+  }
+}
+
+// Prefer the Chinese highlight when present, else the original, else a fallback string.
+function localizedHighlight(item, fallback) {
+  return item.highlightZh || item.highlight || fallback;
+}
+
 function linkList(items) {
   const wrap = el("div", "evidence-links");
   items.forEach((item) => {
@@ -999,7 +1012,7 @@ function saveWatchKeywords(list) {
 
 function itemMatchesKeywords(item, keywords) {
   if (!keywords.length) return false;
-  const haystack = `${item.title ?? ""} ${item.highlight ?? ""} ${item.monitorLabel ?? ""}`.toLowerCase();
+  const haystack = `${item.title ?? ""} ${item.titleZh ?? ""} ${item.highlight ?? ""} ${item.highlightZh ?? ""} ${item.monitorLabel ?? ""}`.toLowerCase();
   return keywords.some((kw) => haystack.includes(kw.toLowerCase()));
 }
 
@@ -1171,7 +1184,7 @@ function renderFeed(ledger, monitor, digest) {
       if (isWatchHit) tagRow.append(el("span", "badge-watch", "★ 关注"));
       if (status) tagRow.append(el("span", "badge-status", FEED_STATUSES[status].label));
       card.append(tagRow);
-      card.append(el("h4", null, item.title));
+      appendItemTitle(card, item);
       card.append(
         el(
           "p",
@@ -1179,7 +1192,7 @@ function renderFeed(ledger, monitor, digest) {
           `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
         ),
       );
-      card.append(el("p", null, item.highlight || "Exa monitor 捕捉到的新动向。"));
+      card.append(el("p", null, localizedHighlight(item, "Exa monitor 捕捉到的新动向。")));
       if (item.url) {
         const link = el("a", null, "查看证据");
         link.href = item.url;
@@ -1443,9 +1456,9 @@ function renderMonitor(monitor, history, ledger, digest, data) {
       tagRow.append(el("span", "tag", `${item.monitorLabel} · ${status}`));
       if (isFresh) tagRow.append(el("span", "badge-new", "NEW"));
       card.append(tagRow);
-      card.append(el("h4", null, item.title));
+      appendItemTitle(card, item);
       card.append(el("p", "date-line", fmtDate(item.publishedDate)));
-      card.append(el("p", null, item.highlight || "Exa returned this as a recent relevant item."));
+      card.append(el("p", null, localizedHighlight(item, "Exa returned this as a recent relevant item.")));
       if (item.url) {
         const link = el("a", null, "查看证据");
         link.href = item.url;
@@ -1475,7 +1488,7 @@ function renderMonitor(monitor, history, ledger, digest, data) {
       );
       const card = el("article", `alert-card priority-${item.priority}`);
       card.append(el("span", "tag", item.monitorLabel));
-      card.append(el("h4", null, item.title));
+      appendItemTitle(card, item);
       card.append(el("p", "date-line", fmtDate(item.publishedDate)));
       if (review) {
         const decision = el("div", "alert-decision");
@@ -1483,7 +1496,7 @@ function renderMonitor(monitor, history, ledger, digest, data) {
         decision.append(el("p", null, review.reason));
         card.append(decision);
       }
-      card.append(el("p", null, item.highlight || "Exa returned this as a relevant recent item."));
+      card.append(el("p", null, localizedHighlight(item, "Exa returned this as a relevant recent item.")));
       if (item.url) {
         const link = el("a", null, "查看证据");
         link.href = item.url;
@@ -1510,9 +1523,9 @@ function renderMonitor(monitor, history, ledger, digest, data) {
     ledgerItems.forEach((item) => {
       const card = el("article", `ledger-card priority-${item.priority}`);
       card.append(el("span", "tag", item.monitorLabel));
-      card.append(el("h4", null, item.title));
+      appendItemTitle(card, item);
       card.append(el("p", "date-line", `首次发现：${fmtDate(item.firstSeenAt)}`));
-      card.append(el("p", null, item.highlight || "Monitor alert retained in ledger."));
+      card.append(el("p", null, localizedHighlight(item, "Monitor alert retained in ledger.")));
       if (item.url) {
         const link = el("a", null, "查看证据");
         link.href = item.url;

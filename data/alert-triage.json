@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T23:33:46.195Z",
+  "generatedAt": "2026-06-22T01:02:20.593Z",
   "source": "data/monitor.json",
-  "monitorGeneratedAt": "2026-06-21T23:33:46.195Z",
+  "monitorGeneratedAt": "2026-06-22T01:02:20.593Z",
   "lookbackDays": 14,
   "rubric": {
     "base": {
@@ -32,51 +32,53 @@
     }
   },
   "summary": {
-    "totalCandidates": 17,
-    "newUrls": 3,
+    "totalCandidates": 14,
+    "newUrls": 2,
     "alreadyTracked": 2,
-    "needsReview": 14,
-    "lowSignal": 1,
-    "gradeA": 2,
+    "needsReview": 12,
+    "lowSignal": 0,
+    "gradeA": 0,
     "gradeB": 7,
     "gradeC": 7,
-    "gradeD": 1,
-    "promotionQueueSize": 7,
+    "gradeD": 0,
+    "promotionQueueSize": 5,
     "byLane": {
-      "融资 / 商业化": 5,
+      "投放 / 付费获客证据": 5,
+      "融资 / 商业化": 3,
       "中国 AI 社交出海": 1,
-      "线下真人社交": 2,
-      "投放 / 付费获客证据": 6,
+      "线下真人社交": 1,
       "Coverage signal watchlist": 2,
-      "研究 / 政策风险": 1
+      "研究 / 政策风险": 1,
+      "语言交换 / 跨文化社交": 1
     }
   },
   "promotionQueue": [
     {
-      "candidateName": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and C",
-      "monitorId": "funding",
-      "monitorLabel": "融资 / 商业化",
-      "lanePriority": "high",
-      "routeTo": "融资时间线",
-      "routeTarget": "fundingTimeline",
-      "triageScore": 76,
-      "grade": "A",
+      "candidateName": "一款“放弃美国市场”的AI社交App，月流水碾压C.ai",
+      "monitorId": "paid-acquisition",
+      "monitorLabel": "投放 / 付费获客证据",
+      "lanePriority": "medium",
+      "routeTo": "渠道 / 投放审计",
+      "routeTarget": "channelSummary",
+      "triageScore": 68,
+      "grade": "B",
       "signals": [
-        "funding",
-        "companion"
+        "launch",
+        "companion",
+        "china-export"
       ],
-      "sourceDomain": "unite.ai",
+      "sourceDomain": "m.36kr.com",
       "reputableSource": false,
       "isNewUrl": true,
       "isRecent": true,
       "matchedTracked": null,
-      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
-      "suggestedAction": "高优先级：人工打开证据，确认后升级进 brief 主表",
+      "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
+      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
       "status": "needs-review",
-      "title": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI",
-      "url": "https://www.unite.ai/tryll-engine-raises-600k-pre-seed-at-6m-valuation-to-bring-on-device-ai-characters-and-conversations-to-games/",
-      "publishedDate": "2026-06-17T15:42:13.000Z",
-      "highlight": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI ... A new startup aiming to make AI-native gameplay practical for game studios has secured fresh funding and opened its technology to a select group of developers. Tryll announced that it has raise",
+      "title": "一款“放弃美国市场”的AI社交App，月流水碾压C.ai-36氪",
+      "url": "https://m.36kr.com/p/3042007961911433",
+      "publishedDate": "2026-06-18T09:40:14.000Z",
+      "highlight": "市场的突破， ... 成功做出了高流水。 ... LoveyDovey 于 2023 年 10 月正式上线，并在东亚市场率先跑出。在日本榜单，难觅 C.ai、Talkie 等在欧美市场大热的 AI 社交产品，LoveyDovey 却能直接挤进娱乐畅销榜 Top20，和火热的短剧出海 App 一较高下，它更是毫不谦虚地将自己称为全日本评价第一、排名第一的 AI 角色聊天 App。 ... LoveyDovey 在中国台湾的营收表现还要更好一点，它一度来到畅销总榜Top57。点点数据显示，LoveyDovey 过去 30 天的内购收入达到了 76 万美元，中国台湾、日本和韩国是最主要营收市场。虽然这个数据也不是特别高，但对 AI 社交来",
       "rank": 1
     },
     {
@@ -162,110 +164,60 @@
       "rank": 4
     },
     {
-      "candidateName": "OpenAI Launches ChatGPT Advertising Business in Japan Amid Rising AI Costs",
-      "monitorId": "paid-acquisition",
-      "monitorLabel": "投放 / 付费获客证据",
-      "lanePriority": "medium",
-      "routeTo": "渠道 / 投放审计",
-      "routeTarget": "channelSummary",
+      "candidateName": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and C",
+      "monitorId": "funding",
+      "monitorLabel": "融资 / 商业化",
+      "lanePriority": "high",
+      "routeTo": "融资时间线",
+      "routeTarget": "fundingTimeline",
       "triageScore": 56,
       "grade": "B",
       "signals": [
-        "launch"
+        "funding",
+        "companion"
       ],
-      "sourceDomain": "ajupress.com",
+      "sourceDomain": "unite.ai",
       "reputableSource": false,
-      "isNewUrl": true,
+      "isNewUrl": false,
       "isRecent": true,
       "matchedTracked": null,
-      "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
+      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
       "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
       "status": "needs-review",
-      "title": "OpenAI Launches ChatGPT Advertising Business in Japan Amid Rising AI Costs | AJU PRESS",
-      "url": "https://www.ajupress.com/view/20260619152470142",
-      "publishedDate": "2026-06-19T06:24:00.000Z",
-      "highlight": "OpenAI is set to launch an advertising business using ChatGPT in Japan as the company faces increasing operational costs associated with artificial intelligence (AI). The new service will display contextually relevant ads during user conversations with ChatGPT, distinguishing it from traditional search ads that appear ",
+      "title": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI",
+      "url": "https://www.unite.ai/tryll-engine-raises-600k-pre-seed-at-6m-valuation-to-bring-on-device-ai-characters-and-conversations-to-games/",
+      "publishedDate": "2026-06-17T15:42:13.000Z",
+      "highlight": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI ... A new startup aiming to make AI-native gameplay practical for game studios has secured fresh funding and opened its technology to a select group of developers. Tryll announced that it has raise",
       "rank": 5
-    },
-    {
-      "candidateName": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
-      "monitorId": "funding",
-      "monitorLabel": "融资 / 商业化",
-      "lanePriority": "high",
-      "routeTo": "融资时间线",
-      "routeTarget": "fundingTimeline",
-      "triageScore": 50,
-      "grade": "B",
-      "signals": [
-        "funding"
-      ],
-      "sourceDomain": "knowstartup.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
-      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
-      "status": "needs-review",
-      "title": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
-      "url": "https://knowstartup.com/news/maya-research-raises-1-9-million-voice-ai-south-park-commons/",
-      "publishedDate": "2026-06-17T11:26:57.000Z",
-      "highlight": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Bengaluru- and San Francisco-based Maya Research has raised $1.9 million in a seed round to build voice AI that speaks, thinks, and responds like a native speaker — a bet o",
-      "rank": 6
-    },
-    {
-      "candidateName": "KLIPY raises $3.8M from investors and joins Google AI Futures Fund to build the expression",
-      "monitorId": "funding",
-      "monitorLabel": "融资 / 商业化",
-      "lanePriority": "high",
-      "routeTo": "融资时间线",
-      "routeTarget": "fundingTimeline",
-      "triageScore": 50,
-      "grade": "B",
-      "signals": [
-        "funding"
-      ],
-      "sourceDomain": "prnewswire.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
-      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
-      "status": "needs-review",
-      "title": "KLIPY raises $3.8M from investors and joins Google AI Futures Fund to build the expression layer for GIFs, memes, stickers, clips, and AI media",
-      "url": "https://www.prnewswire.com/news-releases/klipy-raises-3-8m-from-investors-and-joins-google-ai-futures-fund-to-build-the-expression-layer-for-gifs-memes-stickers-clips-and-ai-media-302802594.html",
-      "publishedDate": "2026-06-17T00:00:00.000Z",
-      "highlight": "KLIPY raises $3.8M from investors and joins Google AI Futures Fund to build the expression layer for GIFs, memes, stickers, clips, and AI media Accessibility Statement Skip Navigation ... KLIPY is the enterprise-grade expression API layer, helping developers integrate GIFs, memes, stickers, clips, and AI for real-time ",
-      "rank": 7
     }
   ],
   "candidates": [
     {
-      "candidateName": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and C",
-      "monitorId": "funding",
-      "monitorLabel": "融资 / 商业化",
-      "lanePriority": "high",
-      "routeTo": "融资时间线",
-      "routeTarget": "fundingTimeline",
-      "triageScore": 76,
-      "grade": "A",
+      "candidateName": "一款“放弃美国市场”的AI社交App，月流水碾压C.ai",
+      "monitorId": "paid-acquisition",
+      "monitorLabel": "投放 / 付费获客证据",
+      "lanePriority": "medium",
+      "routeTo": "渠道 / 投放审计",
+      "routeTarget": "channelSummary",
+      "triageScore": 68,
+      "grade": "B",
       "signals": [
-        "funding",
-        "companion"
+        "launch",
+        "companion",
+        "china-export"
       ],
-      "sourceDomain": "unite.ai",
+      "sourceDomain": "m.36kr.com",
       "reputableSource": false,
       "isNewUrl": true,
       "isRecent": true,
       "matchedTracked": null,
-      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
-      "suggestedAction": "高优先级：人工打开证据，确认后升级进 brief 主表",
+      "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
+      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
       "status": "needs-review",
-      "title": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI",
-      "url": "https://www.unite.ai/tryll-engine-raises-600k-pre-seed-at-6m-valuation-to-bring-on-device-ai-characters-and-conversations-to-games/",
-      "publishedDate": "2026-06-17T15:42:13.000Z",
-      "highlight": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI ... A new startup aiming to make AI-native gameplay practical for game studios has secured fresh funding and opened its technology to a select group of developers. Tryll announced that it has raise",
+      "title": "一款“放弃美国市场”的AI社交App，月流水碾压C.ai-36氪",
+      "url": "https://m.36kr.com/p/3042007961911433",
+      "publishedDate": "2026-06-18T09:40:14.000Z",
+      "highlight": "市场的突破， ... 成功做出了高流水。 ... LoveyDovey 于 2023 年 10 月正式上线，并在东亚市场率先跑出。在日本榜单，难觅 C.ai、Talkie 等在欧美市场大热的 AI 社交产品，LoveyDovey 却能直接挤进娱乐畅销榜 Top20，和火热的短剧出海 App 一较高下，它更是毫不谦虚地将自己称为全日本评价第一、排名第一的 AI 角色聊天 App。 ... LoveyDovey 在中国台湾的营收表现还要更好一点，它一度来到畅销总榜Top57。点点数据显示，LoveyDovey 过去 30 天的内购收入达到了 76 万美元，中国台湾、日本和韩国是最主要营收市场。虽然这个数据也不是特别高，但对 AI 社交来",
       "rank": 1
     },
     {
@@ -351,82 +303,31 @@
       "rank": 4
     },
     {
-      "candidateName": "OpenAI Launches ChatGPT Advertising Business in Japan Amid Rising AI Costs",
-      "monitorId": "paid-acquisition",
-      "monitorLabel": "投放 / 付费获客证据",
-      "lanePriority": "medium",
-      "routeTo": "渠道 / 投放审计",
-      "routeTarget": "channelSummary",
+      "candidateName": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and C",
+      "monitorId": "funding",
+      "monitorLabel": "融资 / 商业化",
+      "lanePriority": "high",
+      "routeTo": "融资时间线",
+      "routeTarget": "fundingTimeline",
       "triageScore": 56,
       "grade": "B",
       "signals": [
-        "launch"
+        "funding",
+        "companion"
       ],
-      "sourceDomain": "ajupress.com",
+      "sourceDomain": "unite.ai",
       "reputableSource": false,
-      "isNewUrl": true,
+      "isNewUrl": false,
       "isRecent": true,
       "matchedTracked": null,
-      "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
+      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
       "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
       "status": "needs-review",
-      "title": "OpenAI Launches ChatGPT Advertising Business in Japan Amid Rising AI Costs | AJU PRESS",
-      "url": "https://www.ajupress.com/view/20260619152470142",
-      "publishedDate": "2026-06-19T06:24:00.000Z",
-      "highlight": "OpenAI is set to launch an advertising business using ChatGPT in Japan as the company faces increasing operational costs associated with artificial intelligence (AI). The new service will display contextually relevant ads during user conversations with ChatGPT, distinguishing it from traditional search ads that appear ",
+      "title": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI",
+      "url": "https://www.unite.ai/tryll-engine-raises-600k-pre-seed-at-6m-valuation-to-bring-on-device-ai-characters-and-conversations-to-games/",
+      "publishedDate": "2026-06-17T15:42:13.000Z",
+      "highlight": "Tryll Engine Raises $600K Pre-Seed at $6M Valuation to Bring On-Device AI Characters and Conversations to Games – Unite.AI ... A new startup aiming to make AI-native gameplay practical for game studios has secured fresh funding and opened its technology to a select group of developers. Tryll announced that it has raise",
       "rank": 5
-    },
-    {
-      "candidateName": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
-      "monitorId": "funding",
-      "monitorLabel": "融资 / 商业化",
-      "lanePriority": "high",
-      "routeTo": "融资时间线",
-      "routeTarget": "fundingTimeline",
-      "triageScore": 50,
-      "grade": "B",
-      "signals": [
-        "funding"
-      ],
-      "sourceDomain": "knowstartup.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
-      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
-      "status": "needs-review",
-      "title": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons",
-      "url": "https://knowstartup.com/news/maya-research-raises-1-9-million-voice-ai-south-park-commons/",
-      "publishedDate": "2026-06-17T11:26:57.000Z",
-      "highlight": "Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Maya Research Raises $1.9M for Voice AI, Backed by South Park Commons ... Bengaluru- and San Francisco-based Maya Research has raised $1.9 million in a seed round to build voice AI that speaks, thinks, and responds like a native speaker — a bet o",
-      "rank": 6
-    },
-    {
-      "candidateName": "KLIPY raises $3.8M from investors and joins Google AI Futures Fund to build the expression",
-      "monitorId": "funding",
-      "monitorLabel": "融资 / 商业化",
-      "lanePriority": "high",
-      "routeTo": "融资时间线",
-      "routeTarget": "fundingTimeline",
-      "triageScore": 50,
-      "grade": "B",
-      "signals": [
-        "funding"
-      ],
-      "sourceDomain": "prnewswire.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认融资金额 / 轮次 / 投资方",
-      "suggestedAction": "中优先级：补官方 / 商业证据，达标后升级",
-      "status": "needs-review",
-      "title": "KLIPY raises $3.8M from investors and joins Google AI Futures Fund to build the expression layer for GIFs, memes, stickers, clips, and AI media",
-      "url": "https://www.prnewswire.com/news-releases/klipy-raises-3-8m-from-investors-and-joins-google-ai-futures-fund-to-build-the-expression-layer-for-gifs-memes-stickers-clips-and-ai-media-302802594.html",
-      "publishedDate": "2026-06-17T00:00:00.000Z",
-      "highlight": "KLIPY raises $3.8M from investors and joins Google AI Futures Fund to build the expression layer for GIFs, memes, stickers, clips, and AI media Accessibility Statement Skip Navigation ... KLIPY is the enterprise-grade expression API layer, helping developers integrate GIFs, memes, stickers, clips, and AI for real-time ",
-      "rank": 7
     },
     {
       "candidateName": "Pixi's new iOS app turns text messages into interactive AR experiences",
@@ -453,7 +354,7 @@
       "url": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences/",
       "publishedDate": "2026-06-18T12:00:00.000Z",
       "highlight": "Pixi's new iOS app turns text messages into interactive AR experiences | TechCrunch ... Pixi’s new iOS app turns text messages into interactive AR experiences ... Forget stickers, GIFs, and emoji reactions. Pixi is betting that the next evolution of messaging is interactive augmented reality (AR). ... The startup launc",
-      "rank": 8
+      "rank": 6
     },
     {
       "candidateName": "Character.AI is adding new tools for chatbot creators.",
@@ -480,7 +381,7 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/951461/character-ai-is-adding-new-tools-for-chatbot-creators",
       "publishedDate": "2026-06-17T16:00:00.000Z",
       "highlight": "Character.AI is adding new tools for chatbot creators. | The Verge The homepageThe Verge logo. The homepageThe Verge logo. Posted Jun 17, 2026 at 4:00 PM UTC E Emma Roth Character.AI is adding new tools for chatbot creators. A new dashboard will show a creator’s most popular AI characters, along with metrics including ",
-      "rank": 9
+      "rank": 7
     },
     {
       "candidateName": "Frontiers | The adaptive ecological trap",
@@ -506,7 +407,7 @@
       "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1839672/full",
       "publishedDate": "2026-06-18T01:32:34.000Z",
       "highlight": "Regarding emotional function compensation, generative AI serves as a low-risk, highly controllable “ideal partner”. Through algorithmic analysis of user input, it provides seemingly precise, empathetic, and tirelessly responsive feedback. This undoubtedly offers a safe, non-judgmental emotional outlet for adolescents e",
-      "rank": 10
+      "rank": 8
     },
     {
       "candidateName": "MojiMoshi Embeds AI Agents Inside Telegram and Line, No App Needed",
@@ -532,11 +433,11 @@
       "title": "MojiMoshi Embeds AI Agents Inside Telegram and Line, No App Needed - AINews",
       "url": "https://ainews.cool/article/20260620-mojimoshi-ai-agent-telegram-line",
       "publishedDate": "2026-06-20T02:32:06.000Z",
-      "highlight": "users create persistent AI agents that live inside Telegram and Line, eliminating ... MojiMoshi has quietly launched a platform that embeds persistent, context-aware AI agents directly into existing messaging apps—starting with Telegram and Line. Users do not download a new app or learn a new interface; they simply add",
-      "rank": 11
+      "highlight": "live inside Telegram and Line ... MojiMoshi has quietly launched a platform that embeds persistent, context-aware AI agents directly into existing messaging apps—starting with Telegram and Line. Users do not download a new app or learn a new interface; they simply add an agent to a chat, and it stays there, remembering",
+      "rank": 9
     },
     {
-      "candidateName": "CloudX Takes A Swing At Black‑Box Mobile UA With Agentic Buying Tools",
+      "candidateName": "OpenAI Launches ChatGPT Advertising Business in Japan Amid Rising AI Costs",
       "monitorId": "paid-acquisition",
       "monitorLabel": "投放 / 付费获客证据",
       "lanePriority": "medium",
@@ -547,7 +448,7 @@
       "signals": [
         "launch"
       ],
-      "sourceDomain": "adexchanger.com",
+      "sourceDomain": "ajupress.com",
       "reputableSource": false,
       "isNewUrl": false,
       "isRecent": true,
@@ -555,11 +456,11 @@
       "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
       "suggestedAction": "保留为 watchlist，持续观察",
       "status": "needs-review",
-      "title": "CloudX Takes A Swing At Black‑Box Mobile UA With Agentic Buying Tools | AdExchanger",
-      "url": "https://www.adexchanger.com/mobile/cloudx-takes-a-swing-at-black-box-mobile-ua-with-agentic-buying/",
-      "publishedDate": "2026-06-17T13:00:22.000Z",
-      "highlight": "CloudX, which launched into general availability in February, uses AI agents to handle mobile monetization tasks, such as setting price floors, updating line items and managing SDK integrations. ... On Wednesday, the company launched agentic buying, which lets publishers acquire users directly from other apps without g",
-      "rank": 12
+      "title": "OpenAI Launches ChatGPT Advertising Business in Japan Amid Rising AI Costs | AJU PRESS",
+      "url": "https://www.ajupress.com/view/20260619152470142",
+      "publishedDate": "2026-06-19T06:24:00.000Z",
+      "highlight": "OpenAI is set to launch an advertising business using ChatGPT in Japan as the company faces increasing operational costs associated with artificial intelligence (AI). The new service will display contextually relevant ads during user conversations with ChatGPT, distinguishing it from traditional search ads that appear ",
+      "rank": 10
     },
     {
       "candidateName": "Twice As Many Americans Are Now Using AI Companions Than Dating Apps",
@@ -585,7 +486,7 @@
       "url": "https://officechai.com/ai/twice-as-many-americans-are-now-using-ai-companions-than-dating-apps-sensortower-data/",
       "publishedDate": "2026-06-17T10:25:34.000Z",
       "highlight": "New data from SensorTower, part of its upcoming State of AI 2026 report, tracks total hours Americans spent on AI companion apps versus dating and social discovery platforms every quarter from early 2025 through the start of 2026. The two lines don’t just diverge, they swap places entirely on what used to be a settled ",
-      "rank": 13
+      "rank": 11
     },
     {
       "candidateName": "Happn Expands Its Presence in London With First Outdoor Advertising Campaign",
@@ -611,57 +512,7 @@
       "url": "https://www.topgmnews.com/2026/06/17/happn-expands-its-presence-in-london-with-first-outdoor-advertising-campaign/",
       "publishedDate": "2026-06-17T00:00:00.000Z",
       "highlight": "Happn Expands Its Presence in London With First Outdoor Advertising Campaign – Topgmnews ... Dating platform Happn is making a bold move in the UK market with the launch of its first-ever outdoor advertising campaign across London. The initiative highlights the company’s unique location-based dating experience and refl",
-      "rank": 14
-    },
-    {
-      "candidateName": "Sensor Tower State of AI 2026 Report: Global Time Spent on Generative AI Apps Projected to",
-      "monitorId": "paid-acquisition",
-      "monitorLabel": "投放 / 付费获客证据",
-      "lanePriority": "medium",
-      "routeTo": "渠道 / 投放审计",
-      "routeTarget": "channelSummary",
-      "triageScore": 30,
-      "grade": "D",
-      "signals": [],
-      "sourceDomain": "prnewswire.com",
-      "reputableSource": false,
-      "isNewUrl": false,
-      "isRecent": true,
-      "matchedTracked": null,
-      "missingEvidence": "确认投放渠道是否与目标赛道产品相关",
-      "suggestedAction": "低信号：暂不处理，仅留痕",
-      "status": "low-signal",
-      "title": "Sensor Tower State of AI 2026 Report: Global Time Spent on Generative AI Apps Projected to More Than Double Year-Over-Year",
-      "url": "https://www.prnewswire.com/news-releases/sensor-tower-state-of-ai-2026-report-global-time-spent-on-generative-ai-apps-projected-to-more-than-double-year-over-year-302800844.html",
-      "publishedDate": "2026-06-16T10:30:00.000Z",
-      "highlight": "SAN FRANCISCO, June 16, 2026 /PRNewswire/ -- Sensor Tower, a leading provider of data on the digital economy, today released its State of AI 2026 report, delivering a comprehensive look at the explosive growth in engagement, spending, and advertising on Generative AI across mobile apps and the web. The report reveals t",
-      "rank": 15
-    },
-    {
-      "candidateName": "‎Timeleft: Make New Friends IRL App",
-      "monitorId": "irl",
-      "monitorLabel": "线下真人社交",
-      "lanePriority": "critical",
-      "routeTo": "IRL 线下真人簇",
-      "routeTarget": "clusters:irl",
-      "triageScore": 82,
-      "grade": "A",
-      "signals": [
-        "irl"
-      ],
-      "sourceDomain": "apps.apple.com",
-      "reputableSource": false,
-      "isNewUrl": true,
-      "isRecent": true,
-      "matchedTracked": "timeleft",
-      "missingEvidence": "—（已跟踪）",
-      "suggestedAction": "已在对照表，复核是否需要更新增长 / 融资 / 渠道字段",
-      "status": "already-tracked",
-      "title": "‎Timeleft: Make New Friends IRL App - App Store",
-      "url": "https://apps.apple.com/bt/app/timeleft-make-new-friends-irl/id6466442949",
-      "publishedDate": "2026-06-15T23:33:49.402Z",
-      "highlight": "‎Timeleft: Make New Friends IRL App - App Store ... # Timeleft: Make New Friends IRL ... Meet New People & Make Friends ... The friendship app 3M+ users love. Timeleft matches you for dinners, drinks, coffee, and runs with like-minded people. No swiping. No planning. Just show up. ▶ HOW IT WORKS ◀ 1. Take the quiz We m",
-      "rank": 16
+      "rank": 12
     },
     {
       "candidateName": "Turnout Announces $35M Series A to Put an AI Advocate in Every American’s Corner",
@@ -687,7 +538,31 @@
       "url": "https://theaiinsider.tech/2026/06/19/turnout-announces-35m-series-a-to-put-an-ai-advocate-in-every-americans-corner/",
       "publishedDate": "2026-06-19T15:34:20.000Z",
       "highlight": "- Turnout, an AI-powered consumer advocacy service, has raised $35 million in Series A funding led by HighPost Capital, with participation from Shine Capital, LGVP, Mangusta Capital, Honeystone Ventures, and investor Omri Casspi, bringing the company’s total valuation to $400 million. ... - The platform combines AI age",
-      "rank": 17
+      "rank": 13
+    },
+    {
+      "candidateName": "HelloTalk - Learn Languages",
+      "monitorId": "language",
+      "monitorLabel": "语言交换 / 跨文化社交",
+      "lanePriority": "medium",
+      "routeTo": "语言交换簇",
+      "routeTarget": "clusters:language",
+      "triageScore": 50,
+      "grade": "B",
+      "signals": [],
+      "sourceDomain": "play.google.com",
+      "reputableSource": false,
+      "isNewUrl": true,
+      "isRecent": true,
+      "matchedTracked": "hellotalk",
+      "missingEvidence": "—（已跟踪）",
+      "suggestedAction": "已在对照表，复核是否需要更新增长 / 融资 / 渠道字段",
+      "status": "already-tracked",
+      "title": "HelloTalk - Learn Languages – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?hl=en_IN&id=com.hellotalk",
+      "publishedDate": "2026-06-18T01:00:04.460Z",
+      "highlight": "Tandem: Language exchangeTripod Technology GmbH3.8",
+      "rank": 14
     }
   ]
 }

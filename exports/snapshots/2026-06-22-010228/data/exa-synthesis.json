@@ -1,0 +1,340 @@
+{
+  "generatedAt": "2026-06-15T09:34:38.044Z",
+  "source": "https://api.exa.ai/search",
+  "request": {
+    "query": "2024 2025 2026 AI social apps AI companion apps AI roleplay apps interactive entertainment apps language exchange apps similar to HelloTalk Tandem AI dating offline dates local activity social apps group travel social platforms and IRL offline social apps funding growth news",
+    "type": "deep-lite",
+    "systemPrompt": "Prefer primary company pages, funding announcements, reputable tech media, app-market reports, and research papers. Collapse duplicates. Separate AI-only companion products from products that create real offline human interactions such as dinners, events, group travel, local activities, and offline-first dating. Return concise Chinese output grounded in sources.",
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "summary",
+        "core_products",
+        "irl_products",
+        "watchlist",
+        "risks"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "description": "A concise Chinese synthesis of the market and opportunity."
+        },
+        "core_products": {
+          "type": "array",
+          "description": "Important AI social, AI companion, language exchange, or entertainment products.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "irl_products": {
+          "type": "array",
+          "description": "Products that connect users to real offline human interactions.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "watchlist": {
+          "type": "array",
+          "description": "Products or categories to keep monitoring because evidence is incomplete or adjacent.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "risks": {
+          "type": "array",
+          "description": "Safety, regulation, monetization, or evidence risks.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contents": {
+      "highlights": true
+    }
+  },
+  "ok": true,
+  "status": 200,
+  "response": {
+    "requestId": "651ee835c3a6ff6e03dda94ac3a78207",
+    "resolvedSearchType": "",
+    "results": [
+      {
+        "id": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+        "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch",
+        "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+        "publishedDate": "2026-04-29T13:00:00.000Z",
+        "author": "Aisha Malik",
+        "highlights": [
+          "Shapes, an app where humans and AI characters chat together in shared group conversations, is emerging from stealth with $8 million in seed funding. Think Discord, but with AI characters alongside humans.\n[...]\nFounded in 2022, Shapes has more than 400,000 monthly active users. The app’s founders, Anushk Mittal and Noorie Dhingra, believe that Shapes can address issues around “ AI psychosis,” which refers to cases where prolonged interactions with AI chatbots or AI companions can cause individuals to develop delusions or paranoia.\n[...]\none-on-one\n[...]\ninteractions with real people\n[...]\nre clearly labeled\n[...]\nUsers can create their own Shapes and set their personalities. The company says users have already created three million Shapes to add into group chats. Many Shapes are rooted in fandom, as the app serves as a way for fans to deep-dive on subculture and meet other fans.\n[...]\nWhile some may question the need for adding AI into group chats, Mittal and Dhingra believe one of the main reasons group chats die is that some participants don’t want to be the first person to send a message. Shapes solves this, as AI agents can initiate conversations and play a key role in keeping them going.\n[...]\nAdditionally, users don’t have to worry about not getting a response to their messages because Shapes will always acknowledge and respond to them. Unlike AI companions on other apps that need to be summoned, Shapes have free will and can decide when to message.\n[...]\nIt’s worth noting that although the popular chatbot ChatGPT already allows AI and humans to converse in group chats, those conversations operate differently from Shapes. For example, when you create a group chat in ChatGPT, it’s mostly for planning or brainstorming. On Shapes, however, it’s all about social, community-style interactions with AI characters that have various personalities.\n[...]\n“Shapes is about human conversations,” Mittal said. “It’s more of a next-gen chat app than an AI app. The demographic is people who are obsessively online, who spend a lot of time online connecting and sharing. Those are the users who come in and they get an opportunity to obsess about their interests, and the AI acts as a facilitator in those conversations.”\n[...]\nShapes’ growth has been driven by word of mouth, Mittal says, with the app seeing a sixfold increase in users since the start of the year. The company also says that thousands of users spend two to four hours in the app each day.\n[...]\nAs for the new funding, the company plans to use it to accelerate development and user acquisition. The round was led by Lightspeed, with participation from AI Capital Partners, AI Grant, and angel investors."
+        ],
+        "image": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2270785056.jpg?resize=1200,686",
+        "favicon": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32"
+      },
+      {
+        "id": "https://digitalhumancorp.com/en/research/best-ai-companion-app-2026",
+        "title": "Best AI Companion Apps 2026: Memory, Safety, Privacy Compared",
+        "url": "https://digitalhumancorp.com/en/research/best-ai-companion-app-2026",
+        "publishedDate": "2026-03-11T15:00:00.000Z",
+        "highlights": [
+          "There are now over 128 AI companion apps in active distribution. That number was 16 just three years ago. MIT Technology Review named AI companions one of its 10 Breakthrough Technologies of 2026, and the global market is projected to grow from approximately $49 billion in 2026 to $552 billion by 2035, according to Precedence Research.\n[...]\nThe best AI companion app in 2026 depends on the job. If you want roleplay or fictional characters, Character.AI is built for entertainment. If you want vivid companion memory and immersive attachment, Nomi is the strongest public option. If you want a privacy-first wellness companion for adults, KAi is the only product in this comparison built around persistent understanding, a 24-hour raw conversation scrub, PWA access, and real-world wellbeing instead of engagement. For memory-only comparisons, read the best AI companion apps with memory in 2026. For Android-specific options, read the best AI companion apps for Android in 2026.\n[...]\n- Best for roleplayCharacter.AI, with major safety, teen-use, and adult-wellbeing caveats.\n[...]\n| App | Best For | Memory | Privacy | Safety / Fit |\n| --- | --- | --- | --- | --- |\n| KAi | Adults who want privacy-first wellness support, persistent memory, and PWA access | One continuous conversation with persistent understanding | 24-hour raw conversation scrub; meaning persists, transcripts do not | Private beta access; not built for roleplay, minors, or app-store shopping |\n[...]\n| Nomi | Immersive AI companionship and entertainment memory | Strong long-term memory inside an engagement-oriented product | More transparent than many competitors, but still stores companion data | Best fit when entertainment attachment is the intended use |\n[...]\n| Character.AI | Roleplay, fiction, persona experimentation | Session-based by default; weak continuity for adult companionship | Conversation retention and policy-based controls | Major litigation, teen safety, and engagement-design concerns |\n[...]\n| Replika | Long-running conversational relationship with avatar features | Persistent but inconsistent and relationship-simulation oriented | Subject to documented regulatory enforcement | Dependency mechanics and intimate data retention |\n[...]\nPricing: Free with limited access; Character\n[...]\nThe answer depends on what you need. For entertainment and roleplay, Character.AI has the largest platform. For the richest companion experience with strong memory, Nomi leads the entertainment category. For free, low-pressure reflection, Pi is the most honest option. For genuine wellness outcomes with real privacy, where success means being more capable in the real world, not more attached to the app, KAi is the only platform built from that premise."
+        ],
+        "image": "https://digitalhumancorp.com/og-image.png",
+        "favicon": "https://digitalhumancorp.com/favicon.ico"
+      },
+      {
+        "id": "https://www.quora.com/Which-AI-companion-platforms-are-actually-worth-using-in-2026",
+        "title": "Which AI companion platforms are actually worth using in 2026? - Quora",
+        "url": "https://www.quora.com/Which-AI-companion-platforms-are-actually-worth-using-in-2026",
+        "publishedDate": "2026-03-28T00:00:00.000Z",
+        "highlights": [
+          "Which AI companion platforms are actually worth using in\n[...]\nWhich AI companion platforms are actually worth using in 2026?\n[...]\nIn my experience, joyzarea provides the most natural conversations, while replika focuses more on companionship and emotional support. They all offer free plans that let you chat with AI characters and build ongoing conversations. Just keep in mind that many advanced features are usually locked behind paid subscriptions.\n[...]\nMost apps I tried\n[...]\neager to imitate a romantic\n[...]\nreally adapting to how I\n[...]\n. Some had flashy intros but broke\n[...]\nscript or got repetitive. What actually worked better was choosing\n[...]\nand what stood out\n[...]\nlike messaging someone who gradually learns your\n[...]\n-the-\n[...]\n. It didn\n[...]\nt pretend to be human\n[...]\nbalance between realism and\n[...]\n. The UI was clean, and it let\n[...]\nIf you're looking for something that feels less like a chatbot and more like a consistent presence, pick based on how well it matches your pace and not just how it looks in the first five minutes. A lot of these apps rely on novelty upfront but don’t hold up over time unless they’re built to\n[...]\n. For me it came\n[...]\nto finding one that didn’t just mirror my\n[...]\nbut offered enough personality to keep\n[...]\nYes. I mean, I wouldn’t say that it’s hugely common, but it’s definitely a rising trend in the US and especially in other parts of the world like Asia. This rising trend is evident by the sheer number of AI companion platforms and Apps that are currently available.\n[...]\nMore and more people are lonely these days and those who are used to spending a lot of time online, are finding communicating with AI companions and chatbots to be a convenient and comforting way to get emotional support, engage in roleplay, or even have a virtual relationship.\n[...]\nYes. I mean, I wouldn’t say that it’s hugely common, but it’s definitely a rising trend in the US and especially in other parts of the world like Asia. This rising trend is evident by the sheer number of AI companion platforms and Apps that are currently available.\n[...]\nMore and more people are lonely these days and those who are used to spending a lot of time online, are finding communicating with AI companions and chatbots to be a convenient and comforting way to get emotional support, engage in roleplay, or even have a virtual relationship.\n[...]\nThat said, for some people (especially young people and emotionally vulnerable individuals) there are risks and ethical concerns with using these companions, including privacy risks and blurring reality with fiction.\n[...]\nWhat are the best AI girlfriends or AI companion chatbot platforms?\n[...]\nWhat is the best AI companion in 202"
+        ],
+        "image": "https://qph.cf2.quoracdn.net/main-custom-t-1393740-600x315-tjtbwiqofezszbgbqrtunqerutuchpmn.jpeg",
+        "favicon": "https://qsf.fs.quoracdn.net/-4-ans_frontend_assets.favicon-new.ico-26-e7e93fe0a7fbc991.ico"
+      },
+      {
+        "id": "https://www.ainvest.com/news/ai-meets-meet-cute-historical-test-physical-platform-economics-2602/",
+        "title": "When AI Meets the Meet-Cute: A Historical Test of Physical Platform Economics",
+        "url": "https://www.ainvest.com/news/ai-meets-meet-cute-historical-test-physical-platform-economics-2602/",
+        "publishedDate": "2026-02-23T20:42:39.000Z",
+        "author": "AInvest",
+        "highlights": [
+          "- 222 uses AI to curate in-person gatherings, aiming to reduce social friction by simulating organic \"meet-cutes\" without digital intermediation.\n[...]\n- The $10.1M Series A validates demand for physical connection tools but highlights inherent scalability challenges due to high fixed costs per event.\n[...]\n- Competing against digital-first platforms and AI-enhanced rivals, 222 must prove its $22/month model can absorb venue, staffing, and logistics expenses at scale.\n[...]\nThe startup's model directly parallels past infrastructure plays. Like a dating app, 222 uses data to predict compatibility, but it removes the digital layer entirely. Instead of swiping, users RSVP to curated gatherings. The AI's role is to simulate the spontaneous \"meet-cute\" of old-walking into a room where everyone is a potential connection. This is the same promise made by countless physical network builders, from community centers to hobby clubs, but with a tech-enabled twist on curation. The $10.1 million Series A to build the default social facilitator is a clear signal of belief in this niche, operating in a crowded field of digital-first connection tools. It validates the idea that demand exists for a gentler, more organic way to form local bonds.\n[...]\n22\n[...]\nthe number of people who show up\n[...]\nThe investment case for 222 must be tested against two realities: a crowded market and a competitive landscape that is rapidly evolving. The broader AI Dating & Relationships Tools market is projected for significant growth, driven by rising user demand for personalized, efficient matchmaking with a significant uptick in monthly active users. Yet 222 targets a specific, narrow segment within that larger pie: the physical, IRL experience. It is not competing directly with Bumble BMBL-- or Tinder on swiping; it is competing for the user's time and wallet after the digital connection is made, or for those who find the digital process itself too friction-filled.\n[...]\nThis creates a clear risk of being out-innovated or having its core user base distracted. Major players are integrating AI to enhance their own offerings, blurring the lines between digital and physical. If a dating app can use AI to better predict compatibility and suggest local meetups, it could capture the very audience 222 is trying to serve. The startup's $10.1 million Series A to build the default social facilitator provides runway, but it does not guarantee a path to profitability before capital is exhausted if growth stalls. The model's viability hinges on converting its 10-city presence into a dense, recurring event schedule that can absorb fixed costs-a tall order against both digital giants and the inherent challenge of getting people to show up."
+        ],
+        "image": "https://cdn.ainvest.com/aigc/hxcmp/images/compress-qwen_generated_1771879106163.jpg.png",
+        "favicon": "https://www.ainvest.com/favicon.ico"
+      },
+      {
+        "id": "https://www.ainchina.com/blog/minimax-ipo-212-million-users-ai-companion-empire/",
+        "title": "MiniMax Files for IPO: How China's AI Companion Empire Built 212 Million Users and Challenged the Global Social Landscape | AI in China",
+        "url": "https://www.ainchina.com/blog/minimax-ipo-212-million-users-ai-companion-empire/",
+        "publishedDate": "2026-03-31T16:00:00.000Z",
+        "author": "Meeeeed@AI in China",
+        "highlights": [
+          "| Metric | Data Point | Significance |\n| --- | --- | --- |\n| IPO Filing | Secretly submitted April 23, 2026 | First major Chinese AI consumer company to go public |\n| Total Users | 212 million (Talkie + 星野) | Largest AI companion user base globally |\n| Monthly Active Users | 27.6 million | Sustained engagement at scale |\n| Global Reach | 200 countries | Most international Chinese AI consumer app |\n| Peak App Store Ranking | #2 Free App (US App Store) | Briefly surpassed Instagram and TikTok |\n| Valuation at IPO | $2.5 billion | Makes MiniMax a unicorn twice over |\n| Founding Team | Former Sensetime VP + Alibaba executives | Proven AI and consumer tech pedigree |\n| Core Technology | M2.7 MoE model | Latest generation multimodal AI |\n| Content Generated | 70 billion+ messages exchanged | Massive conversational data moat |\n[...]\n| Financial Metric | Figure | Context |\n| --- | --- | --- |\n| Valuation at IPO | $2.5 billion | 2.5× unicorn threshold |\n| Revenue (2025) | $180 million | Primarily from subscriptions + API |\n| Revenue Growth | +340% YoY | Accelerating monetization |\n| Gross Margin | 72% | High-margin SaaS-like business |\n| R&D Spending | 45% of revenue | Heavy investment in model training |\n| Headcount | ~800 employees | Lean for user scale |\n| Burn Rate | Cash-flow positive since Q4 2025 | Rare among AI unicorns |\n[...]\n| Dimension | Talkie (International) | 星野/Xingye (Domestic) |\n| --- | --- | --- |\n| Launch Date | June 2023 | March 2024 |\n| Primary Markets | US, Brazil, Japan, Southeast Asia | China mainland |\n| User Demographics | 62% female, 60% Gen Z | 58% female, 55% under 25 |\n| Character Style | Anime, fantasy, celebrity avatars | Historical figures, xianxia, modern romance |\n| Top Categories | Romance, RPG companions, therapists | Historical dialogue, cultivation novels, BL |\n| Monetization | Subscriptions ($9.99/mo), voice packs | Virtual gifts, premium characters, subscriptions |\n| Content Moderation | Strict NSFW filtering | Real-name verification, youth protection |\n| Localization | 12 languages | Mandarin + dialect support |\n[...]\nTalkie's success outside China surprised many industry observers. The app briefly reached #2 on the US App Store free app rankings in late 2024—surpassing Instagram and TikTok for a 48-hour period. Its success formula combines:\n[...]\nCopy proven Western models | Create new category (AI\n[...]\nMiniMax's IPO filing on April 23, 2026, marks the moment when AI companions transitioned from fringe technology to mainstream infrastructure. With 212 million users, 27.6 million monthly actives, and cash-flow positive operations, the company has demonstrated that artificial intimacy isn't just technically feasible—it's commercially viable at global scale."
+        ],
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200&h=600&fit=crop",
+        "favicon": "https://www.ainchina.com/favicon.svg"
+      },
+      {
+        "id": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+        "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch",
+        "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+        "publishedDate": "2026-05-27T08:00:00.000Z",
+        "author": "Lauren Forristal",
+        "highlights": [
+          "WeRoad, the Milan-based group travel startup, has raised a $58 million Series C round led by Airbnb as it prepares for its first major expansion outside Europe. The funding brings the company’s total capital raised to roughly $100 million and will finance WeRoad’s push into the U.S., beginning with Austin.\n[...]\nThe new investment reflects a bet that the next generation of travel companies may look less like booking platforms and more like social platforms designed to facilitate real-world connections.\n[...]\nThe U.S. launch also arrives as loneliness, particularly among younger consumers, has become both a public health concern and an emerging business opportunity. When much of the tech industry remains focused on AI, WeRoad is positioning itself as part of the growing “IRL economy,” a category of startups monetizing offline interaction rather than screen time. Companies like Timeleft, 222, and Pie are pursuing similar ideas through dinners, clubs, events, and community-based experiences.\n[...]\nThe founders’ response was to\n[...]\ninterests. WeRoad trips are primarily designed for younger travelers and grouped\n[...]\nshared interests and travel styles.\n[...]\ncan book trips through\n[...]\nplatform based on themes such as beach vacations or skiing\n[...]\nBefore each trip begins,\n[...]\nGroups typically include between eight and\n[...]\nAdditionally, instead of traditional\n[...]\n, WeRoad has “group leaders,” coordinators closer in age to travelers who act\n[...]\n. The company now works with more than\n[...]\n4,000\n[...]\nleaders globally.\n[...]\nWeRoad has also begun expanding beyond travel itself. In 2025, the company launched WeMeet, an app focused on local in-person gatherings, including dinners, hikes, yoga classes, running groups, after-work drinks, and board game nights. WeRoad says more than 50,000 people attended WeMeet events across 35 cities last year, while the app reached 150,000 downloads.\n[...]\nThe company says WeMeet will also play a central role in its U.S. expansion strategy. Rather than immediately scaling nationwide, WeRoad plans to focus on a small number of cities first, beginning with Austin, where it will recruit group leaders, organize local events, and build community partnerships before expanding further.\n[...]\n“We’ll be launching WeMeet events across multiple U.S. cities throughout 2026, starting with Austin because of its incredible energy and vibrant community scene,” De Nadai said.\n[...]\nWeRoad says it generated €130 million in revenue in 2025, up 30% year over year, while taking more than 100,000 travelers on trips last year alone. Since launching in 2017, the company says it has organized travel for more than 300,000 customers across over 1,000 itineraries globally."
+        ],
+        "image": "https://techcrunch.com/wp-content/uploads/2026/05/WeRoad-Travellers-5.jpg?w=1200",
+        "favicon": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32"
+      },
+      {
+        "id": "https://kalinga.ai/together-tech-startups-2026/",
+        "title": "Together Tech: Exciting Startup Trend Guide 2026",
+        "url": "https://kalinga.ai/together-tech-startups-2026/",
+        "publishedDate": "2026-06-06T13:37:04.000Z",
+        "author": "Kalinga AI",
+        "highlights": [
+          "To understand why together tech is gaining momentum, you have to look at what’s happening around it. As of mid-2026, AI fundraising continues to shatter records. Alphabet recently announced an $85 billion raise for its AI business. Anthropic filed confidentially for its IPO. The money flowing into AI systems and digital platforms is unprecedented.\n[...]\nIn June 2026, Board closed a $20 million Series A led by Union Square Ventures, with General Partner Michael Mignano joining the board of directors. Notable angel investors include Biz Stone, Tim Ferriss, and Scott Belsky. The round builds on a previous $15 million raise led by Lerer Hippeau.\n[...]\nAlongside the funding, Board unveiled Board Studio, an AI-powered creation platform that will let anyone design original games using natural language prompts — taking an idea from concept to playable prototype in under an hour.\n[...]\n- It serves\n[...]\nuses AI as a creation tool rather than as the end product\n[...]\n30+ sessions/month\n[...]\n85% of users) suggest genuine behavioral adoption\n[...]\n: hobbyists building\n[...]\nlimited, often Internet-free personal\n[...]\nphysical interaction and outdoor use\n[...]\nCyberdeck builds have\n[...]\noperates on human\n[...]\n| Dimension | Traditional Consumer Tech | Together Tech |\n| --- | --- | --- |\n| Core goal | Maximize digital engagement | Enable in-person interaction |\n| Success metric | Daily active users, session length | Play sessions, co-presence, social outcomes |\n| AI usage | AI as core product | AI as creation/facilitation tool |\n| Attention model | Capture and retain attention | Release attention to the physical world |\n| Business model | Subscription, ads, data | Hardware sales, platform fees |\n| Cultural framing | Productivity, connectivity | Belonging, play, shared experience |\n| Investment narrative | Scale through digital distribution | Scale through physical venue penetration |\n| Example | TikTok, Instagram, streaming apps | Board, cyberdeck community, offline-first apps |\n[...]\n- AI as an enabler, not just a threat. Together tech companies like Board are using AI for content generation and platform creation, reducing the content costs that previously made interactive hardware unscalable.\n[...]\nThe together tech wave is not simply a market trend — it is a signal about where consumer values are heading. As AI continues to automate more cognitive tasks and digital platforms become more pervasive, the experiences that cannot be replicated digitally — shared physical presence, tactile play, eye contact, laughter in a room — become more scarce and therefore more valuable.\n[...]\nis a tool for"
+        ],
+        "image": "https://kalinga.ai/wp-content/uploads/2026/06/together-tech-startups-2026-human-connection.jpg.png",
+        "favicon": "https://kalinga.ai/wp-content/uploads/2025/01/cropped-kaiicon100-32x32.png"
+      },
+      {
+        "id": "https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/",
+        "title": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch",
+        "url": "https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/",
+        "publishedDate": "2026-05-19T14:00:00.000Z",
+        "author": "Dominic-Madori Davis",
+        "highlights": [
+          "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch\n[...]\nonline teenager.” She obsessed over music groups, TV shows, and movies, and never missed the chance to talk about her interests endlessly online. When ChatGPT launched in 2022, she saw potential immediately. “AI could finally let any user actually simulate any\n[...]\n, not just watch or talk about their favorite\n[...]\nthem,” she told TechCrunch.\n[...]\n“The role-play and immersion that fans had always wanted was suddenly possible at scale,” she said. She brought in her friend Amit Bhatnagar, who grew up building Minecraft games, and Pritesh Kadiwala, and the three of them began building Status AI: a gamified social media app where users can play any character in any universe. The app officially came out of stealth last year.\n[...]\nThe worlds on Status are user-generated, where settings, stories, and characters all come from player interaction. “You pick one character to be your first follower, then earn more as the story progresses.” There are both multiplayer and single-player modes for users looking to connect with friends in the app. “We’re fielding interest from studios and streamers,” she said. “They see Status as a way to develop audiences before bringing fans together in theaters or arenas.”\n[...]\nThe company announced Tuesday $17 million in combined seed and Series A funding, with investors including Abstract, General Catalyst, Union Square Ventures, Y Combinator, and LightShed Partners. The raise is a bet that consumer social’s next chapter isn’t another feed but instead interactive entertainment and the IP franchises that come with it.\n[...]\nThe era of passive entertainment — users sitting back and watching other people’s lives scroll past — is coming to an end, Nur argues. And the first generation of AI social apps, built around the chatbot experience as seen with Character.AI and Chai, is already starting to feel dated.\n[...]\nIn some ways, Nur says the company is hoping to reimagine what a consumer app looks like in a post-AI world. “We’re using AI to create immersive, fun experiences that are brand-safe, interactive, and endlessly dynamic.” Status is also part of a trend on which TechCrunch reported late last year, suggesting the future of social media will be less generalized and more focused on fandom and niche communities.\n[...]\nNur said the fresh capital will be used to help scale the platform. Already, she said, Status has seen more than 13 million worlds created, with more than 5 million character profiles — metrics that suggest strong early engagement in what Nur calls a new category: immersive social entertainment."
+        ],
+        "image": "https://techcrunch.com/wp-content/uploads/2026/05/StatusTeamPhoto2.jpg?resize=1200,800",
+        "favicon": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32"
+      },
+      {
+        "id": "https://www.axios.com/2026/06/01/sekai-mini-app-startup-funding",
+        "title": "Sekai raises $20 million as people create 15 million AI mini apps",
+        "url": "https://www.axios.com/2026/06/01/sekai-mini-app-startup-funding",
+        "publishedDate": "2026-06-01T13:00:04.000Z",
+        "author": "Kerry Flynn",
+        "highlights": [
+          "Sekai raises $20 million as people create 15 million AI mini apps\n[...]\n# Exclusive: Sekai raises $20M for AI app creation\n[...]\nSekai has raised a $20 million Series A to grow a platform for creating mini apps through text prompts, founder and CEO Lucky Zhang exclusively tells Axios.\n[...]\nWhy it matters: The founder, who previously sold startups to Apple and TikTok parent ByteDance, is betting AI-generated software is the next breakout consumer app.\n[...]\nHow it works: Sekai is available as an iOS and Android app where people can play with others' mini apps and create their own by describing an app idea in prompts. Users can also remix others' apps.\n[...]\napp that \"picks\n[...]\nweather, my mood and what's clean in\n[...]\n-tale villain I am based on my pettiest comebacks and pet peeves,\" as Axios viewed.\n- Users have created more than 15 million mini apps, with more than 200,000 generated daily. On average, people spend more than an hour per day on the app, according to the company.\n- Zhang says Sekai's early traction came from highly shareable creations, including interactive birthday cards.\n[...]\nFollow the money: Khosla Ventures and Connect Ventures co-led the Series A round, with a16z Speedrun, Mayfield, A*, MVP Ventures, 359 Capital, Parable VC and 645 Ventures participating.\n[...]\n- Sekai raised $6 million in seed funding, led by Mayfield, in 2025.\n[...]\nCatch up quick: Founded in 2024, Sekai is Zhang's fourth startup. Apple acquired his video e-commerce company Yi+ AI in 2017. Bytedance acquired Latin America-based short-video platform Blacktail in 2020. He founded NCT, a music streaming service in Vietnam, which is still running.\n[...]\n- Sekai, which means \"world\" in Japanese, initially focused on anime fan-fiction experiences before expanding into broader app creation after AI coding models improved dramatically last year, Zhang says.\n[...]\nThe big picture: Zhang says Sekai is designed to feel less like passive social media consumption and more like creative participation, where app creation is a form of online expression.\n[...]\n- \"We want this to be something that's not doomscrolling,\" Zhang says. \"The way to get rid of doomscrolling is asking you to interact. It could be to actively build or to actually engage.\"\n[...]\n- The rise of AI coding tools has made software creation much easier. Zhang says he sees mini apps as a new format similar to how short-form video reshaped social media.\n[...]\n- \"You don't call any\n[...]\nAI slop,\" Zhang says\n[...]\n- Quinn says she's working with Sekai on potential creator and celebrity partnerships through its relationship with CAA.\n- Sekai plans to help creators earn money through apps and interactive fan experiences built on the platform, Zhang says."
+        ],
+        "image": "https://images.axios.com/qKudIQG-EMOy5_UsGr6tP3HCx1Q=/1366x768/smart/2024/09/19/183134-1726770694569.jpg",
+        "favicon": "https://static.axios.com/icons/favicon.ico"
+      },
+      {
+        "id": "https://www.sitepoint.com/ai-companion-apps/",
+        "title": "5 Best AI Companion Apps: From Learning Tools to \"AI Girlfriends\"",
+        "url": "https://www.sitepoint.com/ai-companion-apps/",
+        "publishedDate": "2025-07-24T18:11:37.000Z",
+        "highlights": [
+          "Artificial intelligence has moved beyond simple task-oriented assistants and into a new frontier of emotional connection and interaction. With major tech players like xAI introducing features like Grok's Ani, it's clear these companions are going mainstream.\n[...]\nWhile some users explore these platforms for connection leading to the popular term \"AI girlfriends\", the underlying technology serves a much broader purpose. These apps are powerful sandboxes for learning, creativity, and skill development. They offer unique opportunities to practice communication, co-author stories, or simply engage with a highly responsive, judgment-free AI.\n[...]\nChoosing the right platform depends entirely on what you’re looking for, be it a learning partner, a tool for creative role-playing, or simply a friendly, supportive chat. To help you navigate this growing digital landscape, we’ve compiled a list of the five best AI companion apps and websites available today.\n[...]\nAs one of the pioneers in the AI companion space, Replika has earned its reputation as a supportive and empathetic friend. Initially marketed as \"the AI companion who cares,\" Replika is designed to be a safe space for users to share their thoughts and feelings. It learns from your conversational style and a personality you help shape, gradually becoming a mirror of your own inner world and a great tool for self-reflection.\n[...]\nFor those whose imagination knows no bounds, Character AI offers a virtually limitless universe of conversational possibilities. Unlike apps that provide a single, dedicated AI partner, Character AI is a massive sandbox where users can create and interact with a vast library of AIs. These characters can be anything you can dream up: a charming vampire, a historical figure, a sci-fi adventurer, or, of course, a loving companion.\n[...]\nTalkie AI brings a strong visual and gamified element to the AI companion experience. This platform emphasizes the creation and customization of visual avatars, allowing you to design your companion’s appearance in great detail. The interactive experience is built around a card-based system, where you can define your Talkie’s personality, backstory, and even specific scenarios for role-playing.\n[...]\nNovel AI is a bit different from the others on this list, as it’s not a traditional chatbot. Instead, it’s a powerful, AI-assisted storytelling and authorship tool. For those who see their ideal AI companion as a character in a shared story, Novel AI is the ultimate creative partner. It uses incredibly sophisticated language models to help you write high-quality, long-form narratives.\n[...]\nYou can set\n[...]\nscene, define your character (your\n[...]\n), and then write\n[...]\nyour story, suggest"
+        ],
+        "image": "https://uploads.sitepoint.com/wp-content/uploads/medium_5_Best_AI_Companion_Apps_From_Learning_Tools_to_AI_Girlfriends_4dfe50cce2.png"
+      }
+    ],
+    "searchTime": 6582.6,
+    "costDollars": {
+      "total": 0.012
+    },
+    "output": {
+      "content": {
+        "risks": [
+          "AI引发的心理健康问题（如AI精神病、过度沉浸与现实脱节）",
+          "隐私数据保护与监管压力",
+          "线下平台面临的高额固定成本、物流压力及扩张的可扩展性挑战",
+          "AI社交产品的成瘾性设计争议"
+        ],
+        "summary": "2024-2026年AI社交市场呈现出明显的两极分化趋势：一方面，AI陪伴与互动娱乐应用通过高粘性的角色扮演和虚拟角色生态持续增长（如MiniMax、Character.AI）；另一方面，Together Tech（线下连接技术）作为反思AI过载的产物崛起，旨在利用技术辅助而非替代线下人类互动。资本市场正在同时投入这两个领域，前者通过SaaS订阅和虚拟道具实现高速变现，而后者则致力于解决孤独感流行病，通过线下旅游、活动策划和实体硬件设备构建可持续的真实社交网络。",
+        "core_products": [
+          "MiniMax (Talkie/Xingye) - 全球领先的AI社交与陪伴平台，提供角色扮演与虚拟互动",
+          "Character.AI - 专注于角色扮演与沉浸式互动的行业领先者",
+          "Shapes - 将AI融入人类群聊，旨在作为交互式社交辅助工具",
+          "Status AI - 游戏化社交媒体，通过AI创建互动娱乐内容",
+          "Sekai - 允许用户通过提示语创建和交互AI迷你应用",
+          "Replika - 提供情感支持与个性化陪伴",
+          "Nomi - 侧重于AI陪伴的沉浸式记忆与情感互动",
+          "Tandem/HelloTalk - 用于语言交换的社交应用"
+        ],
+        "irl_products": [
+          "222 - 使用AI策划线下聚会以促进有机社交",
+          "WeRoad - 基于共享兴趣的线下社交与组团旅游平台",
+          "Board - 通过触摸屏控制台促进家庭、学校和医院的线下游戏与互动",
+          "SoMe Social - 专注于将线上连接转化为线下活动的社交应用",
+          "Partiful - 活动规划与线下社交应用",
+          "Woov - 针对线下节庆活动的陪伴与连接应用",
+          "Idyoma - 强调线下见面的语言交换应用"
+        ],
+        "watchlist": [
+          "AI生成的迷你应用生态（如Sekai）",
+          "基于特定地理位置的线下社交聚合器",
+          "夜生活与文化体验式社交平台",
+          "消费级实体社交硬件（Cyberdeck等）"
+        ]
+      },
+      "grounding": [
+        {
+          "field": "risks",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+              "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch"
+            },
+            {
+              "url": "https://digitalhumancorp.com/en/research/best-ai-companion-app-2026",
+              "title": "Best AI Companion Apps 2026: Memory, Safety, Privacy Compared"
+            },
+            {
+              "url": "https://www.quora.com/Which-AI-companion-platforms-are-actually-worth-using-in-2026",
+              "title": "Which AI companion platforms are actually worth using in 2026?"
+            },
+            {
+              "url": "https://www.ainvest.com/news/ai-meets-meet-cute-historical-test-physical-platform-economics-2602/",
+              "title": "When AI Meets the Meet-Cute: A Historical Test of Physical Platform Economics"
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "summary",
+          "citations": [
+            {
+              "url": "https://www.ainchina.com/blog/minimax-ipo-212-million-users-ai-companion-empire/",
+              "title": "MiniMax Files for IPO: How China's AI Companion Empire Built 212 Million Users and Challenged the Global Social Landscape | AI in China"
+            },
+            {
+              "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+              "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch"
+            },
+            {
+              "url": "https://kalinga.ai/together-tech-startups-2026/",
+              "title": "Together Tech: Exciting Startup Trend Guide 2026"
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "core_products",
+          "citations": [
+            {
+              "url": "https://techcrunch.com/2026/04/29/meet-shapes-the-app-bringing-humans-and-ai-into-the-same-group-chats/",
+              "title": "Meet Shapes, the app bringing humans and AI into the same group chats | TechCrunch"
+            },
+            {
+              "url": "https://techcrunch.com/2026/05/19/gamified-social-media-network-status-announces-17m-funding-to-help-usher-in-new-era-of-social-networking/",
+              "title": "Forget the feed: Status AI raises $17M to turn social media into interactive entertainment | TechCrunch"
+            },
+            {
+              "url": "https://www.axios.com/2026/06/01/sekai-mini-app-startup-funding",
+              "title": "Sekai raises $20 million as people create 15 million AI mini apps"
+            },
+            {
+              "url": "https://www.ainchina.com/blog/minimax-ipo-212-million-users-ai-companion-empire/",
+              "title": "MiniMax Files for IPO: How China's AI Companion Empire Built 212 Million Users and Challenged the Global Social Landscape | AI in China"
+            },
+            {
+              "url": "https://digitalhumancorp.com/en/research/best-ai-companion-app-2026",
+              "title": "Best AI Companion Apps 2026: Memory, Safety, Privacy Compared"
+            },
+            {
+              "url": "https://www.sitepoint.com/ai-companion-apps/",
+              "title": "5 Best AI Companion Apps: From Learning Tools to \"AI Girlfriends\""
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "irl_products",
+          "citations": [
+            {
+              "url": "socialwithsome.com",
+              "title": "SoMe Social | IRL Social"
+            },
+            {
+              "url": "https://www.ainvest.com/news/ai-meets-meet-cute-historical-test-physical-platform-economics-2602/",
+              "title": "When AI Meets the Meet-Cute: A Historical Test of Physical Platform Economics"
+            },
+            {
+              "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+              "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch"
+            },
+            {
+              "url": "https://logicity.in/en/blog/together-tech-why-startups-are-betting-on-in-person-over-ai",
+              "title": "Together Tech: Why Startups Are Betting on In-Person Over AI | Logicity"
+            },
+            {
+              "url": "https://thenighttimefoundation.substack.com/p/five-months-on-the-world-has-caught",
+              "title": "Five Months On: The World Has Caught Up. Now the Money Needs To."
+            }
+          ],
+          "confidence": "high"
+        },
+        {
+          "field": "watchlist",
+          "citations": [
+            {
+              "url": "https://www.axios.com/2026/06/01/sekai-mini-app-startup-funding",
+              "title": "Sekai raises $20 million as people create 15 million AI mini apps"
+            },
+            {
+              "url": "https://tandem.net/blog/best-language-exchange-apps",
+              "title": "The Best 7 Language Exchange Apps in 2026: How to Find Your ..."
+            },
+            {
+              "url": "https://techcrunch.com/2026/05/27/airbnb-backed-weroad-raises-58m-to-take-its-group-travel-platform-to-the-us/",
+              "title": "Airbnb-backed WeRoad raises $58M to take its group travel platform to the US | TechCrunch"
+            },
+            {
+              "url": "https://thenighttimefoundation.substack.com/p/five-months-on-the-world-has-caught",
+              "title": "Five Months On: The World Has Caught Up. Now the Money Needs To."
+            }
+          ],
+          "confidence": "medium"
+        }
+      ]
+    }
+  }
+}

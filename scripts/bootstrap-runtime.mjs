@@ -63,6 +63,7 @@ async function ensureEnvFile() {
 
   const pairs = [
     ["EXA_API_KEY", process.env.EXA_API_KEY],
+    ["GEMINI_API_KEY", process.env.GEMINI_API_KEY],
     ["FEISHU_WEBHOOK_URL", process.env.FEISHU_WEBHOOK_URL],
     ["FEISHU_WEBHOOK_SECRET", process.env.FEISHU_WEBHOOK_SECRET],
   ].filter(([, value]) => typeof value === "string" && value.length > 0);

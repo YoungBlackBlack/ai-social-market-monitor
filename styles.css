@@ -1290,6 +1290,14 @@ h1 {
   box-shadow: 0 0 0 2px var(--coral);
 }
 
+.orig-line {
+  margin: -4px 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0.72;
+}
+
 .badge-new {
   display: inline-block;
   background: var(--coral);
