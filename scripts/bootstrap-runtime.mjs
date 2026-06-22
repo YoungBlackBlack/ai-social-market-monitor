@@ -23,8 +23,13 @@ async function ensureDirectory(path) {
 
 async function seedDirectory(sourcePath, targetPath) {
   if (!(await pathExists(sourcePath))) return;
+  // If sourcePath is already a symlink, a previous bootstrap already linked it to the volume.
+  // Copying that symlink onto its own target throws ERR_FS_CP_NON_DIR_TO_DIR, which crashed
+  // every re-invocation of bootstrapRuntime (e.g. the spawned run-all). Nothing to seed here.
+  const stats = await lstat(sourcePath);
+  if (stats.isSymbolicLink()) return;
   await ensureDirectory(targetPath);
-  // force: true so each deploy refreshes the volume from the freshly committed git files.
+  // force: true so each fresh deploy refreshes the volume from the freshly committed git files.
   // The daily automation commits data/+exports/ to git, and the on-host monitor run is the
   // only other writer — force:true makes git the source of truth and stops the persistent
   // volume from shadowing newly pushed data and the regenerated standalone report.

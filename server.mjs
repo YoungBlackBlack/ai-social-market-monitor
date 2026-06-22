@@ -53,6 +53,9 @@ async function resolveRequestPath(urlPath) {
   if (urlPath === "/healthz") return null;
   if (urlPath === "/statusz") return null;
 
+  // Never serve dotfiles (e.g. /.env, /.git) — they would leak secrets.
+  if (/(^|\/)\.[^/]/.test(urlPath)) return undefined;
+
   const safePath = resolve(runtime.rootPath, `.${urlPath}`);
   if (!safePath.startsWith(runtime.rootPath)) return undefined;
   return safePath;
