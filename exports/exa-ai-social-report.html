@@ -1214,47 +1214,108 @@ h1 {
 }
 
 .feed-segment-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(180px, 1fr));
-  gap: 10px;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .feed-segment {
   appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 999px;
   background: #fff;
   color: var(--ink);
   cursor: pointer;
-  display: grid;
-  gap: 3px;
-  min-height: 96px;
-  padding: 14px 16px;
-  text-align: left;
+  font: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 7px 14px;
+  min-height: 40px;
 }
 
-.feed-segment strong {
-  font-size: 28px;
-  line-height: 1;
-}
-
-.feed-segment span {
-  font-weight: 850;
-}
-
-.feed-segment small {
+.feed-seg-count {
+  font-weight: 800;
+  font-size: 12px;
   color: var(--muted);
-  line-height: 1.35;
+  background: rgba(36, 107, 254, 0.08);
+  border-radius: 999px;
+  padding: 1px 8px;
 }
 
 .feed-segment.selected {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 2px rgba(48, 96, 255, 0.14);
+  border-color: #17202a;
+  background: #17202a;
+  color: #fff;
 }
 
-.feed-key-toggle {
+.feed-segment.selected .feed-seg-count {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.feed-lane-select {
+  appearance: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 40px;
+  padding: 6px 12px;
+  cursor: pointer;
+  max-width: 220px;
+}
+
+.feed-more-toggle {
   margin-left: auto;
+}
+
+.feed-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 12px 0 0;
+}
+
+.feed-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.feed-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.feed-legend-dot.lg-critical {
+  background: var(--coral);
+}
+
+.feed-legend-dot.lg-high {
+  background: var(--blue);
+}
+
+.feed-legend-dot.lg-medium {
+  background: var(--green);
+}
+
+.feed-advanced {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .feed-count {
@@ -1292,6 +1353,20 @@ h1 {
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+}
+
+/* On the feed (default landing) view, drop the big research hero so news reaches the first screen. */
+body[data-active-view="feed"] .hero {
+  display: none;
+}
+
+.feed-head {
+  margin-bottom: 14px;
+}
+
+.feed-head h2 {
+  font-size: 26px;
+  margin: 0;
 }
 
 #feed-stream {
@@ -1349,10 +1424,15 @@ h1 {
 }
 
 .feed-card .date-line {
-  color: var(--muted);
+  color: var(--ink);
   font-size: 12.5px;
   font-weight: 700;
   margin: 2px 0 0;
+}
+
+.feed-card .date-line .date-sub {
+  color: var(--muted);
+  font-weight: 400;
 }
 
 .feed-card > a {
@@ -1398,27 +1478,23 @@ h1 {
 .why-line {
   display: flex;
   align-items: baseline;
-  gap: 8px;
-  margin: 0 0 10px;
-  padding: 7px 10px;
-  background: rgba(36, 107, 254, 0.07);
-  border-left: 3px solid var(--blue);
-  border-radius: 0;
-  font-size: 13.5px;
-  line-height: 1.45;
+  gap: 6px;
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .why-label {
   flex-shrink: 0;
-  font-size: 11px;
-  font-weight: 850;
+  font-size: 10.5px;
+  font-weight: 800;
   color: var(--blue);
   letter-spacing: 0.04em;
 }
 
 .why-text {
-  color: var(--ink);
-  font-weight: 700;
+  color: var(--muted);
+  font-weight: 500;
 }
 
 .badge-new {
@@ -1430,12 +1506,6 @@ h1 {
   letter-spacing: 0.06em;
   border-radius: 6px;
   padding: 2px 7px;
-}
-
-@media (max-width: 1100px) {
-  .feed-segment-row {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -1454,7 +1524,7 @@ h1 {
 }
 
 @media (max-width: 680px) {
-  .feed-key-toggle {
+  .feed-more-toggle {
     margin-left: 0;
   }
 }
@@ -3904,10 +3974,8 @@ h1 { letter-spacing: -0.035em; }
         <div class="view-toc" id="view-toc" aria-label="本视图小节导航"></div>
         <main>
           <section class="section route-section feed" id="feed" data-view="feed">
-            <div class="section-head">
-              <p class="section-label">what's new · 最新动向</p>
-              <h2>最新动向：竞品与 AI 社交赛道的新新闻和新动作</h2>
-              <p>按"发现时间"倒序排列监控台账里抓到的每一条动向，自上次访问以来的新增会高亮标记，让你一眼看到第一手变化。</p>
+            <div class="section-head feed-head">
+              <h2>最新动向</h2>
             </div>
             <div class="feed-banner" id="feed-banner"></div>
             <div class="feed-controls" id="feed-controls" aria-label="筛选最新动向"></div>
@@ -4270,14 +4338,13 @@ function el(tag, className, text) {
   return node;
 }
 
-// Show the Chinese translation as the title when available, keeping the English original viewable.
+// Show the Chinese translation as the title; keep the English original on hover to avoid clutter.
 function appendItemTitle(card, item) {
-  card.append(el("h4", null, item.titleZh || item.title || ""));
+  const h4 = el("h4", null, item.titleZh || item.title || "");
   if (item.titleZh && item.title && item.titleZh !== item.title) {
-    const orig = el("p", "orig-line", item.title);
-    orig.title = item.title; // full original on hover; CSS truncates to one line
-    card.append(orig);
+    h4.title = item.title;
   }
+  card.append(h4);
   // One-line "why this is recommended to you" note.
   if (item.whyZh) {
     const why = el("p", "why-line");
@@ -5355,13 +5422,11 @@ function renderFeed(ledger, monitor, digest) {
     if (status) tagRow.append(el("span", "badge-status", FEED_STATUSES[status].label));
     card.append(tagRow);
     appendItemTitle(card, item);
-    card.append(
-      el(
-        "p",
-        "date-line",
-        `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
-      ),
-    );
+    const dateLine = el("p", "date-line", `发现于 ${fmtDate(item.firstSeenAt)}`);
+    if (item.publishedDate) {
+      dateLine.append(el("span", "date-sub", ` · 发布 ${fmtDate(item.publishedDate)}`));
+    }
+    card.append(dateLine);
     card.append(el("p", "feed-summary", localizedHighlight(item, "Exa monitor 捕捉到的新动向。")));
     if (item.url) {
       const link = el("a", null, "查看证据");
@@ -5457,6 +5522,10 @@ function renderFeed(ledger, monitor, digest) {
 
   if (controls) {
     controls.replaceChildren();
+
+    // Primary row: compact segment pills + lane dropdown + a disclosure for advanced filters.
+    const primaryRow = el("div", "feed-control-row");
+
     const segmentRow = el("div", "feed-segment-row");
     const segmentDefinitions = [
       ["history", "全部动向", items.length, "全部已发现 URL，按发现时间倒序"],
@@ -5466,9 +5535,9 @@ function renderFeed(ledger, monitor, digest) {
     segmentDefinitions.forEach(([key, label, value, description]) => {
       const btn = el("button", `feed-segment${activeSegment === key ? " selected" : ""}`);
       btn.type = "button";
-      btn.append(el("strong", null, String(value)));
-      btn.append(el("span", null, label));
-      btn.append(el("small", null, description));
+      btn.title = description;
+      btn.append(el("span", "feed-seg-label", label));
+      btn.append(el("span", "feed-seg-count", String(value)));
       btn.addEventListener("click", () => {
         activeSegment = key;
         segmentRow.querySelectorAll(".feed-segment").forEach((item) => item.classList.remove("selected"));
@@ -5477,24 +5546,51 @@ function renderFeed(ledger, monitor, digest) {
       });
       segmentRow.append(btn);
     });
-    controls.append(segmentRow);
+    primaryRow.append(segmentRow);
 
-    const laneRow = el("div", "feed-control-row");
-    const makeChip = (label, onClick, selected) => {
-      const btn = el("button", `filter-button feed-lane-chip${selected ? " selected" : ""}`, label);
-      btn.type = "button";
-      btn.addEventListener("click", () => {
-        onClick();
-        laneRow.querySelectorAll(".feed-lane-chip").forEach((b) => b.classList.remove("selected"));
-        btn.classList.add("selected");
-        renderStream();
-      });
-      return btn;
-    };
-    laneRow.append(makeChip("全部赛道", () => { activeLane = "all"; }, true));
+    const laneSelect = el("select", "feed-lane-select");
+    laneSelect.setAttribute("aria-label", "按赛道筛选");
+    const allOption = el("option", null, "全部赛道");
+    allOption.value = "all";
+    laneSelect.append(allOption);
     laneOrder.forEach((lane) => {
-      laneRow.append(makeChip(lane, () => { activeLane = lane; }, false));
+      const option = el("option", null, lane);
+      option.value = lane;
+      laneSelect.append(option);
     });
+    laneSelect.value = activeLane;
+    laneSelect.addEventListener("change", () => {
+      activeLane = laneSelect.value;
+      renderStream();
+    });
+    primaryRow.append(laneSelect);
+
+    const advanced = el("div", "feed-advanced");
+    advanced.hidden = true;
+    const moreToggle = el("button", "filter-button feed-more-toggle", "更多筛选 ▾");
+    moreToggle.type = "button";
+    moreToggle.setAttribute("aria-expanded", "false");
+    moreToggle.addEventListener("click", () => {
+      advanced.hidden = !advanced.hidden;
+      moreToggle.classList.toggle("selected", !advanced.hidden);
+      moreToggle.setAttribute("aria-expanded", String(!advanced.hidden));
+      moreToggle.textContent = advanced.hidden ? "更多筛选 ▾" : "更多筛选 ▴";
+    });
+    primaryRow.append(moreToggle);
+    controls.append(primaryRow);
+
+    // Priority legend so the left color bars have meaning.
+    const legend = el("div", "feed-legend");
+    legend.append(el("span", "section-label", "优先级"));
+    [["lg-critical", "关键"], ["lg-high", "重点"], ["lg-medium", "一般"]].forEach(([cls, label]) => {
+      const item = el("span", "feed-legend-item");
+      item.append(el("span", `feed-legend-dot ${cls}`));
+      item.append(document.createTextNode(label));
+      legend.append(item);
+    });
+    controls.append(legend);
+
+    // Advanced (collapsed by default): key-only / hide-processed / mark-read / watch keywords.
     const keyToggle = el("button", "filter-button feed-key-toggle", "只看重点");
     keyToggle.type = "button";
     keyToggle.addEventListener("click", () => {
@@ -5502,8 +5598,6 @@ function renderFeed(ledger, monitor, digest) {
       keyToggle.classList.toggle("selected", keyOnly);
       renderStream();
     });
-    laneRow.append(keyToggle);
-
     const hideToggle = el("button", "filter-button", "隐藏已处理");
     hideToggle.type = "button";
     hideToggle.addEventListener("click", () => {
@@ -5511,7 +5605,6 @@ function renderFeed(ledger, monitor, digest) {
       hideToggle.classList.toggle("selected", hideProcessed);
       renderStream();
     });
-    laneRow.append(hideToggle);
     const markVisited = el("button", "filter-button", "标记本轮已读");
     markVisited.type = "button";
     markVisited.addEventListener("click", () => {
@@ -5524,10 +5617,10 @@ function renderFeed(ledger, monitor, digest) {
       renderBanner();
       renderStream();
     });
-    laneRow.append(markVisited);
-    controls.append(laneRow);
+    const toggleRow = el("div", "feed-control-row");
+    toggleRow.append(keyToggle, hideToggle, markVisited);
+    advanced.append(toggleRow);
 
-    // Watch-keyword box (task: configurable keywords) — highlight/pin the topics the user cares about.
     const watchRow = el("div", "feed-watch-row");
     watchRow.append(el("label", "feed-watch-label", "关注关键词（逗号分隔，如 Timeleft, AI dating）"));
     const inputWrap = el("div", "feed-watch-input");
@@ -5560,7 +5653,8 @@ function renderFeed(ledger, monitor, digest) {
     });
     inputWrap.append(input, watchOnlyToggle);
     watchRow.append(inputWrap);
-    controls.append(watchRow);
+    advanced.append(watchRow);
+    controls.append(advanced);
   }
 
   renderStream();

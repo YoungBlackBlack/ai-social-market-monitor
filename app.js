@@ -70,14 +70,13 @@ function el(tag, className, text) {
   return node;
 }
 
-// Show the Chinese translation as the title when available, keeping the English original viewable.
+// Show the Chinese translation as the title; keep the English original on hover to avoid clutter.
 function appendItemTitle(card, item) {
-  card.append(el("h4", null, item.titleZh || item.title || ""));
+  const h4 = el("h4", null, item.titleZh || item.title || "");
   if (item.titleZh && item.title && item.titleZh !== item.title) {
-    const orig = el("p", "orig-line", item.title);
-    orig.title = item.title; // full original on hover; CSS truncates to one line
-    card.append(orig);
+    h4.title = item.title;
   }
+  card.append(h4);
   // One-line "why this is recommended to you" note.
   if (item.whyZh) {
     const why = el("p", "why-line");
@@ -1155,13 +1154,11 @@ function renderFeed(ledger, monitor, digest) {
     if (status) tagRow.append(el("span", "badge-status", FEED_STATUSES[status].label));
     card.append(tagRow);
     appendItemTitle(card, item);
-    card.append(
-      el(
-        "p",
-        "date-line",
-        `发现于 ${fmtDate(item.firstSeenAt)}${item.publishedDate ? ` · 发布 ${fmtDate(item.publishedDate)}` : ""}`,
-      ),
-    );
+    const dateLine = el("p", "date-line", `发现于 ${fmtDate(item.firstSeenAt)}`);
+    if (item.publishedDate) {
+      dateLine.append(el("span", "date-sub", ` · 发布 ${fmtDate(item.publishedDate)}`));
+    }
+    card.append(dateLine);
     card.append(el("p", "feed-summary", localizedHighlight(item, "Exa monitor 捕捉到的新动向。")));
     if (item.url) {
       const link = el("a", null, "查看证据");
@@ -1257,6 +1254,10 @@ function renderFeed(ledger, monitor, digest) {
 
   if (controls) {
     controls.replaceChildren();
+
+    // Primary row: compact segment pills + lane dropdown + a disclosure for advanced filters.
+    const primaryRow = el("div", "feed-control-row");
+
     const segmentRow = el("div", "feed-segment-row");
     const segmentDefinitions = [
       ["history", "全部动向", items.length, "全部已发现 URL，按发现时间倒序"],
@@ -1266,9 +1267,9 @@ function renderFeed(ledger, monitor, digest) {
     segmentDefinitions.forEach(([key, label, value, description]) => {
       const btn = el("button", `feed-segment${activeSegment === key ? " selected" : ""}`);
       btn.type = "button";
-      btn.append(el("strong", null, String(value)));
-      btn.append(el("span", null, label));
-      btn.append(el("small", null, description));
+      btn.title = description;
+      btn.append(el("span", "feed-seg-label", label));
+      btn.append(el("span", "feed-seg-count", String(value)));
       btn.addEventListener("click", () => {
         activeSegment = key;
         segmentRow.querySelectorAll(".feed-segment").forEach((item) => item.classList.remove("selected"));
@@ -1277,24 +1278,51 @@ function renderFeed(ledger, monitor, digest) {
       });
       segmentRow.append(btn);
     });
-    controls.append(segmentRow);
+    primaryRow.append(segmentRow);
 
-    const laneRow = el("div", "feed-control-row");
-    const makeChip = (label, onClick, selected) => {
-      const btn = el("button", `filter-button feed-lane-chip${selected ? " selected" : ""}`, label);
-      btn.type = "button";
-      btn.addEventListener("click", () => {
-        onClick();
-        laneRow.querySelectorAll(".feed-lane-chip").forEach((b) => b.classList.remove("selected"));
-        btn.classList.add("selected");
-        renderStream();
-      });
-      return btn;
-    };
-    laneRow.append(makeChip("全部赛道", () => { activeLane = "all"; }, true));
+    const laneSelect = el("select", "feed-lane-select");
+    laneSelect.setAttribute("aria-label", "按赛道筛选");
+    const allOption = el("option", null, "全部赛道");
+    allOption.value = "all";
+    laneSelect.append(allOption);
     laneOrder.forEach((lane) => {
-      laneRow.append(makeChip(lane, () => { activeLane = lane; }, false));
+      const option = el("option", null, lane);
+      option.value = lane;
+      laneSelect.append(option);
     });
+    laneSelect.value = activeLane;
+    laneSelect.addEventListener("change", () => {
+      activeLane = laneSelect.value;
+      renderStream();
+    });
+    primaryRow.append(laneSelect);
+
+    const advanced = el("div", "feed-advanced");
+    advanced.hidden = true;
+    const moreToggle = el("button", "filter-button feed-more-toggle", "更多筛选 ▾");
+    moreToggle.type = "button";
+    moreToggle.setAttribute("aria-expanded", "false");
+    moreToggle.addEventListener("click", () => {
+      advanced.hidden = !advanced.hidden;
+      moreToggle.classList.toggle("selected", !advanced.hidden);
+      moreToggle.setAttribute("aria-expanded", String(!advanced.hidden));
+      moreToggle.textContent = advanced.hidden ? "更多筛选 ▾" : "更多筛选 ▴";
+    });
+    primaryRow.append(moreToggle);
+    controls.append(primaryRow);
+
+    // Priority legend so the left color bars have meaning.
+    const legend = el("div", "feed-legend");
+    legend.append(el("span", "section-label", "优先级"));
+    [["lg-critical", "关键"], ["lg-high", "重点"], ["lg-medium", "一般"]].forEach(([cls, label]) => {
+      const item = el("span", "feed-legend-item");
+      item.append(el("span", `feed-legend-dot ${cls}`));
+      item.append(document.createTextNode(label));
+      legend.append(item);
+    });
+    controls.append(legend);
+
+    // Advanced (collapsed by default): key-only / hide-processed / mark-read / watch keywords.
     const keyToggle = el("button", "filter-button feed-key-toggle", "只看重点");
     keyToggle.type = "button";
     keyToggle.addEventListener("click", () => {
@@ -1302,8 +1330,6 @@ function renderFeed(ledger, monitor, digest) {
       keyToggle.classList.toggle("selected", keyOnly);
       renderStream();
     });
-    laneRow.append(keyToggle);
-
     const hideToggle = el("button", "filter-button", "隐藏已处理");
     hideToggle.type = "button";
     hideToggle.addEventListener("click", () => {
@@ -1311,7 +1337,6 @@ function renderFeed(ledger, monitor, digest) {
       hideToggle.classList.toggle("selected", hideProcessed);
       renderStream();
     });
-    laneRow.append(hideToggle);
     const markVisited = el("button", "filter-button", "标记本轮已读");
     markVisited.type = "button";
     markVisited.addEventListener("click", () => {
@@ -1324,10 +1349,10 @@ function renderFeed(ledger, monitor, digest) {
       renderBanner();
       renderStream();
     });
-    laneRow.append(markVisited);
-    controls.append(laneRow);
+    const toggleRow = el("div", "feed-control-row");
+    toggleRow.append(keyToggle, hideToggle, markVisited);
+    advanced.append(toggleRow);
 
-    // Watch-keyword box (task: configurable keywords) — highlight/pin the topics the user cares about.
     const watchRow = el("div", "feed-watch-row");
     watchRow.append(el("label", "feed-watch-label", "关注关键词（逗号分隔，如 Timeleft, AI dating）"));
     const inputWrap = el("div", "feed-watch-input");
@@ -1360,7 +1385,8 @@ function renderFeed(ledger, monitor, digest) {
     });
     inputWrap.append(input, watchOnlyToggle);
     watchRow.append(inputWrap);
-    controls.append(watchRow);
+    advanced.append(watchRow);
+    controls.append(advanced);
   }
 
   renderStream();

@@ -1207,47 +1207,108 @@ h1 {
 }
 
 .feed-segment-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(180px, 1fr));
-  gap: 10px;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .feed-segment {
   appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 999px;
   background: #fff;
   color: var(--ink);
   cursor: pointer;
-  display: grid;
-  gap: 3px;
-  min-height: 96px;
-  padding: 14px 16px;
-  text-align: left;
+  font: inherit;
+  font-weight: 800;
+  font-size: 14px;
+  padding: 7px 14px;
+  min-height: 40px;
 }
 
-.feed-segment strong {
-  font-size: 28px;
-  line-height: 1;
-}
-
-.feed-segment span {
-  font-weight: 850;
-}
-
-.feed-segment small {
+.feed-seg-count {
+  font-weight: 800;
+  font-size: 12px;
   color: var(--muted);
-  line-height: 1.35;
+  background: rgba(36, 107, 254, 0.08);
+  border-radius: 999px;
+  padding: 1px 8px;
 }
 
 .feed-segment.selected {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 2px rgba(48, 96, 255, 0.14);
+  border-color: #17202a;
+  background: #17202a;
+  color: #fff;
 }
 
-.feed-key-toggle {
+.feed-segment.selected .feed-seg-count {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.feed-lane-select {
+  appearance: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 40px;
+  padding: 6px 12px;
+  cursor: pointer;
+  max-width: 220px;
+}
+
+.feed-more-toggle {
   margin-left: auto;
+}
+
+.feed-legend {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 12px 0 0;
+}
+
+.feed-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.feed-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.feed-legend-dot.lg-critical {
+  background: var(--coral);
+}
+
+.feed-legend-dot.lg-high {
+  background: var(--blue);
+}
+
+.feed-legend-dot.lg-medium {
+  background: var(--green);
+}
+
+.feed-advanced {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .feed-count {
@@ -1285,6 +1346,20 @@ h1 {
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+}
+
+/* On the feed (default landing) view, drop the big research hero so news reaches the first screen. */
+body[data-active-view="feed"] .hero {
+  display: none;
+}
+
+.feed-head {
+  margin-bottom: 14px;
+}
+
+.feed-head h2 {
+  font-size: 26px;
+  margin: 0;
 }
 
 #feed-stream {
@@ -1342,10 +1417,15 @@ h1 {
 }
 
 .feed-card .date-line {
-  color: var(--muted);
+  color: var(--ink);
   font-size: 12.5px;
   font-weight: 700;
   margin: 2px 0 0;
+}
+
+.feed-card .date-line .date-sub {
+  color: var(--muted);
+  font-weight: 400;
 }
 
 .feed-card > a {
@@ -1391,27 +1471,23 @@ h1 {
 .why-line {
   display: flex;
   align-items: baseline;
-  gap: 8px;
-  margin: 0 0 10px;
-  padding: 7px 10px;
-  background: rgba(36, 107, 254, 0.07);
-  border-left: 3px solid var(--blue);
-  border-radius: 0;
-  font-size: 13.5px;
-  line-height: 1.45;
+  gap: 6px;
+  margin: 2px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .why-label {
   flex-shrink: 0;
-  font-size: 11px;
-  font-weight: 850;
+  font-size: 10.5px;
+  font-weight: 800;
   color: var(--blue);
   letter-spacing: 0.04em;
 }
 
 .why-text {
-  color: var(--ink);
-  font-weight: 700;
+  color: var(--muted);
+  font-weight: 500;
 }
 
 .badge-new {
@@ -1423,12 +1499,6 @@ h1 {
   letter-spacing: 0.06em;
   border-radius: 6px;
   padding: 2px 7px;
-}
-
-@media (max-width: 1100px) {
-  .feed-segment-row {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -1447,7 +1517,7 @@ h1 {
 }
 
 @media (max-width: 680px) {
-  .feed-key-toggle {
+  .feed-more-toggle {
     margin-left: 0;
   }
 }
